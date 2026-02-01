@@ -203,8 +203,10 @@
       '<button class="evidence-preview-close">\u00d7</button>' +
       '<div class="evidence-preview-container">' +
         '<div class="evidence-party-legend" style="display:none"></div>' +
-        '<img class="evidence-preview-img" src="" alt="">' +
-        '<div class="evidence-preview-caption"></div>' +
+        '<div class="evidence-preview-main">' +
+          '<img class="evidence-preview-img" src="" alt="">' +
+          '<div class="evidence-preview-caption"></div>' +
+        '</div>' +
       '</div>';
     document.body.appendChild(lb);
 
@@ -244,24 +246,25 @@
     img.alt = caption || '';
 
     // Party legend
+    var container = lightboxEl.querySelector('.evidence-preview-container');
     if (partyGroup && typeof PARTY_GROUPS !== 'undefined' && PARTY_GROUPS[partyGroup]) {
       var group = PARTY_GROUPS[partyGroup];
       var html = '<div class="evidence-party-legend-title">' + group.title + '</div>';
-      html += '<div class="evidence-party-legend-grid">';
       for (var i = 0; i < group.parties.length; i++) {
         var p = group.parties[i];
         html += '<div class="evidence-party-legend-item">' +
           '<span class="evidence-party-legend-code">' + p.code + '</span>' +
           ' = ' +
-          '<span class="evidence-party-legend-name">' + p.name + '</span> ' +
-          '<span class="evidence-party-legend-role">(' + p.role + ')</span>' +
+          '<span class="evidence-party-legend-name">' + p.name + '</span>' +
+          '<br><span class="evidence-party-legend-role">' + p.role + '</span>' +
           '</div>';
       }
-      html += '</div>';
       legend.innerHTML = html;
       legend.style.display = 'block';
+      container.classList.add('has-legend');
     } else {
       legend.style.display = 'none';
+      container.classList.remove('has-legend');
     }
 
     if (caption) {

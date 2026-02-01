@@ -1317,6 +1317,18 @@ a.evidence-tag.evidence-link::before {
   width: 100%;
   text-align: center;
 }
+.evidence-preview-container.has-legend {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+.evidence-preview-main {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
 
 .evidence-preview-img {
   max-width: 100%;
@@ -1352,67 +1364,86 @@ a.evidence-tag.evidence-link::before {
   color: var(--gold-light);
 }
 
-/* Party legend in lightbox */
+/* Party legend sidebar in lightbox */
 .evidence-party-legend {
   background: rgba(255, 251, 235, 0.95);
-  border-radius: 0;
-  padding: 16px 22px;
-  margin-bottom: 14px;
-  max-width: 700px;
-  width: 100%;
+  padding: 18px 16px;
+  width: 200px;
+  min-width: 200px;
   box-sizing: border-box;
   text-align: left;
   border: 1px solid rgba(200, 160, 80, 0.3);
+  align-self: stretch;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 .evidence-party-legend-title {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   color: #888;
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
-  text-transform: none;
-}
-.evidence-party-legend-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3px 28px;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  border-bottom: 1px solid rgba(200, 160, 80, 0.2);
+  padding-bottom: 10px;
 }
 .evidence-party-legend-item {
-  font-size: 0.85rem;
-  line-height: 1.7;
-  white-space: nowrap;
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
 .evidence-party-legend-code {
   color: #b42828;
   font-weight: 600;
+  font-size: 0.88rem;
 }
 .evidence-party-legend-name {
   color: #333;
   font-weight: 500;
+  font-size: 0.88rem;
 }
 .evidence-party-legend-role {
   color: #999;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
+  display: block;
+  margin-top: 1px;
+  padding-left: 2px;
 }
 
-/* Mobile: ensure lightbox content fits */
+/* Mobile: stack legend on top, image below */
 @media (max-width: 768px) {
+  .evidence-preview-container.has-legend {
+    flex-direction: column;
+    align-items: center;
+  }
+  .evidence-party-legend {
+    width: 100%;
+    min-width: 0;
+    max-height: none;
+    padding: 12px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    align-items: baseline;
+  }
+  .evidence-party-legend-title {
+    width: 100%;
+    margin-bottom: 6px;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .evidence-party-legend-item {
+    margin-bottom: 2px;
+    font-size: 0.78rem;
+  }
+  .evidence-party-legend-role {
+    display: inline;
+    margin-left: 4px;
+  }
   .evidence-preview-img {
-    max-height: 60vh;
+    max-height: 55vh;
   }
   .evidence-preview-close {
     top: 12px;
     right: 12px;
-  }
-  .evidence-party-legend {
-    padding: 12px 14px;
-    margin-bottom: 10px;
-  }
-  .evidence-party-legend-grid {
-    grid-template-columns: 1fr;
-    gap: 2px;
-  }
-  .evidence-party-legend-item {
-    font-size: 0.8rem;
   }
 }
 
