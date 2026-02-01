@@ -13,7 +13,12 @@ const EVIDENCE_FILES = {
   "01股份转让协议书.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "stock_transfer_agreement.pdf",
-    aliases: ["股份转让协议书", "01股份转让协议书"]
+    aliases: ["股份转让协议书", "01股份转让协议书"],
+    quickPreview: {
+      storagePath: "preview_stock_transfer_article4.png",
+      uploaded: true,
+      caption: "\u7b2c\u56db\u6761\uff1a\u4e59\u65b9\u627f\u8bfa\u5b89\u6392\u53cb\u597d\u7b2c\u4e09\u65b9\u63d0\u4f9b<strong>5000\u4e07\u65e5\u5e01\u501f\u6b3e</strong>\u4e88\u76ee\u6807\u516c\u53f8\u8fd0\u8425"
+    }
   },
 
   // === 02: Capital Contribution to Tu's Account ===
@@ -31,6 +36,11 @@ const EVIDENCE_FILES = {
     translations: {
       ja: { storagePath: "business_license_certified.pdf", uploaded: true },
       cn: { storagePath: "business_license_certified_cn.pdf", uploaded: true }
+    },
+    quickPreview: {
+      storagePath: "preview_business_license_rep.jpg",
+      uploaded: true,
+      caption: "\u51c3\u4e91\u5cf0\u4e3a<strong>\u4ee3\u8868\u53d6\u7f14\u5f79</strong>\uff08\u6cd5\u5b9a\u4ee3\u8868\u4eba\uff09\uff0c\u800c\u975e\u4ef2\u88c1\u4e66\u4e2d\u7684\u201c\u8463\u4e8b\u201d"
     }
   },
 
@@ -38,14 +48,24 @@ const EVIDENCE_FILES = {
   "05-2018年第一次借款协议.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "loan_agreement_2018_first.pdf",
-    aliases: ["2018年第一次借款协议", "第一次借款协议"]
+    aliases: ["2018年第一次借款协议", "第一次借款协议"],
+    quickPreview: {
+      storagePath: "preview_loan1_article2_1.png",
+      uploaded: true,
+      caption: "\u7b2c\u4e8c\u6761\u7b2c1\u9879\uff1a\u4e19\u65b9\u9700\u6309\u5404\u81ea\u7684<strong>\u80a1\u6743\u6bd4\u4f8b\u7b79\u96c6800\u4e07\u65e5\u5143</strong>\u4e88\u4e59\u65b9"
+    }
   },
 
   // === 06: Second Loan Agreement ===
   "06-2019年第二次借款协议.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "loan_agreement_2019_second.pdf",
-    aliases: ["2019年第二次借款协议", "第二次借款协议"]
+    aliases: ["2019年第二次借款协议", "第二次借款协议"],
+    quickPreview: {
+      storagePath: "preview_loan2_recital2.jpg",
+      uploaded: true,
+      caption: "\u9274\u4e8e2\uff1a2000\u4e07\u65e5\u5143\u501f\u6b3e\u5df2<strong>\u5168\u90e8\u7528\u4e8e\u516c\u53f8\u8fd0\u8425\u7ba1\u7406\u6295\u5165</strong>\uff0c\u73b0\u7ecf\u8425\u72b6\u51b5\u597d\u8f6c"
+    }
   },
 
   // === 08: Green License ===
@@ -56,6 +76,11 @@ const EVIDENCE_FILES = {
     translations: {
       ja: { storagePath: "green_license.pdf", uploaded: true },
       cn: { storagePath: "green_license_translation.pdf", uploaded: true }
+    },
+    quickPreview: {
+      storagePath: "preview_green_license_date.jpg",
+      uploaded: true,
+      caption: "\u8bb8\u53ef\u6587\u53f7\u8fd1\u8fd0\u81ea\u4e8c\u7b2c644\u53f7\uff0c<strong>\u8bb8\u53ef\u65e5\u671f2018\u5e7411\u67086\u65e5</strong>\uff08\u62a5\u544a\u4e49\u52a1\u6761\u4ef6\u5df2\u6d88\u706d\uff09"
     }
   },
   "08-2绿牌许可证翻译件.pdf": {
@@ -91,6 +116,11 @@ const EVIDENCE_FILES = {
     translations: {
       ja: { storagePath: "corporate_seal_instruction_20191109.pdf", uploaded: true },
       cn: { storagePath: "corporate_seal_instruction_cn_p1_2.pdf", uploaded: true }
+    },
+    quickPreview: {
+      storagePath: "preview_corporate_seal_instruction.png",
+      uploaded: true,
+      caption: "\u51c3\u4e91\u5cf0\u4ee5\u4ee3\u8868\u53d6\u7f14\u5f79\u8eab\u4efd\u7b7e\u7f72\uff1a\u5c06\u5168\u90e8<strong>\u5370\u7ae0\u3001\u5b58\u6298\u3001\u73b0\u91d1\u5361\u3001\u73b0\u91d1\u91d1\u5e93</strong>\u79fb\u4ea4\u7ed9\u897f\u7551\u8bda\u4eae"
     }
   },
   "10-2名片.pdf": {
@@ -112,6 +142,11 @@ const EVIDENCE_FILES = {
     translations: {
       ja: { storagePath: "shareholders_meeting_20191202.pdf", uploaded: true },
       cn: { storagePath: "shareholders_meeting_20191202_cn.pdf", uploaded: false }
+    },
+    quickPreview: {
+      storagePath: "preview_shareholders_meeting.png",
+      uploaded: true,
+      caption: "\u7b2c\u4e00\u56de<strong>\u4e34\u65f6\u80a1\u4e1c\u5927\u4f1a</strong>\uff1a\u51c3\u4e91\u5cf0\u3001\u5415\u4f1f\u9e9f\u3001\u8521\u542f\u6d9b\u53c2\u52a0\uff0c\u5458\u6627\u5230\u573a\u4f46\u88ab\u6392\u65a5"
     }
   },
   "千路商事株式会社2019年第一次临时股东大会决议案.pdf": {
@@ -124,7 +159,12 @@ const EVIDENCE_FILES = {
   "12-罗建峰2019年12月3日律师函.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "lawyer_letter_luo_20191203.pdf",
-    aliases: ["罗建峰2019年12月3日律师函", "12-罗建峰2019年12月3日律师函.JPG"]
+    aliases: ["罗建峰2019年12月3日律师函", "12-罗建峰2019年12月3日律师函.JPG"],
+    quickPreview: {
+      storagePath: "preview_lawyer_letter_2019.png",
+      uploaded: true,
+      caption: "\u8d22\u52a1\u6587\u4ef6\u88ab\u8f6c\u79fb\u4ec524\u5929\u540e\uff0c\u7f57\u5efa\u5cf0\u53d1\u51fa<strong>\u5f8b\u5e08\u51fd</strong>\u8981\u6c42\u63d0\u4f9b\u94f6\u884c\u6d41\u6c34"
+    }
   },
 
   // === 13: Supplier Notification ===
@@ -135,6 +175,11 @@ const EVIDENCE_FILES = {
     translations: {
       ja: { storagePath: "supplier_notice_japanese.pdf", uploaded: true },
       cn: { storagePath: "supplier_notice_20191223.pdf", uploaded: true }
+    },
+    quickPreview: {
+      storagePath: "preview_supplier_notice_signature.jpg",
+      uploaded: true,
+      caption: "\u5415\u4f1f\u9e9f\u3001\u8521\u542f\u6d9b\u4ee5<strong>\u4e1a\u52a1\u6267\u884c\u8d23\u4efb\u4eba</strong>\u8eab\u4efd\u7f72\u540d\uff0c\u7981\u6b62\u5411\u5458\u6627\u63d0\u4f9b\u4efb\u4f55\u4fe1\u606f"
     }
   },
   "お取り業者への通知書.pdf": {
@@ -153,6 +198,11 @@ const EVIDENCE_FILES = {
     translations: {
       ja: { storagePath: "audit_report_japanese.pdf", uploaded: true },
       cn: { storagePath: "audit_report_chinese.pdf", uploaded: true }
+    },
+    quickPreview: {
+      storagePath: "preview_audit_report_header.jpg",
+      uploaded: true,
+      caption: "\u51fa\u5177\u4eba\uff1a<strong>\u516c\u8ba4\u4f1a\u8ba1\u58eb\u957f\u5c9b\u5e7f\u660e</strong>\uff08\u4e0e11\u67089\u65e5\u8f6c\u79fb\u5f53\u5929\u5728\u573a\u4e3a\u540c\u4e00\u4eba\uff09"
     }
   },
   "14-2审计报告中文翻译.pdf": {
@@ -171,14 +221,24 @@ const EVIDENCE_FILES = {
   "16罗建峰与蔡启泳的债权转让协议.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "debt_transfer_agreement.pdf",
-    aliases: ["债权转让协议"]
+    aliases: ["债权转让协议"],
+    quickPreview: {
+      storagePath: "preview_debt_transfer_20pct.jpg",
+      uploaded: true,
+      caption: "\u8f6c\u8ba9\u5bf9\u4ef7\uff1a\u5b9e\u73b0\u503a\u6743\u540e\u652f\u4ed8\u5b9e\u9645\u53d6\u5f97\u91d1\u989d\u7684<strong>20%</strong>\uff0c\u8521\u542f\u6cf3\u96f6\u9884\u4ed8\u6210\u672c"
+    }
   },
 
   // === 17: Arbitration Award (split into 5 parts) ===
   "17湛江仲裁裁决书.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "arbitration_award_p1_6.pdf",
-    aliases: ["湛江仲裁裁决书", "员昊邱千依孙万鹏裁决书"]
+    aliases: ["湛江仲裁裁决书", "员昊邱千依孙万鹏裁决书"],
+    quickPreview: {
+      storagePath: "preview_arbitration_p2_title.jpg",
+      uploaded: true,
+      caption: "\u7b2c2\u9875\uff1a\u51c3\u4e91\u5cf0\u88ab\u5217\u4e3a<strong>\u201c\u8463\u4e8b\u201d</strong>\u800c\u975e\u6cd5\u5b9a\u4ee3\u8868\u4eba\uff0c\u4e0e\u8425\u4e1a\u6267\u7167\u4e0d\u7b26"
+    }
   },
   "17湛江仲裁裁决书_7-12.pdf": {
     uploaded: true, type: "pdf",
@@ -255,6 +315,11 @@ const EVIDENCE_FILES = {
     translations: {
       ja: { storagePath: "qianxun_qianlu_nishida_registration.pdf", uploaded: true },
       cn: { storagePath: "qianxun_registration_cn.pdf", uploaded: true }
+    },
+    quickPreview: {
+      storagePath: "preview_qianxun_registration.jpg",
+      uploaded: true,
+      caption: "\u5343\u5bfb\u516c\u53f8\u767b\u8bb0\uff1a\u51c3\u4e91\u5cf035%\u4e3a<strong>\u4ee3\u8868\u793e\u5458</strong>\uff0c\u4e0e\u5343\u8def\u540c\u5730\u5740\u8fd0\u8425"
     }
   },
 
@@ -294,7 +359,12 @@ const EVIDENCE_FILES = {
   // === Court Rulings ===
   "员昊撤销仲裁案件湛江中院裁定书.pdf": {
     uploaded: true, type: "pdf",
-    storagePath: "zhanjiang_court_ruling.pdf"
+    storagePath: "zhanjiang_court_ruling.pdf",
+    quickPreview: {
+      storagePath: "preview_court_ruling_p4.jpg",
+      uploaded: true,
+      caption: "\u7b2c4\u9875\uff1a<strong>\u8521\u542f\u6cf3\u4e3b\u52a8\u63d0\u4ea4\u5ba1\u8ba1\u62a5\u544a</strong>\uff0c\u8bc1\u660e\u88ab\u7533\u8bf7\u4eba\u62e5\u6709\u5b8c\u6574\u8d22\u52a1\u6570\u636e"
+    }
   },
   "湛江中院撤销仲裁代理词20230915终稿.pdf": {
     uploaded: true, type: "pdf",
