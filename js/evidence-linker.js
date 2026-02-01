@@ -71,10 +71,10 @@
         '</button>' +
         '<hr class="evidence-popup-divider">' +
         '<a id="evidence-lang-ja" class="evidence-lang-btn" target="_blank" rel="noopener noreferrer">' +
-          '<span class="evidence-lang-icon">\ud83c\uddef\ud83c\uddf5</span> \u65e5\u8bed\u539f\u7248' +
+          '\u65e5\u8bed\u539f\u7248' +
         '</a>' +
         '<a id="evidence-lang-cn" class="evidence-lang-btn" target="_blank" rel="noopener noreferrer">' +
-          '<span class="evidence-lang-icon">\ud83c\udde8\ud83c\uddf3</span> \u4e2d\u6587\u7ffb\u8bd1\u4ef6' +
+          '\u4e2d\u6587\u7ffb\u8bd1\u4ef6' +
         '</a>' +
         '<a id="evidence-lang-full" class="evidence-lang-btn" target="_blank" rel="noopener noreferrer">' +
           '\ud83d\udcc4 \u67e5\u770b\u5b8c\u6574\u6587\u4ef6' +
@@ -150,14 +150,14 @@
       if (hasTrans.cn && hasTrans.cn.uploaded) {
         cnBtn.href = buildUrl(hasTrans.cn.storagePath);
         cnBtn.classList.remove('disabled');
-        cnBtn.innerHTML = '<span class="evidence-lang-icon">\ud83c\udde8\ud83c\uddf3</span> \u4e2d\u6587\u7ffb\u8bd1\u4ef6';
+        cnBtn.innerHTML = '\u4e2d\u6587\u7ffb\u8bd1\u4ef6';
         cnBtn.onclick = function () {
           setTimeout(function () { popupOverlay.classList.remove('active'); }, 100);
         };
       } else {
         cnBtn.href = '#';
         cnBtn.classList.add('disabled');
-        cnBtn.innerHTML = '<span class="evidence-lang-icon">\ud83c\udde8\ud83c\uddf3</span> \u4e2d\u6587\u7ffb\u8bd1\u4ef6 <span class="evidence-lang-badge">\u5f85\u8865\u5145</span>';
+        cnBtn.innerHTML = '\u4e2d\u6587\u7ffb\u8bd1\u4ef6 <span class="evidence-lang-badge">\u5f85\u8865\u5145</span>';
         cnBtn.onclick = function (e) { e.preventDefault(); };
       }
     } else {
