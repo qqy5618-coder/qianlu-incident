@@ -6,16 +6,16 @@
   <title>千路事件 - 刑事告发材料</title>
   <link rel="stylesheet" href="css/style.css">
 <style>
-#password-gate{position:fixed;top:0;left:0;width:100%;height:100%;background:#fafafa;display:flex;align-items:center;justify-content:center;z-index:99999;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
-#password-gate .gate-box{background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:48px 40px;text-align:center;max-width:400px;width:90%;box-shadow:0 2px 12px rgba(0,0,0,0.08)}
-#password-gate h2{color:#1a1a1a;margin:0 0 8px;font-size:1.4rem}
-#password-gate p{color:#555;margin:0 0 28px;font-size:0.9rem}
-#password-gate input{width:100%;padding:12px 16px;border:1px solid #e0e0e0;border-radius:6px;background:#fafafa;color:#1a1a1a;font-size:1rem;text-align:center;letter-spacing:4px;box-sizing:border-box;outline:none}
+#password-gate{position:fixed;top:0;left:0;width:100%;height:100%;background:#f7f6f3;display:flex;align-items:center;justify-content:center;z-index:99999;font-family:"Helvetica Neue",Helvetica,"PingFang SC","Microsoft YaHei",Arial,sans-serif}
+#password-gate .gate-box{background:#fff;border:1px solid #d8d4cd;padding:56px 48px;text-align:center;max-width:400px;width:90%}
+#password-gate h2{color:#1a1a1a;margin:0 0 8px;font-size:1rem;font-weight:400;letter-spacing:6px;text-transform:uppercase}
+#password-gate p{color:#999;margin:0 0 36px;font-size:0.78rem;letter-spacing:1px}
+#password-gate input{width:100%;padding:14px 16px;border:1px solid #d8d4cd;background:#fff;color:#1a1a1a;font-size:0.95rem;text-align:center;letter-spacing:6px;box-sizing:border-box;outline:none}
 #password-gate input:focus{border-color:#1a1a1a}
-#password-gate button{width:100%;margin-top:16px;padding:12px;background:#1a1a1a;color:#fff;border:none;border-radius:6px;font-size:1rem;cursor:pointer}
+#password-gate button{width:100%;margin-top:20px;padding:14px;background:#1a1a1a;color:#fff;border:none;font-size:0.75rem;cursor:pointer;letter-spacing:4px;text-transform:uppercase;transition:background 0.2s}
 #password-gate button:hover{background:#333}
-#password-gate .gate-error{color:#c62828;margin-top:12px;font-size:0.85rem;display:none}
-#password-gate .gate-notice{color:#999;font-size:0.75rem;margin-top:20px}
+#password-gate .gate-error{color:#8b1a1a;margin-top:16px;font-size:0.78rem;display:none;letter-spacing:1px}
+#password-gate .gate-notice{color:#999;font-size:0.68rem;margin-top:24px;letter-spacing:1px}
 body.locked{overflow:hidden}
 body.locked>*:not(#password-gate){display:none!important}
 </style>
@@ -28,7 +28,7 @@ body.locked>*:not(#password-gate){display:none!important}
     <h1><span class="accent">千路事件</span> &middot; 刑事告发材料</h1>
     <div style="display:flex;gap:12px;align-items:center;">
       <span class="header-badge">恶意虚假诉讼</span>
-      <button id="printBtn" style="background:#fff;border:1px solid #e0e0e0;color:#1a1a1a;padding:6px 16px;border-radius:20px;cursor:pointer;font-size:0.8rem;">打印全部</button>
+      <button id="printBtn" style="background:transparent;border:1px solid #d8d4cd;color:#1a1a1a;padding:6px 18px;cursor:pointer;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;transition:all 0.2s;">打印全部</button>
     </div>
   </div>
   <nav class="main-nav">
