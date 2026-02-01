@@ -7,6 +7,48 @@
 //   3. Verify storagePath matches the exact filename in Supabase
 // ============================================================
 
+// Party definitions for documents that use 甲乙丙丁 codes
+const PARTY_GROUPS = {
+  stock_transfer: {
+    title: "《股份转让协议书》各方当事人",
+    parties: [
+      { code: "甲A", name: "涂云峰", role: "原股东" },
+      { code: "甲B", name: "邱千依", role: "原股东" },
+      { code: "乙A", name: "吕伟麟", role: "受让方" },
+      { code: "乙B", name: "蔡启涛", role: "受让方" },
+      { code: "丙A", name: "员昊", role: "受让方" },
+      { code: "丙B", name: "孙万鹏", role: "受让方" },
+      { code: "丁方", name: "千路商事株式会社", role: "目标公司" }
+    ]
+  },
+  loan_2018: {
+    title: "《2018年第一次借款协议》各方当事人",
+    parties: [
+      { code: "甲方", name: "罗建峰", role: "债权人/出借人" },
+      { code: "乙方", name: "千路商事株式会社", role: "借款人" },
+      { code: "丙A", name: "员昊", role: "股东/社长" },
+      { code: "丙B", name: "孙万鹏", role: "股东" },
+      { code: "丙C", name: "涂云峰", role: "代表取缔役" },
+      { code: "丙D", name: "邱千依", role: "股东" },
+      { code: "丙E", name: "吕伟麟", role: "最大股东41%" },
+      { code: "丙F", name: "蔡启涛", role: "股东" }
+    ]
+  },
+  loan_2019: {
+    title: "《2019年第二次借款协议》各方当事人",
+    parties: [
+      { code: "甲方", name: "罗建峰", role: "债权人/出借人" },
+      { code: "乙方", name: "千路商事株式会社", role: "借款人" },
+      { code: "丙A", name: "员昊", role: "股东/社长" },
+      { code: "丙B", name: "孙万鹏", role: "股东" },
+      { code: "丙C", name: "涂云峰", role: "代表取缔役" },
+      { code: "丙D", name: "邱千依", role: "股东" },
+      { code: "丙E", name: "吕伟麟", role: "最大股东41%" },
+      { code: "丙F", name: "蔡启涛", role: "股东" }
+    ]
+  }
+};
+
 const EVIDENCE_FILES = {
 
   // === 01: Stock Transfer Agreement ===
@@ -17,7 +59,8 @@ const EVIDENCE_FILES = {
     quickPreview: {
       storagePath: "preview_stock_transfer_article4.png",
       uploaded: true,
-      caption: "\u7b2c\u56db\u6761\uff1a\u4e59\u65b9\u627f\u8bfa\u5b89\u6392\u53cb\u597d\u7b2c\u4e09\u65b9\u63d0\u4f9b<strong>5000\u4e07\u65e5\u5e01\u501f\u6b3e</strong>\u4e88\u76ee\u6807\u516c\u53f8\u8fd0\u8425"
+      caption: "\u7b2c\u56db\u6761\uff1a\u4e59\u65b9\u627f\u8bfa\u5b89\u6392\u53cb\u597d\u7b2c\u4e09\u65b9\u63d0\u4f9b<strong>5000\u4e07\u65e5\u5e01\u501f\u6b3e</strong>\u4e88\u76ee\u6807\u516c\u53f8\u8fd0\u8425",
+      partyGroup: "stock_transfer"
     }
   },
 
@@ -52,7 +95,8 @@ const EVIDENCE_FILES = {
     quickPreview: {
       storagePath: "preview_loan1_article2_1.png",
       uploaded: true,
-      caption: "\u7b2c\u4e8c\u6761\u7b2c1\u9879\uff1a\u4e19\u65b9\u9700\u6309\u5404\u81ea\u7684<strong>\u80a1\u6743\u6bd4\u4f8b\u7b79\u96c6800\u4e07\u65e5\u5143</strong>\u4e88\u4e59\u65b9"
+      caption: "\u7b2c\u4e8c\u6761\u7b2c1\u9879\uff1a\u4e19\u65b9\u9700\u6309\u5404\u81ea\u7684<strong>\u80a1\u6743\u6bd4\u4f8b\u7b79\u96c6800\u4e07\u65e5\u5143</strong>\u4e88\u4e59\u65b9",
+      partyGroup: "loan_2018"
     }
   },
 
@@ -64,7 +108,8 @@ const EVIDENCE_FILES = {
     quickPreview: {
       storagePath: "preview_loan2_recital2.jpg",
       uploaded: true,
-      caption: "\u9274\u4e8e2\uff1a2000\u4e07\u65e5\u5143\u501f\u6b3e\u5df2<strong>\u5168\u90e8\u7528\u4e8e\u516c\u53f8\u8fd0\u8425\u7ba1\u7406\u6295\u5165</strong>\uff0c\u73b0\u7ecf\u8425\u72b6\u51b5\u597d\u8f6c"
+      caption: "\u9274\u4e8e2\uff1a2000\u4e07\u65e5\u5143\u501f\u6b3e\u5df2<strong>\u5168\u90e8\u7528\u4e8e\u516c\u53f8\u8fd0\u8425\u7ba1\u7406\u6295\u5165</strong>\uff0c\u73b0\u7ecf\u8425\u72b6\u51b5\u597d\u8f6c",
+      partyGroup: "loan_2019"
     }
   },
 

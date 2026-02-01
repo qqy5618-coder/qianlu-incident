@@ -95,13 +95,14 @@
   var popupOverlay = null;
 
   // Show popup with preview + full doc options
-  // opts: { fileInfo, previewPath, previewCaption }
+  // opts: { fileInfo, previewPath, previewCaption, partyGroup }
   function showPopup(opts) {
     if (!popupOverlay) popupOverlay = createPopup();
 
     var fileInfo = opts.fileInfo;
     var previewPath = opts.previewPath;
     var previewCaption = opts.previewCaption;
+    var partyGroup = opts.partyGroup || null;
 
     var previewBtn = document.getElementById('evidence-preview-btn');
     var divider = popupOverlay.querySelector('.evidence-popup-divider');
@@ -116,7 +117,7 @@
       divider.style.display = 'block';
       previewBtn.onclick = function () {
         popupOverlay.classList.remove('active');
-        showPreviewLightbox(buildUrl(previewPath), previewCaption || '');
+        showPreviewLightbox(buildUrl(previewPath), previewCaption || '', partyGroup);
       };
     } else {
       previewBtn.style.display = 'none';
@@ -201,6 +202,7 @@
     lb.innerHTML =
       '<button class="evidence-preview-close">\u00d7</button>' +
       '<div class="evidence-preview-container">' +
+        '<div class="evidence-party-legend" style="display:none"></div>' +
         '<img class="evidence-preview-img" src="" alt="">' +
         '<div class="evidence-preview-caption"></div>' +
       '</div>';
@@ -230,15 +232,37 @@
     return lb;
   }
 
-  function showPreviewLightbox(imageUrl, caption) {
+  function showPreviewLightbox(imageUrl, caption, partyGroup) {
     if (!lightboxEl) lightboxEl = createLightbox();
 
     var img = lightboxEl.querySelector('.evidence-preview-img');
     var cap = lightboxEl.querySelector('.evidence-preview-caption');
+    var legend = lightboxEl.querySelector('.evidence-party-legend');
 
     img.classList.remove('zoomed');
     img.src = imageUrl;
     img.alt = caption || '';
+
+    // Party legend
+    if (partyGroup && typeof PARTY_GROUPS !== 'undefined' && PARTY_GROUPS[partyGroup]) {
+      var group = PARTY_GROUPS[partyGroup];
+      var html = '<div class="evidence-party-legend-title">' + group.title + '</div>';
+      html += '<div class="evidence-party-legend-grid">';
+      for (var i = 0; i < group.parties.length; i++) {
+        var p = group.parties[i];
+        html += '<div class="evidence-party-legend-item">' +
+          '<span class="evidence-party-legend-code">' + p.code + '</span>' +
+          ' = ' +
+          '<span class="evidence-party-legend-name">' + p.name + '</span> ' +
+          '<span class="evidence-party-legend-role">(' + p.role + ')</span>' +
+          '</div>';
+      }
+      html += '</div>';
+      legend.innerHTML = html;
+      legend.style.display = 'block';
+    } else {
+      legend.style.display = 'none';
+    }
 
     if (caption) {
       cap.innerHTML = caption;
@@ -316,10 +340,12 @@
           var capturedPreview = preview;
           btn.addEventListener('click', function (e) {
             e.preventDefault();
+            var pg = (capturedFileInfo.quickPreview && capturedFileInfo.quickPreview.partyGroup) || null;
             showPopup({
               fileInfo: capturedFileInfo,
               previewPath: capturedPreview ? capturedPreview.storagePath : null,
-              previewCaption: capturedPreview ? capturedPreview.caption : null
+              previewCaption: capturedPreview ? capturedPreview.caption : null,
+              partyGroup: pg
             });
           });
           span.parentNode.replaceChild(btn, span);
@@ -387,10 +413,12 @@
                   el.addEventListener('click', function (e) {
                     e.preventDefault();
                     var pv = (fInfo.quickPreview && fInfo.quickPreview.uploaded) ? fInfo.quickPreview : null;
+                    var pg = (fInfo.quickPreview && fInfo.quickPreview.partyGroup) || null;
                     showPopup({
                       fileInfo: fInfo,
                       previewPath: pv ? pv.storagePath : null,
-                      previewCaption: pv ? pv.caption : null
+                      previewCaption: pv ? pv.caption : null,
+                      partyGroup: pg
                     });
                   });
                 }
