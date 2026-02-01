@@ -964,3 +964,82 @@ body {
 .site-footer strong {
   color: white;
 }
+
+/* ===== Evidence Link Styles ===== */
+
+/* Clickable evidence-tag: inherits existing blue chip style, adds hover */
+a.evidence-tag.evidence-link {
+  text-decoration: none;
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+a.evidence-tag.evidence-link:hover {
+  background: #bbdefb;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+}
+
+a.evidence-tag.evidence-link:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Paperclip icon as clickable indicator */
+a.evidence-tag.evidence-link::before {
+  content: '\1F4CE ';
+  font-size: 0.75rem;
+}
+
+/* Block layout inside .evidence-files */
+.evidence-files a.evidence-tag.evidence-link {
+  display: block;
+}
+
+/* Unavailable file: dimmed */
+.evidence-tag.evidence-unavailable {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Folder reference */
+.evidence-tag.evidence-folder {
+  opacity: 0.7;
+  cursor: default;
+}
+
+/* Quote-style evidence links */
+.evidence-quote-link {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.evidence-quote-link:hover {
+  color: var(--primary-light);
+  text-decoration-style: solid;
+}
+
+.evidence-quote-unavailable {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+/* Print: clean output without link decorations */
+@media print {
+  a.evidence-tag.evidence-link::before {
+    content: '';
+  }
+  a.evidence-tag.evidence-link {
+    color: var(--primary) !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+}

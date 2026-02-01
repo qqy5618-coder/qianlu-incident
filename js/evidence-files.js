@@ -11,48 +11,48 @@ const EVIDENCE_FILES = {
 
   // === 01: Stock Transfer Agreement ===
   "01股份转让协议书.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "01股份转让协议书.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "stock_transfer_agreement.pdf",
     aliases: ["股份转让协议书", "01股份转让协议书"]
   },
 
   // === 02: Capital Contribution to Tu's Account ===
   "02由于公司当时没有账户 出资都转给了凃云峰账户.JPG": {
-    uploaded: false, type: "image",
-    storagePath: "02由于公司当时没有账户 出资都转给了凃云峰账户.JPG",
+    uploaded: true, type: "image",
+    storagePath: "capital_contribution_proof.jpg",
     aliases: ["02出资转入凃云峰个人账户", "02出资转入凃云峰账户"]
   },
 
   // === 04: Business License ===
   "04千路商事营业执照藤本.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "04千路商事营业执照藤本.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "business_license_certified.pdf",
     aliases: ["营业执照藤本", "千路商事营业执照藤本"]
   },
 
   // === 05: First Loan Agreement ===
   "05-2018年第一次借款协议.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "05-2018年第一次借款协议.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "loan_agreement_2018_first.pdf",
     aliases: ["2018年第一次借款协议", "第一次借款协议"]
   },
 
   // === 06: Second Loan Agreement ===
   "06-2019年第二次借款协议.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "06-2019年第二次借款协议.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "loan_agreement_2019_second.pdf",
     aliases: ["2019年第二次借款协议", "第二次借款协议"]
   },
 
   // === 08: Green License ===
   "08-1绿牌许可证.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "08-1绿牌许可证.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "green_license.pdf",
     aliases: ["绿牌许可证"]
   },
   "08-2绿牌许可证翻译件.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "08-2绿牌许可证翻译件.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "green_license_translation.pdf",
     aliases: ["绿牌许可证翻译件"]
   },
 
@@ -63,27 +63,27 @@ const EVIDENCE_FILES = {
     aliases: ["罗建峰在日本证明照片"]
   },
   "09罗建峰在日本证明照片/吕伟麟和蔡启涛及凃云峰在千路公司门口合影，庆祝营运牌照取得.PNG": {
-    uploaded: false, type: "image",
-    storagePath: "09罗建峰在日本证明照片/吕伟麟和蔡启涛及凃云峰在千路公司门口合影，庆祝营运牌照取得.PNG"
+    uploaded: true, type: "image",
+    storagePath: "photo_09_company_celebration.png"
   },
   "09罗建峰在日本证明照片/罗建峰与吕伟麟及凃云峰抵达日本后前往大阪城公园拍照留念.PNG": {
-    uploaded: false, type: "image",
-    storagePath: "09罗建峰在日本证明照片/罗建峰与吕伟麟及凃云峰抵达日本后前往大阪城公园拍照留念.PNG"
+    uploaded: true, type: "image",
+    storagePath: "photo_09_osaka_castle.png"
   },
   "09罗建峰在日本证明照片/罗建峰在日本时乘坐的车牌为和泉300あ680.PNG": {
-    uploaded: false, type: "image",
-    storagePath: "09罗建峰在日本证明照片/罗建峰在日本时乘坐的车牌为和泉300あ680.PNG"
+    uploaded: true, type: "image",
+    storagePath: "photo_09_car_plate.png"
   },
 
   // === 10: Asset Transfer Documents ===
   "10-1-2019年11月9日取走公章的法人指示书.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "10-1-2019年11月9日取走公章的法人指示书.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "corporate_seal_instruction_20191109.pdf",
     aliases: ["凃云峰签章《业务指示书》"]
   },
   "10-2名片.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "10-2名片.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "namecard_20191109.pdf",
     aliases: ["当日现场人名片"]
   },
   "10-2-2019年11月9日当日现场人名片.pdf": {
@@ -94,60 +94,83 @@ const EVIDENCE_FILES = {
 
   // === 11: Shareholder Meeting ===
   "11-2019年12月2日第一回临时股东大会.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "11-2019年12月2日第一回临时股东大会.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "shareholders_meeting_20191202.pdf",
     aliases: ["2019年第一次临时股东大会"]
   },
   "千路商事株式会社2019年第一次临时股东大会决议案.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "千路商事株式会社2019年第一次临时股东大会决议案.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "shareholder_resolution_2019.pdf",
     aliases: ["股东大会决议案"]
   },
 
   // === 12: Luo's Lawyer Letter ===
   "12-罗建峰2019年12月3日律师函.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "12-罗建峰2019年12月3日律师函.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "lawyer_letter_luo_20191203.pdf",
     aliases: ["罗建峰2019年12月3日律师函", "12-罗建峰2019年12月3日律师函.JPG"]
   },
 
   // === 13: Supplier Notification ===
   "13-2019年12月23日发给各供应商的通知书.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "13-2019年12月23日发给各供应商的通知书.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "supplier_notice_20191223.pdf",
     aliases: ["2019年12月23日发给各供应商的通知书", "发给各供应商的通知书"]
   },
   "お取り業者への通知書.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "お取り業者への通知書.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "supplier_notice_japanese.pdf"
   },
   "通知书.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "通知书.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "notice_chinese.pdf"
   },
 
   // === 14: Audit Report ===
   "14-1审计报告日文原版.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "14-1审计报告日文原版.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "audit_report_japanese.pdf"
   },
   "14-2审计报告中文翻译.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "14-2审计报告中文翻译.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "audit_report_chinese.pdf"
+  },
+
+  // === 15: Luo's Second Lawyer Letter ===
+  "15-罗建峰2021年10月13日律师函.JPG": {
+    uploaded: true, type: "image",
+    storagePath: "lawyer_letter_luo_20211013.jpg",
+    aliases: ["罗建峰2021年10月13日律师函"]
   },
 
   // === 16: Debt Transfer Agreement ===
   "16罗建峰与蔡启泳的债权转让协议.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "16罗建峰与蔡启泳的债权转让协议.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "debt_transfer_agreement.pdf",
     aliases: ["债权转让协议"]
   },
 
-  // === 17: Arbitration Award ===
+  // === 17: Arbitration Award (split into 5 parts) ===
   "17湛江仲裁裁决书.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "17湛江仲裁裁决书.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "arbitration_award_p1_6.pdf",
     aliases: ["湛江仲裁裁决书", "员昊邱千依孙万鹏裁决书"]
+  },
+  "17湛江仲裁裁决书_7-12.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "arbitration_award_p7_12.pdf"
+  },
+  "17湛江仲裁裁决书_13-18.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "arbitration_award_p13_18.pdf"
+  },
+  "17湛江仲裁裁决书_19-24.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "arbitration_award_p19_24.pdf"
+  },
+  "17湛江仲裁裁决书_25-32.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "arbitration_award_p25_32.pdf"
   },
 
   // === 18: Qianxun Company Materials ===
@@ -157,20 +180,20 @@ const EVIDENCE_FILES = {
     aliases: ["千寻公司资料", "千寻公司资料（含银行存折及注册备案资料）"]
   },
   "18千寻公司资料/18-1几人成立新公司证明存折-千寻公司入股.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "18千寻公司资料/18-1几人成立新公司证明存折-千寻公司入股.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "qianxun_bankbook.pdf",
     aliases: ["18-1几人成立新公司证明存折-千寻公司入股"]
   },
 
   // === 19: Lu Weilin Payment Evidence ===
   "19-1吕伟麟替罗建峰支付的第二次借款凭证出自仲裁申请书.jpg": {
-    uploaded: false, type: "image",
-    storagePath: "19-1吕伟麟替罗建峰支付的第二次借款凭证出自仲裁申请书.jpg",
+    uploaded: true, type: "image",
+    storagePath: "lu_payment_proof_1.jpg",
     aliases: ["吕伟麟代付凭证", "19-1吕伟麟替罗建峰支付借款凭证"]
   },
   "19-2吕伟麟替罗建峰支付的第二次借款凭证声明出自仲裁申请书.jpg": {
-    uploaded: false, type: "image",
-    storagePath: "19-2吕伟麟替罗建峰支付的第二次借款凭证声明出自仲裁申请书.jpg"
+    uploaded: true, type: "image",
+    storagePath: "lu_payment_proof_2.jpg"
   },
 
   // === 20: Court Documents ===
@@ -183,14 +206,14 @@ const EVIDENCE_FILES = {
     storagePath: "20-2包头中院吕替蔡支付律师费/出自仲裁书第19页最后一行.jpg"
   },
   "20220729 被告证据目录（签字版）.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "20220729 被告证据目录（签字版）.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "defendant_evidence_list_20220729.pdf"
   },
 
   // === Financial Data ===
   "2019.04千路财务状况表": {
-    uploaded: false, type: "other",
-    storagePath: "2019.04千路财务状况表（内含两表）.xls",
+    uploaded: true, type: "other",
+    storagePath: "financial_statement_201904.xls",
     aliases: ["2019.04千路财务状况表（内含两表）.xls"]
   },
 
@@ -202,23 +225,23 @@ const EVIDENCE_FILES = {
 
   // === Company Registration (Fujimoto) ===
   "千寻千路西田公司藤本.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "千寻千路西田公司藤本.pdf",
+    uploaded: true, type: "pdf",
+    storagePath: "qianxun_qianlu_nishida_registration.pdf",
     aliases: ["千寻千路西田公司藤本 2.pdf"]
   },
 
   // === Qianxun Property Registrations ===
   "千寻玉出东.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "千寻玉出东.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "qianxun_tamade_east.pdf"
   },
   "千寻玉出中.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "千寻玉出中.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "qianxun_tamade_central.pdf"
   },
   "千寻与westage的共同担保房产证.pdf": {
     uploaded: false, type: "pdf",
-    storagePath: "千寻与westage的共同担保房产证.pdf",
+    storagePath: "qianxun_westage_mortgage.pdf",
     aliases: ["共同担保目録(は)第7533号"]
   },
 
@@ -234,22 +257,22 @@ const EVIDENCE_FILES = {
     storagePath: "zhanjiang_court_ruling.pdf"
   },
   "湛江中院撤销仲裁代理词20230915终稿.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "湛江中院撤销仲裁代理词20230915终稿.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "arbitration_revocation_brief.pdf"
   },
   "邱千依-全国法院信息综合查询.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "邱千依-全国法院信息综合查询.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "qiu_court_records.pdf"
   },
 
   // === Other Evidence Files ===
   "株主名簿-千路.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "株主名簿-千路.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "shareholder_register.pdf"
   },
   "被告证据1-6（合并页码版）.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "被告证据1-6（合并页码版）.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "defendant_evidence_1_6.pdf"
   },
 
   // === Shorthand-only references (no numbered prefix) ===
@@ -258,12 +281,12 @@ const EVIDENCE_FILES = {
     storagePath: "西畑诚亮签字预り証.pdf"
   },
   "员昊方现场录音": {
-    uploaded: false, type: "video",
-    storagePath: "员昊方现场录音.mp4"
+    uploaded: true, type: "video",
+    storagePath: "VID_20191109_180841.mp4"
   },
   "罗建峰2021年10月13日律师函": {
-    uploaded: false, type: "pdf",
-    storagePath: "罗建峰2021年10月13日律师函.pdf"
+    uploaded: true, type: "image",
+    storagePath: "lawyer_letter_luo_20211013.jpg"
   },
   "湛江仲裁申请书": {
     uploaded: false, type: "pdf",
@@ -284,10 +307,25 @@ const EVIDENCE_FILES = {
   },
 
   // === Tianyancha Screenshots ===
-  "天眼查\"查关系\"截图": {
-    uploaded: false, type: "image",
-    storagePath: "天眼查查关系截图.png",
-    aliases: ["天眼查"查关系"截图"]
+  "天眼查-蔡启涛与吕伟麟关系": {
+    uploaded: true, type: "image",
+    storagePath: "tianyancha_cai_qitao_lu_weilin.png",
+    aliases: ["天眼查蔡启涛吕伟麟"]
+  },
+  "天眼查-蔡启泳与吕伟麟关系": {
+    uploaded: true, type: "image",
+    storagePath: "tianyancha_cai_qiyong_lu_weilin.png",
+    aliases: ["天眼查蔡启泳吕伟麟"]
+  },
+  "天眼查-蔡启涛与蔡启泳关系": {
+    uploaded: true, type: "image",
+    storagePath: "tianyancha_cai_qitao_cai_qiyong.png",
+    aliases: ["天眼查蔡启涛蔡启泳"]
+  },
+  "天眼查-凃云峰与罗建峰关系": {
+    uploaded: true, type: "image",
+    storagePath: "tianyancha_tu_yunfeng_luo_jianfeng.png",
+    aliases: ["天眼查凃云峰罗建峰"]
   }
 };
 
