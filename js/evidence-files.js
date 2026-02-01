@@ -30,7 +30,7 @@ const EVIDENCE_FILES = {
     aliases: ["营业执照藤本", "千路商事营业执照藤本"],
     translations: {
       ja: { storagePath: "business_license_certified.pdf", uploaded: true },
-      cn: { storagePath: "business_license_certified_cn.pdf", uploaded: false }
+      cn: { storagePath: "business_license_certified_cn.pdf", uploaded: true }
     }
   },
 
@@ -90,7 +90,7 @@ const EVIDENCE_FILES = {
     aliases: ["凃云峰签章《业务指示书》"],
     translations: {
       ja: { storagePath: "corporate_seal_instruction_20191109.pdf", uploaded: true },
-      cn: { storagePath: "corporate_seal_instruction_20191109_cn.pdf", uploaded: false }
+      cn: { storagePath: "corporate_seal_instruction_cn_p1_2.pdf", uploaded: true }
     }
   },
   "10-2名片.pdf": {
@@ -254,7 +254,7 @@ const EVIDENCE_FILES = {
     aliases: ["千寻千路西田公司藤本 2.pdf"],
     translations: {
       ja: { storagePath: "qianxun_qianlu_nishida_registration.pdf", uploaded: true },
-      cn: { storagePath: "qianxun_qianlu_nishida_registration_cn.pdf", uploaded: false }
+      cn: { storagePath: "qianxun_registration_cn.pdf", uploaded: true }
     }
   },
 
@@ -278,7 +278,11 @@ const EVIDENCE_FILES = {
   "千寻与westage的共同担保房产证.pdf": {
     uploaded: false, type: "pdf",
     storagePath: "qianxun_westage_mortgage.pdf",
-    aliases: ["共同担保目録(は)第7533号"]
+    aliases: ["共同担保目録(は)第7533号"],
+    translations: {
+      ja: { storagePath: "qianxun_westage_mortgage.pdf", uploaded: false },
+      cn: { storagePath: "qianxun_westage_mortgage_cn_p1-4.pdf", uploaded: true }
+    }
   },
 
   // === Tu Yunfeng Asset Transfer Seal ===
@@ -307,7 +311,7 @@ const EVIDENCE_FILES = {
     storagePath: "shareholder_register.pdf",
     translations: {
       ja: { storagePath: "shareholder_register.pdf", uploaded: true },
-      cn: { storagePath: "shareholder_register_cn.pdf", uploaded: false }
+      cn: { storagePath: "shareholder_register_cn.pdf", uploaded: true }
     }
   },
   "被告证据1-6（合并页码版）.pdf": {

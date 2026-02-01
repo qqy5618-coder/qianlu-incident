@@ -22,7 +22,7 @@
 | 执行通知 | PDF | `enforcement_notice.pdf` |
 | 员昊限制消费令 | PDF | `consumption_restriction_order.pdf` |
 | 员昊、邱千依护照出入境记录 | PDF | `passport_entry_exit_records.pdf` |
-| 天眼查"查关系"截图 | 图片 | `tianyancha_relationship.png` |
+| ~~天眼查"查关系"截图~~ | ~~图片~~ | ~~已上传4张 tianyancha_*.png~~ |
 | 20-2 吕替蔡支付律师费/出自仲裁书第19页最后一行.jpg | 图片 | `arbitration_p19_lawyer_fee.jpg` |
 
 ## 待补充中文翻译件
@@ -32,18 +32,19 @@
 
 | 日语原版 | 翻译件 storagePath | 状态 |
 |----------|-------------------|------|
-| 04 千路商事营业执照藤本 | `business_license_certified_cn.pdf` | 待翻译 |
-| 10-1 法人指示书（业务指示书） | `corporate_seal_instruction_20191109_cn.pdf` | 待翻译 |
 | 11 第一回临时股东大会 | `shareholders_meeting_20191202_cn.pdf` | 待翻译 |
-| 千寻千路西田公司藤本（登记证明） | `qianxun_qianlu_nishida_registration_cn.pdf` | 待翻译 |
 | 千寻玉出东（不动产登记） | `qianxun_tamade_east_cn.pdf` | 待翻译 |
 | 千寻玉出中（不动产登记） | `qianxun_tamade_central_cn.pdf` | 待翻译 |
-| 株主名簿-千路（股东名册） | `shareholder_register_cn.pdf` | 待翻译 |
 
 **已有翻译件（无需操作）：**
 - 08 绿牌许可证 → `green_license_translation.pdf` (已上传)
 - 14 审计报告 → `audit_report_chinese.pdf` (已上传)
 - 13 供应商通知书 → `supplier_notice_20191223.pdf` (已上传)
+- 04 千路商事营业执照藤本 → `business_license_certified_cn.pdf` (已上传)
+- 10-1 法人指示书 → `corporate_seal_instruction_cn_p1_2.pdf` + `_p3_6.pdf` (已上传)
+- 千寻千路西田公司藤本 → `qianxun_registration_cn.pdf` (已上传)
+- 千寻与westage共同担保 → `qianxun_westage_mortgage_cn_p1-4.pdf` 等9个拆分件 (已上传)
+- 株主名簿-千路 → `shareholder_register_cn.pdf` (已生成并上传)
 
 ---
 
