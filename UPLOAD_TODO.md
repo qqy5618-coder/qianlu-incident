@@ -25,6 +25,28 @@
 | 天眼查"查关系"截图 | 图片 | `tianyancha_relationship.png` |
 | 20-2 吕替蔡支付律师费/出自仲裁书第19页最后一行.jpg | 图片 | `arbitration_p19_lawyer_fee.jpg` |
 
+## 待补充中文翻译件
+
+以下日语原版文件已上传，但中文翻译件尚未提供。
+补充翻译件后上传到 Supabase，并在 `js/evidence-files.js` 对应条目的 `translations.cn` 中设置 `uploaded: true`。
+
+| 日语原版 | 翻译件 storagePath | 状态 |
+|----------|-------------------|------|
+| 04 千路商事营业执照藤本 | `business_license_certified_cn.pdf` | 待翻译 |
+| 10-1 法人指示书（业务指示书） | `corporate_seal_instruction_20191109_cn.pdf` | 待翻译 |
+| 11 第一回临时股东大会 | `shareholders_meeting_20191202_cn.pdf` | 待翻译 |
+| 千寻千路西田公司藤本（登记证明） | `qianxun_qianlu_nishida_registration_cn.pdf` | 待翻译 |
+| 千寻玉出东（不动产登记） | `qianxun_tamade_east_cn.pdf` | 待翻译 |
+| 千寻玉出中（不动产登记） | `qianxun_tamade_central_cn.pdf` | 待翻译 |
+| 株主名簿-千路（股东名册） | `shareholder_register_cn.pdf` | 待翻译 |
+
+**已有翻译件（无需操作）：**
+- 08 绿牌许可证 → `green_license_translation.pdf` (已上传)
+- 14 审计报告 → `audit_report_chinese.pdf` (已上传)
+- 13 供应商通知书 → `supplier_notice_20191223.pdf` (已上传)
+
+---
+
 ## 上传步骤
 
 ```bash

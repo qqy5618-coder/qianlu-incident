@@ -27,7 +27,11 @@ const EVIDENCE_FILES = {
   "04千路商事营业执照藤本.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "business_license_certified.pdf",
-    aliases: ["营业执照藤本", "千路商事营业执照藤本"]
+    aliases: ["营业执照藤本", "千路商事营业执照藤本"],
+    translations: {
+      ja: { storagePath: "business_license_certified.pdf", uploaded: true },
+      cn: { storagePath: "business_license_certified_cn.pdf", uploaded: false }
+    }
   },
 
   // === 05: First Loan Agreement ===
@@ -48,7 +52,11 @@ const EVIDENCE_FILES = {
   "08-1绿牌许可证.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "green_license.pdf",
-    aliases: ["绿牌许可证"]
+    aliases: ["绿牌许可证"],
+    translations: {
+      ja: { storagePath: "green_license.pdf", uploaded: true },
+      cn: { storagePath: "green_license_translation.pdf", uploaded: true }
+    }
   },
   "08-2绿牌许可证翻译件.pdf": {
     uploaded: true, type: "pdf",
@@ -79,7 +87,11 @@ const EVIDENCE_FILES = {
   "10-1-2019年11月9日取走公章的法人指示书.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "corporate_seal_instruction_20191109.pdf",
-    aliases: ["凃云峰签章《业务指示书》"]
+    aliases: ["凃云峰签章《业务指示书》"],
+    translations: {
+      ja: { storagePath: "corporate_seal_instruction_20191109.pdf", uploaded: true },
+      cn: { storagePath: "corporate_seal_instruction_20191109_cn.pdf", uploaded: false }
+    }
   },
   "10-2名片.pdf": {
     uploaded: true, type: "pdf",
@@ -96,7 +108,11 @@ const EVIDENCE_FILES = {
   "11-2019年12月2日第一回临时股东大会.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "shareholders_meeting_20191202.pdf",
-    aliases: ["2019年第一次临时股东大会"]
+    aliases: ["2019年第一次临时股东大会"],
+    translations: {
+      ja: { storagePath: "shareholders_meeting_20191202.pdf", uploaded: true },
+      cn: { storagePath: "shareholders_meeting_20191202_cn.pdf", uploaded: false }
+    }
   },
   "千路商事株式会社2019年第一次临时股东大会决议案.pdf": {
     uploaded: true, type: "pdf",
@@ -115,7 +131,11 @@ const EVIDENCE_FILES = {
   "13-2019年12月23日发给各供应商的通知书.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "supplier_notice_20191223.pdf",
-    aliases: ["2019年12月23日发给各供应商的通知书", "发给各供应商的通知书"]
+    aliases: ["2019年12月23日发给各供应商的通知书", "发给各供应商的通知书"],
+    translations: {
+      ja: { storagePath: "supplier_notice_japanese.pdf", uploaded: true },
+      cn: { storagePath: "supplier_notice_20191223.pdf", uploaded: true }
+    }
   },
   "お取り業者への通知書.pdf": {
     uploaded: true, type: "pdf",
@@ -129,7 +149,11 @@ const EVIDENCE_FILES = {
   // === 14: Audit Report ===
   "14-1审计报告日文原版.pdf": {
     uploaded: true, type: "pdf",
-    storagePath: "audit_report_japanese.pdf"
+    storagePath: "audit_report_japanese.pdf",
+    translations: {
+      ja: { storagePath: "audit_report_japanese.pdf", uploaded: true },
+      cn: { storagePath: "audit_report_chinese.pdf", uploaded: true }
+    }
   },
   "14-2审计报告中文翻译.pdf": {
     uploaded: true, type: "pdf",
@@ -227,17 +251,29 @@ const EVIDENCE_FILES = {
   "千寻千路西田公司藤本.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "qianxun_qianlu_nishida_registration.pdf",
-    aliases: ["千寻千路西田公司藤本 2.pdf"]
+    aliases: ["千寻千路西田公司藤本 2.pdf"],
+    translations: {
+      ja: { storagePath: "qianxun_qianlu_nishida_registration.pdf", uploaded: true },
+      cn: { storagePath: "qianxun_qianlu_nishida_registration_cn.pdf", uploaded: false }
+    }
   },
 
   // === Qianxun Property Registrations ===
   "千寻玉出东.pdf": {
     uploaded: true, type: "pdf",
-    storagePath: "qianxun_tamade_east.pdf"
+    storagePath: "qianxun_tamade_east.pdf",
+    translations: {
+      ja: { storagePath: "qianxun_tamade_east.pdf", uploaded: true },
+      cn: { storagePath: "qianxun_tamade_east_cn.pdf", uploaded: false }
+    }
   },
   "千寻玉出中.pdf": {
     uploaded: true, type: "pdf",
-    storagePath: "qianxun_tamade_central.pdf"
+    storagePath: "qianxun_tamade_central.pdf",
+    translations: {
+      ja: { storagePath: "qianxun_tamade_central.pdf", uploaded: true },
+      cn: { storagePath: "qianxun_tamade_central_cn.pdf", uploaded: false }
+    }
   },
   "千寻与westage的共同担保房产证.pdf": {
     uploaded: false, type: "pdf",
@@ -268,7 +304,11 @@ const EVIDENCE_FILES = {
   // === Other Evidence Files ===
   "株主名簿-千路.pdf": {
     uploaded: true, type: "pdf",
-    storagePath: "shareholder_register.pdf"
+    storagePath: "shareholder_register.pdf",
+    translations: {
+      ja: { storagePath: "shareholder_register.pdf", uploaded: true },
+      cn: { storagePath: "shareholder_register_cn.pdf", uploaded: false }
+    }
   },
   "被告证据1-6（合并页码版）.pdf": {
     uploaded: true, type: "pdf",
