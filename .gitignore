@@ -1,0 +1,17 @@
+# Large media files (stored on Supabase Storage)
+media/*.mp4
+media/*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Node
+node_modules/
+
+# Vercel
+.vercel/
