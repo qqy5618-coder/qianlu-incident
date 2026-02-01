@@ -134,23 +134,35 @@ const EVIDENCE_FILES = {
     aliases: ["绿牌许可证翻译件"]
   },
 
-  // === 09: Luo Jianfeng Japan Photos ===
-  "09罗建峰在日本证明照片/": {
-    uploaded: false, type: "folder",
-    storagePath: "09罗建峰在日本证明照片/",
+  // === 09: Luo Jianfeng Japan Photos (2018年11月) ===
+  "09罗建峰在日本证明照片/2018年11月16日.PNG": {
+    uploaded: true, type: "image",
+    storagePath: "luo_japan_date_20181116.png",
     aliases: ["罗建峰在日本证明照片"]
+  },
+  "09罗建峰在日本证明照片/凃云峰在千路公司委托的财务日本公司门口合影.PNG": {
+    uploaded: true, type: "image",
+    storagePath: "luo_japan_tu_accounting_firm.png"
   },
   "09罗建峰在日本证明照片/吕伟麟和蔡启涛及凃云峰在千路公司门口合影，庆祝营运牌照取得.PNG": {
     uploaded: true, type: "image",
-    storagePath: "photo_09_company_celebration.png"
+    storagePath: "luo_japan_green_license_celebration.png"
   },
   "09罗建峰在日本证明照片/罗建峰与吕伟麟及凃云峰抵达日本后前往大阪城公园拍照留念.PNG": {
     uploaded: true, type: "image",
-    storagePath: "photo_09_osaka_castle.png"
+    storagePath: "luo_japan_osaka_castle.png"
+  },
+  "09罗建峰在日本证明照片/罗建峰与吕伟麟及蔡启涛及员昊在日本神户球场合影.PNG": {
+    uploaded: true, type: "image",
+    storagePath: "luo_japan_kobe_stadium.png"
+  },
+  "09罗建峰在日本证明照片/罗建峰与吕伟麟及蔡启涛合影.PNG": {
+    uploaded: true, type: "image",
+    storagePath: "luo_japan_group_photo.png"
   },
   "09罗建峰在日本证明照片/罗建峰在日本时乘坐的车牌为和泉300あ680.PNG": {
     uploaded: true, type: "image",
-    storagePath: "photo_09_car_plate.png"
+    storagePath: "luo_japan_taxi_plate.png"
   },
 
   // === 10: Asset Transfer Documents ===
@@ -303,26 +315,27 @@ const EVIDENCE_FILES = {
   },
 
   // === 18: Qianxun Company Materials ===
-  "18千寻公司资料/": {
-    uploaded: false, type: "folder",
-    storagePath: "18千寻公司资料/",
-    aliases: ["千寻公司资料", "千寻公司资料（含银行存折及注册备案资料）"]
-  },
-  "18千寻公司资料/18-1几人成立新公司证明存折-千寻公司入股.pdf": {
+  "18-1几人成立千寻合同会社证明存折-千寻公司入股.pdf": {
     uploaded: true, type: "pdf",
-    storagePath: "qianxun_bankbook.pdf",
-    aliases: ["18-1几人成立新公司证明存折-千寻公司入股"]
+    storagePath: "qianxun_bank_book_establishment.pdf",
+    aliases: ["千寻公司资料", "千寻公司资料（含银行存折及注册备案资料）", "18-1几人成立新公司证明存折-千寻公司入股"]
+  },
+  "千寻合同会社出资人信息.JPG": {
+    uploaded: true, type: "image",
+    storagePath: "qianxun_shareholder_info.jpg",
+    aliases: ["千寻合同会社出资人信息"]
   },
 
-  // === 19: Lu Weilin Payment Evidence ===
+  // === 19: Lu Weilin Payment Evidence (两张凭证) ===
   "19-1吕伟麟替罗建峰支付的第二次借款凭证出自仲裁申请书.jpg": {
     uploaded: true, type: "image",
-    storagePath: "lu_payment_proof_1.jpg",
-    aliases: ["吕伟麟代付凭证", "19-1吕伟麟替罗建峰支付借款凭证"]
+    storagePath: "lu_payment_bank_transfer.jpg",
+    aliases: ["吕伟麟代付凭证", "19-1吕伟麟替罗建峰支付借款凭证", "吕伟麟汇款1000万日币银行流水单"]
   },
   "19-2吕伟麟替罗建峰支付的第二次借款凭证声明出自仲裁申请书.jpg": {
     uploaded: true, type: "image",
-    storagePath: "lu_payment_proof_2.jpg"
+    storagePath: "lu_payment_declaration.jpg",
+    aliases: ["吕伟麟代付声明书", "19-2吕伟麟代付声明"]
   },
 
   // === 20: Court Documents ===
@@ -352,7 +365,7 @@ const EVIDENCE_FILES = {
     storagePath: "lawyer_fee_evidence_20230311.pdf"
   },
 
-  // === Company Registration (Fujimoto) ===
+  // === Company Registration (Fujimoto) - 3家公司分拆版 ===
   "千寻千路西田公司藤本.pdf": {
     uploaded: true, type: "pdf",
     storagePath: "qianxun_qianlu_nishida_registration.pdf",
@@ -366,6 +379,21 @@ const EVIDENCE_FILES = {
       uploaded: true,
       caption: "\u5343\u5bfb\u516c\u53f8\u767b\u8bb0\uff1a\u51c3\u4e91\u5cf035%\u4e3a<strong>\u4ee3\u8868\u793e\u5458</strong>\uff0c\u4e0e\u5343\u8def\u540c\u5730\u5740\u8fd0\u8425"
     }
+  },
+  "千路株式会社司藤本.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "qianlu_registration_split.pdf",
+    aliases: ["千路商事株式会社藤本"]
+  },
+  "千寻合同会社藤本.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "qianxun_registration_split.pdf",
+    aliases: ["千寻合同会社藤本单独"]
+  },
+  "西田诚亮公司藤本.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "nishida_company_registration_split.pdf",
+    aliases: ["西田诚亮公司藤本"]
   },
 
   // === Qianxun Property Registrations ===
@@ -386,11 +414,11 @@ const EVIDENCE_FILES = {
     }
   },
   "千寻与westage的共同担保房产证.pdf": {
-    uploaded: false, type: "pdf",
-    storagePath: "qianxun_westage_mortgage.pdf",
-    aliases: ["共同担保目録(は)第7533号"],
+    uploaded: true, type: "pdf",
+    storagePath: "qianxun_westage_mortgage_cn_p1-4.pdf",
+    aliases: ["共同担保目録(は)第7533号", "千寻与westage共同担保"],
     translations: {
-      ja: { storagePath: "qianxun_westage_mortgage.pdf", uploaded: false },
+      ja: { storagePath: "qianxun_westage_mortgage_cn_p1-4.pdf", uploaded: true },
       cn: { storagePath: "qianxun_westage_mortgage_cn_p1-4.pdf", uploaded: true }
     }
   },
@@ -439,30 +467,70 @@ const EVIDENCE_FILES = {
     uploaded: false, type: "pdf",
     storagePath: "西畑诚亮签字预り証.pdf"
   },
-  "员昊方现场录音": {
-    uploaded: true, type: "video",
-    storagePath: "VID_20191109_180841.mp4"
-  },
   "罗建峰2021年10月13日律师函": {
     uploaded: true, type: "image",
     storagePath: "lawyer_letter_luo_20211013.jpg"
   },
   "湛江仲裁申请书": {
     uploaded: false, type: "pdf",
-    storagePath: "湛江仲裁申请书.pdf"
+    storagePath: "arbitration_application.pdf"
   },
   "执行通知": {
-    uploaded: false, type: "pdf",
-    storagePath: "执行通知.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "qiu_court_records.pdf",
+    aliases: ["执行通知书"]
   },
   "员昊限制消费令": {
-    uploaded: false, type: "pdf",
-    storagePath: "员昊限制消费令.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "qiu_court_records.pdf"
   },
+  "邱千依限制消费令": {
+    uploaded: true, type: "pdf",
+    storagePath: "qiu_court_records.pdf"
+  },
+
+  // === Passport / Entry-Exit Records ===
   "员昊、邱千依护照出入境记录": {
-    uploaded: false, type: "pdf",
-    storagePath: "员昊邱千依护照出入境记录.pdf",
-    aliases: ["邱千依护照出入境记录"]
+    uploaded: true, type: "image",
+    storagePath: "passport_yuanhao_1.jpg",
+    aliases: ["邱千依护照出入境记录", "员昊护照出入境记录", "护照出入境记录"]
+  },
+  "护照出入境记录-员昊1": {
+    uploaded: true, type: "image",
+    storagePath: "passport_yuanhao_1.jpg"
+  },
+  "护照出入境记录-员昊2": {
+    uploaded: true, type: "image",
+    storagePath: "passport_yuanhao_2.jpg"
+  },
+  "护照出入境记录-邱千依1": {
+    uploaded: true, type: "image",
+    storagePath: "passport_qiuqianyi_1.jpg"
+  },
+  "护照出入境记录-邱千依2": {
+    uploaded: true, type: "image",
+    storagePath: "passport_qiuqianyi_2.jpg"
+  },
+
+  // === 2019.11.9 Scene Photos (additional) ===
+  "2019年11月9日当天照片3": {
+    uploaded: true, type: "image",
+    storagePath: "scene_photo_20191109_3.png"
+  },
+  "2019年11月9日当天照片4": {
+    uploaded: true, type: "image",
+    storagePath: "scene_photo_20191109_4.png"
+  },
+  "2019年11月9日当天照片5": {
+    uploaded: true, type: "image",
+    storagePath: "scene_photo_20191109_5.png"
+  },
+
+  // === Handwriting Analysis Report ===
+  "笔迹咨询鉴定": {
+    uploaded: true, type: "pdf",
+    storagePath: "handwriting_analysis_report.pdf",
+    aliases: ["笔迹鉴定书", "笔迹咨询鉴定书"]
   },
 
   // === Tianyancha Screenshots ===
