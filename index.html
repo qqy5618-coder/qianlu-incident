@@ -5,8 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>千路事件 - 刑事告发材料</title>
   <link rel="stylesheet" href="css/style.css">
+<style>
+#password-gate{position:fixed;top:0;left:0;width:100%;height:100%;background:#1a1a2e;display:flex;align-items:center;justify-content:center;z-index:99999;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+#password-gate .gate-box{background:#16213e;border:1px solid #0f3460;border-radius:12px;padding:48px 40px;text-align:center;max-width:400px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+#password-gate h2{color:#e94560;margin:0 0 8px;font-size:1.4rem}
+#password-gate p{color:#a0a0b0;margin:0 0 28px;font-size:0.9rem}
+#password-gate input{width:100%;padding:12px 16px;border:1px solid #0f3460;border-radius:8px;background:#0a0a1a;color:#fff;font-size:1rem;text-align:center;letter-spacing:4px;box-sizing:border-box;outline:none}
+#password-gate input:focus{border-color:#e94560}
+#password-gate button{width:100%;margin-top:16px;padding:12px;background:#e94560;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer}
+#password-gate button:hover{background:#c73651}
+#password-gate .gate-error{color:#e94560;margin-top:12px;font-size:0.85rem;display:none}
+#password-gate .gate-notice{color:#555;font-size:0.75rem;margin-top:20px}
+body.locked{overflow:hidden}
+body.locked>*:not(#password-gate){display:none!important}
+</style>
 </head>
-<body>
+<body class="locked">
 
 <!-- ===== HEADER ===== -->
 <header class="site-header">
@@ -1928,6 +1942,32 @@
   <p>告发人：员昊、邱千依 | 涉案公司：千路商事株式会社</p>
   <p style="margin-top:8px;">本材料仅供执法机关查阅参考</p>
 </footer>
+
+<div id="password-gate">
+  <div class="gate-box">
+    <h2>刑事告发材料</h2>
+    <p>本材料仅供执法机关查阅，请输入访问密码</p>
+    <input type="password" id="gate-pwd" placeholder="请输入密码" autofocus>
+    <button id="gate-btn">进入</button>
+    <div class="gate-error" id="gate-error">密码错误，请重试</div>
+    <div class="gate-notice">千路事件 &middot; 内部材料</div>
+  </div>
+</div>
+<script>
+(function(){
+  var h='8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92';
+  function sha256(s){return crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)).then(function(b){return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0')}).join('')})}
+  function unlock(){document.body.classList.remove('locked');var g=document.getElementById('password-gate');if(g)g.remove();sessionStorage.setItem('_ga','1')}
+  if(sessionStorage.getItem('_ga')==='1'){unlock()}
+  else{
+    document.getElementById('gate-btn').onclick=function(){
+      var v=document.getElementById('gate-pwd').value;
+      sha256(v).then(function(r){if(r===h){unlock()}else{document.getElementById('gate-error').style.display='block';document.getElementById('gate-pwd').value=''}})
+    };
+    document.getElementById('gate-pwd').onkeydown=function(e){if(e.key==='Enter')document.getElementById('gate-btn').click()};
+  }
+})();
+</script>
 
 <script src="js/supabase-config.js"></script>
 <script src="js/evidence-files.js"></script>
