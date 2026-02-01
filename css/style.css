@@ -1,20 +1,20 @@
-/* ===== CSS Variables — 纸质文档风 ===== */
+/* ===== CSS Variables — 简洁白底黑字 ===== */
 :root {
-  --primary: #5c3d2e;
-  --primary-light: #7b5b4c;
-  --primary-dark: #3e2518;
-  --accent: #b33a2b;
-  --accent-light: #d45a4a;
-  --warning: #c66900;
-  --success: #3a7d44;
-  --bg: #f8f5f0;
-  --bg-white: #fffdf9;
-  --text: #2c2420;
-  --text-light: #5a504a;
-  --text-muted: #8a7e76;
-  --border: #e0d8cf;
-  --shadow: 0 2px 8px rgba(60,40,20,0.08);
-  --shadow-lg: 0 4px 16px rgba(60,40,20,0.12);
+  --primary: #1a1a1a;
+  --primary-light: #444;
+  --primary-dark: #000;
+  --accent: #c62828;
+  --accent-light: #e53935;
+  --warning: #e65100;
+  --success: #2e7d32;
+  --bg: #fafafa;
+  --bg-white: #ffffff;
+  --text: #1a1a1a;
+  --text-light: #555;
+  --text-muted: #999;
+  --border: #e0e0e0;
+  --shadow: 0 1px 4px rgba(0,0,0,0.06);
+  --shadow-lg: 0 2px 12px rgba(0,0,0,0.1);
   --radius: 6px;
   --radius-lg: 10px;
 }
@@ -40,13 +40,13 @@ body {
 
 /* ===== Header ===== */
 .site-header {
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
-  color: white;
+  background: #fff;
+  color: var(--text);
   padding: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 1px 0 var(--border);
 }
 
 .header-top {
@@ -65,11 +65,12 @@ body {
 }
 
 .header-top h1 .accent {
-  color: var(--accent-light);
+  color: var(--accent);
 }
 
 .header-badge {
   background: var(--accent);
+  color: #fff;
   padding: 4px 16px;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -79,7 +80,8 @@ body {
 
 /* ===== Navigation ===== */
 .main-nav {
-  background: rgba(0,0,0,0.15);
+  background: #f5f5f5;
+  border-top: 1px solid var(--border);
   overflow-x: auto;
 }
 
@@ -94,7 +96,7 @@ body {
 .main-nav a {
   display: block;
   padding: 12px 20px;
-  color: rgba(255,255,255,0.8);
+  color: var(--text-light);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -105,17 +107,18 @@ body {
 
 .main-nav a:hover,
 .main-nav a.active {
-  color: white;
-  border-bottom-color: var(--accent-light);
-  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  border-bottom-color: var(--accent);
+  background: rgba(0,0,0,0.03);
 }
 
 /* ===== Hero Banner ===== */
 .hero {
-  background: linear-gradient(135deg, var(--primary), var(--primary-light));
-  color: white;
+  background: #fff;
+  color: var(--text);
   padding: 60px 40px;
   text-align: center;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero h2 {
@@ -126,7 +129,7 @@ body {
 
 .hero .subtitle {
   font-size: 1.1rem;
-  opacity: 0.9;
+  color: var(--text-light);
   max-width: 800px;
   margin: 0 auto 24px;
 }
@@ -140,15 +143,15 @@ body {
 }
 
 .hero-meta-item {
-  background: rgba(255,255,255,0.1);
+  background: #f5f5f5;
   padding: 12px 24px;
   border-radius: var(--radius);
-  backdrop-filter: blur(4px);
+  border: 1px solid var(--border);
 }
 
 .hero-meta-item .label {
   font-size: 0.8rem;
-  opacity: 0.7;
+  color: var(--text-muted);
   display: block;
 }
 
@@ -304,7 +307,7 @@ body {
 }
 
 .card .evidence-table th {
-  background: var(--primary-light);
+  background: #f0f0f0;
   padding: 10px 14px;
 }
 
@@ -540,8 +543,8 @@ body {
 }
 
 .evidence-table th {
-  background: var(--primary);
-  color: white;
+  background: #f0f0f0;
+  color: var(--text);
   padding: 14px 16px;
   text-align: left;
   font-size: 0.9rem;
@@ -954,15 +957,16 @@ body {
 
 /* ===== Footer ===== */
 .site-footer {
-  background: var(--primary-dark);
-  color: rgba(255,255,255,0.7);
+  background: #f5f5f5;
+  color: var(--text-muted);
   text-align: center;
   padding: 24px;
   font-size: 0.85rem;
+  border-top: 1px solid var(--border);
 }
 
 .site-footer strong {
-  color: white;
+  color: var(--text);
 }
 
 /* ===== Evidence Link Styles ===== */
