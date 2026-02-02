@@ -865,80 +865,406 @@ body {
   }
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive — Tablet & Mobile ===== */
 @media (max-width: 768px) {
+  /* --- Header --- */
   .header-top {
-    padding: 16px 20px;
+    padding: 14px 16px;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
-
   .header-top h1 {
-    font-size: 0.95rem;
-    letter-spacing: 4px;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .header-badge {
+    font-size: 0.62rem;
+    padding: 4px 12px;
+    letter-spacing: 2px;
   }
 
+  /* --- Nav: horizontal scroll --- */
+  .main-nav {
+    -webkit-overflow-scrolling: touch;
+  }
   .main-nav ul {
-    padding: 0 12px;
+    padding: 0 8px;
     justify-content: flex-start;
   }
-
   .main-nav a {
-    padding: 12px 16px;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
+    padding: 10px 14px;
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
   }
 
+  /* --- Hero --- */
   .hero {
-    padding: 48px 20px;
+    padding: 36px 16px;
   }
-
   .hero h2 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     letter-spacing: 2px;
   }
-
+  .hero .subtitle {
+    font-size: 0.82rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  .hero-meta {
+    flex-direction: column;
+    margin-top: 20px;
+  }
   .hero-meta-item {
-    padding: 12px 20px;
+    padding: 12px 16px;
+    border-right: 1px solid var(--border);
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .hero-meta-item:last-child {
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-meta-item .label {
+    font-size: 0.6rem;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+  .hero-meta-item .value {
+    font-size: 0.88rem;
+    text-align: right;
   }
 
+  /* --- Main Content --- */
   .main-content {
-    padding: 32px 16px;
+    padding: 24px 12px;
   }
 
+  /* --- Section --- */
+  .section {
+    margin-bottom: 40px;
+  }
+  .section-title {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    padding-bottom: 12px;
+  }
+  .section-desc {
+    font-size: 0.82rem;
+    margin-bottom: 20px;
+  }
+
+  /* --- Stats Grid --- */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 24px;
+  }
+  .stat-card {
+    padding: 20px 12px;
+    border-right: 1px solid var(--border);
+  }
+  .stat-card .stat-value {
+    font-size: 1.35rem;
+  }
+  .stat-card .stat-label {
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+  }
+
+  /* --- Cards --- */
   .card {
-    padding: 24px;
+    padding: 20px 16px;
+    margin-bottom: 16px;
+  }
+  .card-title {
+    font-size: 0.92rem;
+  }
+  .card p {
+    font-size: 0.84rem;
+    line-height: 1.85;
   }
 
+  /* --- Evidence Files --- */
+  .evidence-files {
+    padding: 14px;
+    margin-top: 14px;
+  }
+  .evidence-files .evidence-tag {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  /* --- Quote --- */
+  .card .quote {
+    padding: 12px 14px;
+    font-size: 0.82rem;
+    margin: 12px 0;
+  }
+
+  /* --- Contradiction --- */
+  .contradiction-header {
+    padding: 14px 16px;
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+  }
+  .contradiction-body {
+    padding: 16px;
+  }
   .contradiction-row {
     grid-template-columns: 1fr;
     gap: 8px;
   }
-
   .contradiction-vs {
     text-align: center;
     padding: 0;
+    font-size: 1rem;
+  }
+  .contradiction-claim,
+  .contradiction-fact {
+    padding: 14px;
+    font-size: 0.82rem;
   }
 
+  /* --- Person Grid --- */
   .person-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .person-card .person-header {
+    padding: 16px;
+  }
+  .person-card .person-body {
+    padding: 0 16px 16px;
+  }
+  .person-card .person-body p {
+    font-size: 0.82rem;
+  }
+  .person-tag {
+    font-size: 0.6rem;
+    padding: 3px 10px;
+    letter-spacing: 1px;
   }
 
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+  /* --- Timeline --- */
+  .timeline {
+    padding-left: 32px;
+  }
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline-item::before {
+    left: -27px;
+    width: 8px;
+    height: 8px;
+  }
+  .timeline-content {
+    padding: 18px 16px;
+  }
+  .timeline-content h4 {
+    font-size: 0.88rem;
+  }
+  .timeline-content p {
+    font-size: 0.82rem;
+  }
+  .timeline-date {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
   }
 
-  .stat-card {
-    border-right: 1px solid var(--border);
+  /* --- Loss Items --- */
+  .loss-item {
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .loss-item .loss-desc {
+    font-size: 0.82rem;
+  }
+  .loss-item .loss-amount {
+    font-size: 1rem;
+    margin-left: 0;
+    align-self: flex-end;
+  }
+  .loss-total {
+    padding: 16px;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+  .loss-total .loss-amount {
+    font-size: 1.2rem;
   }
 
+  /* --- Legal Articles --- */
+  .legal-article {
+    padding: 18px 16px;
+    margin-bottom: 12px;
+  }
+  .legal-article h4 {
+    font-size: 0.88rem;
+  }
+  .legal-article p {
+    font-size: 0.82rem;
+  }
+
+  /* --- Flow Chart --- */
+  .flow-step {
+    padding: 16px 18px;
+  }
+  .flow-step h4 {
+    font-size: 0.82rem;
+  }
+  .flow-step p {
+    font-size: 0.78rem;
+  }
+
+  /* --- Logic Chain --- */
+  .logic-chain {
+    padding: 20px 16px;
+    margin-bottom: 24px;
+  }
+  .logic-chain h3 {
+    font-size: 0.88rem;
+    letter-spacing: 2px;
+  }
+  .logic-step {
+    gap: 14px;
+  }
+  .logic-text {
+    font-size: 0.82rem;
+  }
+
+  /* --- Callout --- */
+  .callout {
+    padding: 16px;
+    font-size: 0.82rem;
+    margin: 14px 0;
+  }
+
+  /* --- Evidence Tables: horizontal scroll --- */
   .evidence-table {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
-
   .evidence-table th,
   .evidence-table td {
-    padding: 10px;
+    padding: 8px 10px;
+    white-space: nowrap;
+  }
+
+  /* --- Evidence Popup --- */
+  .evidence-lang-popup {
+    min-width: 0;
+    max-width: 92vw;
+    width: 92vw;
+    padding: 28px 20px 20px;
+  }
+  .evidence-lang-title {
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+  }
+  .evidence-lang-btn {
+    padding: 12px 16px;
+    font-size: 0.82rem;
+  }
+  .evidence-preview-btn {
+    padding: 12px 16px;
+    font-size: 0.82rem;
+  }
+
+  /* --- Evidence Media Grid --- */
+  .evidence-media-grid {
+    grid-template-columns: 1fr;
+  }
+  .evidence-media {
+    padding: 14px;
+  }
+  .evidence-media h4 {
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
+  }
+
+  /* --- Footer --- */
+  .site-footer {
+    padding: 24px 16px;
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* ===== Responsive — Small Phones ===== */
+@media (max-width: 420px) {
+  .header-top h1 {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+  .main-nav a {
+    padding: 8px 10px;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+  .hero h2 {
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+  }
+  .hero .subtitle {
+    font-size: 0.78rem;
+  }
+  .hero-meta-item .label {
+    font-size: 0.55rem;
+  }
+  .hero-meta-item .value {
+    font-size: 0.78rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .stat-card {
+    border-right: 1px solid var(--border);
+    border-bottom: none;
+  }
+  .stat-card:last-child {
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-card .stat-value {
+    font-size: 1.2rem;
+  }
+  .section-title {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+  }
+  .card {
+    padding: 16px 14px;
+  }
+  .card p {
+    font-size: 0.8rem;
+  }
+  .person-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+  .contradiction-claim .label,
+  .contradiction-fact .label {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+  }
+  .fc-overview-header {
+    font-size: 0.88rem;
+    padding: 12px 14px;
+    letter-spacing: 2px;
+  }
+  .fc-overview-desc {
+    font-size: 0.75rem;
+    padding: 10px 14px;
+  }
+  .evidence-lang-popup {
+    padding: 24px 16px 16px;
   }
 }
 
@@ -1444,6 +1770,130 @@ a.evidence-tag.evidence-link::before {
   .evidence-preview-close {
     top: 12px;
     right: 12px;
+  }
+}
+
+/* ===== False Claims Overview Table ===== */
+.fc-overview {
+  margin: 0 0 32px;
+  border: 2px solid var(--accent);
+}
+.fc-overview-header {
+  background: var(--accent);
+  color: #fff;
+  padding: 16px 20px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.fc-overview-desc {
+  padding: 12px 20px;
+  font-size: 0.82rem;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--border);
+  line-height: 1.7;
+}
+.fc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+.fc-table thead th {
+  background: var(--bg);
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 2px solid var(--border);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+.fc-table thead th.fc-th-claim {
+  background: #faf0f0;
+  color: var(--accent);
+}
+.fc-table thead th.fc-th-truth {
+  background: #f0faf0;
+  color: var(--success);
+}
+.fc-table tbody td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+.fc-table tbody tr:hover {
+  background: #fafaf8;
+}
+.fc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.fc-num {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.fc-page {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.fc-claim-cell {
+  background: #fff8f8;
+}
+.fc-truth-cell {
+  background: #f8fff8;
+}
+.fc-detail-link {
+  color: var(--accent);
+  font-size: 0.78rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  white-space: nowrap;
+}
+.fc-detail-link:hover {
+  color: var(--accent-light);
+  border-color: var(--accent-light);
+}
+.fc-evidence-inline {
+  font-size: 0.78rem;
+  margin-top: 4px;
+}
+@media (max-width: 768px) {
+  .fc-overview {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .fc-table {
+    font-size: 0.75rem;
+    min-width: 500px;
+  }
+  .fc-table thead th,
+  .fc-table tbody td {
+    padding: 8px 8px;
+  }
+  .fc-table .fc-hide-mobile {
+    display: none;
+  }
+  .fc-overview-header {
+    font-size: 0.88rem;
+    letter-spacing: 2px;
+    padding: 12px 16px;
+  }
+  .fc-overview-desc {
+    font-size: 0.78rem;
+    padding: 10px 16px;
   }
 }
 

@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="css/style.css">
 <style>
 #password-gate{position:fixed;top:0;left:0;width:100%;height:100%;background:#f7f6f3;display:flex;align-items:center;justify-content:center;z-index:99999;font-family:"Helvetica Neue",Helvetica,"PingFang SC","Microsoft YaHei",Arial,sans-serif}
-#password-gate .gate-box{background:#fff;border:1px solid #d8d4cd;padding:56px 48px;text-align:center;max-width:400px;width:90%}
+#password-gate .gate-box{background:#fff;border:1px solid #d8d4cd;padding:56px 48px;text-align:center;max-width:400px;width:90%;box-sizing:border-box}
 #password-gate h2{color:#1a1a1a;margin:0 0 8px;font-size:1rem;font-weight:400;letter-spacing:6px;text-transform:uppercase}
 #password-gate p{color:#999;margin:0 0 36px;font-size:0.78rem;letter-spacing:1px}
 #password-gate input{width:100%;padding:14px 16px;border:1px solid #d8d4cd;background:#fff;color:#1a1a1a;font-size:0.95rem;text-align:center;letter-spacing:6px;box-sizing:border-box;outline:none}
+@media(max-width:768px){#password-gate .gate-box{padding:36px 24px}#password-gate h2{font-size:0.85rem;letter-spacing:3px}#password-gate input{font-size:0.88rem;letter-spacing:4px;padding:12px 14px}#password-gate button{font-size:0.7rem;letter-spacing:3px;padding:12px}}
 #password-gate input:focus{border-color:#1a1a1a}
 #password-gate button{width:100%;margin-top:20px;padding:14px;background:#1a1a1a;color:#fff;border:none;font-size:0.75rem;cursor:pointer;letter-spacing:4px;text-transform:uppercase;transition:background 0.2s}
 #password-gate button:hover{background:#333}
@@ -202,8 +203,10 @@ body.locked>*:not(#password-gate){display:none!important}
         </div>
         <div class="person-body">
           <p><strong>关系：</strong>吕伟麟、蔡启涛的好友</p>
+          <p><strong>职业背景：</strong><strong style="color:#b71c1c;">中国注册会计师</strong>，曾任<strong>中国联塑集团执行董事</strong>（<span class="evidence-tag">百度罗建峰资料</span>）——专业审计出身，完全清楚审计报告的完整格式和内容</p>
           <p><strong>核心行为：</strong>明知"乙方"（公司）未履行汇报义务（且该义务在绿牌取得后已消灭）却拖延9个月才发律师函。将债权以不合理对价转让给蔡启泳。在仲裁中做虚假陈述，将"乙方"的义务偷换为个人义务，声称"唯一联系人是4名中国股东"、"不了解绿牌车资格情况"。与凃云峰共同成立千寻合同会社。</p>
           <span class="person-tag suspect-tag">原债权人</span>
+          <span class="person-tag suspect-tag">中国注册会计师</span>
           <span class="person-tag suspect-tag">虚假陈述</span>
           <span class="person-tag suspect-tag">千寻合同会社成员</span>
         </div>
@@ -333,7 +336,9 @@ body.locked>*:not(#password-gate){display:none!important}
           <p>此事实具有三重法律意义：（1）证明五名被告发人之间存在超越普通借贷关系的深度利益关联——共同出资成立不动产公司；（2）吕伟麟作为千路商事41%最大股东，却未以本人名义出资千寻，而是安排表哥兼中国合资伙伴吴铭刚代持——千寻与千路商事系同一法人代表（凃云峰）控制、股东高度重合的关联公司，吕伟麟刻意规避说明其深知千寻的设立不可让员昊等人知悉；（3）凃云峰已另有法人身份，完全具备将千路商事代表取缔役身份移交员昊的客观条件，其拒不兑现管理权转让承诺系出于主观故意。</p>
           <span class="evidence-tag">千寻公司资料（含银行存折及注册备案资料）</span>
           <span class="evidence-tag">千寻合同会社出资人信息</span>
-          <span class="evidence-tag">千寻千路西田公司藤本 2.pdf &mdash; 三家公司履历事项全部证明书</span>
+          <span class="evidence-tag">千路株式会社司藤本.pdf &mdash; 千路商事株式会社履历事项全部证明书：代表取締役 涂云峰，资本金800万円</span>
+          <span class="evidence-tag">千寻合同会社藤本.pdf &mdash; 千寻合同会社履历事项全部证明书：代表社員 涂云峰，资本金900万円，2019年2月21日成立</span>
+          <span class="evidence-tag">西田诚亮公司藤本.pdf &mdash; 株式会社ウエステージ（Westage）履历事项全部证明书：代表取締役 西畑誠亮，资本金2000万円</span>
         </div>
       </div>
 
@@ -667,7 +672,8 @@ body.locked>*:not(#password-gate){display:none!important}
       &bull; <strong>法律关系的恶意倒置：</strong>员昊、邱千依本系向公司出借资金之债权人，却在仲裁中被裁定为公司债务之连带清偿人，出借人反被追索还款，违背基本法律逻辑；<br>
       &bull; <strong>签字动机的恶意利用：</strong>员昊基于管理权转让承诺而签字的行为，被歪曲解释为对公司债务的连带保证——该承诺至今已逾八年从未兑现，签字行为反成为恶意追诉之工具；<br>
       &bull; <strong>有限责任原则的公然践踏：</strong>千路商事株式会社系依法设立的有限责任公司，其法人人格独立，公司债务应由公司法人财产清偿。将公司出资人个人财产用于清偿公司债务，严重违反公司法人人格独立原则；<br>
-      &bull; <strong>选择性追诉暴露犯罪本质：</strong>放弃对实际控制人凃云峰（持股62.5%、法定代表人）、吕伟麟（持股12.5%）、蔡启涛（持股12.5%）的追诉，仅向员昊、邱千依、孙万鹏主张连带责任，进一步证明本案并非正当债权追索，而系以仲裁为工具实施的精准定向迫害。<br><br>
+      &bull; <strong>选择性追诉暴露犯罪本质：</strong>放弃对实际控制人凃云峰（持股62.5%、法定代表人）、吕伟麟（持股12.5%）、蔡启涛（持股12.5%）的追诉，仅向员昊、邱千依、孙万鹏主张连带责任，进一步证明本案并非正当债权追索，而系以仲裁为工具实施的精准定向迫害；<br>
+      &bull; <strong style="color:#b71c1c;">犯罪闭环——&ldquo;制造违约 &rarr; 以违约起诉 &rarr; 给自己免责&rdquo;：</strong>被告发人首先通过转移全部财务资料（2019.11.9）、指使邓桂燕停止财务汇报（11月底）、秘密股东会将受害人排除出公司（12.2），人为制造了员昊&ldquo;无法提供财务信息&rdquo;的违约假象。随后罗建峰以此&ldquo;违约&rdquo;为由发起仲裁。最后在仲裁中，蔡启泳刻意放弃对凃云峰、吕伟麟、蔡启涛的追诉——而这三人恰恰正是制造违约条件的人。<strong style="color:#b71c1c;">制造违约条件的人全部被免责，被他们制造的违约所害的人反被追诉——此等&ldquo;先制造违约、再以违约起诉、最后给自己免责&rdquo;的三步闭环，系虚假诉讼最典型的犯罪特征，足以证明各被告发人之间存在事先通谋。</strong>（详见<a href="#luo-financial-group" style="color:#b71c1c;">罗建峰财务群直接参与记录 &mdash; 犯罪闭环分析</a>）<br><br>
 
       <strong style="color:#b71c1c; font-size:1.1em;">四、审计报告证据链 &mdash; 本案最核心、最具杀伤力之证据</strong><br><br>
       本部分论证系整个证据链中<strong style="color:#b71c1c;">最核心的证据</strong>，足以独立证明虚假诉讼成立。证据链条如下：<br><br>
@@ -698,10 +704,143 @@ body.locked>*:not(#password-gate){display:none!important}
   <!-- ==================== 裁决书逐条反驳 ==================== -->
   <div id="rebuttal" class="section">
     <h3 class="section-title"><span class="icon">&#9878;</span> （2022）湛仲字第56号裁决书 &mdash; 逐条反驳</h3>
-    <p class="section-desc">以下逐页引用湛江仲裁裁决书中对方的虚假证言及仲裁庭认定，右侧以员昊、邱千依方持有的证据进行逐条反驳。所有页码均对应裁决书原文。</p>
+    <p class="section-desc">以下逐页引用湛江仲裁裁决书中蔡启泳转述罗建峰的虚假陈述，及仲裁庭据此作出的错误认定。每一条虚假陈述均有铁证驳倒。</p>
+
+    <!-- ===== 九大虚假陈述速览表 ===== -->
+    <div class="fc-overview">
+      <div class="fc-overview-header">&#9889; 警方速览：仲裁裁决书九大虚假陈述对照表</div>
+      <div class="fc-overview-desc">
+        蔡启泳在仲裁中转述罗建峰的叙述（裁决书第2-10页），构成虚假诉讼的核心。以下每一条均有铁证驳倒。<br>
+        <strong>点击「证据」可查看原件，点击「详情」可跳转完整分析。</strong>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="fc-table">
+          <thead>
+            <tr>
+              <th style="width:36px">#</th>
+              <th style="width:52px">页码</th>
+              <th class="fc-th-claim" style="width:30%">&#10060; 仲裁书中的虚假陈述</th>
+              <th class="fc-th-truth" style="width:30%">&#9989; 铁证反驳</th>
+              <th>关键证据</th>
+              <th class="fc-hide-mobile" style="width:60px">详情</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="fc-num">1</span></td>
+              <td><span class="fc-page">P2</span></td>
+              <td class="fc-claim-cell">凃云峰是<strong>"董事"</strong></td>
+              <td class="fc-truth-cell">实际是<strong>"代表取缔役"</strong>（法定代表人），故意降格以减轻其法律责任</td>
+              <td class="fc-evidence-inline"><span class="evidence-tag">04千路商事营业执照藤本.pdf</span></td>
+              <td class="fc-hide-mobile"><a href="#rebuttal-1" class="fc-detail-link" onclick="document.getElementById('rebuttal-1').scrollIntoView({behavior:'smooth'});return false;">反驳一</a></td>
+            </tr>
+            <tr>
+              <td><span class="fc-num">2</span></td>
+              <td><span class="fc-page">P5</span></td>
+              <td class="fc-claim-cell">借款是"<strong>为了支持4人事业</strong>"、出于"信任和友情"</td>
+              <td class="fc-truth-cell"><span class="evidence-tag">01股份转让协议书.pdf</span> 第四条约定：吕伟麟/蔡启涛承诺安排友好第三方借款，以此获得<strong>51%控制权</strong>——是商业对价</td>
+              <td class="fc-evidence-inline"><span class="evidence-tag">01股份转让协议书.pdf</span></td>
+              <td class="fc-hide-mobile"><a href="#rebuttal-5" class="fc-detail-link" onclick="document.getElementById('rebuttal-5').scrollIntoView({behavior:'smooth'});return false;">反驳五</a></td>
+            </tr>
+            <tr>
+              <td><span class="fc-num">3</span></td>
+              <td><span class="fc-page">P5</span></td>
+              <td class="fc-claim-cell">公司<strong>"一直没有"</strong>履行汇报义务</td>
+              <td class="fc-truth-cell">邓桂燕（千路财务）在群内<strong>连续汇报8个月</strong>（2019年3月-11月），吕伟麟也在群中</td>
+              <td class="fc-evidence-inline"><span class="evidence-tag">邓桂燕自称千路大陆财务燕</span><br><span class="evidence-tag">11月收入报表仍在发送</span></td>
+              <td class="fc-hide-mobile"><a href="#rebuttal-4" class="fc-detail-link" onclick="document.getElementById('rebuttal-4').scrollIntoView({behavior:'smooth'});return false;">反驳四</a></td>
+            </tr>
+            <tr>
+              <td><span class="fc-num">4</span></td>
+              <td><span class="fc-page">P5</span></td>
+              <td class="fc-claim-cell">汇报义务主体是<strong>"4名股东"</strong></td>
+              <td class="fc-truth-cell">合同原文："<strong>乙方需</strong>每周末向甲方报告"——义务主体是<strong>公司（乙方）</strong>，不是个人股东</td>
+              <td class="fc-evidence-inline"><span class="evidence-tag">05-2018年第一次借款协议.pdf</span></td>
+              <td class="fc-hide-mobile"><a href="#rebuttal-3" class="fc-detail-link" onclick="document.getElementById('rebuttal-3').scrollIntoView({behavior:'smooth'});return false;">反驳三</a></td>
+            </tr>
+            <tr>
+              <td><span class="fc-num">5</span></td>
+              <td><span class="fc-page">P5-6</span></td>
+              <td class="fc-claim-cell">9个月后罗建峰<strong>"无奈"</strong>发律师函</td>
+              <td class="fc-truth-cell">发函前，凃/吕/蔡已夺权+拿走印章+停止汇报——<strong>自己制造违约后配合发函</strong></td>
+              <td class="fc-evidence-inline"><span class="evidence-tag">凃云峰签章《业务指示书》</span></td>
+              <td class="fc-hide-mobile"><a href="#rebuttal-4" class="fc-detail-link" onclick="document.getElementById('rebuttal-4').scrollIntoView({behavior:'smooth'});return false;">反驳四</a></td>
+            </tr>
+            <tr>
+              <td><span class="fc-num">6</span></td>
+              <td><span class="fc-page">P6</span></td>
+              <td class="fc-claim-cell">"<strong>唯一联系</strong>是4名中国股东"</td>
+              <td class="fc-truth-cell">吕伟麟/蔡启涛/凃云峰深度介入公司运营，以"业务执行责任人"身份签发通知</td>
+              <td class="fc-evidence-inline"><span class="evidence-tag">13-2019年12月23日发给各供应商的通知书.pdf</span></td>
+              <td class="fc-hide-mobile"><a href="#rebuttal-6" class="fc-detail-link" onclick="document.getElementById('rebuttal-6').scrollIntoView({behavior:'smooth'});return false;">反驳六</a></td>
+            </tr>
+            <tr>
+              <td><span class="fc-num">7</span></td>
+              <td><span class="fc-page">P5</span></td>
+              <td class="fc-claim-cell">吕伟麟仅仅是<strong>"代罗建峰支付"</strong>借款</td>
+              <td class="fc-truth-cell">吕既代罗付1000万借款，又替蔡启泳付律师费——<strong>吕才是幕后出资人和操控者</strong></td>
+              <td class="fc-evidence-inline"><span class="evidence-tag">吕伟麟代付凭证</span></td>
+              <td class="fc-hide-mobile"><a href="#rebuttal-9" class="fc-detail-link" onclick="document.getElementById('rebuttal-9').scrollIntoView({behavior:'smooth'});return false;">反驳九</a></td>
+            </tr>
+            <tr>
+              <td><span class="fc-num">8</span></td>
+              <td><span class="fc-page">P7</span></td>
+              <td class="fc-claim-cell"><strong>"放弃向股东凃云峰主张权利"</strong></td>
+              <td class="fc-truth-cell">凃是<strong>法定代表人（代表取缔役）</strong>+合同义务执行人——<strong>放弃追诉说明凃是自己人</strong></td>
+              <td class="fc-evidence-inline"><span class="evidence-tag">04千路商事营业执照藤本.pdf</span></td>
+              <td class="fc-hide-mobile"><a href="#rebuttal-8" class="fc-detail-link" onclick="document.getElementById('rebuttal-8').scrollIntoView({behavior:'smooth'});return false;">反驳八</a></td>
+            </tr>
+            <tr>
+              <td><span class="fc-num">9</span></td>
+              <td><span class="fc-page">P6</span></td>
+              <td class="fc-claim-cell">公司"<strong>经营困难，濒临破产</strong>"</td>
+              <td class="fc-truth-cell">总投入<strong>4600万日元</strong>，月营收55.7万元；疫情期间<strong>领巨额补助、零开支</strong>——<strong>除非资金被侵占，否则不会破产</strong></td>
+              <td class="fc-evidence-inline"><span class="evidence-tag">2019年04月千路报表</span><br><span class="evidence-tag">14-1审计报告日文原版.pdf</span></td>
+              <td class="fc-hide-mobile"><a href="#rebuttal-5" class="fc-detail-link" onclick="document.getElementById('rebuttal-5').scrollIntoView({behavior:'smooth'});return false;">反驳五</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===== 千路/千寻公司区分提示 ===== -->
+    <div class="callout callout-info" style="margin-bottom:20px;">
+      <strong>&#9888; 请注意区分两家公司</strong>
+      <p><strong>千路商事株式会社</strong>（本案核心公司）：出租车运营公司，凃云峰任法定代表人（代表取缔役），6名股东——吕伟麟41%、员昊14.70%、邱千依13.475%、蔡启涛10%、凃云峰7.35%等。两份借款协议的"乙方"即千路商事。</p>
+      <p><strong>千寻合同会社</strong>（恶意串通证据）：2019年1月由凃云峰、罗建峰、蔡启涛等人秘密成立的不动产公司，凃云峰任法人代表持35%。千寻的股东全部指向被告发人利益共同体，<strong>员昊等受害人完全不知情</strong>。千寻在本案中的意义是证明罗建峰与凃云峰、蔡启涛存在密切利益关联。</p>
+    </div>
+
+    <!-- ===== 裁决书原文查阅 ===== -->
+    <div class="card" style="margin-bottom:24px;">
+      <div class="card-title">裁决书原文查阅</div>
+      <p style="font-size:0.85rem;color:#555;margin-bottom:8px;">以上虚假陈述均出自（2022）湛仲字第56号裁决书。点击以下链接可查看裁决书各段原文：</p>
+      <p>
+        <span class="evidence-tag" data-preview="preview_arb_p2_director.jpg" data-caption="第2页：凃云峰被列为&lt;strong&gt;\"董事\"&lt;/strong&gt;而非法定代表人">17湛江仲裁裁决书.pdf &mdash; 第1-6页（封面、当事人信息、案情叙述）</span>
+        <span class="evidence-tag" data-preview="preview_arb_p8_abandon_tu.jpg" data-caption="第7页：&lt;strong&gt;放弃向股东凃云峰主张权利&lt;/strong&gt;——给自己人免责">17湛江仲裁裁决书_7-12.pdf &mdash; 第7-12页（仲裁请求、举证、答辩）</span>
+        <span class="evidence-tag">17湛江仲裁裁决书_13-18.pdf &mdash; 第13-18页（被申请人举证）</span>
+        <span class="evidence-tag">17湛江仲裁裁决书_19-24.pdf &mdash; 第19-24页（质证、仲裁庭查明事实）</span>
+        <span class="evidence-tag">17湛江仲裁裁决书_25-32.pdf &mdash; 第25-32页（仲裁庭意见、裁决结果）</span>
+      </p>
+    </div>
+
+    <!-- ===== 虚假叙事 vs 真实事件链 ===== -->
+    <div class="card danger" style="margin-bottom:28px;">
+      <div class="card-title">虚假叙事 vs 真实事件链</div>
+      <div class="flow-chart" style="margin:12px 0 0;">
+        <div class="flow-step" style="border-left:3px solid #8b1a1a;padding:8px 12px;margin-bottom:8px;background:#fff8f8;">
+          <strong style="color:#8b1a1a;">他们编造的故事：</strong><br>
+          好心借钱帮朋友 &rarr; 朋友从不汇报 &rarr; 无奈发律师函 &rarr; 依然不理 &rarr; 只好仲裁 &rarr; 顺便免了自己人的责
+        </div>
+        <div style="text-align:center;font-size:1.2rem;color:#8b1a1a;font-weight:700;margin:4px 0;">&#9660; 铁证揭穿 &#9660;</div>
+        <div class="flow-step" style="border-left:3px solid #2d5a27;padding:8px 12px;background:#f8fff8;">
+          <strong style="color:#2d5a27;">真实的事件链：</strong><br>
+          吕/蔡为取得51%控制权而安排借款 &rarr; 财务一直在汇报 &rarr; 他们自己的人夺权并停止汇报 &rarr; 制造"违约"假象 &rarr; 以"违约"为由起诉受害者 &rarr; 给自己人（凃云峰）免责
+        </div>
+      </div>
+    </div>
 
     <!-- ===== 反驳 1: P2 凃云峰身份降格 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-1" class="contradiction-box">
       <div class="contradiction-header">反驳一 &mdash; 裁决书第2页：凃云峰法定代表人身份被降格为"董事"</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -718,7 +857,7 @@ body.locked>*:not(#password-gate){display:none!important}
         <div class="evidence-files">
           <p><strong>对应证据文件：</strong></p>
           <p><span class="evidence-tag">04千路商事营业执照藤本.pdf &mdash; 日本法务局登记证明，明确记载凃云峰为"代表取缔役"（法定代表人）</span></p>
-          <p><span class="evidence-tag">千寻千路西田公司藤本.pdf &mdash; 三家公司登记簿，同样显示凃云峰为千路商事代表取缔役</span></p>
+          <p><span class="evidence-tag">千路株式会社司藤本.pdf &mdash; 千路商事株式会社登记簿：役員欄明确记载凃云峰为「代表取締役」</span></p>
           <p><span class="evidence-tag">01股份转让协议书.pdf &mdash; 第1页明确"甲A：涂云峰（持62.5%）"，系公司创始人及法定代表人</span></p>
           <p><span class="evidence-tag">05-2018年第一次借款协议.pdf &mdash; "乙方（借款人）：千路商事株式会社，法定代表人涂云峰"</span></p>
           <p><span class="evidence-tag">株主名簿-千路.pdf &mdash; 千路商事股东名簿，记载凃云峰的法定代表人地位</span></p>
@@ -727,7 +866,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 2: P4 乙方概念偷换 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-2" class="contradiction-box">
       <div class="contradiction-header">反驳二 &mdash; 裁决书第4页：对"乙方"的概念偷换</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -755,7 +894,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 3: P5 汇报义务主体偷换 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-3" class="contradiction-box">
       <div class="contradiction-header">反驳三 &mdash; 裁决书第5页：汇报义务主体的偷换</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -780,7 +919,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 4: P5-6 九个月不通知 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-4" class="contradiction-box">
       <div class="contradiction-header">反驳四 &mdash; 裁决书第5-6页："9个月后才发律师函"的预谋性配合</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -811,7 +950,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 5: P6 不了解绿牌车 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-5" class="contradiction-box">
       <div class="contradiction-header">反驳五 &mdash; 裁决书第6-9页："无从了解绿牌车资格批准情况"的虚假陈述</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -843,7 +982,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 6: P6-7 唯一联系人 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-6" class="contradiction-box">
       <div class="contradiction-header">反驳六 &mdash; 裁决书第6-7页："唯一联系是4名中国股东"的虚假陈述</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -854,7 +993,7 @@ body.locked>*:not(#password-gate){display:none!important}
           <div class="contradiction-vs">VS</div>
           <div class="contradiction-fact">
             <span class="label">员昊方反驳证据</span>
-            <p><strong>1.</strong> 吕伟麟和蔡启涛才是安排罗建峰提供借款的人（股份转让协议中"安排友好第三方提供资金"）；<br>
+            <p><strong>1.</strong> 吕伟麟和蔡启涛承诺安排友好第三方借款给千路商事——<strong>这是二人取得51%控制权的商业对价</strong>（股份转让协议第四条），罗建峰正是二人安排的"友好第三方"，绝非与员昊等人的"信任和友情"关系；<br>
             <strong>2.</strong> <strong>罗建峰与凃云峰、蔡启涛于2019年1月共同成立千寻合同会社</strong>；<br>
             <strong>3.</strong> 第二次借款1000万日元由<strong>吕伟麟账户代罗建峰支付</strong>，出具《声明书》证明；<br>
             <strong>4.</strong> 吕伟麟、蔡启涛<strong>长期频繁往返日本与中国</strong>，并在通知书中以"业务执行责任人"身份出现；<br>
@@ -866,7 +1005,7 @@ body.locked>*:not(#password-gate){display:none!important}
           <p><strong>对应证据文件：</strong></p>
           <p><span class="evidence-tag">01股份转让协议书.pdf &mdash; 约定"乙方（吕伟麟、蔡启涛）安排友好第三方提供5000万日元借款"，证明罗建峰由吕、蔡安排</span></p>
           <p><span class="evidence-tag">18千寻公司资料/18-1几人成立新公司证明存折-千寻公司入股.pdf &mdash; 千寻合同会社银行存折，2018年12月外国汇款1000万日元入账</span></p>
-          <p><span class="evidence-tag">千寻千路西田公司藤本.pdf &mdash; 千寻合同会社2019年2月21日成立，注册资金900万日元，经营不动产</span></p>
+          <p><span class="evidence-tag">千寻合同会社藤本.pdf &mdash; 千寻合同会社2019年2月21日成立，代表社員涂云峰，资本金900万円，经营不动产</span></p>
           <p><span class="evidence-tag">19-1吕伟麟替罗建峰支付的第二次借款凭证出自仲裁申请书.jpg &mdash; 中信银行汇款单：LU WEI LIN于2019年3月29日汇出1000万日元</span></p>
           <p><span class="evidence-tag">19-2吕伟麟替罗建峰支付的第二次借款凭证声明出自仲裁申请书.jpg &mdash; 吕伟麟声明书：确认代罗建峰支付1000万日元</span></p>
           <p><span class="evidence-tag">20-2包头中院吕替蔡支付律师费/出自仲裁书第19页最后一行.jpg &mdash; 仲裁书记载吕伟麟代蔡启泳支付5000元律师费</span></p>
@@ -877,7 +1016,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 7: P7 四人违反汇报义务 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-7" class="contradiction-box">
       <div class="contradiction-header">反驳七 &mdash; 裁决书第7页："4人违反定期报告银行余额义务"的概念偷换</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -904,7 +1043,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 8: P8 放弃对凃云峰主张权利 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-8" class="contradiction-box">
       <div class="contradiction-header">反驳八 &mdash; 裁决书第8页：放弃对凃云峰主张权利 &mdash; 恶意串通的核心证据</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -928,7 +1067,7 @@ body.locked>*:not(#password-gate){display:none!important}
           <p><strong>对应证据文件：</strong></p>
           <p><span class="evidence-tag">05-2018年第一次借款协议.pdf &mdash; 丙方六人（员昊、孙万鹏、邱千依、凃云峰、吕伟麟、蔡启涛）处于完全相同的合同地位</span></p>
           <p><span class="evidence-tag">06-2019年第二次借款协议.pdf &mdash; 同样六人为丙方，却仅追诉其中三人</span></p>
-          <p><span class="evidence-tag">千寻千路西田公司藤本.pdf &mdash; 千寻合同会社登记信息，证明罗建峰与凃云峰、蔡启涛2019年1月共同成立新公司</span></p>
+          <p><span class="evidence-tag">千寻合同会社藤本.pdf &mdash; 千寻合同会社登记信息，证明罗建峰与凃云峰、蔡启涛共同成立新公司</span></p>
           <p><span class="evidence-tag">18千寻公司资料/ &mdash; 整个文件夹含千寻合同会社成立的存折、照片等资料</span></p>
           <p><span class="evidence-tag">19-1吕伟麟替罗建峰支付的第二次借款凭证出自仲裁申请书.jpg &mdash; 吕伟麟代罗建峰付款证据</span></p>
           <p><span class="evidence-tag">2023年3月11日仲裁决定书中吕伟麟替蔡启泳付律师费的证据.pdf &mdash; 蔡启泳委托兰迪律所代理合同（律师费¥5,000）+ 招商银行入账回单（付款人：吕伟麟，摘要："千路仲裁费"）</span></p>
@@ -938,7 +1077,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 9: P5/P10 吕伟麟代付借款 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-9" class="contradiction-box">
       <div class="contradiction-header">反驳九 &mdash; 裁决书第5、10页：吕伟麟代罗建峰支付借款揭示的关系</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -966,7 +1105,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 10: P22-24 仲裁庭查明事实中的问题 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-10" class="contradiction-box">
       <div class="contradiction-header">反驳十 &mdash; 裁决书第22-25页：仲裁庭查明事实中忽略的关键证据</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -982,7 +1121,13 @@ body.locked>*:not(#password-gate){display:none!important}
             <strong>2. 财务文件被恶意转移：</strong>2019年11月9日全部财务文件被凃、吕、蔡移交第三方，员昊等人客观上无法提供任何财务数据；<br>
             <strong>3. 受害人已被解职：</strong>2019年12月12日被强行解除职务，彻底失去获取公司信息的一切途径；<br>
             <strong style="color:#b71c1c;">4. 审计报告 &mdash; 本案最核心证据：</strong>（1）2019年11月9日资产转移当天，公认会计士长岛广明即在现场（有其名片为证）；（2）2020年5月22日，同一个长岛广明出具了覆盖公司三年经营期的完整审计报告；（3）<strong>该审计报告系蔡启泳本人于2023年8月21日在湛江中院撤裁听证会上主动提交</strong>（（2023）粤08民特113号裁定书第4页记载）。<strong style="color:#b71c1c;">审计报告的信息量远远大于银行流水，足以全面掌握公司经营状况。既然罗建峰已通过凃、吕、蔡获得了完整审计报告，则以"未提供银行流水"追究员昊连带责任的裁判基础已不复存在。</strong>员昊方在仲裁阶段从未掌握该报告，直至蔡启泳在听证会上提交后方才获知——被告发人在仲裁中故意隐匿了此等关键证据；<br>
-            <strong>5. 千寻合同会社：</strong>罗建峰与凃云峰、蔡启涛2019年1月共同成立新公司，三人保持密切联系。</p>
+            <strong style="color:#b71c1c;">5. 审计报告被故意删减——隐匿公司财务总余额：</strong>蔡启泳提交的审计报告仅三页，但日本任何正规会计师事务所出具的审计报告必须包含完整的财务报表（资产负债表、损益表等）。<strong style="color:#b71c1c;">蔡启泳故意将可能存在的公司财务总余额部分删除后才提交</strong>——如果公司确实"濒临破产"，如实提供完整审计报告只会有利于其主张，<strong>唯一需要删减的理由是完整报告会暴露公司财务状况良好、资金可能被贪污的事实</strong>；<br>
+            <strong style="color:#b71c1c;">6. 审计报告日文声明证明来源——凃云峰提供给罗建峰：</strong>审计报告日文原版前两页底部均标注<strong>"千路商事合同会社法人の許可なしに、転送·コピーすることはできません"</strong>（未经千路商事会社法人允许，不可转发、复印）。该声明系会计师事务所的标准保密标识，表明审计报告的合法接收者只有<strong>千路商事法人即凃云峰</strong>。罗建峰能够获得该报告，<strong>必定是凃云峰提供的</strong>——进一步证明二人系同一阵营；<br>
+            <strong style="color:#b71c1c;">7. 罗建峰的专业背景使其完全清楚审计报告问题：</strong>罗建峰系<strong>中国注册会计师</strong>，曾任<strong>中国联塑集团执行董事</strong>（<span class="evidence-tag">百度罗建峰资料</span>）。作为专业审计会计出身，罗建峰完全清楚一份正规审计报告应包含哪些内容。其接受一份被删减的三页审计报告而不提出任何质疑，<strong>只能说明删减行为是双方合谋的结果</strong>；<br>
+            <strong style="color:#b71c1c;">8. 公司总投入4600万日元——不可能"濒临破产"：</strong>公司股东投入资金（800万日元+股权投资款）加上罗建峰两次借款（2000万+1000万日元），<strong>公司总投入高达约4600万日元</strong>。加上公司月营收55.7万元人民币（15辆运营车辆），<strong>除非存在资金贪污或恶意侵吞，一家总投入4600万日元、月营收55.7万元的出租车公司不可能"濒临破产"</strong>；<br>
+            <strong style="color:#b71c1c;">9. 2020-2023年疫情期间——公司本应盈余更多：</strong>按照日本国家政策，千路商事这样2019年年收入上千万人民币的企业，在2020-2023年疫情期间可以领取<strong>上百万人民币的国家各类补助金</strong>，且<strong>员工工资由国家承担70%</strong>。然而据了解，凃云峰在疫情期间将公司全部员工开除或逼退，<strong>公司实际开支几乎降为零，同时持续领取巨额国家补助金</strong>——在零开支、有补助的条件下声称"濒临破产"，完全违背常理；<br>
+            <strong style="color:#b71c1c;">10. 自2019年11月9日至今拒绝财务汇报——涉嫌职务侵占：</strong>从2019年11月9日全部财务文件被转移至今已逾<strong>6年</strong>，凃云峰、吕伟麟、蔡启涛作为公司实际控制人，<strong>从未向员昊和邱千依（合计持股约28%的出资人）进行过任何财务汇报</strong>。6年间公司资产（出租车、牌照、银行账户余额、疫情补助金）的去向完全不明。<strong style="color:#b71c1c;">拒绝向出资人汇报公司财务状况、擅自处置公司资产并据为己有，涉嫌构成职务侵占罪</strong>；<br>
+            <strong>11. 千寻合同会社：</strong>罗建峰与凃云峰、蔡启涛2019年1月共同成立新公司，三人保持密切联系。</p>
           </div>
         </div>
         <div class="evidence-files">
@@ -993,17 +1138,19 @@ body.locked>*:not(#password-gate){display:none!important}
           <p><span class="evidence-tag">西畑诚亮签字《预り证》（保管证）&mdash; 详列接收的全部公司资产清单，日期2019年11月9日</span></p>
           <p><span class="evidence-tag">10-2名片.pdf &mdash; 当日在场三人名片：西畑诚亮（Westage不动产）、长岛广明（公认会计士）、田中贵之（公认会计士）</span></p>
           <p><span class="evidence-tag">お取り業者への通知書.pdf &mdash; 2019年12月23日律师函，宣布解任员昊等三人职务</span></p>
-          <p><span class="evidence-tag">14-1审计报告日文原版.pdf &mdash; 长岛广明（11月9日在场同一人）于2020年5月22日出具</span></p>
+          <p><span class="evidence-tag">14-1审计报告日文原版.pdf &mdash; 长岛广明（11月9日在场同一人）于2020年5月22日出具，仅三页且缺失财务余额部分；前两页底部标注"未经千路商事法人允许不可转发复印"</span></p>
           <p><span class="evidence-tag">14-2审计报告中文翻译.pdf &mdash; 覆盖公司三年经营期的完整审计，信息量远超银行流水</span></p>
           <p><span class="evidence-tag">员昊撤销仲裁案件湛江中院裁定书.pdf &mdash; （2023）粤08民特113号，第4页记载蔡启泳提交审计报告</span></p>
+          <p><span class="evidence-tag">百度罗建峰资料 &mdash; 百度百科截图：罗建峰为中国联塑集团执行董事、中国注册会计师，专业审计出身</span></p>
+          <p><span class="evidence-tag">2019.04千路财务状况表 &mdash; 月营收55.7万元，银行余额59.5万元——公司经营良好，与"濒临破产"完全矛盾</span></p>
           <p><span class="evidence-tag">18千寻公司资料/ &mdash; 千寻合同会社全部资料，证明罗建峰与凃云峰、蔡启涛密切联系</span></p>
-          <p><span class="evidence-tag">千寻千路西田公司藤本.pdf &mdash; 千寻合同会社2019年2月21日成立的法务局登记</span></p>
+          <p><span class="evidence-tag">千寻合同会社藤本.pdf &mdash; 千寻合同会社2019年2月21日成立的法务局登记</span></p>
         </div>
       </div>
     </div>
 
     <!-- ===== 反驳 11: P25-26 债权转让 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-11" class="contradiction-box">
       <div class="contradiction-header">反驳十一 &mdash; 裁决书第25-26页：债权转让的不合理性</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -1032,7 +1179,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 12: P28-29 仲裁庭关于连带责任认定 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-12" class="contradiction-box">
       <div class="contradiction-header">反驳十二 &mdash; 裁决书第28-30页：仲裁庭关于连带责任的错误认定</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -1068,7 +1215,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 13: P23 通知书时间线曲解 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-13" class="contradiction-box">
       <div class="contradiction-header">反驳十三 &mdash; 裁决书第23页：对解职通知书时间线的曲解</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -1105,7 +1252,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 14: P19-20 申请人对被申请人证据的质证 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-14" class="contradiction-box">
       <div class="contradiction-header">反驳十四 &mdash; 裁决书第19-20页：申请人对被申请人证据的不当质证</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -1135,7 +1282,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 15: P30-32 裁决结果 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-15" class="contradiction-box">
       <div class="contradiction-header">反驳十五 &mdash; 裁决书第30-32页：裁决结果基于虚假事实</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -1158,7 +1305,12 @@ body.locked>*:not(#password-gate){display:none!important}
             &bull; 该义务附有前提条件"在乙方未取得绿牌车公司资格前"，公司于2018年11月取得绿牌后义务即已消灭；第二次协议签订时（2019年4月）该条款已不具备生效条件<br><br>
             <strong>三、虚假陈述与证据隐匿</strong><br>
             &bull; 罗建峰并非"不知公司情况"：亲赴日本乘坐绿牌车、签约前刚考察回国、与凃云峰共同经营千寻会社、获取审计报告（反驳五、六、十）<br>
-            &bull; 财务文件被凃、吕、蔡恶意转移至第三方，员昊等人客观无法提供财务数据（反驳四、十二）<br><br>
+            &bull; 财务文件被凃、吕、蔡恶意转移至第三方，员昊等人客观无法提供财务数据（反驳四、十二）<br>
+            &bull; <strong style="color:#b71c1c;">蔡启泳故意将审计报告中的财务总余额部分删除后提交</strong>，日文原版标注"未经千路商事法人允许不可转发复印"证明报告来源于凃云峰（反驳十）<br>
+            &bull; 罗建峰系<strong>中国注册会计师</strong>、曾任联塑集团执行董事，专业审计出身却接受被删减的三页审计报告而不质疑（反驳十）<br>
+            &bull; <strong>公司总投入约4600万日元</strong>，月营收55.7万元——除非资金被贪污否则不可能"濒临破产"（反驳十）<br>
+            &bull; 2020-2023年疫情期间公司可领取巨额国家补助金、员工工资国家承担70%，凃云峰却开除全部员工，<strong>零开支+领补助仍声称"破产"</strong>（反驳十）<br>
+            &bull; <strong style="color:#b71c1c;">自2019年11月9日至今逾6年拒绝向员昊和邱千依（持股约28%）进行任何财务汇报，涉嫌职务侵占</strong>（反驳十、十六）<br><br>
             <strong>四、恶意串通的客观证据</strong><br>
             &bull; 债权以不合理对价转让给共谋者亲属，选择性追诉符合虚假诉讼特征（反驳十一）<br>
             &bull; 吕伟麟既代罗建峰付借款1000万日元又代蔡启泳付律师费5000元，暴露幕后操控关系（反驳九、十四）<br>
@@ -1183,7 +1335,7 @@ body.locked>*:not(#password-gate){display:none!important}
     </div>
 
     <!-- ===== 反驳 16: 蔡启泳在撤裁听证会中的虚假陈述 ===== -->
-    <div class="contradiction-box">
+    <div id="rebuttal-16" class="contradiction-box">
       <div class="contradiction-header">反驳十六 &mdash; 蔡启泳在撤裁听证会中的虚假陈述</div>
       <div class="contradiction-body">
         <div class="contradiction-row">
@@ -1197,9 +1349,9 @@ body.locked>*:not(#password-gate){display:none!important}
           <div class="contradiction-fact">
             <span class="label">员昊方反驳证据</span>
             <p><strong>1. 罗建峰非独立债权人：</strong>罗建峰在入股前对员昊、邱千依而言完全陌生，系吕伟麟、蔡启涛单方面安排引入。罗建峰与凃云峰、蔡启涛于2019年1月共同成立千寻合同会社，第二次借款由吕伟麟账户代付。<strong>罗建峰与凃、吕、蔡三人存在深度利益关联，绝非"有广泛社会关系的独立人士"</strong>；<br>
-            <strong>2. 公司并非"破产"：</strong>公司至2019年10月月营收已达110万元人民币，2019年4月财务报表显示月营收55.7万元、15辆运营车辆、银行余额59.5万元。<strong class="text-danger">公司经营状况良好，系凃云峰、吕伟麟、蔡启涛三人在排挤员昊后擅自变卖全部资产（含出租车及牌照）并据为己有</strong>，解雇近20名员工后关闭公司并集体失联。所谓"破产"系三人恶意侵吞资产后的结果，非公司经营失败；<br>
-            <strong>3. 员昊并非"不配合审计"：</strong>2019年11月16日，员昊和邱千依到场参加审计会议，因现场有身份不明人员且律师建议回避安全风险而中途离开，<strong>非"不配合"</strong>。且凃云峰掌握全部财务文件，审计最终已完成并出具报告——员昊的离场未影响审计结果；<br>
-            <strong style="color:#b71c1c;">4. 公司全部资产至今在凃、吕、蔡三人手中：</strong>千路商事的全部固定资产（出租车运营车辆、绿牌牌照）均被三人变卖侵吞，五年来从未向员昊等出资人告知资产处置情况。<strong>真正的侵权人是凃、吕、蔡三人，而非被指控的员昊等人。</strong></p>
+            <strong>2. 公司并非"破产"&mdash;&mdash;总投入4600万日元：</strong>公司股东投入资金加上罗建峰两次借款，<strong>总投入高达约4600万日元</strong>。公司至2019年10月月营收已达110万元人民币，2019年4月财务报表显示月营收55.7万元、15辆运营车辆、银行余额59.5万元。<strong style="color:#b71c1c;">一家总投入4600万日元、月营收55.7万元的出租车公司，除非资金被贪污或恶意侵吞，不可能"濒临破产"。</strong>事实上，公司经营状况良好，系凃云峰、吕伟麟、蔡启涛三人在排挤员昊后擅自变卖全部资产（含出租车及牌照）并据为己有，解雇近20名员工后关闭公司并集体失联。所谓"破产"系三人恶意侵吞资产后的结果，非公司经营失败。<strong style="color:#b71c1c;">更不可忽视的是：2020-2023年疫情期间，按照日本国家政策，千路商事可以领取上百万人民币的国家各类补助金，员工工资由国家承担70%。凃云峰却将全部员工开除或逼退，公司实际开支几乎为零，同时持续领取巨额补助金——在这种条件下声称"濒临破产"完全违背常理。</strong>此外，蔡启泳提交的审计报告被故意删减——仅三页，缺失公司财务总余额部分。若公司确实破产，如实提交完整审计报告只会更有利于其主张，<strong style="color:#b71c1c;">删减的唯一理由是完整报告会暴露资金被贪污的事实</strong>（<span class="evidence-tag">14-1审计报告日文原版.pdf</span>）；<br>
+            <strong>3. 员昊并非"不配合审计"：</strong>2019年11月16日，员昊和邱千依到场参加审计会议，因现场有身份不明人员且律师建议回避安全风险而中途离开，<strong>非"不配合"</strong>。且凃云峰掌握全部财务文件，审计最终已完成并出具报告——员昊的离场未影响审计结果。<strong>值得注意的是：罗建峰系中国注册会计师、曾任中国联塑集团执行董事</strong>（<span class="evidence-tag">百度罗建峰资料</span>），<strong>专业审计出身的他完全清楚审计报告应包含完整财务报表，却接受了一份被删减的三页报告而不提出任何质疑——说明删减是双方合谋的结果</strong>；<br>
+            <strong style="color:#b71c1c;">4. 公司全部资产至今在凃、吕、蔡三人手中——涉嫌职务侵占：</strong>千路商事的全部固定资产（出租车运营车辆、绿牌牌照）均被三人变卖侵吞。<strong style="color:#b71c1c;">自2019年11月9日至今逾6年，凃云峰作为法定代表人从未向员昊和邱千依（合计持股约28%的出资人）进行过任何财务汇报。</strong>6年间公司资产去向、2020-2023年疫情补助金去向、银行账户余额等一概不明。<strong>真正的侵权人是凃、吕、蔡三人，而非被指控的员昊等人。拒绝向出资人汇报并擅自处置公司资产据为己有，涉嫌构成职务侵占罪。</strong></p>
           </div>
         </div>
         <div class="evidence-files">
@@ -1223,6 +1375,9 @@ body.locked>*:not(#password-gate){display:none!important}
       <p>7. <strong>虚假转让</strong>（P25-26）：以零成本将债权转让给共谋者蔡启涛的兄弟蔡启泳</p>
       <p>8. <strong>因果颠倒</strong>（P23）：将员昊被解职曲解为员昊主动逃避义务</p>
       <p>9. <strong>忽略关键证据</strong>（P22-25）：完全无视财务文件被恶意转移、绿牌许可已取得、审计报告的存在</p>
+      <p>10. <strong>隐匿证据</strong>：审计报告被故意删减（财务总余额部分缺失），罗建峰作为中国注册会计师接受删减报告而不质疑</p>
+      <p>11. <strong>虚假叙事</strong>（P5）：将吕/蔡取得51%控制权的商业对价借款包装为"扶持4人事业发展"的信任关系</p>
+      <p>12. <strong>涉嫌职务侵占</strong>：自2019年11月至今逾6年拒绝向持股28%的出资人进行任何财务汇报，疫情补助金及公司资产去向不明</p>
     </div>
   </div>
 
@@ -1269,7 +1424,8 @@ body.locked>*:not(#password-gate){display:none!important}
       <p>&bull; 对方持虚假诉讼仲裁结果对员昊、邱千依二人实施限制高消费，导致无法回国正常经营，损失数百万元人民币</p>
       <p>&bull; 多年无法回国与家人团聚，造成巨大精神损害</p>
       <p>&bull; 被告发人试图强行吊销员昊和邱千依在日本的签证，阻碍在日本上诉</p>
-      <p>&bull; 公司全部固定资产被凃、吕、蔡三人变卖侵吞，5年未告知财务状况</p>
+      <p>&bull; 公司全部固定资产被凃、吕、蔡三人变卖侵吞，<strong>自2019年11月至今逾6年拒绝向员昊和邱千依进行任何财务汇报</strong></p>
+      <p>&bull; 2020-2023年疫情期间公司本可领取巨额日本国家补助金（员工工资国家承担70%），凃云峰却开除全部员工、领取补助后去向不明，<strong>涉嫌职务侵占</strong></p>
     </div>
   </div>
 
@@ -1428,7 +1584,7 @@ body.locked>*:not(#password-gate){display:none!important}
       <p>&bull; <strong>令和1年11月13日（2019年11月13日）</strong>——资产转移<strong>4天后</strong>：Westage资本金增至<strong>2,000万日元</strong>，发行股份增至400股</p>
       <p>&bull; <strong>法律意义：</strong>凃云峰将千路商事全部资产交给Westage的西畑诚亮"保管"后，Westage立即进行公司重组、增资扩股——<strong>强烈暗示千路商事的资产转移与Westage的增资行为之间存在关联，千路商事的资产可能被用于Westage的融资或增资安排</strong></p>
 
-      <div class="quote">证据文件：18千寻公司资料/（含银行存折及注册备案资料，记载出资人名单及金额）、千寻千路西田公司藤本 2.pdf（千路商事、千寻合同会社、Westage三家公司履历事项全部证明书，记载地址变更及Westage增资时间线）</div>
+      <div class="quote">证据文件：18千寻公司资料/（含银行存折及注册备案资料，记载出资人名单及金额）、千路株式会社司藤本.pdf（千路商事履历事项全部证明书）、千寻合同会社藤本.pdf（千寻合同会社履历事项全部证明书，记载地址变更）、西田诚亮公司藤本.pdf（Westage履历事项全部证明书，记载增资时间线）</div>
 
       <p style="margin-top:24px;"><strong>18-A 千寻合同会社与Westage（西畑诚亮）共同担保不动产 &mdash; 关联交易核心证据</strong></p>
       <p>大阪法务局令和6年5月27日调取的<strong>全部事项证明书</strong>（整理番号D36721）显示：</p>
@@ -1617,7 +1773,7 @@ body.locked>*:not(#password-gate){display:none!important}
 
       <div class="evidence-files" style="margin-top:12px;">
         <p><strong>对应证据文件：</strong></p>
-        <p><span class="evidence-tag">千寻千路西田公司藤本.pdf &mdash; 千寻合同会社2019年2月21日成立，凃云峰任法人代表</span></p>
+        <p><span class="evidence-tag">千寻合同会社藤本.pdf &mdash; 千寻合同会社2019年2月21日成立，凃云峰任代表社員（法人代表）</span></p>
         <p><span class="evidence-tag">18千寻公司资料/ &mdash; 千寻合同会社银行存折、成立资料</span></p>
         <p><span class="evidence-tag">01股份转让协议书.pdf &mdash; 入股时管理权承诺</span></p>
         <p><span class="evidence-tag" data-preview="preview_loan1_article3.png" data-caption="&lt;strong&gt;丙A担任社长，任期不能结束&lt;/strong&gt;——8年未移交管理权，反而解除员昊职务">05-2018年第一次借款协议.pdf &mdash; "员昊担任社长，任期不得结束"</span></p>
@@ -1720,7 +1876,7 @@ body.locked>*:not(#password-gate){display:none!important}
         <p><span class="evidence-tag">17湛江仲裁裁决书.pdf &mdash; 第2页将凃云峰降格标注为"董事"</span></p>
         <p><span class="evidence-tag">16罗建峰与蔡启泳的债权转让协议.pdf &mdash; 零预付对价、选择性通知</span></p>
         <p><span class="evidence-tag">09罗建峰在日本证明照片/ &mdash; 反驳"不了解绿牌车"的虚假陈述</span></p>
-        <p><span class="evidence-tag">千寻千路西田公司藤本.pdf &mdash; 反驳"唯一联系是4名股东"的虚假陈述</span></p>
+        <p><span class="evidence-tag">千寻合同会社藤本.pdf &mdash; 千寻合同会社登记信息，反驳"唯一联系是4名股东"的虚假陈述</span></p>
         <p><span class="evidence-tag">14-1审计报告日文原版.pdf &mdash; 被隐匿三年的关键证据</span></p>
         <p><span class="evidence-tag">员昊撤销仲裁案件湛江中院裁定书.pdf &mdash; 记载蔡启泳提交审计报告</span></p>
       </div>
@@ -1851,7 +2007,9 @@ body.locked>*:not(#password-gate){display:none!important}
         <p><span class="evidence-tag">12-罗建峰2019年12月3日律师函.JPG &mdash; "24小时"终点证据</span></p>
         <p><span class="evidence-tag">14-1审计报告日文原版.pdf &mdash; 隐匿3年3个月的核心证据</span></p>
         <p><span class="evidence-tag">员昊撤销仲裁案件湛江中院裁定书.pdf &mdash; 蔡启泳2023年8月21日首次提交审计报告</span></p>
-        <p><span class="evidence-tag">千寻千路西田公司藤本.pdf &mdash; 公司关系证据</span></p>
+        <p><span class="evidence-tag">千路株式会社司藤本.pdf &mdash; 千路商事登记：代表取締役 涂云峰</span>
+        <span class="evidence-tag">千寻合同会社藤本.pdf &mdash; 千寻合同会社登记：代表社員 涂云峰</span>
+        <span class="evidence-tag">西田诚亮公司藤本.pdf &mdash; Westage登记：代表取締役 西畑誠亮</span></p>
         <p><span class="evidence-tag">天眼查"查关系"截图 &mdash; 蔡启泳与吕伟麟共同经营房悦居信息服务有限公司、蔡启涛与吕伟麟通过孔宇共享商业网络</span></p>
         <p><span class="evidence-tag">19-1吕伟麟替罗建峰支付的第二次借款凭证出自仲裁申请书.jpg &mdash; 资金关系证据</span></p>
         <p><span class="evidence-tag">2023年3月11日仲裁决定书中吕伟麟替蔡启泳付律师费的证据.pdf &mdash; 资金关系证据</span></p>
@@ -1881,7 +2039,335 @@ body.locked>*:not(#password-gate){display:none!important}
       <p style="margin-top:10px;"><strong style="color:#c62828;">【犯罪目的与主观故意层面】</strong></p>
       <p><strong>10. 持续侵害证据链：</strong>选择性执行最弱势受害人 + 消极执行（暴露非追债目的）+ 明知裁决错误仍继续执行 + 侵吞资产后失联 + 限消/失信持续压迫</p>
       <p><strong>11. 主观犯意证据链：</strong>9个月故意沉默 + 24天/24小时精确时间衔接 + 审计报告隐匿3年3个月 + 五人行为系统异常 + 利益关联密切（公司、家族、资金、财务四重关联）</p>
-      <p><strong style="color:#b71c1c;">12. 犯罪团伙关系网络证据链（天眼查）：</strong>蔡启泳与吕伟麟同在房悦居公司 + 蔡启涛与吕伟麟通过孔宇共享6家顺德公司商业网络 + 吴铭刚与吕伟麟在中国合开多家公司 + 中日两国交叉持股形成完整犯罪团伙</p>
+      <p><strong style="color:#b71c1c;">12. 犯罪团伙关系网络证据链（天眼查+爱企查）：</strong>蔡启泳与吕伟麟同在房悦居公司 + 蔡启涛与吕伟麟通过孔宇共享6家顺德公司商业网络 + 吴铭刚与吕伟麟在中国合开多家公司 + 中日两国交叉持股形成完整犯罪团伙</p>
+      <p><strong style="color:#b71c1c;">13. 邓桂燕财务控制枢纽证据链（<a href="#affiliated" style="color:#b71c1c;">详见关联企业调查</a>）：</strong>邓桂燕同时担任吕伟麟/孔宇/蔡启泳/吴铭刚名下7家公司的财务负责人 + 邓桂燕是千路商事中国方面会计（由吕伟麟/蔡启涛指派） + 邓桂燕在微信群中向包括罗建峰在内的全体股东汇报财务 + <strong>千路旅游咨询有限公司</strong>（吕伟麟=监事、邓桂燕=财务负责人）是千路商事在中国的人民币收款通道 + 罗建峰声称"无法获知财务"纯属虚构 + 仲裁裁决核心事实认定被推翻</p>
+      <p><strong style="color:#b71c1c;">14. 罗建峰在财务群的直接参与铁证（<a href="#luo-financial-group" style="color:#b71c1c;">详见核心铁证</a>）：</strong>罗建峰身处千路商事两个财务微信群（10人+11人） + 2019年3月12日由蔡启涛亲自邀请入群 + 群内从2019年3月至11月<strong>每天</strong>发送资金日报表（人民币+日元） + 罗建峰亲口回复"收到，七月业绩增长明显" + 罗建峰主动审核报表"费用计提了吗？" + 罗建峰指导"财务管理模块需增加费用模块、固定资产管理模块" + 11月9日取走资料→11月底邓桂燕停止汇报→12月2日踢出员昊/邱千依→12月3日罗建峰律师函（四步环环相扣=有预谋） + <strong>罗建峰的仲裁陈述"无法获知财务"被其本人微信发言彻底推翻</strong></p>
+    </div>
+  </div>
+
+  <!-- ==================== 罗建峰在财务群的直接参与证据 ==================== -->
+  <div id="luo-financial-group" class="section">
+    <h3 class="section-title"><span class="icon">&#128272;</span> 核心铁证 &mdash; 罗建峰在财务群的直接参与记录</h3>
+    <p class="section-desc">罗建峰在仲裁中声称"2019年4月以后无法获取千路商事的财务信息"。以下微信截图证明：罗建峰<strong>同时身处至少两个千路商事财务群</strong>，从2019年3月至11月<strong>每天接收资金日报表和月度财务报表</strong>，并<strong>主动审核财务、指导财务系统建设</strong>。其仲裁陈述是彻头彻尾的虚假。</p>
+
+    <div class="evidence-block" style="background:#e8eaf6; border-left:4px solid #283593;">
+      <h4 style="color:#1a237e;">一、两个财务群 &mdash; 罗建峰均为成员</h4>
+
+      <h5>（一）"千路报帐对账【重要群】"（10人）</h5>
+      <p>群成员：邱千依、阿岚、员昊、孙万鹏、(财务)、蔡启涛、吕伟麟、<strong style="color:#b71c1c;">罗建峰</strong>、吴铭刚、孔宇</p>
+      <p><strong>2019年3月12日</strong>，<strong>蔡启涛亲自</strong>邀请罗建峰加入此群。群内众人欢呼："欢迎罗总加入千路兵团"。</p>
+      <p>此群从2019年3月22日起，<strong>每天</strong>发布"资金日报表"（人民币+日元双币种），每周发布订单表，每月发布完整银行流水、QFPAY支付记录、现金流水。<strong>持续至2019年11月21日未间断。</strong></p>
+      <div class="media-grid">
+        <div class="media-item">
+          <span class="evidence-tag">千路报帐对账重要群-成员列表</span>
+          <p class="media-caption">群信息页：10名成员，罗建峰清晰可见</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">蔡启涛邀请罗建峰进入财务群</span>
+          <p class="media-caption">2019-03-12：蔡启涛Andy邀请罗先生加入群聊</p>
+        </div>
+      </div>
+
+      <h5 style="margin-top:15px;">（二）"日本大阪千路绿牌公司工作群"（11人）</h5>
+      <p>群成员：吕伟麟、员昊、蔡启涛、吴总、孙万鹏、邱千依、涂云峰、<strong style="color:#b71c1c;">罗建峰</strong>、孔宇、(财务)、境外专员</p>
+      <p><strong>2019年3月13日</strong>，"吴总"邀请罗建峰加入此群。此群每月发布千路报表.xlsx、千路财务状况表、资产负债明细表、损益表、损益汇总等<strong>全套财务报表</strong>。每日发布收入速报。<strong>持续至2019年11月12日。</strong></p>
+      <div class="media-grid">
+        <div class="media-item">
+          <span class="evidence-tag">千路绿牌公司工作群-成员列表</span>
+          <p class="media-caption">群信息页：11名成员，罗建峰清晰可见</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">罗建峰被邀请进入工作群</span>
+          <p class="media-caption">2019-03-13：罗建峰被邀请入群，众人欢迎</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="evidence-block" style="background:#fce4ec; border-left:4px solid #b71c1c;">
+      <h4 style="color:#b71c1c;">二、罗建峰亲口发言 &mdash; 证明"明知而虚构"</h4>
+      <p>以下为微信"按群成员查找"功能检索到的罗建峰本人发言，时间跨度从2019年3月到7月：</p>
+
+      <table class="evidence-table" style="width:100%; border-collapse:collapse; margin:10px 0;">
+        <tr style="background:#ffcdd2;"><th style="padding:6px; border:1px solid #ddd; text-align:left;">日期</th><th style="padding:6px; border:1px solid #ddd; text-align:left;">罗建峰原话</th><th style="padding:6px; border:1px solid #ddd; text-align:left;">证据意义</th></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">2019-04-22</td><td style="padding:6px; border:1px solid #ddd;">"@蔡启涛Andy 现在的<strong>账目管理模块</strong>内容未足以实现完整的<strong>财务管理模块</strong>，需根据千路实际有涉及的账目及内容增加，如<strong>费用模块、固定资产管理模</strong>..."</td><td style="padding:6px; border:1px solid #ddd;"><strong style="color:#b71c1c;">主动指导财务系统建设</strong></td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">2019-06-14</td><td style="padding:6px; border:1px solid #ddd;">"@焙 相关<strong>未付的当月费用计提了吗</strong>？"</td><td style="padding:6px; border:1px solid #ddd;"><strong style="color:#b71c1c;">主动审核财务报表</strong></td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">2019-07-09</td><td style="padding:6px; border:1px solid #ddd;">"@A0 员昊 继续加油💪💪"</td><td style="padding:6px; border:1px solid #ddd;">回应每日收入报告</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">2019-07-16</td><td style="padding:6px; border:1px solid #ddd;">"朝着正轨的方向发展了哈"、"<strong>还是要向规模化的方向去想，去那个布局</strong>的"</td><td style="padding:6px; border:1px solid #ddd;"><strong style="color:#b71c1c;">指导公司战略方向</strong></td></tr>
+        <tr style="background:#ffcdd2;"><td style="padding:6px; border:1px solid #ddd;">2019-07-29</td><td style="padding:6px; border:1px solid #ddd;">"<strong>收到，七月业绩增长明显</strong>，加油 @A0 员昊"</td><td style="padding:6px; border:1px solid #ddd;"><strong style="color:#b71c1c;">明确确认收到月度财务汇报</strong></td></tr>
+      </table>
+
+      <p style="background:#ffcdd2; padding:8px 12px; border-radius:4px; margin-top:10px;"><strong style="color:#b71c1c;">不可辩驳的逻辑：</strong>一个人不可能一边在群里说"收到，七月业绩增长明显"，一边在仲裁中说"2019年4月以后无法获取千路商事的财务信息"。<strong>这不是记忆偏差，这是蓄意捏造事实。</strong></p>
+
+      <div class="media-grid">
+        <div class="media-item">
+          <span class="evidence-tag">罗建峰群内发言记录汇总</span>
+          <p class="media-caption">微信"按群成员查找"：罗建峰2019年3月-7月全部发言</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">罗建峰问费用计提</span>
+          <p class="media-caption">2019-06-14：罗建峰主动审核5月报表</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">罗建峰确认收到七月业绩</span>
+          <p class="media-caption">2019-07-29："收到，七月业绩增长明显"</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">罗建峰谈规模化布局</span>
+          <p class="media-caption">2019-07-16：罗建峰指导公司战略方向</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="evidence-block">
+      <h4>三、群内分发的财务资料（罗建峰均可查阅）</h4>
+      <p>以下为群内实际分发的千路商事财务资料，涵盖<strong>每日资金日报表、月度报表、银行流水、损益表、资产负债表</strong>等全套财务信息：</p>
+      <ul>
+        <li><strong>2019年4月25日</strong>一次性发送5份Excel：4月订单、りそな銀行流水、QFPAY流水(中文)、近畿大阪銀行流水、现金流水（<span class="evidence-tag">财务群发送5份银行流水Excel</span>）</li>
+        <li><strong>2019年4月26日</strong>：有人要求"叮叮财务审批完成后在叮叮内<strong>抄送给我及罗先生</strong>"（<span class="evidence-tag">财务群抄送给我及罗先生</span>）</li>
+        <li><strong>2019年4月23日</strong>：群内发送日本残高試算表、貸借対照表、損益計算PDF（<span class="evidence-tag">财务群发送日本报表及会议文件</span>）</li>
+        <li><strong>2019年5月→11月</strong>：每日资金日报表（人民币+日元双币种）持续发送，从未间断（<span class="evidence-tag">5月资金日报表连续发送</span>）</li>
+        <li><strong>2019年10月4日</strong>：群内报告"截止至10月4日。千路人民币资金不足以支付Bp"（<span class="evidence-tag">10月资金不足报告@蔡启涛</span>）</li>
+        <li><strong>2019年11月7-12日</strong>：仍在发布每日收入报告，距11月9日事件仅2天（<span class="evidence-tag">11月收入报表仍在发送</span>）</li>
+      </ul>
+    </div>
+
+    <div class="evidence-block">
+      <h4>四、罗建峰持续使用千路商事服务（2019年7月）</h4>
+      <p>在声称"无法获知"的同一时期，罗建峰仍然以客户身份使用千路商事的包车服务：</p>
+      <ul>
+        <li><strong>2019年7月23-28日</strong>：罗建峰携家人到日本大阪旅游，千路专门建立了"7.23-28 罗总欢乐游(6)"6人服务群（<span class="evidence-tag">罗总欢乐游专属旅行群</span>）</li>
+        <li><strong>2019年1月20日</strong>：罗建峰的朋友使用千路服务后，付款给<strong>蔡启涛的支付宝13600323383</strong>，该账号被标注为"公司收款的支付宝号"（<span class="evidence-tag">公司支付宝号为蔡启涛</span>）</li>
+      </ul>
+      <p>罗建峰一边在使用千路的服务、付款给千路、在财务群里审核报表、讨论公司战略，一边在仲裁中说自己"什么都不知道"。</p>
+    </div>
+
+    <div class="evidence-block" style="background:#fff3e0; border-left:4px solid #e65100;">
+      <h4 style="color:#bf360c;">五、"完美配合"时间线 &mdash; 有组织的虚假诉讼</h4>
+      <table class="evidence-table" style="width:100%; border-collapse:collapse; margin:10px 0;">
+        <tr style="background:#ffe0b2;"><th style="padding:6px; border:1px solid #ddd;">日期</th><th style="padding:6px; border:1px solid #ddd;">事件</th><th style="padding:6px; border:1px solid #ddd;">行为人</th></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">2019-03-12/13</td><td style="padding:6px; border:1px solid #ddd;">罗建峰被拉进两个财务群，开始每天接收财务信息</td><td style="padding:6px; border:1px solid #ddd;">蔡启涛、吴总</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">2019-03 → 11</td><td style="padding:6px; border:1px solid #ddd;">每天发资金日报表、每月发完整报表，罗建峰持续回复"收到"、主动审核</td><td style="padding:6px; border:1px solid #ddd;">全体群成员</td></tr>
+        <tr style="background:#ffccbc;"><td style="padding:6px; border:1px solid #ddd;"><strong>2019-11-09</strong></td><td style="padding:6px; border:1px solid #ddd;"><strong>吕伟麟+蔡启涛到日本，取走千路全部印章、存折、现金和财务资料</strong></td><td style="padding:6px; border:1px solid #ddd;">吕伟麟、蔡启涛</td></tr>
+        <tr style="background:#ffccbc;"><td style="padding:6px; border:1px solid #ddd;">11月底</td><td style="padding:6px; border:1px solid #ddd;"><strong>邓桂燕突然停止在群内汇报财务</strong>（汇报了8个月后突然中止。此时员昊和邱千依已被排除出公司，<strong>不可能阻止她继续汇报</strong>——唯一能下达停止指令的只有她的中国老板吕伟麟/蔡启涛）</td><td style="padding:6px; border:1px solid #ddd;">邓桂燕（受吕伟麟/蔡启涛指令）</td></tr>
+        <tr style="background:#ffccbc;"><td style="padding:6px; border:1px solid #ddd;"><strong>2019-12-02</strong></td><td style="padding:6px; border:1px solid #ddd;"><strong>召开临时股东大会，将员昊、邱千依排除出公司</strong></td><td style="padding:6px; border:1px solid #ddd;">吕伟麟、蔡启涛、罗建峰、凃云峰</td></tr>
+        <tr style="background:#ffccbc;"><td style="padding:6px; border:1px solid #ddd;"><strong>2019-12-03</strong></td><td style="padding:6px; border:1px solid #ddd;"><strong>罗建峰发出律师函</strong>（仅隔1天——律师函必然事先准备好）</td><td style="padding:6px; border:1px solid #ddd;">罗建峰</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">2019-12后</td><td style="padding:6px; border:1px solid #ddd;">员昊、邱千依完全无法获取任何财务资料（<strong>真正被剥夺信息的是受害人</strong>）</td><td style="padding:6px; border:1px solid #ddd;">—</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">2020年间</td><td style="padding:6px; border:1px solid #ddd;">千寻合同会社连续买卖不动产、与西田诚亮做抵押担保贷款（需罗建峰配合签字）</td><td style="padding:6px; border:1px solid #ddd;">罗建峰、凃云峰、蔡启涛、西田诚亮</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">2020-05-22</td><td style="padding:6px; border:1px solid #ddd;">审计报告出具（由控制财务资料的一方安排编制）</td><td style="padding:6px; border:1px solid #ddd;">长岛広明</td></tr>
+        <tr style="background:#ffccbc;"><td style="padding:6px; border:1px solid #ddd;">此后</td><td style="padding:6px; border:1px solid #ddd;"><strong>罗建峰提起仲裁，声称"2019年4月以后无法获取千路商事的财务信息"</strong></td><td style="padding:6px; border:1px solid #ddd;">罗建峰</td></tr>
+      </table>
+      <div class="callout callout-danger" style="margin-top:15px;">
+        <strong style="font-size:1.15em; color:#b71c1c;">&#9888; 犯罪闭环分析 &mdash; &ldquo;制造违约 &rarr; 以违约起诉 &rarr; 给自己免责&rdquo;</strong><br><br>
+
+        <strong>第一步：制造违约条件</strong><br>
+        吕伟麟、蔡启涛、凃云峰转走全部财务资料（11月9日）&rarr; 指使邓桂燕停止财务汇报（11月底）&rarr; 召开股东大会将员昊、邱千依排除出公司（12月2日）。经此三步操作，员昊在客观上已<strong>完全不可能</strong>获取任何公司财务信息——<strong style="color:#b71c1c;">这正是他们刻意制造的结果</strong>。<br><br>
+
+        <strong>第二步：以制造的违约为由起诉受害人</strong><br>
+        仅在股东会24小时后（12月3日），罗建峰即发出律师函要求员昊&ldquo;提供银行流水&rdquo;。此时全部财务资料在吕伟麟、蔡启涛手中，员昊客观上无法提供。罗建峰随后以&ldquo;员昊未汇报财务状况&rdquo;为由提起仲裁，声称自己&ldquo;2019年4月以后无法获取财务信息&rdquo;——而微信群记录证明他<strong>直到11月还在群内接收日报表并回复&ldquo;收到&rdquo;</strong>。<strong style="color:#b71c1c;">这是经典的&ldquo;贼喊捉贼&rdquo;：自己的同伙转走了全部资料、切断了汇报渠道，然后自己以&ldquo;收不到汇报&rdquo;为由起诉受害人。</strong><br><br>
+
+        <strong>第三步：给自己免责</strong><br>
+        在仲裁中，蔡启泳（蔡启涛之兄弟、罗建峰的债权受让人）<strong>刻意放弃对凃云峰（持股62.5%、法定代表人）、吕伟麟（持股12.5%）、蔡启涛（持股12.5%）的追诉</strong>——而这三人恰恰是：（1）转走全部财务资料的人；（2）指使邓桂燕停止汇报的人；（3）秘密召开股东会排除受害人的人；（4）掌握完整审计报告的人。换言之：<strong style="color:#b71c1c;">制造违约条件的人全部被免责，而被他们制造的违约所害的人反被追诉。</strong><br><br>
+
+        <strong>&#128270; 排除法验证：</strong><br>
+        &bull; 11月9日取走财务资料后，<strong>谁拿着谁负责</strong>——拿着全部资料的是吕伟麟和蔡启涛；<br>
+        &bull; 邓桂燕停止汇报后，员昊和邱千依已被开除出公司，<strong>根本不可能阻止邓桂燕继续汇报</strong>——唯一能下达停止指令的只有她的中国老板吕伟麟和蔡启涛；<br>
+        &bull; 罗建峰在两个财务群中持续8个月接收日报表——在此背景下声称&ldquo;无法获知财务信息&rdquo;，<strong>只有一种解释：这是有预谋、有组织、多方配合的虚假陈述</strong>。<br><br>
+
+        <strong style="color:#b71c1c; font-size:1.05em;">结论：先制造违约条件 &rarr; 再以违约起诉受害人 &rarr; 同时让真正制造违约的人全部免责——这不是正当债权追索，这是一个精心设计的犯罪闭环。</strong>
+      </div>
+    </div>
+
+    <div class="evidence-block" style="background:#fce4ec; border-left:4px solid #880e4f;">
+      <h4 style="color:#880e4f;">六、邓桂燕 &mdash; 犯罪集团的财务控制枢纽</h4>
+      <p>邓桂燕不是中立第三方，而是整个犯罪网络的<strong>核心参与者</strong>：</p>
+      <ol>
+        <li><strong>信息闸门</strong>：掌握千路商事全部中国方面财务 → 汇报8个月 → 接到指令后立即停止 → 配合制造"信息断裂"假象</li>
+        <li><strong>资金通道管理人</strong>：千路旅游咨询有限公司的财务负责人，控制千路商事在中国的全部人民币进出</li>
+        <li><strong>网络连接点</strong>：同时担任吕伟麟/孔宇/蔡启泳/吴铭刚名下7家公司的财务负责人（<a href="#affiliated" style="color:#880e4f;">详见关联企业调查</a>）</li>
+        <li><strong>自我确认身份</strong>：邓桂燕在微信中对千路员工自称"<strong>千路大陆财务燕</strong>"（<span class="evidence-tag">邓桂燕自称千路大陆财务燕</span>）</li>
+        <li><strong>证据销毁嫌疑</strong>：千路旅游咨询有限公司已被注销，中国方面的资金流水记录可能已被销毁</li>
+      </ol>
+      <p>邓桂燕是吕伟麟与千路商事之间的<strong>桥梁</strong>——通过她，吕伟麟实现了对千路商事财务的远程控制；通过她的突然停止汇报，配合了11月9日之后的信息封锁；通过她管理的千路旅游，控制了千路商事在中国的全部资金通道。她是这个犯罪集团中不可或缺的一环。</p>
+    </div>
+  </div>
+
+  <!-- ==================== 关联企业调查 ==================== -->
+  <div id="affiliated" class="section">
+    <h3 class="section-title"><span class="icon">&#128373;</span> 关联企业调查 &mdash; 邓桂燕节点与共用财务网络</h3>
+    <p class="section-desc">通过爱企查工商数据调查发现：吕伟麟、蔡启涛、蔡启泳、孔宇、吴铭刚、罗建峰等人在中国共享同一名财务总管<strong>邓桂燕</strong>，邓桂燕同时担任7家关联公司的财务负责人。这一发现直接推翻了仲裁裁决的核心事实认定。</p>
+
+    <div class="evidence-block">
+      <h4>一、邓桂燕的核心角色</h4>
+      <p>邓桂燕是吕伟麟和蔡启涛最早安排担任千路商事株式会社<strong>中国方面会计</strong>的人员。吕伟麟和蔡启涛的说辞是：邓桂燕是他们中国公司的会计，可以"免费"帮助千路商事做财务管理，省去日本人工成本。</p>
+      <p>邓桂燕带领其手下<strong>谭永琴</strong>（谭咏琴）负责千路商事的日常财务统计工作，并建立了微信工作群。<strong>该微信群中包括罗建峰以及千路商事的全部六位股东</strong>，邓桂燕负责每月不定期在群内汇报财务状况，月底制作财务总表发到群里。</p>
+      <p style="color:#c62828;"><strong>这意味着：罗建峰在仲裁中所称"2019年4月以后无法获取千路商事的财务信息"，纯属虚假陈述。</strong>实际情况是，财务汇报方式从凃云峰私下向罗建峰汇报，变为邓桂燕在包含罗建峰的工作群中公开汇报——信息透明度不是降低了，而是<strong>提高了</strong>。</p>
+    </div>
+
+    <div class="evidence-block" style="background:#fce4ec; border-left:4px solid #c62828;">
+      <h4 style="color:#c62828;">★ 直接证据：蔡启涛微信聊天记录与千路财务报表</h4>
+      <p>以下微信聊天记录截图直接证明邓桂燕的会计身份及千路商事财务的持续汇报事实：</p>
+
+      <h5 style="margin-top:15px;">（一）2019年2月22日：蔡启涛向股东群发送千路财务报表</h5>
+      <p>蔡启涛在微信群中发送了<strong>"2018.12千路财务状况说明.xls"</strong>和<strong>"2018年12月千路报表.xlsx"</strong>两份Excel文件，并附言：</p>
+      <blockquote style="border-left:3px solid #c62828; padding-left:12px; color:#b71c1c; font-style:italic; margin:10px 0;">
+        "这是我们公司财务做的千路公司（包括大阪和顺德）去年止的数据"
+      </blockquote>
+      <p>"<strong>我们公司财务</strong>"指的就是邓桂燕。此处蔡启涛明确承认：邓桂燕以"我们公司的财务"身份，制作千路商事的财务数据。报表涵盖大阪（日本总部）和顺德（中国业务），说明邓桂燕掌握千路商事<strong>全部</strong>财务信息。</p>
+      <div class="media-grid">
+        <div class="media-item">
+          <span class="evidence-tag">蔡启涛微信-发送千路财务报表</span>
+          <p class="media-caption">2019-02-22：蔡启涛向群内发送千路财务Excel文件，并说明"这是我们公司财务做的"</p>
+        </div>
+      </div>
+
+      <h5 style="margin-top:15px;">（二）2019年3月5日：蔡启涛确认邓桂燕是千路商事会计</h5>
+      <p>蔡启涛在微信中<strong>明确确认</strong>邓桂燕的身份和职责分工：</p>
+      <blockquote style="border-left:3px solid #c62828; padding-left:12px; color:#b71c1c; font-style:italic; margin:10px 0;">
+        "邓桂艳是会计"<br>
+        "袁浩阿曹是负责统计我们的收入，然后负责管理这个人民币的这个资金呢……那个邓桂艳呢，他是负责记账的了"
+      </blockquote>
+      <p>随后，员昊（凃云峰）回应：</p>
+      <blockquote style="border-left:3px solid #1565c0; padding-left:12px; color:#0d47a1; font-style:italic; margin:10px 0;">
+        "好的好的，那我们就把那个阿燕直接拉到群里面了"
+      </blockquote>
+      <p>这段对话证明：<strong>（1）</strong>邓桂燕担任千路商事会计是蔡启涛/吕伟麟主动安排的；<strong>（2）</strong>全体股东知情并同意；<strong>（3）</strong>邓桂燕随后被拉入包含罗建峰在内的股东工作群，开始定期汇报财务。</p>
+      <div class="media-grid">
+        <div class="media-item">
+          <span class="evidence-tag">蔡启涛微信-讨论邓桂燕入群1</span>
+          <p class="media-caption">2019-03-05：蔡启涛开始讨论邓桂燕的财务角色</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">蔡启涛微信-确认邓桂燕是会计</span>
+          <p class="media-caption">蔡启涛确认："邓桂艳是会计"、"负责记账的"</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">蔡启涛微信-同意邓桂燕参与</span>
+          <p class="media-caption">蔡启涛同意邓桂燕参与千路财务管理</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">蔡启涛微信-确认拉阿燕入群</span>
+          <p class="media-caption">员昊回应："那我们就把那个阿燕直接拉到群里面了"</p>
+        </div>
+      </div>
+      <div class="media-grid" style="margin-top:8px;">
+        <div class="media-item">
+          <span class="evidence-tag">蔡启涛微信-语音消息记录</span>
+          <p class="media-caption">相关语音消息记录</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">蔡启涛微信-讨论邓桂燕入群2</span>
+          <p class="media-caption">讨论邓桂燕入群的后续对话</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">蔡启涛微信-邓桂燕角色说明</span>
+          <p class="media-caption">蔡启涛进一步说明邓桂燕的角色定位</p>
+        </div>
+      </div>
+
+      <h5 style="margin-top:15px;">（三）千路商事财务报表实物（Excel原件）</h5>
+      <p>以下两份Excel财务报表是邓桂燕制作的千路商事实际财务数据：</p>
+      <ul>
+        <li><span class="evidence-tag">2018年12月千路报表</span> &mdash; 2018年12月千路商事财务总表（由蔡启涛于2019-02-22发到群中）</li>
+        <li><span class="evidence-tag">2019年04月千路报表</span> &mdash; <strong style="color:#c62828;">2019年4月千路商事财务总表</strong></li>
+      </ul>
+      <p style="background:#ffcdd2; padding:8px 12px; border-radius:4px;"><strong style="color:#b71c1c;">关键证据价值：</strong>2019年4月的财务报表的存在，<strong>直接证明</strong>罗建峰在仲裁中声称的"2019年4月以后无法获取千路商事的财务信息"是彻头彻尾的谎言——财务报表一直在制作和分发，罗建峰作为微信群成员不可能"无法获知"。</p>
+      <p style="margin-top:8px;"><em>注：我方还可向微信（腾讯）总部调取该工作群的全部聊天记录，邓桂燕每天都在群内发送财务信息，可完整还原罗建峰接收财务汇报的全过程。</em></p>
+    </div>
+
+    <div class="evidence-block">
+      <h4>二、"千路旅游咨询有限公司" &mdash; 千路商事的中国资金通道</h4>
+      <p>工商数据显示：<strong>佛山市顺德区千路旅游咨询有限公司</strong>（成立于2018年6月28日，已注销），其中：</p>
+      <ul>
+        <li>吕伟麟 = <strong>监事</strong>（实际控制人）</li>
+        <li>邓桂燕 = <strong>财务负责人</strong></li>
+        <li>莫志平 = 法定代表人</li>
+      </ul>
+      <p>该公司是吕伟麟等股东专门设立的，用于帮助千路商事株式会社<strong>收取中国客户的人民币款项</strong>并<strong>发放中国方面客服人员工资</strong>。由于千路商事在日本注册，需要收取人民币时，客户直接将款项支付给千路旅游咨询有限公司。<strong>千路旅游实质上是千路商事在中国的"钱袋子"。</strong></p>
+      <p>邓桂燕作为千路旅游的财务负责人，<strong>直接管理着千路商事全部中国方面的资金进出</strong>，对千路商事的财务状况了如指掌。该公司现已注销，不排除存在销毁资金流水记录的可能。</p>
+    </div>
+
+    <div class="evidence-block">
+      <h4>三、邓桂燕同时管理的7家关联公司</h4>
+      <p>爱企查数据显示，邓桂燕目前及历史上担任以下公司的<strong>财务负责人</strong>，法定代表人均为吕伟麟/孔宇/蔡启泳/吴铭刚：</p>
+      <table class="evidence-table" style="width:100%; border-collapse:collapse; margin:10px 0;">
+        <tr style="background:#f5f5f5;"><th style="padding:6px; border:1px solid #ddd; text-align:left;">公司名称</th><th style="padding:6px; border:1px solid #ddd;">法定代表人</th><th style="padding:6px; border:1px solid #ddd;">状态</th></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">佛山市迅得物业管理有限公司</td><td style="padding:6px; border:1px solid #ddd; text-align:center;">关展阳（<strong>吕伟麟</strong>=董事）</td><td style="padding:6px; border:1px solid #ddd; text-align:center;">开业</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">佛山市顺德区钧成企业管理有限公司</td><td style="padding:6px; border:1px solid #ddd; text-align:center;"><strong>孔宇</strong></td><td style="padding:6px; border:1px solid #ddd; text-align:center;">注销</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">佛山市顺德区顺悦物业管理有限公司</td><td style="padding:6px; border:1px solid #ddd; text-align:center;"><strong>孔宇</strong></td><td style="padding:6px; border:1px solid #ddd; text-align:center;">注销</td></tr>
+        <tr style="background:#fff3e0;"><td style="padding:6px; border:1px solid #ddd;"><strong>佛山市顺德区千路旅游咨询有限公司</strong></td><td style="padding:6px; border:1px solid #ddd; text-align:center;">莫志平（<strong>吕伟麟</strong>=监事）</td><td style="padding:6px; border:1px solid #ddd; text-align:center;">注销</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">佛山市讯得企业管理咨询有限公司</td><td style="padding:6px; border:1px solid #ddd; text-align:center;"><strong>吕伟麟</strong></td><td style="padding:6px; border:1px solid #ddd; text-align:center;">注销</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">英德市长兴投资管理有限公司</td><td style="padding:6px; border:1px solid #ddd; text-align:center;"><strong>孔宇</strong></td><td style="padding:6px; border:1px solid #ddd; text-align:center;">注销</td></tr>
+        <tr><td style="padding:6px; border:1px solid #ddd;">佛山拓派电子科技有限公司</td><td style="padding:6px; border:1px solid #ddd; text-align:center;"><strong>吴铭刚</strong>（<strong>吕伟麟</strong>=监事）</td><td style="padding:6px; border:1px solid #ddd; text-align:center;">开业</td></tr>
+      </table>
+      <p>此外，邓桂燕曾在<strong>佛山市顺德区宇翔企业管理有限公司</strong>（法定代表人：<strong>孔宇</strong>）担任监事。</p>
+      <p>邓桂燕的合作伙伴中：<strong>吕伟麟</strong>合作4次（最多）、<strong>孔宇</strong>合作5次、<strong>罗建峰</strong>合作1次。谭永琴（谭咏琴）同时在吕伟麟控股的<strong>潮代企业管理</strong>公司任职。</p>
+      <p><em>数据来源：爱企查 &mdash; <span class="evidence-tag">爱企查报告-邓桂燕</span>、<span class="evidence-tag">爱企查报告-吕伟麟</span></em></p>
+    </div>
+
+    <div class="evidence-block">
+      <h4>四、佛山拓派电子科技有限公司 &mdash; 邓桂燕/吕伟麟/吴铭刚三角关系</h4>
+      <p>这家公司清晰展示了关键人物的直接关联：</p>
+      <ul>
+        <li><strong>邓桂燕</strong> = 财务负责人</li>
+        <li><strong>吴铭刚</strong> = 法定代表人、执行董事兼经理</li>
+        <li><strong>吕伟麟</strong> = 监事</li>
+      </ul>
+      <p><em>数据来源：<span class="evidence-tag">爱企查-邓桂燕吴铭刚吕伟麟三角关系</span></em></p>
+    </div>
+
+    <div class="evidence-block">
+      <h4>五、吕伟麟-蔡启泳的更多关联</h4>
+      <p>吕伟麟的爱企查报告还显示：</p>
+      <ul>
+        <li><strong>佛山市顺德区百智达物业管理有限公司</strong>：法定代表人为<strong>蔡启泳</strong>，吕伟麟持股35%+担任监事</li>
+        <li><strong>佛山市顺德区房悦居信息服务有限公司</strong>：法定代表人为<strong>蔡启泳</strong>，吕伟麟担任监事（已注销）</li>
+        <li><strong>佛山市顺德区潮代企业管理信息咨询有限责任公司</strong>：吕伟麟持股<strong>90.21%</strong>，注册资本3,400万元，谭咏琴（邓桂燕的手下）在此公司任职</li>
+      </ul>
+      <p><em>数据来源：<span class="evidence-tag">爱企查报告-蔡启泳</span>、<span class="evidence-tag">爱企查报告-孔宇</span>、<span class="evidence-tag">爱企查报告-罗建峰</span></em></p>
+    </div>
+
+    <div class="evidence-block">
+      <h4>六、关系网络图谱（爱企查商业关系图）</h4>
+      <div class="media-grid">
+        <div class="media-item">
+          <span class="evidence-tag">爱企查-吕伟麟商业关系图</span>
+          <p class="media-caption">吕伟麟为中心的商业关系网络，可见邓桂燕、孔宇、蔡启涛、罗建峰等全部关键人物</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">爱企查-孔宇商业关系图</span>
+          <p class="media-caption">孔宇为中心，可见吕伟麟、邓桂燕、蔡启涛及其共管的多家公司</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">爱企查-蔡启涛商业关系图</span>
+          <p class="media-caption">蔡启涛关联企业网络</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">爱企查-蔡启泳商业关系图</span>
+          <p class="media-caption">蔡启泳关联企业网络，含与吕伟麟共同持股的百智达物业等</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">爱企查-邓桂燕吴铭刚吕伟麟三角关系</span>
+          <p class="media-caption">佛山拓派电子科技有限公司：邓桂燕=财务负责人、吴铭刚=法定代表人、吕伟麟=监事</p>
+        </div>
+        <div class="media-item">
+          <span class="evidence-tag">爱企查-迅得物业管理全景关系图</span>
+          <p class="media-caption">佛山市迅得物业管理有限公司全景关系图：邓桂燕、吕伟麟、孔宇、罗建峰均出现其中</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="evidence-block" style="background:#fff3e0; border-left:4px solid #e65100;">
+      <h4 style="color:#bf360c;">七、法律意义 &mdash; 为何邓桂燕节点推翻仲裁裁决</h4>
+      <p><strong>仲裁裁决的核心事实认定：</strong>"2019年4月以后，罗建峰无法获取千路商事的财务信息。"</p>
+      <p><strong>邓桂燕的存在直接推翻这一认定：</strong></p>
+      <ol>
+        <li><strong>邓桂燕是吕伟麟/蔡启涛指派的千路商事中国方面会计</strong>，同时管理千路旅游咨询有限公司（千路商事的中国资金通道），对千路商事全部财务了如指掌；</li>
+        <li><strong>邓桂燕在微信群中持续向包括罗建峰在内的全体成员汇报财务</strong>，罗建峰声称"无法获知"是明知而虚构；</li>
+        <li><strong>邓桂燕不是独立第三方</strong>，而是吕伟麟合作最频繁的商业伙伴（4次），是吕伟麟、蔡启涛、孔宇、蔡启泳、吴铭刚整个商业网络的<strong>共用财务总管</strong>；</li>
+        <li><strong>"千路旅游咨询有限公司"已被注销</strong>，千路商事在中国的人民币收支通道被关闭，不排除销毁资金流水记录的目的；</li>
+        <li><strong>整个仲裁是一个有组织的行为</strong>：邓桂燕掌握真实财务 → 罗建峰在群中看到报表 → 罗建峰在仲裁中虚构"无法获知" → 仲裁庭基于虚假事实裁决 → 执行受害人财产。</li>
+      </ol>
+      <p style="margin-top:10px;"><strong>结论：</strong>本案不是个别人的不实陈述，而是一个以吕伟麟为核心、邓桂燕为财务控制枢纽、罗建峰为前台工具人的<strong>有组织犯罪团伙</strong>利用仲裁程序实施的系统性诈骗。犯罪策划地、实施地（佛山市顺德区）、结果地（被害人财产所在地）均在中国境内，中国公安机关具有完全管辖权。</p>
     </div>
   </div>
 

@@ -292,14 +292,19 @@ const EVIDENCE_FILES = {
     storagePath: "arbitration_award_p1_6.pdf",
     aliases: ["湛江仲裁裁决书", "员昊邱千依孙万鹏裁决书"],
     quickPreview: {
-      storagePath: "preview_arbitration_p2_title.jpg",
+      storagePath: "preview_arb_p2_director.jpg",
       uploaded: true,
-      caption: "\u7b2c2\u9875\uff1a\u51c3\u4e91\u5cf0\u88ab\u5217\u4e3a<strong>\u201c\u8463\u4e8b\u201d</strong>\u800c\u975e\u6cd5\u5b9a\u4ee3\u8868\u4eba\uff0c\u4e0e\u8425\u4e1a\u6267\u7167\u4e0d\u7b26"
+      caption: "第2页：凃云峰被列为<strong>\"董事\"</strong>而非法定代表人（代表取缔役），与营业执照不符"
     }
   },
   "17湛江仲裁裁决书_7-12.pdf": {
     uploaded: true, type: "pdf",
-    storagePath: "arbitration_award_p7_12.pdf"
+    storagePath: "arbitration_award_p7_12.pdf",
+    quickPreview: {
+      storagePath: "preview_arb_p8_abandon_tu.jpg",
+      uploaded: true,
+      caption: "第7页：<strong>\"放弃向股东涂云峰主张权利\"</strong>——给法定代表人免责，只追诉受害者"
+    }
   },
   "17湛江仲裁裁决书_13-18.pdf": {
     uploaded: true, type: "pdf",
@@ -553,6 +558,224 @@ const EVIDENCE_FILES = {
     uploaded: true, type: "image",
     storagePath: "tianyancha_tu_yunfeng_luo_jianfeng.png",
     aliases: ["天眼查凃云峰罗建峰"]
+  },
+
+  // === 关联企业调查 - 爱企查商业关系图 ===
+  "爱企查-吕伟麟商业关系图": {
+    uploaded: true, type: "image",
+    storagePath: "aiqicha_lu_weilin_network.png",
+    aliases: ["吕伟麟商业关系图"]
+  },
+  "爱企查-吕伟麟详细关系图": {
+    uploaded: true, type: "image",
+    storagePath: "aiqicha_lu_weilin_detailed.png"
+  },
+  "爱企查-蔡启泳商业关系图": {
+    uploaded: true, type: "image",
+    storagePath: "aiqicha_cai_qiyong_network.png",
+    aliases: ["蔡启泳商业关系图"]
+  },
+  "爱企查-蔡启涛商业关系图": {
+    uploaded: true, type: "image",
+    storagePath: "aiqicha_cai_qitao_network.png",
+    aliases: ["蔡启涛商业关系图"]
+  },
+  "爱企查-孔宇商业关系图": {
+    uploaded: true, type: "image",
+    storagePath: "aiqicha_kong_yu_network.png",
+    aliases: ["孔宇商业关系图"]
+  },
+  "爱企查-邓桂燕吴铭刚吕伟麟三角关系": {
+    uploaded: true, type: "image",
+    storagePath: "aiqicha_deng_guiyan_triangle.png",
+    aliases: ["邓桂燕三角关系图", "佛山拓派电子科技关系图"]
+  },
+  "爱企查-迅得物业管理全景关系图": {
+    uploaded: true, type: "image",
+    storagePath: "aiqicha_xunde_property_full.jpg",
+    aliases: ["迅得物业关系图"]
+  },
+
+  // === 关联企业调查 - 爱企查董监高报告 ===
+  "爱企查报告-邓桂燕": {
+    uploaded: true, type: "pdf",
+    storagePath: "aiqicha_report_deng_guiyan.pdf",
+    aliases: ["邓桂燕董监高报告"]
+  },
+  "爱企查报告-吕伟麟": {
+    uploaded: true, type: "pdf",
+    storagePath: "aiqicha_report_lu_weilin.pdf",
+    aliases: ["吕伟麟董监高报告"]
+  },
+  "爱企查报告-蔡启涛": {
+    uploaded: true, type: "pdf",
+    storagePath: "aiqicha_report_cai_qitao.pdf",
+    aliases: ["蔡启涛董监高报告"]
+  },
+  "爱企查报告-蔡启泳": {
+    uploaded: true, type: "pdf",
+    storagePath: "aiqicha_report_cai_qiyong.pdf",
+    aliases: ["蔡启泳董监高报告"]
+  },
+  "爱企查报告-孔宇": {
+    uploaded: true, type: "pdf",
+    storagePath: "aiqicha_report_kong_yu.pdf",
+    aliases: ["孔宇董监高报告"]
+  },
+  "爱企查报告-罗建峰": {
+    uploaded: true, type: "pdf",
+    storagePath: "aiqicha_report_luo_jianfeng.pdf",
+    aliases: ["罗建峰董监高报告"]
+  },
+
+  // === 邓桂燕相关微信聊天记录 & 财务报表 ===
+  "蔡启涛微信-发送千路财务报表": {
+    uploaded: true, type: "image",
+    storagePath: "deng_guiyan_chat_6853.png",
+    aliases: ["蔡启涛发送千路财务报表截图"]
+  },
+  "蔡启涛微信-讨论邓桂燕入群1": {
+    uploaded: true, type: "image",
+    storagePath: "deng_guiyan_chat_6850.png",
+    aliases: ["蔡启涛确认邓桂燕是会计截图"]
+  },
+  "蔡启涛微信-确认邓桂燕是会计": {
+    uploaded: true, type: "image",
+    storagePath: "deng_guiyan_chat_6851.png",
+    aliases: ["蔡启涛确认邓桂燕负责记账"]
+  },
+  "蔡启涛微信-同意邓桂燕参与": {
+    uploaded: true, type: "image",
+    storagePath: "deng_guiyan_chat_6852.png",
+    aliases: ["蔡启涛同意阿燕参与"]
+  },
+  "蔡启涛微信-语音消息记录": {
+    uploaded: true, type: "image",
+    storagePath: "deng_guiyan_chat_6849.png"
+  },
+  "蔡启涛微信-讨论邓桂燕入群2": {
+    uploaded: true, type: "image",
+    storagePath: "deng_guiyan_chat_6854.png"
+  },
+  "蔡启涛微信-邓桂燕角色说明": {
+    uploaded: true, type: "image",
+    storagePath: "deng_guiyan_chat_6855.png"
+  },
+  "蔡启涛微信-确认拉阿燕入群": {
+    uploaded: true, type: "image",
+    storagePath: "deng_guiyan_chat_6856.png",
+    aliases: ["拉邓桂燕入群聊天记录"]
+  },
+  "2018年12月千路报表": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "qianlu_financial_report_201812.xlsx",
+    aliases: ["千路2018年12月财务报表"]
+  },
+  "2019年04月千路报表": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "qianlu_financial_report_201904.xlsx",
+    aliases: ["千路2019年4月财务报表"]
+  },
+
+  // === 财务群聊天记录 - 罗建峰直接参与证据 ===
+  // --- 群成员列表 & 入群记录 ---
+  "千路报帐对账重要群-成员列表": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_group_10_members.png",
+    aliases: ["10人财务群成员列表", "千路报帐对账群成员"]
+  },
+  "蔡启涛邀请罗建峰进入财务群": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_cai_invites_luo.png",
+    aliases: ["罗建峰入群记录", "蔡启涛拉罗建峰入群"]
+  },
+  "千路绿牌公司工作群-成员列表": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_group_11_members.png",
+    aliases: ["11人工作群成员列表", "千路工作群成员"]
+  },
+  "罗建峰被邀请进入工作群": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_luo_invited_11group.png",
+    aliases: ["罗建峰进入11人工作群"]
+  },
+  // --- 罗建峰亲自发言 ---
+  "罗建峰群内发言记录汇总": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_luo_messages_search.png",
+    aliases: ["罗建峰微信发言搜索"]
+  },
+  "罗建峰问费用计提": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_luo_asks_accrual.png",
+    aliases: ["罗建峰审核财务截图"]
+  },
+  "罗建峰确认收到七月业绩": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_luo_july_revenue_ack.png",
+    aliases: ["罗建峰说收到七月业绩增长"]
+  },
+  "罗建峰谈规模化布局": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_luo_scale_strategy.png",
+    aliases: ["罗建峰讨论公司战略"]
+  },
+  // --- 群内财务报表分发记录 ---
+  "财务群抄送给我及罗先生": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_cc_luo_financial.png",
+    aliases: ["抄送罗先生财务审批"]
+  },
+  "财务群发送日本报表及会议文件": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_financial_pdfs_cc_luo.png",
+    aliases: ["群内发送财务PDF"]
+  },
+  "财务群发送5份银行流水Excel": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_5_financial_excels.png",
+    aliases: ["群内5份银行流水"]
+  },
+  "5月资金日报表连续发送": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_may_daily_reports.png",
+    aliases: ["5月日报表截图"]
+  },
+  "10月资金不足报告@蔡启涛": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_oct_fund_shortage.png",
+    aliases: ["10月千路资金不足截图"]
+  },
+  "11月收入报表仍在发送": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_nov_revenue_reports.png",
+    aliases: ["11月7日收入报表截图"]
+  },
+  // --- 其他关联证据 ---
+  "公司支付宝号为蔡启涛": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_company_alipay_cai.png",
+    aliases: ["千路公司支付宝蔡启涛"]
+  },
+  "罗总欢乐游专属旅行群": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_luo_japan_trip_group.png",
+    aliases: ["罗建峰7月日本旅行群"]
+  },
+  "罗建峰微信个人信息页": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_luo_profile.png",
+    aliases: ["罗建峰微信ID"]
+  },
+  "百度罗建峰资料": {
+    uploaded: true, type: "image",
+    storagePath: "baidu_luo_jianfeng_cpa.png",
+    aliases: ["罗建峰百度百科", "罗建峰中国注册会计师", "罗建峰联塑集团执行董事"]
+  },
+  "邓桂燕自称千路大陆财务燕": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_deng_self_id_finance.png",
+    aliases: ["邓桂燕自我介绍千路财务"]
   }
 };
 
