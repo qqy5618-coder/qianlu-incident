@@ -963,7 +963,12 @@ body {
   }
   .stat-card {
     padding: 20px 12px;
+  }
+  .stat-card:nth-child(even) {
     border-right: 1px solid var(--border);
+  }
+  .stat-card:nth-child(n+3) {
+    border-top: none;
   }
   .stat-card .stat-value {
     font-size: 1.35rem;
@@ -1154,7 +1159,6 @@ body {
   .evidence-table th,
   .evidence-table td {
     padding: 8px 10px;
-    white-space: nowrap;
   }
 
   /* --- Evidence Popup --- */
@@ -1226,6 +1230,10 @@ body {
   }
   .stat-card {
     border-right: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    border-bottom: none;
+  }
+  .stat-card:first-child {
     border-bottom: none;
   }
   .stat-card:last-child {
@@ -1848,6 +1856,22 @@ a.evidence-tag.evidence-link::before {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 1px;
+}
+.fc-page-link.evidence-tag {
+  display: inline-block;
+  background: #8b1a1a;
+  color: #fff;
+  padding: 3px 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-bottom: 2px solid #6b1010;
+  text-align: center;
+  line-height: 1.3;
+}
+.fc-page-link.evidence-tag:hover {
+  background: #a52020;
 }
 .fc-claim-cell {
   background: #fff8f8;
