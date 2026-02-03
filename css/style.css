@@ -1698,6 +1698,26 @@ a.evidence-tag.evidence-link::before {
   color: var(--gold-light);
 }
 
+/* Audio player in lightbox */
+.evidence-audio-wrapper {
+  text-align: center;
+  padding: 40px 20px;
+}
+.evidence-audio-icon {
+  font-size: 4rem;
+  margin-bottom: 24px;
+  opacity: 0.8;
+}
+.evidence-preview-audio {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+}
+.evidence-audio-link {
+  background: linear-gradient(135deg, rgba(139,26,26,0.08), rgba(139,26,26,0.02)) !important;
+  border-left: 3px solid #8b1a1a !important;
+}
+
 /* Party legend sidebar in lightbox */
 .evidence-party-legend {
   background: rgba(255, 251, 235, 0.95);

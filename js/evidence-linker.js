@@ -205,15 +205,21 @@
         '<div class="evidence-party-legend" style="display:none"></div>' +
         '<div class="evidence-preview-main">' +
           '<img class="evidence-preview-img" src="" alt="">' +
+          '<div class="evidence-audio-wrapper" style="display:none">' +
+            '<div class="evidence-audio-icon">\ud83d\udd0a</div>' +
+            '<audio class="evidence-preview-audio" controls preload="metadata"></audio>' +
+          '</div>' +
           '<div class="evidence-preview-caption"></div>' +
         '</div>' +
       '</div>';
     document.body.appendChild(lb);
 
-    // Close on overlay click or close button
+    // Close on overlay click or close button; pause audio on close
     lb.addEventListener('click', function (e) {
       if (e.target === lb || e.target.classList.contains('evidence-preview-close')) {
         lb.classList.remove('active');
+        var aud = lb.querySelector('.evidence-preview-audio');
+        if (aud) { aud.pause(); }
       }
     });
 
@@ -224,22 +230,61 @@
       img.classList.toggle('zoomed');
     });
 
-    // ESC key to close
+    // ESC key to close + pause audio
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && lb.classList.contains('active')) {
         lb.classList.remove('active');
+        var aud = lb.querySelector('.evidence-preview-audio');
+        if (aud) { aud.pause(); }
       }
     });
 
     return lb;
   }
 
+  function showAudioLightbox(audioUrl, caption) {
+    if (!lightboxEl) lightboxEl = createLightbox();
+
+    var img = lightboxEl.querySelector('.evidence-preview-img');
+    var audioWrapper = lightboxEl.querySelector('.evidence-audio-wrapper');
+    var audio = lightboxEl.querySelector('.evidence-preview-audio');
+    var cap = lightboxEl.querySelector('.evidence-preview-caption');
+    var legend = lightboxEl.querySelector('.evidence-party-legend');
+    var container = lightboxEl.querySelector('.evidence-preview-container');
+
+    // Hide image, show audio
+    img.style.display = 'none';
+    img.src = '';
+    audioWrapper.style.display = 'block';
+    audio.src = audioUrl;
+
+    legend.style.display = 'none';
+    container.classList.remove('has-legend');
+
+    if (caption) {
+      cap.innerHTML = caption;
+      cap.style.display = 'inline-block';
+    } else {
+      cap.style.display = 'none';
+    }
+
+    lightboxEl.classList.add('active');
+  }
+
   function showPreviewLightbox(imageUrl, caption, partyGroup) {
     if (!lightboxEl) lightboxEl = createLightbox();
 
     var img = lightboxEl.querySelector('.evidence-preview-img');
+    var audioWrapper = lightboxEl.querySelector('.evidence-audio-wrapper');
+    var audio = lightboxEl.querySelector('.evidence-preview-audio');
     var cap = lightboxEl.querySelector('.evidence-preview-caption');
     var legend = lightboxEl.querySelector('.evidence-party-legend');
+
+    // Hide audio, show image
+    audioWrapper.style.display = 'none';
+    audio.pause();
+    audio.src = '';
+    img.style.display = '';
 
     img.classList.remove('zoomed');
     img.src = imageUrl;
@@ -315,6 +360,26 @@
       if (!fileInfo) return; // no match, leave as-is
 
       if (fileInfo.uploaded && fileInfo.type !== 'folder') {
+        // --- Audio files: inline player in lightbox ---
+        if (fileInfo.type === 'audio') {
+          var audioBtn = document.createElement('span');
+          audioBtn.className = 'evidence-tag evidence-link evidence-audio-link';
+          audioBtn.setAttribute('data-file-type', 'audio');
+          audioBtn.innerHTML = '\ud83d\udd0a ' + span.innerHTML;
+          audioBtn.title = '\u70b9\u51fb\u64ad\u653e\u5f55\u97f3';
+          audioBtn.style.cursor = 'pointer';
+          var capturedAudioInfo = fileInfo;
+          audioBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            showAudioLightbox(
+              buildUrl(capturedAudioInfo.storagePath),
+              capturedAudioInfo.caption || ''
+            );
+          });
+          span.parentNode.replaceChild(audioBtn, span);
+          return;
+        }
+
         var preview = resolvePreview(span, fileInfo);
         var hasPreview = !!preview;
         var hasTranslations = !!fileInfo.translations;

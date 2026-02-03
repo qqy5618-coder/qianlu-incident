@@ -172,7 +172,7 @@ const EVIDENCE_FILES = {
     aliases: ["凃云峰签章《业务指示书》"],
     translations: {
       ja: { storagePath: "corporate_seal_instruction_20191109.pdf", uploaded: true },
-      cn: { storagePath: "corporate_seal_instruction_cn_p1_2.pdf", uploaded: true }
+      cn: { storagePath: "corporate_seal_instruction_cn_p3_6.pdf", uploaded: true }
     },
     quickPreview: {
       storagePath: "preview_corporate_seal_instruction.png",
@@ -210,6 +210,18 @@ const EVIDENCE_FILES = {
     uploaded: true, type: "pdf",
     storagePath: "shareholder_resolution_2019.pdf",
     aliases: ["股东大会决议案"]
+  },
+  "千路商事株式会社2019年度第一回臨時株主総会議事録.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "shareholders_meeting_1st_minutes.pdf",
+    aliases: ["第一回临时股东大会议事录"]
+  },
+
+  // === 11.5: Second Shareholder Meeting (2019年12月12日) ===
+  "2019年第二回臨時株主総会招集のご通知.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "shareholders_meeting_2nd_notice.pdf",
+    aliases: ["第二回临时股东大会召集通知", "2019年12月12日第二次股东会"]
   },
 
   // === 12: Luo's Lawyer Letter ===
@@ -341,6 +353,19 @@ const EVIDENCE_FILES = {
     uploaded: true, type: "image",
     storagePath: "lu_payment_declaration.jpg",
     aliases: ["吕伟麟代付声明书", "19-2吕伟麟代付声明"]
+  },
+  "19-2吕伟麟替罗建峰支付的第二次借款1000万日币的声明书出自仲裁申请书.jpg": {
+    uploaded: true, type: "image",
+    storagePath: "lu_payment_1000man_declaration.jpg",
+    aliases: ["吕伟麟1000万声明书"]
+  },
+
+  // === 19.5: Dec 14 Voice Recording ===
+  "2019年12月14日蔡启涛，吕伟麟代替罗建峰和凃云峰来和員昊邱千依孙万鹏谈判.m4a": {
+    uploaded: true, type: "audio",
+    storagePath: "voice_recording_20191214.m4a",
+    aliases: ["2019年12月14日谈话语音录音", "12月14日买断谈判录音", "2019年12月14日蔡启涛吕伟麟代替罗建峰凃云峰谈判录音"],
+    caption: "2019\u5e7412\u670814\u65e5\u8c08\u8bdd\u5f55\u97f3 \u2014 \u8521\u542f\u6d9b\u3001\u5415\u4f1f\u9e9f<strong>\u4ee3\u66ff\u7f57\u5efa\u5cf0\u548c\u51c3\u4e91\u5cf0</strong>\u5411\u5458\u6627\u3001\u90b1\u5343\u4f9d\u3001\u5b59\u4e07\u9e4f\u63d0\u51fa326\u4e07\u5143\u4e70\u65ad\u6761\u4ef6"
   },
 
   // === 20: Court Documents ===
