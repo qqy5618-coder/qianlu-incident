@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>仲裁裁决虚假陈述 · 逐条对照表</title>
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 15mm 12mm 15mm 12mm;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+    font-size: 10pt;
+    line-height: 1.65;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ---------- COVER ---------- */
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 60px 40px;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+  }
+  .cover .subtitle {
+    font-size: 13pt;
+    color: #666;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+  }
+  .cover .case-ref {
+    font-size: 10pt;
+    color: #999;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .cover .divider {
+    width: 60px;
+    height: 2px;
+    background: #c0392b;
+    margin: 30px auto;
+  }
+  .cover .intro {
+    max-width: 700px;
+    font-size: 10.5pt;
+    color: #444;
+    text-align: left;
+    line-height: 1.8;
+    margin-top: 20px;
+  }
+  .cover .intro p { margin-bottom: 10px; }
+  .cover .intro strong { color: #1a1a1a; }
+
+  /* ---------- TABLE PAGES ---------- */
+  .comparison-section {
+    padding: 0;
+  }
+  .section-title {
+    font-size: 14pt;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 0 10px;
+    letter-spacing: 4px;
+    color: #1a1a1a;
+    border-bottom: 2px solid #c0392b;
+    margin-bottom: 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  thead th {
+    background: #2c2c2c;
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 10pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 1px solid #2c2c2c;
+  }
+  thead th:first-child {
+    width: 38px;
+  }
+  thead th:nth-child(2) {
+    width: 46%;
+  }
+  thead th:nth-child(3) {
+    width: auto;
+  }
+  tbody tr {
+    page-break-inside: avoid;
+  }
+  tbody tr:nth-child(odd) td {
+    background: #fafafa;
+  }
+  tbody td {
+    padding: 12px 14px;
+    border: 1px solid #d8d4cd;
+    vertical-align: top;
+    font-size: 9.5pt;
+    line-height: 1.7;
+  }
+  tbody td:first-child {
+    text-align: center;
+    font-weight: 700;
+    font-size: 11pt;
+    color: #c0392b;
+    vertical-align: middle;
+  }
+  /* Left column = false statement */
+  tbody td:nth-child(2) {
+    color: #333;
+  }
+  /* Right column = rebuttal */
+  tbody td:nth-child(3) {
+    color: #1a1a1a;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 7.5pt;
+    padding: 1px 6px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    vertical-align: middle;
+  }
+  .tag-red {
+    background: #fde8e8;
+    color: #c0392b;
+    border: 1px solid #e8b4b4;
+  }
+  .tag-green {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+  }
+  .tag-blue {
+    background: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #90caf9;
+  }
+  .tag-orange {
+    background: #fff3e0;
+    color: #e65100;
+    border: 1px solid #ffcc80;
+  }
+
+  .page-ref {
+    display: block;
+    font-size: 8pt;
+    color: #999;
+    margin-top: 4px;
+  }
+  .evidence-ref {
+    display: block;
+    font-size: 8pt;
+    color: #1565c0;
+    margin-top: 6px;
+    font-weight: 600;
+  }
+
+  blockquote {
+    border-left: 3px solid #c0392b;
+    padding: 4px 10px;
+    margin: 6px 0;
+    background: #fef9f9;
+    font-size: 9pt;
+    color: #555;
+  }
+  .rebuttal-quote {
+    border-left: 3px solid #2e7d32;
+    background: #f5faf5;
+  }
+
+  .highlight {
+    background: #fff9c4;
+    padding: 0 2px;
+    font-weight: 600;
+  }
+  .red-highlight {
+    color: #c0392b;
+    font-weight: 700;
+  }
+
+  .arrow {
+    color: #c0392b;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .doc-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 8pt;
+    color: #999;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+  }
+
+  /* ---------- SUMMARY BOX ---------- */
+  .summary-box {
+    border: 2px solid #c0392b;
+    padding: 16px 20px;
+    margin: 20px 0;
+    background: #fffbfb;
+    page-break-inside: avoid;
+  }
+  .summary-box h3 {
+    font-size: 11pt;
+    color: #c0392b;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+  .summary-box p {
+    font-size: 9.5pt;
+    color: #333;
+    line-height: 1.8;
+  }
+
+  /* Print */
+  @media print {
+    body { font-size: 9pt; }
+    .cover { min-height: auto; padding: 80px 40px; }
+    thead { display: table-header-group; }
+    tbody td { font-size: 8.5pt; padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER ==================== -->
+<div class="cover">
+  <div class="case-ref">（2022）湛仲字第56号 · 虚假诉讼罪控告辅助材料</div>
+  <h1>仲裁裁决虚假陈述</h1>
+  <h1 style="color:#c0392b; font-size: 20pt;">逐条对照表</h1>
+  <div class="subtitle">蔡启泳/罗建峰陈述 &nbsp;vs&nbsp; 客观证据</div>
+  <div class="divider"></div>
+  <div class="intro">
+    <p><strong>使用方法：</strong>本表左列摘录蔡启泳（申请人）在湛江仲裁中的每一条关键陈述，标注裁决书页码；右列对应逐条反驳证据，附证据编号。逐行对照即可清晰看出虚假陈述与客观事实的直接矛盾。</p>
+    <p><strong>裁决书来源：</strong>湛江国际仲裁院（2022）湛仲字第56号裁决书，申请人蔡启泳，被申请人千路商事株式会社、员昊、孙万鹏、邱千依。</p>
+    <p><strong>核心结论：</strong>蔡启泳/罗建峰在仲裁中的陈述与客观证据存在<strong style="color:#c0392b;">至少8处直接矛盾</strong>，构成捏造事实提起虚假诉讼。</p>
+  </div>
+</div>
+
+<!-- ==================== PART 1: 事实陈述虚假 ==================== -->
+<div class="comparison-section">
+  <div class="section-title">第一部分 · 事实陈述虚假</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>蔡启泳/罗建峰在仲裁中的陈述 <span style="font-weight:400;font-size:8pt;">（裁决书原文摘录）</span></th>
+        <th>客观证据反驳 <span style="font-weight:400;font-size:8pt;">（控告人持有的证据）</span></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- ===== ROW 1 ===== -->
+      <tr>
+        <td>1</td>
+        <td>
+          <span class="tag tag-red">虚假陈述</span>
+          <br>
+          "在2019年3月，罗建峰支付了全部借款后，被申请人千路商事株式会社<strong>一直没有履行每周向罗建峰报告公司银行余额的义务</strong>"
+          <br><br>
+          "但由于4个股东，<strong>并没有履行合同明定和强调的报告银行余额的义务</strong>，导致罗建峰出借的资金，在异国他乡得不到任何监控"
+          <span class="page-ref">—— 裁决书第5-6页，申请人陈述</span>
+        </td>
+        <td>
+          <span class="tag tag-green">合同原文</span> 借款协议第2条"特别约定"第3款原文：<br>
+          <blockquote class="rebuttal-quote">"乙方承诺，<strong class="highlight">在乙方未取得绿牌车公司资格前</strong>，不得动用甲方借入的资金，<strong>且</strong>乙方需每周末向甲方报告银行余额情况。否则，属乙方违约。"</blockquote>
+          <strong class="red-highlight">"在乙方未取得绿牌车公司资格前"统领整句</strong>，限定条件适用于"且"连接的两项义务。<br><br>
+          <span class="tag tag-green">客观事实</span> 千路商事<strong>已于2018年11月6日正式取得绿牌车营业资格</strong>。按合同约定，汇报义务已告消灭。<br><br>
+          <span class="tag tag-green">实际履行</span> 即使义务尚存——邓桂燕（吕伟麟指派的财务人员）<strong>每日</strong>在微信群发布含银行余额的财务报表。罗建峰本人在群内<strong>持续8个月查阅并互动回复</strong>，包括回复"收到"、评论"七月业绩增长明显"。
+          <span class="evidence-ref">证据1：微信财务群聊天记录（公证书）<br>证据12：两份借款协议原件</span>
+        </td>
+      </tr>
+
+      <!-- ===== ROW 2 ===== -->
+      <tr>
+        <td>2</td>
+        <td>
+          <span class="tag tag-red">虚假陈述</span>
+          <br>
+          "罗建峰<strong>无法了解借款的使用情况</strong>，也<strong>无从了解公司的业务</strong>，如<strong>绿牌车资格的批准情况</strong>"
+          <br><br>
+          蔡启泳援引罗建峰的陈述，声称罗建峰<strong>"对绿牌车申请状况不知情"</strong>。
+          <span class="page-ref">—— 裁决书第5页，申请人陈述</span>
+        </td>
+        <td>
+          <span class="tag tag-green">罗建峰亲笔签字</span> 第二份借款协议（2019年4月1日）前言条款由罗建峰亲自签字确认：
+          <blockquote class="rebuttal-quote">"2018年6月28日收到甲方提供2000万日元，<strong class="highlight">并全部用于公司运营管理投入</strong>，现依据<strong class="highlight">公司经营状况好转</strong>，继续安排新的借款借入。"</blockquote>
+          <strong class="red-highlight">三层法律后果：</strong><br>
+          1. 追认资金使用——若认为违约，不会追加借款<br>
+          2. 默认绿牌已取得——千路商事主营旅客运输，未取得绿牌无法运营，"运营管理投入"即承认已运营<br>
+          3. <strong>禁反言</strong>——确认"经营状况好转"后，不得在仲裁中声称"不了解经营状况"<br><br>
+          <span class="tag tag-green">追加投资</span> 2019年3月29日通过吕伟麟追加汇款1000万日元——<strong>追加投资本身证明他了解并认可经营状况</strong>。
+          <span class="evidence-ref">证据12：借款协议（2019）前言条款<br>证据20：中信银行汇款单</span>
+        </td>
+      </tr>
+
+      <!-- ===== ROW 3 ===== -->
+      <tr>
+        <td>3</td>
+        <td>
+          <span class="tag tag-red">虚假陈述</span>
+          <br>
+          "至今，被申请人千路商事株式会社<strong>经营困难，濒临破产</strong>，未能偿还任何借款。罗建峰先生无奈，只好提起本案仲裁。"
+          <span class="page-ref">—— 裁决书第5页，申请人陈述</span>
+        </td>
+        <td>
+          <span class="tag tag-green">当事人自认</span> 2019年12月14日录音中，蔡启涛和吕伟麟（代表罗建峰和凃云峰）的陈述：<br><br>
+          <strong>1. 经营优秀：</strong>数次夸赞千路商事为<strong>大阪优秀绿牌车公司</strong>、"司机兼导游的黄埔军校"<br>
+          <strong>2. 资产充裕：</strong>有<strong>130多万人民币应收款</strong>、13台丰田埃尔法 + 3台丰田海狮大商务车（16台车）<br>
+          <strong>3. 收购出价：</strong>蔡启涛提出以<strong>326万人民币</strong>出售股份和债权<br><br>
+          <strong class="red-highlight">经营良好、资产充裕、还能以326万出价——与"经营困难、濒临破产"完全矛盾。</strong><br><br>
+          <span class="tag tag-blue">补充</span> "濒临破产"的真正原因：2019年11月9日吕伟麟拿走全部公章和资金存折，12月2日封锁账户，12月12日免除员昊等三人董事资格——<strong>是对方人为制造的"破产"</strong>。
+          <span class="evidence-ref">证据5：12月14日录音（公证书）</span>
+        </td>
+      </tr>
+
+      <!-- ===== ROW 4 ===== -->
+      <tr>
+        <td>4</td>
+        <td>
+          <span class="tag tag-red">虚假陈述</span>
+          <br>
+          "但上述股东及公司，在收到律师函后<strong>一直置之不理</strong>，未向罗建峰提供任何资料或者报告银行余额情况"
+          <br><br>
+          "被申请人，在收到律师函后，仍然拒不履行定期报告义务的行为，属于以自己的行为表明将不履行还款义务，构成预期违约"
+          <span class="page-ref">—— 裁决书第5页、第7页，申请人陈述</span>
+        </td>
+        <td>
+          <span class="tag tag-orange">时间线陷阱</span> <strong>关键时间线——先拿走资料，再要求提供：</strong><br><br>
+          <table style="width:100%;font-size:8.5pt;border-collapse:collapse;margin:4px 0;">
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;width:100px;font-weight:600;">11月9日</td><td style="padding:3px 6px;border:1px solid #ddd;">吕伟麟拿走<strong>全部公章、存折、资金、银行卡</strong></td></tr>
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;font-weight:600;">12月2日</td><td style="padding:3px 6px;border:1px solid #ddd;">股东会<strong>封锁</strong>员昊等三人的公司账户</td></tr>
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;font-weight:600;color:#c0392b;">12月3日</td><td style="padding:3px 6px;border:1px solid #ddd;color:#c0392b;">罗建峰发律师函要求提供财务数据</td></tr>
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;font-weight:600;">12月12日</td><td style="padding:3px 6px;border:1px solid #ddd;">股东会<strong>免除</strong>员昊等三人董事资格</td></tr>
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;font-weight:600;color:#2e7d32;">12月14日</td><td style="padding:3px 6px;border:1px solid #ddd;color:#2e7d32;">员昊等三人与蔡启涛/吕伟麟<strong>面谈近2.5小时</strong></td></tr>
+          </table>
+          <br>
+          <strong class="red-highlight">不是"不回复"——是全部资料已被对方拿走，根本无从提供。</strong><br>
+          12月14日面谈即为对律师函的<strong>实质回应</strong>。蔡启涛在面谈中还要求员昊等三人<strong>等待审计结果</strong>。
+          <span class="evidence-ref">证据2：11月9日现场视频（公证书）<br>证据3/4：《业务指示书》《预り証》原件<br>证据5：12月14日录音（公证书）<br>证据13：股东会决议原件</span>
+        </td>
+      </tr>
+
+      <!-- ===== ROW 5 ===== -->
+      <tr>
+        <td>5</td>
+        <td>
+          <span class="tag tag-red">虚假陈述</span>
+          <br>
+          "与罗建峰唯一的联系是4名中国股东即被申请人……<strong>原本是出于对4个股东的信任和扶持关系</strong>，而不是商业利益的考量进行的出借，却被这样一种严重的背信行为所破坏"
+          <br><br>
+          隐含陈述：罗建峰"<strong>联系不上员昊等人</strong>"，与千路商事之间缺乏信息渠道。
+          <span class="page-ref">—— 裁决书第6页，申请人陈述</span>
+        </td>
+        <td>
+          <span class="tag tag-green">工商登记</span> 2019年1月31日——在两份借款协议之间——<strong>罗建峰、凃云峰、蔡启涛秘密成立千寻合同会社</strong>：<br><br>
+          <table style="width:100%;font-size:8.5pt;border-collapse:collapse;margin:4px 0;">
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;">凃云峰</td><td style="padding:3px 6px;border:1px solid #ddd;font-weight:700;">35%</td></tr>
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;">吴铭刚（吕伟麟表弟）</td><td style="padding:3px 6px;border:1px solid #ddd;font-weight:700;">35%</td></tr>
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;">罗建峰</td><td style="padding:3px 6px;border:1px solid #ddd;font-weight:700;">16.9%</td></tr>
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;">孔宇</td><td style="padding:3px 6px;border:1px solid #ddd;">8.1%</td></tr>
+            <tr><td style="padding:3px 6px;border:1px solid #ddd;">蔡启涛</td><td style="padding:3px 6px;border:1px solid #ddd;">5%</td></tr>
+          </table>
+          <br>
+          <strong class="red-highlight">罗建峰声称"联系不上员昊等人"，却同时与凃云峰、蔡启涛合资开新公司。</strong><br>
+          "出于信任和扶持"更是虚假——他们在员昊等人不知情的情况下另设公司，注册地与千路商事相同。
+          <span class="evidence-ref">证据19：千寻合同会社登记簿（日本法务局）</span>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- ==================== PART 2: 证据虚假 ==================== -->
+<div class="comparison-section" style="margin-top: 24px;">
+  <div class="section-title">第二部分 · 证据虚假与歪曲</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>蔡启泳/罗建峰在仲裁/法院中的陈述</th>
+        <th>客观证据反驳</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- ===== ROW 6 ===== -->
+      <tr>
+        <td>6</td>
+        <td>
+          <span class="tag tag-red">歪曲证据</span>
+          <br>
+          蔡启泳在湛江中院（2023）粤08民特113号撤裁听证中，提交审计报告并向法院陈述：
+          <blockquote>"用以证明当时对三申请人进行财务审计，三申请人不配合，<strong>发现他们挪用公司资金</strong>。"</blockquote>
+          <span class="page-ref">—— 湛江中院裁定书第4-5页（记载蔡启泳陈述）</span>
+        </td>
+        <td>
+          <span class="tag tag-green">审计报告原文</span> 审计报告中文翻译第3条第（2）款：
+          <blockquote class="rebuttal-quote">"在审阅会计相关材料的过程中，存在以下疑点，<strong class="highlight">并且没有确认到相关事实</strong>。"</blockquote>
+          三项疑点的审计结论<strong>全部是"无法确认"/"用途不明"</strong>：<br>
+          <span style="font-size:8.5pt;">
+          &bull; 第1项（100万日元取款）："现阶段只能认定为<strong>用途不明</strong>款项"<br>
+          &bull; 第2项（小票无法对应）："目前<strong>无法确认到</strong>……"<br>
+          &bull; 第3项（司机预备金）："本来就<strong>无法确认到</strong>……"
+          </span><br><br>
+          <strong class="red-highlight">"用途不明"≠"挪用"。</strong>审计报告从未出现"挪用"二字。审计师本人都说"没有确认到相关事实"，蔡启泳却向法院说"发现挪用"——<strong>对证据内容的故意歪曲，属于虚假陈述。</strong><br><br>
+          <span class="tag tag-blue">补充</span> 蔡启泳提交的中文翻译件<strong>未加盖任何翻译机构公章</strong>，不具备证据效力。
+          <span class="evidence-ref">证据6：审计报告日文原版+中文翻译<br>证据7：湛江中院裁定书（2023）粤08民特113号</span>
+        </td>
+      </tr>
+
+      <!-- ===== ROW 7 ===== -->
+      <tr>
+        <td>7</td>
+        <td>
+          <span class="tag tag-red">隐匿事实</span>
+          <br>
+          审计报告称2019年11月9日取出的50万日元"<strong>使途不明</strong>"。
+          <br><br>
+          蔡启泳据此指控员昊等三人挪用资金。
+          <span class="page-ref">—— 审计报告第3条</span>
+        </td>
+        <td>
+          <span class="tag tag-green">录音实锤</span> 2019年12月14日录音中——审计进行期间：
+          <blockquote class="rebuttal-quote">
+            <strong>蔡启涛（07:28）：</strong>"11月9号你就拿了公司的50万，拿了公司的50万现金了，到银行提了50万在。"<br>
+            <strong>孙万鹏（07:40）：</strong>"<strong class="highlight">金库里</strong>"<br>
+            <strong>蔡启涛（07:41）：</strong>"我在哪里无所谓"
+          </blockquote>
+          蔡启涛和吕伟麟<strong>均未对此表示质疑</strong>。<br><br>
+          <strong class="red-highlight">12月14日各方已确认50万在公司金库。11月9日吕伟麟拿走金库及钥匙（《预り証》第1项明确记载）。2020年5月审计报告却写"使途不明"——明知在金库却写成丢失。</strong>
+          <span class="evidence-ref">证据4：《预り証》第1项"小口現金金庫及び鍵"<br>证据5：12月14日录音（公证书）</span>
+        </td>
+      </tr>
+
+      <!-- ===== ROW 8 ===== -->
+      <tr>
+        <td>8</td>
+        <td>
+          <span class="tag tag-red">隐匿事实</span>
+          <br>
+          审计报告称大量司机经费小票丢失，约400万日元"<strong>使途不明</strong>"。
+          <br><br>
+          蔡启泳据此声称员昊等三人挪用公司资金。
+          <span class="page-ref">—— 审计报告第3条第（2）款</span>
+        </td>
+        <td>
+          <span class="tag tag-green">审计报告自身矛盾</span> 审计报告<strong>同时确认</strong>：司机领款签字在、退回余款签字在，<strong>签字金额可以对账</strong>。如果小票丢失导致金额对不上，会写"现金账目缺失"而非"小票丢失"。<strong>说明金额是对得上的，缺的只是纸质凭证。</strong><br><br>
+          <span class="tag tag-green">录音实锤</span> 12月14日录音中：
+          <blockquote class="rebuttal-quote">蔡启涛说他在整理公司账目时发现了<strong class="highlight">大量司机装在信封中的高速公路小票</strong>，还未整理。</blockquote>
+          <strong class="red-highlight">收据存在，只是在信封中未整理——不是"丢失"。</strong>11月9日后全部财务资料在吕伟麟控制下——小票是在吕伟麟管控期间"丢失"的。
+          <span class="evidence-ref">证据5：12月14日录音（公证书）<br>证据6：审计报告原文</span>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- ==================== PART 3: 利益关联隐匿 ==================== -->
+<div class="comparison-section" style="margin-top: 24px;">
+  <div class="section-title">第三部分 · 利益关联与合谋</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>蔡启泳在仲裁中的行为/陈述</th>
+        <th>隐藏的利益关联</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- ===== ROW 9 ===== -->
+      <tr>
+        <td>9</td>
+        <td>
+          <span class="tag tag-orange">选择性起诉</span>
+          <br>
+          蔡启泳在《仲裁申请书》中声明："由于我方放弃向股东凃云峰主张权利，因此我方仅要求上述三位股东（即员昊、邱千依、孙万鹏）承担相应的违约责任"
+          <br><br>
+          即：<strong>蔡启泳放弃向凃云峰（法定代表人，签署资产转移指示书的人）追责，单独追究员昊等三人。</strong>
+          <span class="page-ref">—— 裁决书第7页、第12页</span>
+        </td>
+        <td>
+          <span class="tag tag-green">利益链条</span> 蔡启泳放弃追究的人与他存在密切利益关联：<br><br>
+          <strong>1. 凃云峰</strong>：与罗建峰、蔡启涛合资成立千寻合同会社（凃云峰占35%），是转移千路商事资产的直接执行人<br>
+          <strong>2. 吕伟麟</strong>：蔡启泳公司的<strong>监事</strong>，帮蔡启泳支付起诉律师费，拿走千路商事全部公章和资金<br>
+          <strong>3. 蔡启涛</strong>：蔡启泳<strong>亲兄弟</strong>，千寻合同会社股东（5%），代表罗建峰与员昊等谈判<br><br>
+          <strong>4. 债权转让</strong>：罗建峰将债权转让给蔡启泳，<strong>对价仅为债权金额的20%</strong><br><br>
+          <strong class="red-highlight">五人之间存在家族关系、商业合作、资金往来——这不是普通的追债行为，而是有组织的合谋诈害。</strong>
+          <span class="evidence-ref">证据9：债权转让协议<br>证据10：蔡启泳公司工商登记<br>证据11：吕伟麟支付律师费凭证<br>证据19：千寻合同会社登记簿</span>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- ==================== SUMMARY ==================== -->
+<div class="summary-box" style="margin-top: 30px;">
+  <h3>总结：虚假诉讼的完整模式</h3>
+  <p>
+    <strong>第一步：</strong>2019年11月9日，吕伟麟拿走千路商事全部公章、存折、资金、银行卡（凃云峰以CEO身份签署指示书）。<br>
+    <strong>第二步：</strong>12月2日封锁员昊等三人的公司账户；12月12日免除董事资格。<br>
+    <strong>第三步：</strong>12月3日罗建峰发律师函，要求员昊等三人提供<strong>已经被对方拿走的财务资料</strong>。<br>
+    <strong>第四步：</strong>审计报告将已知在金库的50万日元写为"使途不明"，将信封中的小票写为"丢失"。<br>
+    <strong>第五步：</strong>罗建峰在仲裁中虚假陈述"不了解经营状况"、"联系不上员昊等人"、"经营困难濒临破产"。<br>
+    <strong>第六步：</strong>蔡启泳以20%对价受让债权，在仲裁中将审计报告的"用途不明"歪曲为"发现挪用"。<br>
+    <strong>第七步：</strong>蔡启泳选择性放弃追究利益关联方（凃云峰等），单独追究员昊等三人。<br><br>
+    <strong style="color:#c0392b;font-size:11pt;">自己拿走了全部资料，再以对方不提供资料为由起诉对方。</strong><br>
+    <strong style="color:#c0392b;font-size:11pt;">这是先制造违约条件，再以违约为由提起虚假诉讼。</strong>
+  </p>
+</div>
+
+<div class="doc-footer">
+  本文档为刑事控告辅助材料 · 仅供办案机关参考<br>
+  控告人：员昊、邱千依 · 联系方式详见入股协议
+</div>
+
+</body>
+</html>
