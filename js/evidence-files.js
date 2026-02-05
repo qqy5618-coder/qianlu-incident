@@ -370,12 +370,14 @@ const EVIDENCE_FILES = {
 
   // === 20: Court Documents ===
   "20-1包头中院无效案文书/": {
-    uploaded: false, type: "folder",
-    storagePath: "20-1包头中院无效案文书/"
+    uploaded: true, type: "folder",
+    storagePath: "baotou_court_1541.jpg",
+    aliases: ["包头中院无效案文书"]
   },
   "20-2包头中院吕替蔡支付律师费/出自仲裁书第19页最后一行.jpg": {
-    uploaded: false, type: "image",
-    storagePath: "20-2包头中院吕替蔡支付律师费/出自仲裁书第19页最后一行.jpg"
+    uploaded: true, type: "image",
+    storagePath: "preview_arbitration_p19_fee.jpg",
+    aliases: ["仲裁书第19页吕替蔡支付律师费"]
   },
   "20220729 被告证据目录（签字版）.pdf": {
     uploaded: true, type: "pdf",
@@ -494,8 +496,9 @@ const EVIDENCE_FILES = {
 
   // === Shorthand-only references (no numbered prefix) ===
   "西畑诚亮签字《预り证》（保管证）": {
-    uploaded: false, type: "pdf",
-    storagePath: "西畑诚亮签字预り証.pdf"
+    uploaded: true, type: "pdf",
+    storagePath: "business_instruction_custody_receipt.pdf",
+    aliases: ["西畑诚亮预り証", "保管证原件"]
   },
   "罗建峰2021年10月13日律师函": {
     uploaded: true, type: "image",
