@@ -801,6 +801,220 @@ const EVIDENCE_FILES = {
     uploaded: true, type: "image",
     storagePath: "wechat_deng_self_id_finance.png",
     aliases: ["邓桂燕自我介绍千路财务"]
+  },
+
+  // ============================================================
+  // === 微信群聊天记录证据 — 三个群 ===
+  // ============================================================
+
+  // === 千路报帐队长【重要群】 (8 files) ===
+  "报帐队长群-IMG_6922": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_captain_6922.png",
+    aliases: ["报帐队长群截图6922"]
+  },
+  "报帐队长群-IMG_6923": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_captain_6923.png",
+    aliases: ["报帐队长群截图6923"]
+  },
+  "报帐队长群-IMG_6925": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_captain_6925.png",
+    aliases: ["报帐队长群截图6925"]
+  },
+  "报帐队长群-IMG_6926": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_captain_6926.png",
+    aliases: ["报帐队长群截图6926"]
+  },
+  "报帐队长群-IMG_6927": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_captain_6927.png",
+    aliases: ["报帐队长群截图6927"]
+  },
+  "报帐队长群-IMG_6928": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_captain_6928.png",
+    aliases: ["报帐队长群截图6928"]
+  },
+  "报帐队长群-IMG_6929": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_captain_6929.png",
+    aliases: ["报帐队长群截图6929"]
+  },
+  "报帐队长群-群名截图": {
+    uploaded: true, type: "image",
+    storagePath: "wechat_captain_hash_0a45e4.jpg",
+    aliases: ["报帐队长群群名"]
+  },
+
+  // === 日本大阪千路绿牌公司工作群 - 聊天截图 (45 files) ===
+  "工作群-IMG_6937": { uploaded: true, type: "image", storagePath: "wechat_work_6937.png" },
+  "工作群-IMG_6944": { uploaded: true, type: "image", storagePath: "wechat_work_6944.png" },
+  "工作群-IMG_6945": { uploaded: true, type: "image", storagePath: "wechat_work_6945.png" },
+  "工作群-IMG_6947": { uploaded: true, type: "image", storagePath: "wechat_work_6947.png" },
+  "工作群-IMG_6948": { uploaded: true, type: "image", storagePath: "wechat_work_6948.png" },
+  "工作群-IMG_6949": { uploaded: true, type: "image", storagePath: "wechat_work_6949.png" },
+  "工作群-IMG_6953": { uploaded: true, type: "image", storagePath: "wechat_work_6953.png" },
+  "工作群-IMG_6954": { uploaded: true, type: "image", storagePath: "wechat_work_6954.png" },
+  "工作群-IMG_6955": { uploaded: true, type: "image", storagePath: "wechat_work_6955.png" },
+  "工作群-IMG_6958": { uploaded: true, type: "image", storagePath: "wechat_work_6958.png" },
+  "工作群-IMG_6959": { uploaded: true, type: "image", storagePath: "wechat_work_6959.png" },
+  "工作群-IMG_6961": { uploaded: true, type: "image", storagePath: "wechat_work_6961.png" },
+  "工作群-IMG_6962": { uploaded: true, type: "image", storagePath: "wechat_work_6962.png" },
+  "工作群-IMG_6963": { uploaded: true, type: "image", storagePath: "wechat_work_6963.png" },
+  "工作群-IMG_6964": { uploaded: true, type: "image", storagePath: "wechat_work_6964.png" },
+  "工作群-IMG_6965": { uploaded: true, type: "image", storagePath: "wechat_work_6965.png" },
+  "工作群-IMG_6966": { uploaded: true, type: "image", storagePath: "wechat_work_6966.png" },
+  "工作群-IMG_6967": { uploaded: true, type: "image", storagePath: "wechat_work_6967.png" },
+  "工作群-IMG_6969": { uploaded: true, type: "image", storagePath: "wechat_work_6969.png" },
+  "工作群-IMG_6971": { uploaded: true, type: "image", storagePath: "wechat_work_6971.png" },
+  "工作群-IMG_6973": { uploaded: true, type: "image", storagePath: "wechat_work_6973.png" },
+  "工作群-IMG_6975": { uploaded: true, type: "image", storagePath: "wechat_work_6975.png" },
+  "工作群-IMG_6976": { uploaded: true, type: "image", storagePath: "wechat_work_6976.png" },
+  "工作群-IMG_6978": { uploaded: true, type: "image", storagePath: "wechat_work_6978.png" },
+  "工作群-IMG_6980": { uploaded: true, type: "image", storagePath: "wechat_work_6980.png" },
+  "工作群-IMG_6981": { uploaded: true, type: "image", storagePath: "wechat_work_6981.png" },
+  "工作群-IMG_6982": { uploaded: true, type: "image", storagePath: "wechat_work_6982.png" },
+  "工作群-IMG_6983": { uploaded: true, type: "image", storagePath: "wechat_work_6983.png" },
+  "工作群-IMG_1537": { uploaded: true, type: "image", storagePath: "wechat_work_1537.png" },
+  "工作群-IMG_1538": { uploaded: true, type: "image", storagePath: "wechat_work_1538.png" },
+  "工作群-hash-01a52c": { uploaded: true, type: "image", storagePath: "wechat_work_hash_01a52c.jpg" },
+  "工作群-hash-05e216": { uploaded: true, type: "image", storagePath: "wechat_work_hash_05e216.jpg" },
+  "工作群-hash-0e6c32": { uploaded: true, type: "image", storagePath: "wechat_work_hash_0e6c32.jpg" },
+  "工作群-hash-1103e6": { uploaded: true, type: "image", storagePath: "wechat_work_hash_1103e6.jpg" },
+  "工作群-hash-547c95": { uploaded: true, type: "image", storagePath: "wechat_work_hash_547c95.jpg" },
+  "工作群-hash-7b338a": { uploaded: true, type: "image", storagePath: "wechat_work_hash_7b338a.jpg" },
+  "工作群-hash-8009c7": { uploaded: true, type: "image", storagePath: "wechat_work_hash_8009c7.png" },
+  "工作群-hash-81e1f2": { uploaded: true, type: "image", storagePath: "wechat_work_hash_81e1f2.jpg" },
+  "工作群-hash-84da29": { uploaded: true, type: "image", storagePath: "wechat_work_hash_84da29.jpg" },
+  "工作群-hash-8e12bb": { uploaded: true, type: "image", storagePath: "wechat_work_hash_8e12bb.png" },
+  "工作群-hash-92e052": { uploaded: true, type: "image", storagePath: "wechat_work_hash_92e052.jpg" },
+  "工作群-hash-945019": { uploaded: true, type: "image", storagePath: "wechat_work_hash_945019.jpg" },
+  "工作群-hash-9d354e": { uploaded: true, type: "image", storagePath: "wechat_work_hash_9d354e.jpg" },
+  "工作群-hash-9fb353": { uploaded: true, type: "image", storagePath: "wechat_work_hash_9fb353.png" },
+  "工作群-hash-b4596c": { uploaded: true, type: "image", storagePath: "wechat_work_hash_b4596c.jpg" },
+
+  // === 绿牌公司工作群 - Excel 月度财务报表 (15 files) ===
+  "2019.05千路财务状况表（内含两表）.xls": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "financial_status_201905.xls",
+    aliases: ["2019年5月千路财务状况表"]
+  },
+  "2019.06千路财务状况表（内含两表）.xls": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "financial_status_201906.xls",
+    aliases: ["2019年6月千路财务状况表"]
+  },
+  "2019.07千路财务状况表（内含两表）.xls": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "financial_status_201907.xls",
+    aliases: ["2019年7月千路财务状况表"]
+  },
+  "2019.08千路损益表.xls": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "profit_loss_201908.xls",
+    aliases: ["2019年8月千路损益表"]
+  },
+  "2019.08千路资产负债明细表.xls": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "balance_sheet_201908.xls",
+    aliases: ["2019年8月千路资产负债表"]
+  },
+  "2019.09千路损益表.xls": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "profit_loss_201909.xls",
+    aliases: ["2019年9月千路损益表"]
+  },
+  "2019年05月千路报表.xlsx": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "monthly_report_201905.xlsx",
+    aliases: ["千路2019年5月月度报表"]
+  },
+  "2019年06月千路报表.xlsx": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "monthly_report_201906.xlsx",
+    aliases: ["千路2019年6月月度报表"]
+  },
+  "2019年07月千路报表.xlsx": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "monthly_report_201907.xlsx",
+    aliases: ["千路2019年7月月度报表"]
+  },
+  "2019年08月千路报表.xlsx": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "monthly_report_201908.xlsx",
+    aliases: ["千路2019年8月月度报表"]
+  },
+  "2019年09月千路报表.xlsx": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "monthly_report_201909.xlsx",
+    aliases: ["千路2019年9月月度报表"]
+  },
+  "8月应收款情况表 9.20.xlsx": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "receivables_201908.xlsx",
+    aliases: ["2019年8月应收款情况表"]
+  },
+  "琴终表7月订单（未收款）.xlsx": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "unpaid_orders_201907.xlsx",
+    aliases: ["2019年7月未收款订单"]
+  },
+  "（改）损益汇总.xlsx": {
+    uploaded: true, type: "spreadsheet",
+    storagePath: "profit_loss_summary_2019.xlsx",
+    aliases: ["损益汇总表", "2019年1-9月损益汇总", "千路损益汇总表"]
+  },
+
+  // === 千路股东群 - 聊天截图 (13 files) ===
+  "股东群-IMG_6903": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6903.png" },
+  "股东群-IMG_6906": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6906.png" },
+  "股东群-IMG_6907": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6907.png" },
+  "股东群-IMG_6908": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6908.png" },
+  "股东群-IMG_6909": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6909.png" },
+  "股东群-IMG_6910": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6910.png" },
+  "股东群-IMG_6916": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6916.png" },
+  "股东群-IMG_6917": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6917.png" },
+  "股东群-IMG_6918": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6918.png" },
+  "股东群-IMG_6919": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6919.png" },
+  "股东群-IMG_6921": { uploaded: true, type: "image", storagePath: "wechat_shareholder_6921.png" },
+  "股东群-hash-8160d8": { uploaded: true, type: "image", storagePath: "wechat_shareholder_hash_8160d8.jpg" },
+  "股东群-hash-fa479e": { uploaded: true, type: "image", storagePath: "wechat_shareholder_hash_fa479e.jpg" },
+
+  // === 股东群 - 新增 PDF 文档 (5 files) ===
+  "千路公司汇报资料.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "company_briefing_20191123.pdf",
+    aliases: ["千路公司汇报资料", "2019年11月23日汇报资料"]
+  },
+  "千路公司危机解决方案.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "crisis_solution_20191204.pdf",
+    aliases: ["千路公司危机解决方案", "2019年12月4日危机解决方案"]
+  },
+  "员昊追款通知.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "payment_demand_yuanhao_20191209.pdf",
+    aliases: ["员昊追款通知", "2019年12月9日追款通知"]
+  },
+  "股东会汇报资料20191127.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "shareholder_report_51pages_20191127.pdf",
+    aliases: ["股东会汇报资料", "51页股东会汇报资料", "2019年11月27日股东会汇报资料", "股东会汇报资料51页"]
+  },
+  "業務指示書と預かり証.pdf": {
+    uploaded: true, type: "pdf",
+    storagePath: "business_instruction_custody_receipt.pdf",
+    aliases: ["业务指示书与保管证", "業務指示書と預かり証", "业务指示书原件"]
+  },
+
+  // === 股东群 - docx ===
+  "关于千路商事株式会社召开股东会的通知(草案)2019-11-25.docx": {
+    uploaded: true, type: "other",
+    storagePath: "shareholder_meeting_notice_draft_20191125.docx",
+    aliases: ["股东会通知草案", "2019年11月25日股东会通知草案", "关于千路商事召开股东会的通知草案"]
   }
 };
 
