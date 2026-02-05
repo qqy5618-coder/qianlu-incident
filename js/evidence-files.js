@@ -1053,6 +1053,20 @@ const EVIDENCE_FILES = {
     uploaded: true, type: "html",
     storagePath: "criminal_complaint_simplified.html",
     aliases: ["刑事控告证据说明（简易版）", "简易版证据说明", "刑事控告简易版"]
+  },
+
+  // === 民事检察监督申请书（检察院版）===
+  "民事检察监督申请书": {
+    uploaded: true, type: "html",
+    storagePath: "procuratorate_supervision_application.html",
+    aliases: ["检察院版", "民事诉讼监督申请书", "检察监督申请书"]
+  },
+
+  // === 刑事控告状（公安版）===
+  "刑事控告状": {
+    uploaded: true, type: "html",
+    storagePath: "criminal_complaint_police.html",
+    aliases: ["公安版", "刑事控告状公安版", "经侦控告状"]
   }
 };
 

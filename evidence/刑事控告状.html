@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>刑事控告状</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 18mm 20mm 18mm;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+    font-size: 11pt;
+    line-height: 1.85;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #c0392b;
+  }
+  h2 {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 36px;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #333;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    page-break-after: avoid;
+  }
+  h4 {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #444;
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+
+  p { margin-bottom: 10px; }
+
+  blockquote {
+    border-left: 3px solid #c0392b;
+    padding: 6px 14px;
+    margin: 10px 0;
+    background: #fef9f9;
+    font-size: 10pt;
+    color: #555;
+  }
+
+  .red { color: #c0392b; font-weight: 700; }
+  .blue { color: #1565c0; font-weight: 700; }
+  .highlight { background: #fff9c4; padding: 0 2px; font-weight: 600; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 10pt;
+  }
+  th, td {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  th {
+    background: #f5f5f5;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .evidence-box {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 10px 14px;
+    margin: 10px 0;
+    font-size: 10pt;
+    color: #555;
+  }
+  .evidence-box strong { color: #1565c0; }
+
+  .key-point {
+    border: 2px solid #c0392b;
+    background: #fffbfb;
+    padding: 12px 16px;
+    margin: 14px 0;
+    page-break-inside: avoid;
+  }
+  .key-point p { margin-bottom: 4px; }
+
+  .info-box {
+    background: #f5f8ff;
+    border: 1px solid #bbdefb;
+    padding: 12px 16px;
+    margin: 14px 0;
+    font-size: 10.5pt;
+    page-break-inside: avoid;
+  }
+
+  .law-ref {
+    background: #fef9f9;
+    border-left: 3px solid #c0392b;
+    padding: 8px 14px;
+    margin: 10px 0;
+    font-size: 10pt;
+  }
+
+  .summary-box {
+    border: 2px solid #c0392b;
+    padding: 16px 20px;
+    margin: 24px 0;
+    background: #fffbfb;
+    page-break-inside: avoid;
+  }
+
+  .doc-footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 9pt;
+    color: #999;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+  }
+
+  ul, ol { margin: 6px 0 10px 20px; }
+  li { margin-bottom: 4px; }
+
+  .party-info { margin: 6px 0; padding-left: 20px; }
+  .party-info p { margin-bottom: 4px; }
+
+  .sign-area {
+    margin-top: 40px;
+    text-align: right;
+    padding-right: 60px;
+  }
+  .sign-area p { margin-bottom: 6px; }
+
+  @media print {
+    body { padding: 0; max-width: none; font-size: 10pt; }
+    h1 { font-size: 18pt; }
+    h2 { font-size: 13pt; margin-top: 24px; }
+    h3 { font-size: 11pt; margin-top: 18px; }
+    .key-point, .summary-box { page-break-inside: avoid; }
+    h2, h3 { page-break-after: avoid; }
+    table { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>刑事控告状</h1>
+
+<p style="text-align: center; color: #666; margin-bottom: 24px;">（公安版 —— 双轨之二）</p>
+
+<!-- ==================== 控告人/被控告人 ==================== -->
+<h2>一、控告人与被控告人</h2>
+
+<h4>控告人：</h4>
+<div class="party-info">
+  <p><strong>员昊</strong>，男，身份信息及联系方式详见入股协议第一页（随附提交）</p>
+  <p><strong>邱千依</strong>，女，身份信息及联系方式详见入股协议第一页（随附提交）</p>
+</div>
+
+<h4>被控告人：</h4>
+<div class="party-info">
+  <p><strong>1. 蔡启泳</strong>——以虚假事实提起仲裁的名义申请人，签名存在伪造嫌疑</p>
+  <p><strong>2. 吕伟麟</strong>——实际操盘人，蔡启泳公司监事，拿走全部公章和资金，代付仲裁律师费</p>
+  <p><strong>3. 罗建峰</strong>——原始债权人，在仲裁中进行多项虚假陈述</p>
+  <p><strong>4. 蔡启涛</strong>——蔡启泳亲兄弟，代表罗建峰和凃云峰处分利益，威胁提出合理诉求的股东</p>
+  <p><strong>5. 凃云峰</strong>——千路商事法定代表人，签署《业务指示书》转移全部公司资产，违法变卖16台车辆</p>
+</div>
+<p>（以上五人身份信息详见入股协议、千寻合同会社登记簿、工商登记资料，随附提交）</p>
+
+<h4>控告罪名：</h4>
+<p><strong class="red">虚假诉讼罪</strong>（《中华人民共和国刑法》第三百零七条之一）</p>
+
+<div class="law-ref">
+  <p><strong>《刑法》第307条之一：</strong>"以捏造的事实提起民事诉讼，妨害司法秩序或者严重侵害他人合法权益的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金；情节严重的，处三年以上七年以下有期徒刑，并处罚金。"</p>
+</div>
+
+
+<!-- ==================== 立案切入点 ==================== -->
+<h2>二、立案切入点——签名伪造与仲裁申请人资格</h2>
+
+<div class="key-point">
+  <p><strong class="red">本案最直接、最易核实的犯罪事实是签名伪造。</strong>签名真伪属于客观事实，可通过司法鉴定一锤定音，不依赖复杂的法律论证。如果签名系伪造，则蔡启泳不具备仲裁申请人资格，整个仲裁裁决的基础即不成立。</p>
+</div>
+
+<h3>（一）笔迹检验发现签名伪造</h3>
+
+<p>经初步笔迹检验（依据GA/T37239-2018《笔迹鉴定技术规范》），对蔡启泳在以下两份文件上的签名进行比对：</p>
+<ul>
+  <li><strong>检材一：</strong>债权转让协议上的"蔡启泳"签名</li>
+  <li><strong>检材二：</strong>蔡启泳委托兰迪律所代理合同上的"蔡启泳"签名</li>
+</ul>
+
+<p>比对发现：两份签名存在字形结构差异、运笔习惯不同、整体风貌差异，检材存在明显摹仿痕迹。</p>
+
+<p><strong class="red">鉴定结论：两份"蔡启泳"签名不是同一人书写。至少一份签名系伪造。</strong></p>
+
+<div class="evidence-box">
+  <strong>证据：</strong>笔迹检验咨询报告、债权转让协议（签名页）、蔡启泳委托代理合同（兰迪律所）
+</div>
+
+<h3>（二）仲裁费用由他人代付——进一步佐证签名伪造</h3>
+
+<p>蔡启泳委托兰迪律所代理仲裁案（2022）湛仲字第56号，律师费5,000元人民币。但<strong>实际付款人不是蔡启泳本人，而是吕伟麟</strong>——汇丰银行入账凭证显示付款人为吕伟麟，附言为"千路仲裁费"。</p>
+
+<p><strong>签名可能伪造 + 费用由他人支付 = 蔡启泳可能并非真正的仲裁发起人。</strong></p>
+
+<p>吕伟麟同时是：</p>
+<ul>
+  <li>蔡启泳公司的监事（工商登记可查）</li>
+  <li>2019年11月9日拿走千路商事全部公章、资金的人（现场录像+蔡启涛录音确认）</li>
+  <li>仲裁律师费的实际支付人</li>
+</ul>
+
+<div class="key-point">
+  <p><strong class="red">整个仲裁案极有可能是吕伟麟操盘、借用蔡启泳名义发起的虚假诉讼。</strong></p>
+  <p style="margin-top:8px;"><strong>侦查建议：</strong>请求对蔡启泳进行讯问——确认债权转让协议和委托代理合同是否由其本人签署；请求对两份签名进行司法鉴定。</p>
+</div>
+
+<div class="evidence-box">
+  <strong>证据：</strong>吕伟麟支付律师费银行凭证（汇丰银行，附言"千路仲裁费"）、蔡启泳公司工商登记（监事为吕伟麟）、债权转让协议（20%对价）
+</div>
+
+
+<!-- ==================== 虚假诉讼犯罪事实 ==================== -->
+<h2>三、虚假诉讼的犯罪事实</h2>
+
+<p>除签名伪造外，仲裁裁决所依据的核心事实均系被控告人合谋捏造。以下为虚假诉讼的完整犯罪事实（详细证据说明见附件《刑事控告证据说明（简易版）》）。</p>
+
+<h3>（一）罗建峰"不了解财务状况"系虚假陈述</h3>
+
+<p><strong>仲裁中的陈述：</strong>罗建峰声称"自2019年4月起不了解千路商事经营状况"。</p>
+
+<p><strong>反驳证据：</strong></p>
+<ul>
+  <li>2019年3月起，财务汇报<strong>从每周升级为每天</strong>，罗建峰在微信群中<strong>持续8个月查阅并频繁互动</strong>（包括回复"收到"、评论"七月业绩增长明显"等）</li>
+  <li>2019年3月29日，罗建峰通过吕伟麟向千路商事追加汇款<strong>1000万日元</strong>——如果不了解经营状况，为何追加投资</li>
+  <li>绿牌公司工作群中保存<strong>16份Excel月度财务报表</strong>（2019年4-9月），按月在群内分享</li>
+</ul>
+
+<div class="evidence-box">
+  <strong>证据：</strong>微信聊天记录公证书、中信银行汇款单（2019.3.29）、16份Excel报表
+</div>
+
+<h3>（二）罗建峰"联系不上员昊等人"系虚假陈述</h3>
+
+<p><strong>仲裁中的陈述：</strong>罗建峰声称"联系不上员昊等三人"。</p>
+
+<p><strong>反驳证据：</strong></p>
+<ul>
+  <li>2019年12月2日，孙万鹏在千路股东群中向罗建峰发送51页《股东会汇报资料》。<strong>仅隔一天</strong>，12月3日罗建峰即发律师函声称"联系不上"</li>
+  <li>12月4日邱千依发送《千路公司危机解决方案》——<strong>罗建峰不回复</strong></li>
+  <li>12月10日孙万鹏发送律师函——<strong>罗建峰不回复</strong></li>
+  <li>12月13日孙万鹏发送《致歉信》正式回应罗建峰律师函——<strong>罗建峰不回复</strong></li>
+  <li>员昊等三人在群内发送至少<strong>8份正式文件</strong>，罗建峰全程在线，<strong class="red">无一回复</strong></li>
+</ul>
+
+<p><strong class="red">不是罗建峰联系不上员昊，而是罗建峰拒绝回复员昊。</strong></p>
+
+<div class="evidence-box">
+  <strong>证据：</strong>千路股东群完整聊天记录（公证书）、《致歉信》原件、律师函原件
+</div>
+
+<h3>（三）"不配合财务汇报"系被制造的假象</h3>
+
+<p>被控告人通过以下步骤系统性地制造了"员昊等三人不配合"的假象：</p>
+
+<table>
+  <tr><th style="width:90px;">日期</th><th>事件</th><th style="width:80px;">实施人</th></tr>
+  <tr><td>2019.11.9</td><td>以"公司审计"为名拿走千路商事全部公章、存折、银行卡、现金（凃云峰签署《业务指示书》）</td><td>吕伟麟、凃云峰</td></tr>
+  <tr><td>2019.11.12</td><td>邓桂燕突然停止财务汇报——恰在资产转移后第三天</td><td>邓桂燕（吕伟麟指派）</td></tr>
+  <tr><td>2019.11.14</td><td>在陌生人办公室设审判式会议，要求出示身份证，员昊律师以安全为由劝说离开</td><td>凃云峰等</td></tr>
+  <tr><td>2019.11.19</td><td>通知所有供应商不得与员昊接触——同时要求员昊追款</td><td>凃云峰</td></tr>
+  <tr><td>2019.12.2</td><td>15分钟通过夺权决议，封锁账户</td><td>凃云峰、蔡启涛</td></tr>
+  <tr><td>2019.12.3</td><td>罗建峰发律师函要求提供已被拿走的财务资料</td><td>罗建峰</td></tr>
+  <tr><td>2019.12.12</td><td>免除员昊等三人董事资格</td><td>凃云峰、蔡启涛</td></tr>
+  <tr><td>此后</td><td>违法变卖全部16台运营车辆（不足66.67%表决权），制造"濒临破产"假象</td><td>凃云峰、吕伟麟、蔡启涛</td></tr>
+</table>
+
+<p><strong class="red">这是先制造违约条件，再以违约为由提起虚假诉讼。</strong></p>
+
+<div class="evidence-box">
+  <strong>证据：</strong>凃云峰签署《业务指示书》、西田诚亮《预り証》、2019.11.9现场视频（公证书）、股东会决议、凃云峰致供应商通知书
+</div>
+
+<h3>（四）合同约定的汇报义务已消灭</h3>
+
+<p>借款协议原文："在乙方<strong>未取得绿牌车公司资格前</strong>，不得动用甲方借入的资金，且乙方需每周末向甲方报告银行余额情况。"千路商事已于2018年11月6日取得绿牌车营业资格——按合同约定，汇报义务已告消灭。</p>
+
+<p>罗建峰在第二份借款协议前言条款中亲笔签字确认：资金"全部用于公司运营管理投入"且"经营状况好转"——以签约行为对资金使用进行了追认，构成"禁反言"。</p>
+
+<p><strong>仲裁以"违反汇报义务"为由判决连带责任，所依据的义务根据合同本身已经不存在。</strong></p>
+
+<h3>（五）审计报告证据被歪曲</h3>
+
+<p>审计报告中文翻译第3条第（2）款原文："在审阅会计相关材料的过程中，存在以下疑点，<strong>并且没有确认到相关事实</strong>。"三项疑点全部结论为"无法确认"/"用途不明"。审计师本人都无法认定存在不当行为。</p>
+
+<p>但蔡启泳在湛江中院（2023）粤08民特113号听证中向法院陈述为："用以证明当时对三申请人进行财务审计，三申请人不配合，发现他们<strong class="red">挪用</strong>公司资金。"</p>
+
+<p><strong class="red">"用途不明"与"挪用"是完全不同的法律概念。</strong>将"用途不明"歪曲为"发现挪用"，属于对证据内容的故意歪曲，构成虚假陈述。</p>
+
+<h3>（六）五人之间的利益关联与合谋证据</h3>
+
+<table>
+  <tr><th>事实</th><th>意义</th></tr>
+  <tr><td>蔡启泳系蔡启涛的亲兄弟</td><td>家族利益关联</td></tr>
+  <tr><td>蔡启泳公司的监事是吕伟麟</td><td>商业利益关联</td></tr>
+  <tr><td>吕伟麟支付蔡启泳的仲裁律师费</td><td>吕伟麟是实际操盘人</td></tr>
+  <tr><td>罗建峰以仅20%对价转让债权</td><td>非正常商业行为，目的是利用蔡启泳名义起诉</td></tr>
+  <tr><td>罗建峰、凃云峰、蔡启涛2019.1.31秘密成立千寻合同会社</td><td>声称"联系不上员昊"的同时与凃云峰合资开新公司</td></tr>
+  <tr><td>吕伟麟拿走全部公章和资金后，配合以"不汇报财务"为由起诉</td><td>自己制造违约条件，再以违约为由起诉</td></tr>
+</table>
+
+
+<!-- ==================== 犯罪损害后果 ==================== -->
+<h2>四、犯罪损害后果</h2>
+
+<p>虚假诉讼已造成严重的实际损害：</p>
+
+<table>
+  <tr><th>受害人</th><th>损害内容</th><th>证据</th></tr>
+  <tr><td>邱千依</td><td>被强制执行标的<strong>2,138,420元</strong>人民币，房产被冻结超过200万元</td><td>（2023）赣0111执2290号</td></tr>
+  <tr><td>邱千依</td><td>被列为<strong>失信被执行人</strong>（2023年11月6日起），被发出<strong>限制消费令</strong>（2025年5月16日），限高超过两年</td><td>限消令原件</td></tr>
+  <tr><td>员昊</td><td>同样被强制执行、房产冻结、列为失信人、限制消费</td><td>执行裁定书、限消令</td></tr>
+  <tr><td>孙万鹏</td><td>同样被强制执行</td><td>执行裁定书</td></tr>
+</table>
+
+<div class="law-ref">
+  <p><strong>《关于进一步加强虚假诉讼犯罪惩治工作的意见》（法发〔2021〕10号）第2条：</strong></p>
+  <p>单方或者与他人恶意串通，采取伪造证据、虚假陈述等手段，捏造民事案件基本事实，虚构民事纠纷……<strong>妨害司法秩序或者严重侵害他人合法权益的</strong>，依照刑法第三百零七条之一第一款的规定，以虚假诉讼罪定罪处罚。</p>
+</div>
+
+<p>本案控告人因虚假仲裁裁决被冻结数百万元资产、被限制消费超过两年，已构成"严重侵害他人合法权益"。</p>
+
+
+<!-- ==================== 管辖权 ==================== -->
+<h2>五、管辖权依据</h2>
+
+<p>根据《公安机关办理刑事案件程序规定》第十五条：</p>
+<ul>
+  <li><strong>犯罪行为发生地：</strong>湛江仲裁委员会所在地——虚假仲裁申请提交地</li>
+  <li><strong>犯罪结果发生地：</strong>南昌市青山湖区——邱千依房产被查封执行地（案号（2023）赣0111执2290号）</li>
+</ul>
+<p>犯罪行为发生地和犯罪结果发生地的公安机关均有管辖权。</p>
+
+
+<!-- ==================== 控告请求 ==================== -->
+<h2>六、控告请求</h2>
+
+<p>控告人请求贵局：</p>
+
+<ol>
+  <li style="margin-bottom:10px;"><strong>对蔡启泳债权转让协议和委托代理合同上的签名进行司法鉴定</strong>，确认签名真伪——这是最快速、最直接的立案切入点</li>
+  <li style="margin-bottom:10px;"><strong>以虚假诉讼罪对上述五人立案侦查</strong></li>
+  <li style="margin-bottom:10px;"><strong>对蔡启泳进行讯问</strong>——确认债权转让协议和委托代理合同是否由其本人签署，确认仲裁是否出于其本人真实意愿</li>
+  <li style="margin-bottom:10px;"><strong>调取罗建峰、蔡启泳、吕伟麟之间的微信聊天记录</strong>——可获取五人直接通谋的证据</li>
+  <li style="margin-bottom:10px;"><strong>对邓桂燕进行询问</strong>——吕伟麟指派的财务人员，2019年11月12日突然停止汇报是否系接到吕伟麟指令</li>
+  <li style="margin-bottom:10px;"><strong>冻结凃云峰、吕伟麟、蔡启涛在中国境内的房产及银行账户</strong></li>
+  <li style="margin-bottom:10px;"><strong>请求中止执行</strong>南昌市青山湖区人民法院（2023）赣0111执2290号案件，待刑事侦查终结</li>
+</ol>
+
+
+<!-- ==================== 证据清单 ==================== -->
+<h2>七、证据清单</h2>
+
+<p><strong>控告人现持有的证据（随控告状一并提交）：</strong></p>
+
+<table>
+  <tr><th style="width:40px;">编号</th><th>证据名称</th><th>证明内容</th><th style="width:70px;">形式</th></tr>
+  <tr style="background:#fff3e0;"><td>1</td><td><strong>笔迹检验咨询报告</strong></td><td>蔡启泳两份文件签名不是同一人书写，至少一份系伪造</td><td>鉴定报告</td></tr>
+  <tr style="background:#fff3e0;"><td>2</td><td><strong>债权转让协议（签名页）</strong></td><td>签名存在伪造嫌疑的直接检材</td><td>原件</td></tr>
+  <tr style="background:#fff3e0;"><td>3</td><td><strong>蔡启泳委托代理合同（兰迪律所）</strong></td><td>签名存在伪造嫌疑的对比检材</td><td>原件</td></tr>
+  <tr style="background:#fff3e0;"><td>4</td><td><strong>吕伟麟支付律师费银行凭证</strong></td><td>付款人为吕伟麟，附言"千路仲裁费"——仲裁由吕伟麟操盘</td><td>银行凭证</td></tr>
+  <tr><td>5</td><td>微信财务群聊天记录</td><td>罗建峰每日接收财务报告持续8个月——"不了解财务"系虚假</td><td>公证书</td></tr>
+  <tr><td>6</td><td>千路股东群完整聊天记录</td><td>员昊发送8份正式文件，罗建峰全程在线无一回复——"联系不上"系虚假</td><td>公证书</td></tr>
+  <tr><td>7</td><td>两份借款协议（入股协议）</td><td>汇报义务"取得绿牌车资格前"的前提条件；罗建峰禁反言</td><td>原件</td></tr>
+  <tr><td>8</td><td>2019年11月9日现场视频</td><td>吕伟麟索取全部公章、资料、资金的完整过程</td><td>公证书</td></tr>
+  <tr><td>9</td><td>凃云峰签署《业务指示书》</td><td>CEO亲笔签字盖章指示移交全部公司资产</td><td>原件</td></tr>
+  <tr><td>10</td><td>西田诚亮签署《预り証》</td><td>逐项列明收到的公章、存折、银行卡、金库</td><td>原件</td></tr>
+  <tr><td>11</td><td>2019年12月14日谈话录音</td><td>蔡启涛/吕伟麟对关键事实的自认</td><td>公证书</td></tr>
+  <tr><td>12</td><td>审计报告日文原版+中文翻译</td><td>"没有确认到相关事实"——未认定任何挪用</td><td>公证翻译</td></tr>
+  <tr><td>13</td><td>湛江中院裁定书（2023）粤08民特113号</td><td>第4-5页记载蔡启泳将"用途不明"歪曲为"发现挪用"</td><td>司法文书</td></tr>
+  <tr><td>14</td><td>仲裁裁决书（2022）湛仲字第56号</td><td>虚假仲裁裁决原文</td><td>司法文书</td></tr>
+  <tr><td>15</td><td>执行裁定书及限消令</td><td>犯罪损害后果</td><td>司法文书</td></tr>
+  <tr><td>16</td><td>蔡启泳公司工商登记</td><td>监事为吕伟麟</td><td>工商档案</td></tr>
+  <tr><td>17</td><td>千寻合同会社登记簿</td><td>罗建峰、凃云峰、蔡启涛合资——"联系不上"系虚假</td><td>日本法务局</td></tr>
+  <tr><td>18</td><td>中信银行汇款单（2019.3.29）</td><td>罗建峰追加1000万日元投资</td><td>银行凭证</td></tr>
+  <tr><td>19</td><td>16份Excel月度财务报表</td><td>完整逐月报表——推翻"没有财务报表"</td><td>电子文件</td></tr>
+  <tr><td>20</td><td>《股东会汇报资料20191127》（51页）</td><td>推翻"不配合"</td><td>电子文件</td></tr>
+  <tr><td>21</td><td>《致歉信》（2019.12.13）</td><td>对律师函的正式回复——推翻"置之不理"</td><td>原件</td></tr>
+  <tr><td>22</td><td>凃云峰致供应商通知书</td><td>禁止供应商与员昊接触——与要求追款矛盾</td><td>原件</td></tr>
+  <tr><td>23</td><td>股东会决议</td><td>12月2日封锁账户、12月12日免除董事</td><td>原件</td></tr>
+  <tr><td>24</td><td>千路商事公司办公室与车库连通照片</td><td>吕伟麟11月9日必然看到绿牌车运营状态</td><td>照片</td></tr>
+</table>
+
+<p style="margin-top:14px;"><strong>请求公安机关依职权调取的证据：</strong></p>
+
+<table>
+  <tr><th style="width:40px;">编号</th><th>证据名称</th><th>调取方式</th><th>证明内容</th></tr>
+  <tr><td>待1</td><td>罗建峰、蔡启泳、吕伟麟之间的微信聊天记录</td><td>公安依法调取</td><td>五人之间的直接通谋证据</td></tr>
+  <tr><td>待2</td><td>蔡启泳仲裁代理律师的委托档案</td><td>向律师事务所调取</td><td>委托人沟通记录、律师费支付来源</td></tr>
+  <tr><td>待3</td><td>邓桂燕的证人证言</td><td>传唤询问</td><td>11月12日停止汇报是否系接到吕伟麟指令</td></tr>
+  <tr><td>待4</td><td>凃云峰、吕伟麟在中国境内的资产信息</td><td>公安依法查询</td><td>可供执行的资产线索</td></tr>
+</table>
+
+
+<!-- ==================== SUMMARY ==================== -->
+<div class="summary-box" style="margin-top: 30px;">
+  <h3 style="color:#c0392b; margin-bottom:10px;">虚假诉讼的完整犯罪模式</h3>
+  <p><strong>第一步：</strong>拿走全部资料（2019.11.9吕伟麟拿走公章、存折、资金）</p>
+  <p><strong>第二步：</strong>切断汇报渠道（11.12邓桂燕停止汇报）</p>
+  <p><strong>第三步：</strong>封锁权限（12.2封锁账户、12.12免除董事）</p>
+  <p><strong>第四步：</strong>发律师函要求提供已被拿走的东西（12.3罗建峰律师函）</p>
+  <p><strong>第五步：</strong>无视所有回复（员昊8份正式文件全部被无视）</p>
+  <p><strong>第六步：</strong>变卖全部车辆制造"濒临破产"假象</p>
+  <p><strong>第七步：</strong>以20%对价转让债权给蔡启泳（蔡启涛亲兄弟），签名可能伪造</p>
+  <p><strong>第八步：</strong>以捏造的"不履行汇报义务"为由提起仲裁</p>
+  <p><strong>第九步：</strong>在仲裁中虚假陈述"不了解财务"、"联系不上"、"不配合"</p>
+  <p><strong>第十步：</strong>歪曲审计报告结论，将"用途不明"说成"发现挪用"</p>
+  <p><strong>第十一步：</strong>获得虚假裁决，申请强制执行</p>
+  <p><strong>第十二步：</strong>控告人房产被冻结、被列为失信人、被限制消费超过两年</p>
+  <p style="margin-top:12px;"><strong class="red" style="font-size:12pt;">自己拿走了全部资料，再以对方不提供资料为由起诉对方。</strong></p>
+  <p><strong class="red" style="font-size:12pt;">这是先制造违约条件，再以违约为由提起虚假诉讼。</strong></p>
+</div>
+
+
+<div class="sign-area">
+  <p>此致</p>
+  <p><strong>______ 市公安局经济犯罪侦查支队</strong></p>
+  <p style="margin-top: 30px;">控告人：员昊</p>
+  <p>控告人：邱千依</p>
+  <p style="margin-top: 20px;">年　　月　　日</p>
+</div>
+
+<div class="doc-footer">
+  本文档为刑事控告辅助材料 · 详细证据说明见附件<br>
+  附件一：刑事控告证据说明（简易版） · 附件二：虚假陈述vs证据对照表
+</div>
+
+</body>
+</html>
