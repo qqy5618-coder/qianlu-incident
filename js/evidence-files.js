@@ -1046,6 +1046,13 @@ const EVIDENCE_FILES = {
     uploaded: true, type: "image",
     storagePath: "lawyer_letter_yuanhao_20191210_jp.jpg",
     aliases: ["员昊等三人律师函", "12月10日律师函", "员昊律师函日语版"]
+  },
+
+  // === 刑事控告证据说明（简易版）===
+  "刑事控告证据说明简易版": {
+    uploaded: true, type: "html",
+    storagePath: "criminal_complaint_simplified.html",
+    aliases: ["刑事控告证据说明（简易版）", "简易版证据说明", "刑事控告简易版"]
   }
 };
 
