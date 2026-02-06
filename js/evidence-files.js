@@ -1096,6 +1096,50 @@ const EVIDENCE_FILES = {
     uploaded: false, type: "pdf",
     storagePath: "tu_yunfeng_agreement_2019.pdf",
     aliases: ["2019年1月凃云峰保证书", "凃云峰亲笔协议书", "凃云峰承认争吵协议书", "协议书2019年初"]
+  },
+
+  // === WeChat Conversation Screenshots (員昊与罗建峰) ===
+  "微信对话截图-罗建峰2019年7月16日-1": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_luojianfeng_20190716_1.png",
+    localPath: "evidence/微信对话截图/IMG_6998.PNG",
+    aliases: ["罗建峰微信1", "罗建峰说公司运营顺利"]
+  },
+  "微信对话截图-罗建峰2019年7月16日-2": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_luojianfeng_20190716_2.png",
+    localPath: "evidence/微信对话截图/IMG_6999.PNG",
+    aliases: ["罗建峰微信2", "罗建峰讨论管理方式"]
+  },
+  "微信对话截图-罗建峰2019年7月16日-3": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_luojianfeng_20190716_3.png",
+    localPath: "evidence/微信对话截图/IMG_7001.PNG",
+    aliases: ["罗建峰微信3", "团队分工默契"]
+  },
+  "微信对话截图-罗建峰2019年7月16日-4": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_luojianfeng_20190716_4.png",
+    localPath: "evidence/微信对话截图/IMG_7002.PNG",
+    aliases: ["罗建峰微信4", "对你有信心"]
+  },
+  "微信对话截图-东洋游学群2018年10月": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_group_201810.png",
+    localPath: "evidence/微信对话截图/IMG_7003.PNG",
+    aliases: ["东洋游学群聊1", "公司发展讨论"]
+  },
+  "微信对话截图-东洋游学群2018年11月开业": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_group_opening_201811.png",
+    localPath: "evidence/微信对话截图/IMG_7004.PNG",
+    aliases: ["东洋游学群聊2", "公司正式开业", "罗建峰庆祝开业"]
+  },
+  "微信对话截图-东洋游学群成员": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_group_members.png",
+    localPath: "evidence/微信对话截图/IMG_7005.PNG",
+    aliases: ["东洋游学群成员", "群成员截图", "蔡启涛罗建峰吕伟麟同群"]
   }
 };
 
