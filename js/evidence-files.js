@@ -1140,6 +1140,20 @@ const EVIDENCE_FILES = {
     storagePath: "wechat_group_members.png",
     localPath: "evidence/微信对话截图/IMG_7005.PNG",
     aliases: ["东洋游学群成员", "群成员截图", "蔡启涛罗建峰吕伟麟同群"]
+  },
+
+  // === Shareholder Meeting Evidence (股东会证据) ===
+  "2019年12月12日第二次股东会录音": {
+    uploaded: false, type: "audio",
+    storagePath: "shareholder_meeting_20191212.m4a",
+    localPath: "evidence/股东会证据/2019年12月12日千路第二次股东会.m4a",
+    aliases: ["第二次股东会录音", "蔡启涛承认运营好", "股东会录音"]
+  },
+  "2019年12月23日供应商通知书": {
+    uploaded: false, type: "pdf",
+    storagePath: "supplier_notice_20191223.pdf",
+    localPath: "evidence/股东会证据/13-2019年12月23日发给各供应商的通知书.pdf",
+    aliases: ["伪造股东会决议", "律师函伪造开除员昊", "供应商通知书"]
   }
 };
 
