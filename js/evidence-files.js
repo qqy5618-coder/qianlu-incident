@@ -1086,6 +1086,16 @@ const EVIDENCE_FILES = {
     uploaded: false, type: "pdf",
     storagePath: "hayabusa_lawyer_response_202010.pdf",
     aliases: ["员昊等三人日本律师回函", "ご連絡", "隼律所回函"]
+  },
+  "堂島法律事務所发函20200819": {
+    uploaded: false, type: "pdf",
+    storagePath: "dojima_lawyer_letter_20200819.pdf",
+    aliases: ["凃云峰律师发来的虚假陈述", "2020年8月19日律师信", "凃云峰8月19日律师信", "堂岛律所8月19日发函"]
+  },
+  "凃云峰协议书2019年初": {
+    uploaded: false, type: "pdf",
+    storagePath: "tu_yunfeng_agreement_2019.pdf",
+    aliases: ["2019年1月凃云峰保证书", "凃云峰亲笔协议书", "凃云峰承认争吵协议书", "协议书2019年初"]
   }
 };
 
