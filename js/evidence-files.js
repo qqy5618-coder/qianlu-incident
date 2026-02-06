@@ -1154,6 +1154,20 @@ const EVIDENCE_FILES = {
     storagePath: "supplier_notice_20191223.pdf",
     localPath: "evidence/股东会证据/13-2019年12月23日发给各供应商的通知书.pdf",
     aliases: ["伪造股东会决议", "律师函伪造开除员昊", "供应商通知书"]
+  },
+
+  // === Qianxun Company Evidence (千寻合同会社证据) ===
+  "千寻合同会社法务局登记证明": {
+    uploaded: false, type: "pdf",
+    storagePath: "qianxun_company_registration.pdf",
+    localPath: "evidence/千寻合同会社/千寻合同会社藤本_3.pdf",
+    aliases: ["千寻合同会社藤本", "千寻法务局证明", "凃云峰罗建峰合谋证据"]
+  },
+  "千寻合同会社出资人信息": {
+    uploaded: false, type: "image",
+    storagePath: "qianxun_investors_info.jpg",
+    localPath: "evidence/千寻合同会社/千寻合同会社出资人信息.JPG",
+    aliases: ["千寻出资人", "凃云峰吴铭刚罗建峰出资"]
   }
 };
 
