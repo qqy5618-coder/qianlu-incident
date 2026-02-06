@@ -1067,6 +1067,25 @@ const EVIDENCE_FILES = {
     uploaded: true, type: "html",
     storagePath: "criminal_complaint_police.html",
     aliases: ["公安版", "刑事控告状公安版", "经侦控告状"]
+  },
+
+  // ============================================================
+  // === 凃云峰日本虚假诉讼证据 ===
+  // ============================================================
+  "堂島法律事務所误发邮件": {
+    uploaded: false, type: "pdf",
+    storagePath: "dojima_lawyer_misdirected_email.pdf",
+    aliases: ["千路商事的委托律师误把凃云峰的对话发给了員昊", "堂島法律事务所邮件", "凃云峰律师邮件"]
+  },
+  "千路商事検討メモ": {
+    uploaded: false, type: "other",
+    storagePath: "qianlu_legal_memo_20200225.docx",
+    aliases: ["律师检讨备忘录", "凃云峰虚假陈述备忘录", "200225千路商事検討メモ"]
+  },
+  "隼綜合法律事務所回函": {
+    uploaded: false, type: "pdf",
+    storagePath: "hayabusa_lawyer_response_202010.pdf",
+    aliases: ["员昊等三人日本律师回函", "ご連絡", "隼律所回函"]
   }
 };
 
