@@ -19,8 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   navLinks.forEach(link => {
     link.addEventListener('click', function (e) {
-      e.preventDefault();
       const sectionId = this.getAttribute('data-section');
+      // 如果没有 data-section 属性，说明是外部链接，不阻止默认行为
+      if (!sectionId) {
+        return; // 让浏览器正常跳转
+      }
+      e.preventDefault();
       showSection(sectionId);
       history.pushState(null, '', '#' + sectionId);
     });
