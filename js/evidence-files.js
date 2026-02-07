@@ -1168,6 +1168,40 @@ const EVIDENCE_FILES = {
     storagePath: "qianxun_investors_info.jpg",
     localPath: "evidence/千寻合同会社/千寻合同会社出资人信息.JPG",
     aliases: ["千寻出资人", "凃云峰吴铭刚罗建峰出资"]
+  },
+
+  // === Tu Yunfeng Conversation Evidence (凃云峰对话证据) ===
+  "凃云峰微信对话-员昊质问转移资产": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_tuyunfeng_20191229_1.png",
+    localPath: "evidence/凃云峰对话/IMG_7014.PNG",
+    aliases: ["凃云峰对话1", "员昊质问转移资产", "凃云峰欠工资"]
+  },
+  "凃云峰微信对话-日语催工资1": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_tuyunfeng_20191229_2.png",
+    localPath: "evidence/凃云峰对话/IMG_7015.PNG",
+    aliases: ["凃云峰对话2", "凃云峰日语催工资", "制造员昊不回复假象"]
+  },
+  "凃云峰微信对话-日语催工资2": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_tuyunfeng_20200119.png",
+    localPath: "evidence/凃云峰对话/IMG_7016.PNG",
+    aliases: ["凃云峰对话3", "凃云峰持续日语催工资"]
+  },
+
+  // === Cai Qitao Threat Evidence (蔡启涛威胁证据) ===
+  "蔡启涛威胁清算消息": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_caiqitao_threat_20191219.png",
+    localPath: "evidence/蔡启涛威胁/IMG_7011.PNG",
+    aliases: ["蔡启涛威胁1", "5天最后通牒", "280万清算威胁"]
+  },
+  "蔡启涛继续威胁消息": {
+    uploaded: false, type: "image",
+    storagePath: "wechat_caiqitao_threat_20191230.png",
+    localPath: "evidence/蔡启涛威胁/IMG_7013.PNG",
+    aliases: ["蔡启涛威胁2", "你知道的", "阻挠干扰威胁"]
   }
 };
 
