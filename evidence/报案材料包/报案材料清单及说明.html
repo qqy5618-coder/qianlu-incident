@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>报案材料清单及说明</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+    background: #f5f5f5;
+    padding: 30px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #c00;
+  }
+  h2 {
+    font-size: 18px;
+    color: #1565c0;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1565c0;
+  }
+  h3 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .checklist {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 15px 0;
+  }
+  .checklist-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    border-left: 4px solid #4caf50;
+  }
+  .checklist-item.pending {
+    border-left-color: #ff9800;
+  }
+  .checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  .item-content {
+    flex: 1;
+  }
+  .item-title {
+    font-weight: bold;
+    color: #333;
+  }
+  .item-desc {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-left: 8px;
+  }
+  .tag-ready { background: #e8f5e9; color: #2e7d32; }
+  .tag-pending { background: #fff3e0; color: #e65100; }
+  .tag-important { background: #ffebee; color: #c62828; }
+  .folder-structure {
+    background: #263238;
+    color: #aed581;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: "Monaco", "Consolas", monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-x: auto;
+  }
+  .note {
+    background: #fff8e1;
+    border: 1px solid #ffca28;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+  }
+  .important {
+    background: #ffebee;
+    border: 1px solid #ef5350;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  th { background: #f5f5f5; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>报案材料清单及说明</h1>
+
+<div class="important">
+  <strong>⚠️ 报案前务必确认：</strong><br>
+  1. 刑事控告书已填写完整（身份信息、签名、日期）<br>
+  2. 证据目录中"待补充"的证据已标注说明<br>
+  3. 所有证据复印件已准备齐全<br>
+  4. 证据原件带好备查（不轻易交出）
+</div>
+
+<h2>一、报案材料包内容</h2>
+
+<div class="checklist">
+  <div class="checklist-item">
+    <div class="checkbox"></div>
+    <div class="item-content">
+      <div class="item-title">刑事控告书.html <span class="tag tag-ready">已准备</span></div>
+      <div class="item-desc">打印2份，控告人签名，留存1份</div>
+    </div>
+  </div>
+
+  <div class="checklist-item">
+    <div class="checkbox"></div>
+    <div class="item-content">
+      <div class="item-title">证据目录.html <span class="tag tag-ready">已准备</span></div>
+      <div class="item-desc">打印2份，与控告书装订在一起</div>
+    </div>
+  </div>
+
+  <div class="checklist-item">
+    <div class="checkbox"></div>
+    <div class="item-content">
+      <div class="item-title">证据包（12类证据） <span class="tag tag-ready">部分已有</span></div>
+      <div class="item-desc">按证据目录编号整理装订</div>
+    </div>
+  </div>
+
+  <div class="checklist-item">
+    <div class="checkbox"></div>
+    <div class="item-content">
+      <div class="item-title">控告人身份证复印件</div>
+      <div class="item-desc">员昊、邱千依各1份</div>
+    </div>
+  </div>
+
+  <div class="checklist-item pending">
+    <div class="checkbox"></div>
+    <div class="item-content">
+      <div class="item-title">委托书（如律师代为报案） <span class="tag tag-pending">按需准备</span></div>
+      <div class="item-desc">授权律师代为提交控告材料</div>
+    </div>
+  </div>
+</div>
+
+<h2>二、证据文件夹结构</h2>
+
+<p>建议按以下结构整理纸质证据包：</p>
+
+<div class="folder-structure">
+报案材料包/<br>
+├── 01-刑事控告书.pdf<br>
+├── 02-证据目录.pdf<br>
+├── 03-控告人身份证复印件/<br>
+│   ├── 员昊身份证.pdf<br>
+│   └── 邱千依身份证.pdf<br>
+│<br>
+├── 证据1-仲裁裁决及法律文书/<br>
+│   ├── 1-1_仲裁裁决书.pdf<br>
+│   ├── 1-2_仲裁申请书.pdf<br>
+│   └── 1-3_湛江中院裁定书.pdf<br>
+│<br>
+├── 证据2-微信聊天记录/<br>
+│   ├── 2-1_财务群成员列表.png<br>
+│   ├── 2-2_蔡启涛邀请罗建峰入群.png<br>
+│   ├── 2-3_罗建峰发言-七月业绩.png<br>
+│   ├── 2-4_罗建峰发言-费用计提.png<br>
+│   └── 2-5_资金日报表汇总.pdf<br>
+│<br>
+├── 证据3-借款协议/<br>
+│   ├── 3-1_第一次借款协议.pdf<br>
+│   └── 3-2_第二次借款协议.pdf<br>
+│<br>
+├── 证据4-审计报告/<br>
+│   ├── 4-1_审计报告日文原版.pdf<br>
+│   ├── 4-1_审计报告中文翻译.pdf<br>
+│   └── 4-2_湛江中院撤裁裁定书.pdf<br>
+│<br>
+├── 证据5-资产转移/<br>
+│   ├── 5-1_业务指示书.pdf<br>
+│   └── 5-2_通知供应商通知书.pdf<br>
+│<br>
+├── 证据6-股东会/<br>
+│   ├── 6-1_12月2日股东会记录.pdf<br>
+│   ├── 6-2_12月12日股东会记录.pdf<br>
+│   └── 6-3_12月23日供应商通知书.pdf<br>
+│<br>
+├── 证据7-律师函/<br>
+│   └── 7-1_罗建峰律师函.pdf<br>
+│<br>
+├── 证据8-千寻合同会社/<br>
+│   └── 8-1_千寻合同会社藤本.pdf<br>
+│<br>
+├── 证据9-企业关联/<br>
+│   ├── 9-1_天眼查截图-房悦居公司.png<br>
+│   └── 9-3_邓桂燕7家公司截图.png<br>
+│<br>
+├── 证据10-资金往来/<br>
+│   ├── 10-1_吕伟麟代罗付款凭证.pdf<br>
+│   └── 10-2_吕伟麟代蔡付律师费.pdf<br>
+│<br>
+├── 证据11-债权转让/<br>
+│   └── 11-1_债权转让协议.pdf<br>
+│<br>
+└── 证据12-执行/<br>
+    ├── 12-1_执行裁定书.pdf<br>
+    └── 12-2_限制消费令.pdf
+</div>
+
+<h2>三、"30秒打动公安"的核心证据页</h2>
+
+<p>建议单独打印以下三页放在最前面，让公安一眼看懂：</p>
+
+<table>
+  <tr>
+    <th>序号</th>
+    <th>内容</th>
+    <th>作用</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><strong>罗建峰微信发言 vs 仲裁陈述对照</strong><br>仲裁说"4月后无法获知财务"<br>微信发言"收到，七月业绩增长明显"</td>
+    <td>直接证明"捏造事实"</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><strong>合同原文 vs 仲裁裁决对照</strong><br>合同写"乙方"<br>裁决写"四被申请人"</td>
+    <td>直接证明"篡改合同"</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><strong>24天/24小时时间线</strong><br>11/9转移资产→12/2股东会→12/3律师函</td>
+    <td>证明"有预谋的共同犯罪"</td>
+  </tr>
+</table>
+
+<h2>四、报案地点选择</h2>
+
+<div class="note">
+  <strong>建议报案地点（按优先级）：</strong><br><br>
+  <strong>1. 南昌市青云谱区公安分局</strong>（首选）<br>
+  理由：邱千依房产被查封地，执行损害发生地，管辖明确<br><br>
+
+  <strong>2. 湛江市公安局</strong><br>
+  理由：仲裁裁决作出地<br><br>
+
+  <strong>3. 佛山市顺德区公安分局</strong><br>
+  理由：被控告人住所地
+</div>
+
+<h2>五、报案话术建议</h2>
+
+<div class="checklist">
+  <h3>开场白：</h3>
+  <p>"我要控告五个人涉嫌虚假诉讼罪。他们在仲裁中捏造事实，现在已经拿着虚假裁决来执行我的房子了。我有直接证据证明他们说谎——他们说'4月以后无法获知财务信息'，但微信记录显示他们7月还在群里说'七月业绩增长明显'。"</p>
+
+  <h3>如果公安说"这是民事纠纷"：</h3>
+  <p>"这不是民事纠纷。民事纠纷是对合同理解不同，虚假诉讼是故意说谎。他在仲裁庭上说'不知道财务情况'，但他自己的微信发言证明他每天都在接收财务报表，还主动审核报表——这是蓄意捏造事实，不是理解不同。最高检2024年已经明确说了，虚假仲裁已执行的，要按虚假诉讼罪追诉。"</p>
+
+  <h3>如果公安说"证据不足"：</h3>
+  <p>"我现在提交的是初步证据，足以证明存在捏造事实的行为。微信记录我可以配合公证，笔迹鉴定我可以配合做——但这些需要公安立案后才能调取原始数据。我请求先受理，如果在审查过程中需要补充证据，我会全力配合。"</p>
+</div>
+
+<h2>六、后续跟进</h2>
+
+<table>
+  <tr>
+    <th>情形</th>
+    <th>应对措施</th>
+  </tr>
+  <tr>
+    <td>公安当场受理</td>
+    <td>索取《受案回执》，记录案件编号和经办人</td>
+  </tr>
+  <tr>
+    <td>公安要求补充材料</td>
+    <td>书面记录需要补充的具体材料，约定补交时间</td>
+  </tr>
+  <tr>
+    <td>公安口头拒绝受理</td>
+    <td>要求出具书面《不予受理通知书》，注明理由</td>
+  </tr>
+  <tr>
+    <td>收到《不予受理通知书》</td>
+    <td>7日内向上级公安机关申请复议，同时向检察院控申部门投诉</td>
+  </tr>
+</table>
+
+<div class="important" style="margin-top:30px;">
+  <strong>⚠️ 最后提醒：</strong><br>
+  1. 保持冷静，不要与公安发生冲突<br>
+  2. 全程录音（合法）或带律师同行<br>
+  3. 每次去都要求书面回执<br>
+  4. 准备好多轮博弈的心理预期
+</div>
+
+</div>
+
+</body>
+</html>
