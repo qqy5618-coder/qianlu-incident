@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>刑事控告书（合同条款版）</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 18mm 20mm 18mm;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+    font-size: 11pt;
+    line-height: 1.85;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #c0392b;
+  }
+  h2 {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 36px;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #333;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    page-break-after: avoid;
+  }
+  h4 {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #444;
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+
+  p { margin-bottom: 10px; }
+
+  blockquote {
+    border-left: 3px solid #c0392b;
+    padding: 6px 14px;
+    margin: 10px 0;
+    background: #fef9f9;
+    font-size: 10pt;
+    color: #555;
+  }
+
+  .red { color: #c0392b; font-weight: 700; }
+  .blue { color: #1565c0; font-weight: 700; }
+  .highlight { background: #fff9c4; padding: 0 2px; font-weight: 600; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 10pt;
+  }
+  th, td {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  th {
+    background: #f5f5f5;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .evidence-box {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 10px 14px;
+    margin: 10px 0;
+    font-size: 10pt;
+    color: #555;
+  }
+  .evidence-box strong { color: #1565c0; }
+
+  .key-point {
+    border: 2px solid #c0392b;
+    background: #fffbfb;
+    padding: 12px 16px;
+    margin: 14px 0;
+    page-break-inside: avoid;
+  }
+  .key-point p { margin-bottom: 4px; }
+
+  .contract-box {
+    background: #fff3e0;
+    border: 2px solid #e65100;
+    padding: 14px 18px;
+    margin: 16px 0;
+    page-break-inside: avoid;
+  }
+  .contract-box .clause-title {
+    font-weight: 700;
+    color: #e65100;
+    margin-bottom: 8px;
+  }
+
+  .timeline-box {
+    background: #e3f2fd;
+    border: 1px solid #90caf9;
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+
+  .comparison-table {
+    margin: 16px 0;
+  }
+  .comparison-table th {
+    background: #ffcdd2;
+  }
+  .comparison-table .correct {
+    background: #c8e6c9;
+  }
+  .comparison-table .wrong {
+    background: #ffcdd2;
+  }
+
+  .summary-box {
+    border: 2px solid #c0392b;
+    padding: 16px 20px;
+    margin: 24px 0;
+    background: #fffbfb;
+    page-break-inside: avoid;
+  }
+
+  .alert-box {
+    background: #fff3e0;
+    border: 2px solid #ff9800;
+    padding: 12px 16px;
+    margin: 14px 0;
+    page-break-inside: avoid;
+  }
+
+  .doc-footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 9pt;
+    color: #999;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+  }
+
+  ul, ol { margin: 6px 0 10px 20px; }
+  li { margin-bottom: 4px; }
+
+  .party-info { margin: 6px 0; padding-left: 20px; }
+  .party-info p { margin-bottom: 4px; }
+
+  .sign-area {
+    margin-top: 40px;
+    text-align: right;
+    padding-right: 60px;
+  }
+  .sign-area p { margin-bottom: 6px; }
+
+  @media print {
+    body { padding: 0; max-width: none; font-size: 10pt; }
+    h1 { font-size: 18pt; }
+    h2 { font-size: 13pt; margin-top: 24px; }
+    h3 { font-size: 11pt; margin-top: 18px; }
+    .key-point, .summary-box { page-break-inside: avoid; }
+    h2, h3 { page-break-after: avoid; }
+    table { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>刑事控告书</h1>
+
+<p style="text-align: center; color: #666; margin-bottom: 24px;">（合同条款版 —— 核心切入点：合同约定的违约责任前提条件不成立）</p>
+
+<!-- ==================== 核心摘要 ==================== -->
+<div class="summary-box">
+  <h3 style="color:#c0392b; margin-bottom:10px;">30秒速览：为什么这是虚假诉讼</h3>
+  <p><strong>合同约定的逻辑链：</strong></p>
+  <p style="text-align:center; font-size:11pt; margin:10px 0;">
+    未报告银行余额 → 乙方违约 → <strong class="red">按第三条第2项处理</strong> → <strong class="red">需证明"违规滥用借款"</strong> → 才能要求赔偿
+  </p>
+  <p><strong>关键事实：</strong></p>
+  <ul>
+    <li><strong>审计报告（2020年5月22日）</strong>已证明员昊和邱千依<strong class="red">没有"违规滥用借款"</strong></li>
+    <li>蔡启泳/王奥在<strong>2022年7月</strong>申请仲裁时，<strong class="red">早已持有该审计报告超过2年</strong></li>
+    <li>仲裁申请书和裁决书中<strong class="red">没有任何员昊、邱千依挪用公款的证据</strong></li>
+  </ul>
+  <p style="margin-top:10px;"><strong class="red">结论：蔡启泳/王奥明知合同约定的赔偿前提条件不成立，仍发起仲裁，构成虚假诉讼。</strong></p>
+</div>
+
+<!-- ==================== 本控告书结构说明 ==================== -->
+<div style="background:#f5f5f5; border:1px solid #ddd; padding:14px 18px; margin:16px 0;">
+  <p style="margin:0 0 8px; font-weight:700;">本控告书结构：</p>
+  <table style="width:100%; font-size:10pt;">
+    <tr>
+      <td style="width:120px; vertical-align:top; padding:4px 8px; background:#e8f5e9; border:1px solid #c8e6c9;"><strong>第二章</strong><br>核心切入点</td>
+      <td style="padding:4px 8px; border:1px solid #ddd;"><strong>快速了解案情</strong>——合同约定必须证明挪用才能追责，但蔡启泳从未指控挪用、也没有挪用证据</td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top; padding:4px 8px; background:#fff3e0; border:1px solid #ffe0b2;"><strong>第四之二章</strong><br>主攻"故意"</td>
+      <td style="padding:4px 8px; border:1px solid #ddd;"><strong>证明明知故犯</strong>——吕伟麟拿走220万资产却仍追诉177万、代付律师费、五人共谋关系等</td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top; padding:4px 8px; background:#e3f2fd; border:1px solid #bbdefb;"><strong>第五章</strong><br>预防性说明</td>
+      <td style="padding:4px 8px; border:1px solid #ddd;"><strong>堵住对方辩护</strong>——提前回应"民事纠纷""认识错误"等可能的辩解</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ==================== 控告人/被控告人 ==================== -->
+<h2>一、控告人与被控告人</h2>
+
+<h4>控告人：</h4>
+<div class="party-info">
+  <p><strong>员昊</strong>，男，身份信息及联系方式详见入股协议第一页（随附提交）</p>
+  <p><strong>邱千依</strong>，女，身份信息及联系方式详见入股协议第一页（随附提交）</p>
+</div>
+
+<h4>被控告人：</h4>
+<div class="party-info">
+  <p><strong>1. 蔡启泳</strong>——仲裁申请人，明知无事实依据仍发起虚假仲裁</p>
+  <p><strong>2. 王奥</strong>——蔡启泳委托代理人，在湛江中院撤裁听证中提交证明员昊无违约的审计报告，却仍坚持虚假诉讼</p>
+  <p><strong>3. 洪华全</strong>——湛江仲裁委独任仲裁员，跳过合同约定的违约责任前提条件，涉嫌枉法裁决</p>
+  <p><strong>4. 罗建峰</strong>——原债权人，在仲裁中进行虚假陈述</p>
+  <p><strong>5. 吕伟麟</strong>——实际操盘人，代付仲裁律师费</p>
+</div>
+
+<h4>控告罪名：</h4>
+<p><strong class="red">虚假诉讼罪</strong>（《中华人民共和国刑法》第三百零七条之一）</p>
+<p><strong class="red">枉法仲裁罪</strong>（《中华人民共和国刑法》第三百九十九条之一）——针对洪华全</p>
+
+<!-- ==================== 核心切入点 ==================== -->
+<h2>二、核心切入点——合同约定的违约责任前提条件不成立</h2>
+
+<div class="key-point">
+  <p><strong class="red">本案最清晰、最易核实的切入点：</strong></p>
+  <p>蔡启泳以"未报告银行余额"为由申请仲裁，但按照借款合同的明确约定，追究赔偿责任<strong>必须先证明"违规滥用借款"</strong>。蔡启泳/王奥从未提供任何员昊、邱千依"违规滥用借款"的证据——因为根本不存在这样的事实。他们明知这一点，却仍发起仲裁，构成虚假诉讼。</p>
+</div>
+
+<h3>（一）合同原文——违约责任的前提条件</h3>
+
+<div class="contract-box">
+  <p class="clause-title">借款协议第二条第3款原文（第5页）：</p>
+  <blockquote>"乙方应于每周末向甲方报告银行余额情况。否则属乙方违约，<strong class="red">应按第3条第2项处理</strong>。"</blockquote>
+</div>
+
+<div class="contract-box">
+  <p class="clause-title">借款协议第三条第2项原文（第5页）：</p>
+  <blockquote>"不得将借款用于与乙方经营无关的用途，及<strong class="red">违规滥用借款</strong>，否则甲方有权立即停止追加借款，并<strong class="red">要求违规方承担相应的赔偿责任</strong>。"</blockquote>
+</div>
+
+<p><strong>合同约定的完整逻辑链：</strong></p>
+<table>
+  <tr><th style="width:60px;">步骤</th><th>内容</th><th>说明</th></tr>
+  <tr><td>1</td><td>未报告银行余额</td><td>第二条第3款的触发条件</td></tr>
+  <tr><td>2</td><td>→ 属乙方违约</td><td>违约成立</td></tr>
+  <tr><td>3</td><td>→ 按第3条第2项处理</td><td>引用违约责任条款</td></tr>
+  <tr><td>4</td><td>→ <strong class="red">需证明"违规滥用借款"</strong></td><td>赔偿责任的<strong>前提条件</strong></td></tr>
+  <tr><td>5</td><td>→ 才能要求赔偿</td><td>责任承担</td></tr>
+</table>
+
+<p style="margin-top:10px;"><strong class="red">关键点：第三条第2项的赔偿责任有明确的前提条件——必须证明"违规滥用借款"。</strong>这不是"未汇报"就自动触发连带赔偿，而是需要先证明存在违规滥用借款的事实。</p>
+
+<h3>（二）审计报告——证明不存在"违规滥用借款"</h3>
+
+<div class="timeline-box">
+  <p><strong>关键时间线：</strong></p>
+  <table>
+    <tr><th style="width:140px;">日期</th><th>事件</th></tr>
+    <tr><td><strong>2020年5月22日</strong></td><td>审计报告完成——证明员昊、邱千依<strong class="red">没有"违规滥用借款"</strong></td></tr>
+    <tr><td colspan="2" style="text-align:center; background:#fff3e0;"><strong>↓ 2年多后 ↓</strong></td></tr>
+    <tr><td><strong>2022年7月8日</strong></td><td>湛江仲裁庭组成（洪华全独任仲裁员）</td></tr>
+    <tr><td><strong>2022年11月2日</strong></td><td>开庭审理</td></tr>
+    <tr><td><strong>2023年2月23日</strong></td><td>仲裁裁决作出</td></tr>
+  </table>
+</div>
+
+<p><strong>审计报告的关键结论：</strong></p>
+<blockquote>"在审阅会计相关材料的过程中，存在以下疑点，<strong class="red">并且没有确认到相关事实</strong>。"</blockquote>
+<p>三项疑点的结论全部为"无法确认"/"用途不明"——<strong class="red">审计师本人都无法认定存在任何不当行为</strong>。</p>
+
+<div class="key-point">
+  <p><strong class="red">"用途不明"≠"违规滥用"</strong></p>
+  <p>"用途不明"是审计术语，表示"无法确认资金去向"；"违规滥用"是法律概念，需要有明确证据证明违规行为存在。审计报告明确结论是"没有确认到相关事实"——这恰恰证明<strong>没有发现任何违规滥用行为</strong>。</p>
+</div>
+
+<h3>（三）蔡启泳/王奥的"明知"——时间线证明</h3>
+
+<p><strong>审计报告完成于2020年5月22日，比仲裁申请早了2年多。</strong>这意味着：</p>
+
+<table class="comparison-table">
+  <tr><th>要素</th><th>证据</th></tr>
+  <tr><td>明知无"违规滥用"</td><td>审计报告（2020.5.22）早于仲裁申请2年多，已证明没有违规滥用</td></tr>
+  <tr><td>明知合同限制</td><td>合同第三条第2项明确规定赔偿责任的前提条件</td></tr>
+  <tr><td>仍发起仲裁</td><td>2022年申请仲裁，要求员昊、邱千依承担连带赔偿责任177万元</td></tr>
+  <tr><td>虚假诉讼故意</td><td>持有证明无违约的证据，却隐瞒并主张违约</td></tr>
+</table>
+
+<div class="alert-box">
+  <p><strong class="red">王奥在湛江中院撤裁听证中的行为：</strong></p>
+  <p>2023年湛江中院撤裁案（2023粤08民特113号）听证中，王奥作为蔡启泳的代理人，<strong>自己提交了审计报告作为证据</strong>。这份审计报告恰恰证明了员昊、邱千依没有"违规滥用借款"。</p>
+  <p><strong class="red">王奥明知审计报告的内容，却仍然坚持虚假诉讼——这是"明知故犯"的直接证据。</strong></p>
+</div>
+
+<h3>（四）仲裁申请书和裁决书的致命缺陷——最核心的虚假诉讼证据</h3>
+
+<p><strong>蔡启泳的仲裁申请书（第9页）请求事项原文：</strong></p>
+<blockquote>"裁决被申请人员昊、孙万鹏、邱千依因<strong>未及时报告银行余额情况</strong>的行为构成严重违约。"</blockquote>
+
+<div class="key-point" style="border-color:#2e7d32; background:#f1f8e9;">
+  <p><strong class="blue">致命的逻辑闭环——这是虚假诉讼的铁证：</strong></p>
+  <table style="margin:10px 0;">
+    <tr><th style="width:50%;">事实</th><th>意义</th></tr>
+    <tr>
+      <td>蔡启泳<strong class="red">从未指控</strong>员昊、邱千依"违规滥用借款"</td>
+      <td>他自己都不认为我们挪用了</td>
+    </tr>
+    <tr>
+      <td>仲裁申请书<strong class="red">没有任何挪用证据</strong></td>
+      <td>他也拿不出任何证据</td>
+    </tr>
+    <tr>
+      <td>审计报告结论："<strong class="red">没有确认到相关事实</strong>"</td>
+      <td>审计也证明没有挪用</td>
+    </tr>
+    <tr>
+      <td>合同约定：赔偿责任<strong>必须以"违规滥用借款"为前提</strong></td>
+      <td>没有挪用就不能追责</td>
+    </tr>
+  </table>
+  <p style="font-size:12pt; margin-top:10px;"><strong class="red">致命问题：既然你自己都没指控我挪用，也没有证据证明我挪用，按合同规定你根本无权追责——那你为什么要仲裁我？</strong></p>
+  <p style="margin-top:8px;"><strong>唯一合理的解释：蔡启泳明知员昊、邱千依没有违约责任，却故意发起虚假诉讼，目的是侵吞员昊、邱千依的房产。</strong></p>
+</div>
+
+<div class="alert-box">
+  <p><strong>这不是"对合同理解不同"的民事纠纷——这是"明知没有权利基础仍发起诉讼"的虚假诉讼。</strong></p>
+  <p>蔡启泳不是在主张一个有争议的权利，而是在主张一个<strong class="red">他自己都知道不存在的权利</strong>：</p>
+  <ul>
+    <li>如果他认为我们挪用了，为什么不在仲裁中指控？</li>
+    <li>如果他有证据证明我们挪用了，为什么不提交？</li>
+    <li>如果他没有证据，凭什么按合同第三条第2项追责？</li>
+  </ul>
+</div>
+
+<h3>（五）仲裁庭的两处篡改——洪华全涉嫌枉法裁决</h3>
+
+<p><strong>仲裁裁决书第29页的认定：</strong></p>
+<blockquote>"合同的条款明确要求<strong class="red">四被申请人</strong>都要履行这项义务。"</blockquote>
+
+<div class="comparison-table">
+  <table>
+    <tr><th>合同原文</th><th>仲裁庭的篡改</th></tr>
+    <tr class="correct"><td>"<strong>乙方</strong>应于每周末向甲方报告银行余额情况"</td><td rowspan="2" class="wrong">"合同的条款明确要求<strong>四被申请人</strong>都要履行这项义务"</td></tr>
+    <tr class="correct"><td>（乙方=千路商事株式会社，即公司）</td></tr>
+  </table>
+</div>
+
+<p><strong class="red">第一处篡改：将"乙方"（公司）篡改为"四被申请人"（个人）。</strong></p>
+
+<p><strong>仲裁裁决书第29-30页的法律适用：</strong></p>
+<blockquote>直接适用《民法典》第178条判决连带责任。</blockquote>
+
+<p><strong class="red">第二处跳跃：完全跳过了合同第三条第2款的"违规滥用借款"前提条件。</strong></p>
+
+<div class="comparison-table">
+  <table>
+    <tr><th style="width:50%;">合同约定的逻辑链</th><th style="width:50%;">仲裁庭的跳跃</th></tr>
+    <tr>
+      <td class="correct">
+        未报告银行余额<br>
+        → 乙方违约<br>
+        → 按第3条第2项处理<br>
+        → <strong>需证明"违规滥用借款"</strong><br>
+        → 才能要求赔偿
+      </td>
+      <td class="wrong">
+        未报告银行余额<br>
+        → 【篡改为"四被申请人"违约】<br>
+        → 【跳过"违规滥用借款"前提】<br>
+        → 直接判连带偿还177万
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="key-point">
+  <p><strong class="red">仲裁员洪华全涉嫌枉法裁决：</strong></p>
+  <ul>
+    <li>全程不询问是否存在"违规滥用借款"的事实</li>
+    <li>不确认合同中违约责任的约定内容</li>
+    <li>将合同中的"乙方"（公司）篡改为"四被申请人"（个人）</li>
+    <li>直接跳过合同约定的前提条件进行判决</li>
+  </ul>
+  <p><strong>请求调查洪华全是否存在与蔡启泳/王奥恶意串通、枉法裁判的情形。</strong></p>
+</div>
+
+<!-- ==================== 证据链闭环 ==================== -->
+<h2>三、证据链闭环——为什么这是虚假诉讼</h2>
+
+<div class="summary-box">
+  <p><strong>完整证据链：</strong></p>
+  <table>
+    <tr><th style="width:80px;">环节</th><th>证据</th><th>证明内容</th></tr>
+    <tr>
+      <td>合同约定</td>
+      <td>借款协议第二条第3款、第三条第2项</td>
+      <td>赔偿责任必须以"违规滥用借款"为前提</td>
+    </tr>
+    <tr>
+      <td>审计结论</td>
+      <td>审计报告（2020.5.22）</td>
+      <td>"没有确认到相关事实"——没有违规滥用</td>
+    </tr>
+    <tr>
+      <td>时间证明</td>
+      <td>审计报告日期 vs 仲裁申请日期</td>
+      <td>蔡启泳/王奥在仲裁前2年多就已持有审计报告</td>
+    </tr>
+    <tr>
+      <td>自认证据</td>
+      <td>王奥在撤裁听证中提交审计报告</td>
+      <td>王奥明知审计报告内容，仍坚持虚假诉讼</td>
+    </tr>
+    <tr>
+      <td>仲裁缺陷</td>
+      <td>仲裁申请书无"违规滥用"指控</td>
+      <td>蔡启泳从未提供任何挪用证据</td>
+    </tr>
+    <tr>
+      <td>裁决篡改</td>
+      <td>裁决书第29页"四被申请人"表述</td>
+      <td>仲裁庭篡改合同原文、跳过前提条件</td>
+    </tr>
+  </table>
+</div>
+
+<p><strong class="red">这个证据链的优势：</strong></p>
+<ul>
+  <li><strong>不是纠缠事实认定</strong>——不需要证明"我们汇报了"这种复杂的事实问题</li>
+  <li><strong>是指出法律前提不存在</strong>——按合同约定，就算没有汇报，也必须先证明"违规滥用"才能追责</li>
+  <li><strong>证据链清晰可验证</strong>——合同条款、审计报告、仲裁申请书都是客观证据</li>
+  <li><strong>时间线无法辩解</strong>——审计报告早于仲裁申请2年多，"明知"无法否认</li>
+</ul>
+
+<!-- ==================== 犯罪损害后果 ==================== -->
+<h2>四、犯罪造成的严重后果</h2>
+
+<h3>（一）财产损失</h3>
+<ul>
+  <li>仲裁裁决金额：<strong>177万元人民币</strong>（本金+利息+律师费）</li>
+  <li>执行标的：<strong>约213.84万元人民币</strong></li>
+  <li>邱千依南昌房产被查封（价值200多万元）</li>
+</ul>
+
+<h3>（二）人身限制</h3>
+<ul>
+  <li>员昊、邱千依被列为失信被执行人，<strong class="red">被限制高消费超过2年</strong></li>
+  <li>无法正常购买机票、高铁票</li>
+  <li>无法正常住宿酒店</li>
+</ul>
+
+<h3>（三）不可挽回的人生损失</h3>
+<div class="alert-box">
+  <p><strong class="red">员昊因被限高，错失与外公临终最后告别的机会。</strong></p>
+  <p>这不是金钱可以弥补的损失，而是被控告人通过虚假诉讼对员昊造成的终身遗憾。</p>
+</div>
+
+<!-- ==================== 主攻"故意"：证明明知故犯 ==================== -->
+<h2>四之二、主攻"故意"——证明被控告人明知故犯、有预谋</h2>
+
+<div class="summary-box" style="border-color:#1565c0; background:#e3f2fd;">
+  <p><strong class="blue">本章节的作用：</strong></p>
+  <p>上述"核心切入点"已经证明<strong>蔡启泳无权追责</strong>（合同约定的前提条件不成立）。</p>
+  <p>本章节进一步证明<strong>蔡启泳是"明知故犯"</strong>——他们不是"不懂法"或"理解错误"，而是<strong>有预谋、有动机、有共谋</strong>地发起虚假诉讼。</p>
+</div>
+
+<h3>（一）吕伟麟拿走公司全部资产——却仍起诉员昊</h3>
+
+<div class="key-point">
+  <p><strong>2019年11月9日，吕伟麟拿走千路商事全部资产：</strong></p>
+  <ul>
+    <li>全部公章、存折、银行卡</li>
+    <li>公司现金（约130万人民币应收款）</li>
+    <li>16台运营车辆（价值约100万人民币）</li>
+    <li><strong>合计约220万人民币</strong></li>
+  </ul>
+  <p style="margin-top:10px;"><strong class="red">罗建峰的借款仅180万人民币（3000万日元）。</strong></p>
+  <p><strong class="red">公司资产（220万）完全可以偿还债务（180万），但吕伟麟拿走资产后，既不告知员昊是否已偿还债务，又另行发起虚假诉讼追讨177万元。</strong></p>
+</div>
+
+<div class="evidence-box">
+  <strong>证据：</strong>2019年11月9日现场视频（公证书）、凃云峰签署《业务指示书》、西田诚亮《预り証》、2019年12月14日录音（蔡启涛、吕伟麟确认公司有220万资产）
+</div>
+
+<h3>（二）吕伟麟代付蔡启泳律师费——实际操盘人的铁证</h3>
+
+<table>
+  <tr><th>付款人</th><th>收款人</th><th>金额</th><th>附言</th><th>意义</th></tr>
+  <tr>
+    <td><strong>吕伟麟</strong></td>
+    <td>兰迪律师事务所</td>
+    <td>5,000元人民币</td>
+    <td>"千路仲裁费"</td>
+    <td>蔡启泳的仲裁律师费由吕伟麟支付</td>
+  </tr>
+  <tr>
+    <td><strong>吕伟麟</strong></td>
+    <td>千路商事（代罗建峰）</td>
+    <td>1,000万日元</td>
+    <td>第二次借款</td>
+    <td>罗建峰的借款由吕伟麟账户支付</td>
+  </tr>
+</table>
+
+<div class="alert-box">
+  <p><strong class="red">吕伟麟"双向代付"：既代罗建峰支付借款，又代蔡启泳支付律师费。</strong></p>
+  <p>名义上的"原债权人"（罗建峰）和"新债权人"（蔡启泳）背后，实际操盘人是同一个人——吕伟麟。</p>
+  <p><strong>这不是正常的债权转让，而是吕伟麟借用蔡启泳的名义发起虚假诉讼。</strong></p>
+</div>
+
+<div class="evidence-box">
+  <strong>证据：</strong>吕伟麟支付律师费银行凭证（汇丰银行，附言"千路仲裁费"）、中信银行汇款单（1000万日元）
+</div>
+
+<h3>（三）五人之间的利益关联——共谋关系</h3>
+
+<table>
+  <tr><th>关系</th><th>证据</th><th>意义</th></tr>
+  <tr>
+    <td>蔡启泳是蔡启涛的亲兄弟</td>
+    <td>身份证明</td>
+    <td>家族利益关联</td>
+  </tr>
+  <tr>
+    <td>吕伟麟是蔡启泳公司的监事</td>
+    <td>工商登记</td>
+    <td>商业利益关联</td>
+  </tr>
+  <tr>
+    <td>吕伟麟支付蔡启泳的仲裁律师费</td>
+    <td>银行凭证</td>
+    <td>吕伟麟是实际操盘人</td>
+  </tr>
+  <tr>
+    <td>罗建峰以仅20%对价转让债权给蔡启泳</td>
+    <td>债权转让协议</td>
+    <td>非正常商业行为</td>
+  </tr>
+  <tr>
+    <td>罗建峰、凃云峰、蔡启涛2019年1月秘密成立千寻合同会社</td>
+    <td>日本法务局登记</td>
+    <td>声称"联系不上员昊"的同时与凃云峰合资开新公司</td>
+  </tr>
+</table>
+
+<h3>（四）犯罪动机——"拿了钱还要追诉"</h3>
+
+<div class="summary-box">
+  <p><strong class="red">致命问题：吕伟麟已经拿走了220万资产，为什么还要起诉员昊追讨177万？</strong></p>
+  <p>只有两种可能：</p>
+  <ol>
+    <li><strong>220万资产已经偿还了罗建峰的债务</strong> → 再起诉员昊就是<strong class="red">重复追讨、诈骗</strong></li>
+    <li><strong>220万资产没有偿还债务</strong> → 那钱去哪了？为什么不用公司资产还债，却要追诉小股东？</li>
+  </ol>
+  <p style="margin-top:10px;"><strong>无论哪种情况，都不是正常的债权追索，而是有预谋的侵吞财产。</strong></p>
+</div>
+
+<div class="key-point">
+  <p><strong class="blue">补充证据的作用：</strong></p>
+  <p>核心切入点（合同条款）已经足以证明虚假诉讼成立。补充证据进一步证明：</p>
+  <ul>
+    <li><strong>犯罪动机</strong>——拿走资产后仍要追诉，目的是侵吞员昊房产</li>
+    <li><strong>实际操盘人</strong>——吕伟麟，而非名义上的蔡启泳</li>
+    <li><strong>共谋关系</strong>——五人之间存在紧密的利益关联</li>
+  </ul>
+  <p><strong>这些证据可以支持对吕伟麟、罗建峰等人的追诉。</strong></p>
+</div>
+
+<!-- ==================== 预防性说明 ==================== -->
+<h2>五、预防性说明——对被控告人可能辩解的回应</h2>
+
+<p>为便于办案机关审查，控告人预先就被控告人可能提出的辩解作出回应：</p>
+
+<h3>辩解一："这是对合同条款的不同理解，属于民事纠纷"</h3>
+
+<div class="key-point" style="border-color:#1565c0; background:#e3f2fd;">
+  <p><strong class="blue">回应：</strong></p>
+  <p><strong>民事纠纷是"各执一词"——本案是"对方自己都没主张却要追责"。</strong></p>
+  <ul>
+    <li>如果蔡启泳认为员昊"违规滥用借款"，<strong>为什么在仲裁中不指控？</strong></li>
+    <li>如果蔡启泳有证据证明员昊挪用，<strong>为什么不提交？</strong></li>
+    <li>仲裁申请书白纸黑字，<strong>只有"未汇报"的指控，没有"挪用"的指控</strong></li>
+  </ul>
+  <p style="margin-top:8px;"><strong class="red">这不是"对合同理解不同"，是"自己都不信却仍然起诉"——蔡启泳主张的是一个他自己都知道不存在的权利。</strong></p>
+</div>
+
+<h3>辩解二："审计报告说'没有确认到'，不等于'没有挪用'"</h3>
+
+<div class="key-point" style="border-color:#1565c0; background:#e3f2fd;">
+  <p><strong class="blue">回应：</strong></p>
+  <ul>
+    <li><strong>举证责任在原告</strong>——蔡启泳要追责，蔡启泳举证，而不是让员昊自证清白</li>
+    <li>审计报告是<strong>蔡启泳一方委托的</strong>长岛会计师事务所出具——他自己的审计师都没发现问题</li>
+    <li>如果蔡启泳"有合理怀疑"，<strong>为什么在仲裁中不指控、不举证？</strong></li>
+    <li><strong>"我怀疑他偷了，但我没证据"不是起诉的法律基础</strong></li>
+  </ul>
+</div>
+
+<h3>辩解三："没有主观故意，是认识错误"</h3>
+
+<div class="key-point" style="border-color:#1565c0; background:#e3f2fd;">
+  <p><strong class="blue">回应：</strong></p>
+  <table>
+    <tr><th style="width:50%;">证据</th><th>证明"明知"</th></tr>
+    <tr>
+      <td>审计报告日期：<strong>2020年5月22日</strong></td>
+      <td rowspan="2">审计报告早于仲裁申请<strong class="red">2年多</strong>——不是"后来才知道"，是"早就知道"</td>
+    </tr>
+    <tr>
+      <td>仲裁申请日期：<strong>2022年7月8日</strong></td>
+    </tr>
+    <tr>
+      <td>王奥在撤裁听证中<strong>自己提交审计报告</strong></td>
+      <td>证明王奥<strong>看过、知道</strong>审计报告内容</td>
+    </tr>
+    <tr>
+      <td>提交审计报告后<strong>仍坚持诉讼请求</strong></td>
+      <td>不是"认识错误"，是<strong>"明知故犯"</strong></td>
+    </tr>
+  </table>
+</div>
+
+<h3>辩解四："仲裁庭支持了我们的请求，说明有合理基础"</h3>
+
+<div class="key-point" style="border-color:#1565c0; background:#e3f2fd;">
+  <p><strong class="blue">回应：</strong></p>
+  <ul>
+    <li>仲裁庭是否判决正确，<strong>不影响蔡启泳是否捏造事实</strong>——仲裁庭被误导不等于蔡启泳没撒谎</li>
+    <li>仲裁庭<strong>篡改了合同条款</strong>（把"乙方"改成"四被申请人"）——这正是要调查仲裁员是否枉法裁决的原因</li>
+    <li>虚假诉讼罪保护的是<strong>司法秩序</strong>——即使诉讼成功，捏造事实的行为本身就构成犯罪</li>
+  </ul>
+</div>
+
+<h3>辩解五："这是正常的债权追索，不应刑事化"</h3>
+
+<div class="key-point" style="border-color:#1565c0; background:#e3f2fd;">
+  <p><strong class="blue">回应：</strong></p>
+  <p><strong>控告人的立场非常明确：如果控告人真的违约了，控告人愿意承担责任。</strong></p>
+  <p>问题是：<strong class="red">按合同规定，控告人根本没有违约责任。</strong></p>
+  <ul>
+    <li>蔡启泳自己都没指控控告人挪用</li>
+    <li>蔡启泳也没有证据证明控告人挪用</li>
+    <li>按合同约定，没有挪用就不能追责</li>
+    <li><strong>蔡启泳追的是一个他自己都知道不存在的责任</strong></li>
+  </ul>
+</div>
+
+<div class="summary-box">
+  <p><strong class="red">所有辩解都无法回答的核心问题：</strong></p>
+  <p style="font-size:12pt; text-align:center; margin:10px 0;"><strong>"既然蔡启泳认为员昊、邱千依挪用了公款，为什么在仲裁中不指控、不举证？"</strong></p>
+  <p>只有两种可能的回答：</p>
+  <ol>
+    <li><strong>"我认为他们挪用了"</strong> → 那为什么不指控？为什么不举证？（不合常理）</li>
+    <li><strong>"我知道他们没挪用"</strong> → 那就是虚假诉讼</li>
+  </ol>
+  <p style="margin-top:10px;"><strong>蔡启泳必须回答这个问题，否则无法解释其行为的合理性。</strong></p>
+</div>
+
+<!-- ==================== 控告请求 ==================== -->
+<h2>六、控告请求</h2>
+
+<ol>
+  <li>请求对<strong>蔡启泳、王奥</strong>以<strong>虚假诉讼罪</strong>立案侦查</li>
+  <li>请求对<strong>洪华全</strong>以<strong>枉法仲裁罪</strong>立案侦查</li>
+  <li>请求调取蔡启泳、王奥、洪华全之间的通讯记录，查明是否存在恶意串通</li>
+  <li>请求中止（2023）赣0111执2290号执行案件，待刑事案件侦查终结</li>
+  <li>请求依法追究被控告人的刑事责任</li>
+</ol>
+
+<!-- ==================== 证据清单 ==================== -->
+<h2>七、证据清单</h2>
+
+<table>
+  <tr><th style="width:40px;">序号</th><th>证据名称</th><th>证明内容</th></tr>
+  <tr><td>1</td><td>借款协议（第一份、第二份）</td><td>合同第二条第3款、第三条第2项原文</td></tr>
+  <tr><td>2</td><td>审计报告（2020年5月22日）</td><td>证明没有"违规滥用借款"的事实</td></tr>
+  <tr><td>3</td><td>仲裁申请书</td><td>蔡启泳从未指控"违规滥用借款"</td></tr>
+  <tr><td>4</td><td>仲裁裁决书（2022湛仲字第56号）</td><td>仲裁庭篡改合同原文、跳过前提条件</td></tr>
+  <tr><td>5</td><td>湛江中院撤裁案卷宗</td><td>王奥自己提交审计报告作为证据</td></tr>
+  <tr><td>6</td><td>吕伟麟支付律师费银行凭证</td><td>吕伟麟是实际操盘人</td></tr>
+</table>
+
+<!-- ==================== 签名 ==================== -->
+<div class="sign-area">
+  <p>控告人：员昊</p>
+  <p>控告人：邱千依</p>
+  <p>日期：2026年　　月　　日</p>
+</div>
+
+<div class="doc-footer">
+  <p>本控告书共　　页</p>
+</div>
+
+</body>
+</html>
