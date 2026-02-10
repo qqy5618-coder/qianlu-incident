@@ -145,22 +145,176 @@
   li { margin-bottom: 4px; }
 
   @media print {
-    body { padding: 0; max-width: none; font-size: 10pt; }
+    body { padding: 0; max-width: none; font-size: 10pt; margin-left: 0 !important; }
     h1 { font-size: 18pt; }
     h2 { font-size: 13pt; margin-top: 24px; }
     h3 { font-size: 11pt; margin-top: 18px; }
     .key-point, .summary-box { page-break-inside: avoid; }
     h2, h3 { page-break-after: avoid; }
     table { page-break-inside: avoid; }
+    .sidebar-nav, .evidence-btn, .modal-overlay { display: none !important; }
+  }
+
+  /* 侧边栏导航 */
+  .sidebar-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background: #1a237e;
+    color: #fff;
+    overflow-y: auto;
+    padding: 20px 0;
+    z-index: 1000;
+    font-size: 12px;
+  }
+  .sidebar-nav h3 {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 15px 10px;
+    margin: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .sidebar-nav a {
+    display: block;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+  }
+  .sidebar-nav a:hover {
+    background: rgba(255,255,255,0.1);
+    border-left-color: #ff9800;
+  }
+  .sidebar-nav a.section {
+    font-weight: bold;
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+    margin-top: 10px;
+  }
+  .sidebar-nav a.sub {
+    padding-left: 25px;
+    font-size: 11px;
+  }
+  body.has-sidebar {
+    margin-left: 220px;
+    max-width: none;
+    padding: 40px 50px 40px 30px;
+  }
+  body.has-sidebar h1, body.has-sidebar h2, body.has-sidebar h3,
+  body.has-sidebar p, body.has-sidebar table, body.has-sidebar div {
+    max-width: 800px;
+  }
+
+  /* 证据按钮 */
+  .evidence-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    background: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 4px;
+    color: #1565c0;
+    text-decoration: none;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 2px 4px;
+    transition: all 0.2s;
+  }
+  .evidence-btn:hover {
+    background: #bbdefb;
+  }
+  .evidence-btn.pdf { background: #ffebee; border-color: #ef9a9a; color: #c62828; }
+  .evidence-btn.img { background: #e8f5e9; border-color: #a5d6a7; color: #2e7d32; }
+  .evidence-btn.audio { background: #fff3e0; border-color: #ffcc80; color: #e65100; }
+
+  /* 证据弹窗 */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-overlay.show { display: flex; }
+  .modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .modal-header {
+    background: #1565c0;
+    color: #fff;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .modal-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .modal-body {
+    padding: 20px;
+    overflow: auto;
+    max-height: calc(90vh - 50px);
+  }
+  .modal-body img { max-width: 100%; }
+  .modal-body iframe { width: 100%; height: 70vh; border: none; }
+
+  @media (max-width: 900px) {
+    .sidebar-nav { display: none; }
+    body.has-sidebar { margin-left: 0; padding: 20px; }
   }
 </style>
 </head>
-<body>
+<body class="has-sidebar">
+
+<!-- 侧边栏导航 -->
+<nav class="sidebar-nav">
+  <h3>📋 目录导航</h3>
+  <a href="#core" class="section">✦ 核心切入点</a>
+  <a href="#section1" class="section">一、核心问题（30秒看懂）</a>
+  <a href="#q1" class="sub">问题一：合同条款被篡改</a>
+  <a href="#q2" class="sub">问题二：违约责任被突破</a>
+  <a href="#q3" class="sub">问题三：无证据定责</a>
+  <a href="#section2" class="section">二、请求调查事项</a>
+  <a href="#inv1" class="sub">（一）蔡启泳签名笔迹鉴定</a>
+  <a href="#inv2" class="sub">（二）王奥何时获得审计报告</a>
+  <a href="#inv3" class="sub">（三）仲裁员洪华全问题</a>
+  <a href="#section3" class="section">三、损害后果</a>
+  <a href="#section4" class="section">四、仲裁裁决的核心依据</a>
+  <a href="#section5" class="section">五、推翻裁决的证据链</a>
+  <a href="#ev1" class="sub">（一）罗建峰虚假陈述</a>
+  <a href="#ev2" class="sub">（二）被剥夺回复能力</a>
+  <a href="#ev3" class="sub">（三）罗建峰拒绝回复</a>
+  <a href="#ev4" class="sub">（四）12月14日录音</a>
+  <a href="#ev5" class="sub">（五）审计报告</a>
+  <a href="#ev6" class="sub">（六）积极配合vs阻挠</a>
+  <a href="#ev7" class="sub">（七）债权转让与利益关联</a>
+  <a href="#ev8" class="sub">（八）实际损害</a>
+  <a href="#section6" class="section">六、控告请求</a>
+  <a href="#section7" class="section">七、证据清单</a>
+</nav>
 
 <h1>刑事控告证据说明（简易版）</h1>
 
 <!-- ==================== 核心切入点（最重要） ==================== -->
-<div style="background:#e8f5e9; border:3px solid #2e7d32; padding:20px 24px; margin:0 0 24px;">
+<div id="core" style="background:#e8f5e9; border:3px solid #2e7d32; padding:20px 24px; margin:0 0 24px;">
   <h3 style="color:#2e7d32; margin:0 0 12px; font-size:14pt;">&#9989; 最清晰的切入点：合同约定的赔偿前提条件不成立</h3>
 
   <p style="margin-bottom:10px;"><strong>合同第二条第3款：</strong>"乙方应于每周末向甲方报告银行余额情况。否则属乙方违约，<strong style="color:#c62828;">应按第3条第2项处理</strong>。"</p>
@@ -178,13 +332,13 @@
 </div>
 
 <!-- ==================== 第一部分：虚假仲裁的核心问题（30秒看懂） ==================== -->
-<h2>一、虚假仲裁的核心问题（30秒看懂）</h2>
+<h2 id="section1">一、虚假仲裁的核心问题（30秒看懂）</h2>
 
 <p style="background:#fff3e0; padding:12px; border-left:4px solid #ff9800; margin-bottom:16px;">
 <strong>案件核心：</strong>被控告人<strong class="red">明知</strong>合同约定的赔偿前提条件（"违规滥用借款"）不成立，却通过<strong class="red">篡改合同条款</strong>（将"乙方"偷换为"四被申请人"）、<strong class="red">跳过前提条件</strong>（绕过第三条第2项）的方式，误导仲裁庭作出错误裁决。蔡启泳持该虚假裁决申请强制执行，查封邱千依房产，对员昊、邱千依限制高消费长达2年以上。
 </p>
 
-<h3>问题一：合同条款被篡改</h3>
+<h3 id="q1">问题一：合同条款被篡改</h3>
 <table>
   <tr>
     <th style="width:50%; background:#e3f2fd;">借款协议原文（第二条第5款）</th>
@@ -197,7 +351,7 @@
 </table>
 <p><strong class="red">仲裁庭直接篡改合同原文——将"乙方"（公司）的义务偷换为"四被申请人"的义务。</strong></p>
 
-<h3>问题二：违约责任被突破</h3>
+<h3 id="q2">问题二：违约责任被突破</h3>
 <p>合同第二条第5款明确规定：不汇报的后果是"应按<strong>第三条第2项</strong>处理"。</p>
 <p>第三条第2款原文："乙方及丙A、丙B、丙C、丙D应按审慎、合理和经济原则使用甲方的借款，<strong>不得将借款用于与乙方经营无关的用途及违规滥用借款</strong>，否则，甲方有权<strong class="green-text">立即停止追加借款</strong>并要求违规方承担相应的<strong class="green-text">赔偿责任</strong>。"</p>
 
@@ -231,7 +385,7 @@
   <p style="margin-top:8px;"><strong class="red">仲裁庭凭什么跳过合同明文约定的违约条款？这是典型的"先定结论、凭空套上法条"的枉法裁决！</strong></p>
 </div>
 
-<h3>问题三：无证据定责</h3>
+<h3 id="q3">问题三：无证据定责</h3>
 <table>
   <tr>
     <th>问题</th>
@@ -253,13 +407,18 @@
 
 <div class="evidence-box">
   <strong>证据：</strong>借款协议第二条第5款、第三条第2款原文、仲裁裁决书第29-30页
+  <div style="margin-top:8px;">
+    <button class="evidence-btn pdf" onclick="showEvidence('loan-agreement-1','第一次借款协议')">📄 借款协议(一)</button>
+    <button class="evidence-btn pdf" onclick="showEvidence('loan-agreement-2','第二次借款协议')">📄 借款协议(二)</button>
+    <button class="evidence-btn pdf" onclick="showEvidence('arbitration','仲裁裁决书')">📄 仲裁裁决书</button>
+  </div>
 </div>
 
 
 <!-- ==================== 第二部分：请求调查事项 ==================== -->
-<h2>二、请求调查事项（需要警察调查什么）</h2>
+<h2 id="section2">二、请求调查事项（需要警察调查什么）</h2>
 
-<h3>（一）蔡启泳签名笔迹鉴定——揭露吕伟麟是幕后操控者</h3>
+<h3 id="inv1">（一）蔡启泳签名笔迹鉴定——揭露吕伟麟是幕后操控者</h3>
 <p>请求调取并鉴定以下两份文书上"蔡启泳"的签名：</p>
 <table>
   <tr>
@@ -277,7 +436,7 @@
 </table>
 <p><strong class="red">调查目的：</strong>湛江中院裁定书已确认"律师费由吕伟麟代为支付"。若两份文书上的"蔡启泳"签名并非同一人书写，则需进一步查明：<strong>是否存在冒用蔡启泳身份签约的情况？结合吕伟麟代付律师费的事实，可合理推断吕伟麟是实际操控整个仲裁的幕后人。</strong></p>
 
-<h3>（二）王奥律师何时获得审计报告</h3>
+<h3 id="inv2">（二）王奥律师何时获得审计报告</h3>
 <p>请求调查王奥律师（蔡启泳代理人）获得审计报告的时间：</p>
 <table>
   <tr>
@@ -295,7 +454,7 @@
 </table>
 <p><strong class="red">核心问题：</strong>无论王奥何时获得审计报告，他都应当知道：审计报告未认定员昊、邱千依挪用资金，因此员昊、邱千依未违反第三条第二款。既然如此，<strong>为何仍继续向南昌青山湖区法院申请执行邱千依房产？为何对员昊、邱千依反复限制高消费长达2年以上？</strong></p>
 
-<h3>（三）请求一并调查仲裁员洪华全是否存在违规行为</h3>
+<h3 id="inv3">（三）请求一并调查仲裁员洪华全是否存在违规行为</h3>
 
 <p><strong>仲裁员洪华全跳过合同约定的违约条款：</strong></p>
 
@@ -341,7 +500,7 @@
 
 
 <!-- ==================== 第三部分：损害后果 ==================== -->
-<h2>三、损害后果</h2>
+<h2 id="section3">三、损害后果</h2>
 
 <p>员昊、邱千依因本案虚假仲裁裁决，已遭受严重经济损害和人身自由限制：</p>
 <table>
@@ -365,7 +524,7 @@
 
 
 <!-- ==================== 第四部分：仲裁裁决的核心依据 ==================== -->
-<h2>四、仲裁裁决的核心依据（被推翻的基础）</h2>
+<h2 id="section4">四、仲裁裁决的核心依据（被推翻的基础）</h2>
 
 <p>湛江仲裁裁决认定：千路商事株式会社、员昊、邱千依、孙万鹏四人违反对罗建峰的财务汇报义务，因此承担全部债务的连带责任。蔡启泳（债权受让人）据此对员昊等三人申请强制执行。</p>
 
@@ -395,10 +554,10 @@
 
 
 <!-- ==================== 第五部分：推翻裁决基础的证据链 ==================== -->
-<h2>五、推翻裁决基础的证据链</h2>
+<h2 id="section5">五、推翻裁决基础的证据链</h2>
 
 <!-- ===== (一) ===== -->
-<h3>（一）罗建峰"不了解财务状况"系虚假陈述</h3>
+<h3 id="ev1">（一）罗建峰"不了解财务状况"系虚假陈述</h3>
 
 <p><strong>仲裁中的陈述：</strong>罗建峰声称"自2019年4月起不了解千路商事经营状况"、"联系不上员昊等人"。</p>
 
@@ -414,13 +573,18 @@
 
 <div class="evidence-box">
   <strong>证据：</strong>微信聊天记录公证书（已公证）、中信银行（国际）汇款单（2019年3月29日，LU WEI LIN汇出1000万日元）、绿牌公司工作群16份Excel月度财务报表（2019年4-9月）
+  <div style="margin-top:8px;">
+    <button class="evidence-btn img" onclick="showEvidence('wechat-group','财务群成员列表')">📷 财务群成员</button>
+    <button class="evidence-btn img" onclick="showEvidence('wechat-july','罗建峰7月发言')">📷 七月业绩发言</button>
+    <button class="evidence-btn img" onclick="showEvidence('wechat-fee','费用计提发言')">📷 费用计提发言</button>
+  </div>
 </div>
 
 <p><strong>结论：</strong>罗建峰从未"不了解财务状况"——他每天都在接收财务报告且频繁互动，汇报从每周升级到每天，且在声称"不了解"的前一个月刚追加了1000万日元投资。此为仲裁中的虚假陈述。</p>
 
 
 <!-- ===== (二) ===== -->
-<h3>（二）员昊等三人并非"不回复律师函"——而是被剥夺了回复能力</h3>
+<h3 id="ev2">（二）员昊等三人并非"不回复律师函"——而是被剥夺了回复能力</h3>
 
 <p><strong>时间线：</strong></p>
 
@@ -456,6 +620,11 @@
 
 <div class="evidence-box">
   <strong>证据：</strong>凃云峰签字盖章的《业务指示书》原件、西田诚亮签字按手印的《预り証》原件（日期2019.11.9）、现场视频十余分钟全程录像（已公证）
+  <div style="margin-top:8px;">
+    <button class="evidence-btn pdf" onclick="showEvidence('shareholder-1202','股东会记录12/2')">📄 股东会记录(12/2)</button>
+    <button class="evidence-btn pdf" onclick="showEvidence('shareholder-1212','股东会记录12/12')">📄 股东会记录(12/12)</button>
+    <button class="evidence-btn pdf" onclick="showEvidence('lawyer-letter','罗建峰律师函')">📄 律师函</button>
+  </div>
 </div>
 
 <p><strong>关键逻辑：</strong></p>
@@ -476,7 +645,7 @@
 
 
 <!-- ===== (三) NEW ===== -->
-<h3>（三）反向进攻：不是员昊联系不上罗建峰，而是罗建峰拒绝回复员昊</h3>
+<h3 id="ev3">（三）反向进攻：不是员昊联系不上罗建峰，而是罗建峰拒绝回复员昊</h3>
 
 <p>罗建峰在仲裁中声称员昊等三人"收到律师函后一直置之不理"。<strong class="red">事实完全相反：不是员昊不回复罗建峰，而是罗建峰拒绝回复员昊。</strong></p>
 
@@ -507,11 +676,14 @@
 
 <div class="evidence-box">
   <strong>证据：</strong>微信群聊天记录（千路股东群全部记录）、《致歉信》（2019年12月13日）、员昊等三人律师函（2019年12月10日）、12月14日录音（公证书）
+  <div style="margin-top:8px;">
+    <button class="evidence-btn audio" onclick="showEvidence('recording-1214','12月14日录音')">🎵 12月14日录音</button>
+  </div>
 </div>
 
 
 <!-- ===== (四) ===== -->
-<h3>（四）12月14日录音——蔡启涛、吕伟麟的当事人自认</h3>
+<h3 id="ev4">（四）12月14日录音——蔡启涛、吕伟麟的当事人自认</h3>
 
 <p><strong>地点：</strong>名古屋市万豪酒店餐厅 &nbsp; <strong>参与人：</strong>蔡启涛、吕伟麟（代表罗建峰和凃云峰）、员昊、邱千依、孙万鹏 &nbsp; <strong>证据：</strong>完整语音录音（已公证）</p>
 
@@ -556,7 +728,7 @@
 
 
 <!-- ===== (五) ===== -->
-<h3>（五）审计报告存在虚假证据</h3>
+<h3 id="ev5">（五）审计报告存在虚假证据</h3>
 
 <p><strong>背景：</strong></p>
 <p>审计自2019年11月9日启动（长岛广明当日到场），2020年5月22日出具报告。蔡启涛在12月14日录音中承诺员昊等三人"就那么一点账目，很快就算清了"，但审计报告完成后至2026年，员昊等三人从未收到该报告。该报告直至2023年8月21日湛江中院（2023）粤08民特113号撤裁听证时才曝光。</p>
@@ -605,11 +777,14 @@
 
 <div class="evidence-box">
   <strong>证据：</strong>审计报告日文原版及中文翻译（第3条第（2）款原文）、湛江中院裁定书第4-5页（记载蔡启泳将"用途不明"歪曲为"挪用"的陈述）
+  <div style="margin-top:8px;">
+    <button class="evidence-btn pdf" onclick="showEvidence('audit-report','审计报告')">📄 审计报告</button>
+  </div>
 </div>
 
 
 <!-- ===== (六) NEW ===== -->
-<h3>（六）员昊等三人的积极配合 vs 对方的系统性阻挠</h3>
+<h3 id="ev6">（六）员昊等三人的积极配合 vs 对方的系统性阻挠</h3>
 
 <p>蔡启泳/罗建峰在仲裁中构建了"员昊等三人不配合"的叙事。微信群记录证明事实完全相反：</p>
 
@@ -694,7 +869,7 @@
 
 
 <!-- ===== (七) ===== -->
-<h3>（七）债权转让与利益关联——不是追债，是迫害</h3>
+<h3 id="ev7">（七）债权转让与利益关联——不是追债，是迫害</h3>
 
 <table>
   <tr><th>事实</th><th>证据</th></tr>
@@ -727,11 +902,15 @@
 
 <div class="evidence-box">
   <strong>证据：</strong>债权转让协议（签名页）、吕伟麟支付律师费银行凭证、笔迹检验咨询报告、蔡启泳委托代理合同（兰迪律所）、千寻合同会社登记簿
+  <div style="margin-top:8px;">
+    <button class="evidence-btn pdf" onclick="showEvidence('debt-transfer','债权转让协议')">📄 债权转让协议</button>
+    <button class="evidence-btn pdf" onclick="showEvidence('handwriting','笔迹鉴定报告')">📄 笔迹鉴定报告</button>
+  </div>
 </div>
 
 
 <!-- ===== (八) ===== -->
-<h3>（八）虚假诉讼造成的实际损害</h3>
+<h3 id="ev8">（八）虚假诉讼造成的实际损害</h3>
 
 <p>员昊等三人因本案虚假仲裁裁决，已遭受严重经济损害和人身自由限制：</p>
 
@@ -747,7 +926,7 @@
 
 
 <!-- ==================== 第三部分 ==================== -->
-<h2>六、控告请求</h2>
+<h2 id="section6">六、控告请求</h2>
 
 <p><strong>控告人：</strong>员昊、邱千依（身份信息及联系方式详见入股协议第一页，随附提交）</p>
 
@@ -781,7 +960,7 @@
 
 
 <!-- ==================== 第四部分 ==================== -->
-<h2>七、证据清单</h2>
+<h2 id="section7">七、证据清单</h2>
 
 <p><strong>控告人现持有的证据（可随控告书一并提交）</strong></p>
 
@@ -857,6 +1036,134 @@
   本文档为刑事控告辅助材料 · 仅供办案机关参考<br>
   控告人：员昊、邱千依 · 联系方式详见入股协议
 </div>
+
+<!-- 证据弹窗 -->
+<div class="modal-overlay" id="evidenceModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span id="modalTitle">证据预览</span>
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <!-- 动态内容 -->
+    </div>
+  </div>
+</div>
+
+<script>
+// Supabase 证据路径映射
+const SUPABASE_BASE = 'https://pahyccjqmlkyvbtwjydg.supabase.co/storage/v1/object/public/media';
+
+const evidencePaths = {
+  // 微信聊天记录（罗建峰参与证据）
+  'wechat-group': `${SUPABASE_BASE}/wechat-luo-6998.png`,
+  'wechat-invite': `${SUPABASE_BASE}/wechat-luo-6999.png`,
+  'wechat-july': `${SUPABASE_BASE}/wechat-luo-7003.png`,
+  'wechat-fee': `${SUPABASE_BASE}/wechat-luo-7001.png`,
+  // 仲裁相关
+  'arbitration': `${SUPABASE_BASE}/17-zhanjiang-arbitration-decision.pdf`,
+  // 借款协议
+  'loan-agreement-1': `${SUPABASE_BASE}/05-loan-agreement-2018.pdf`,
+  'loan-agreement-2': `${SUPABASE_BASE}/06-loan-agreement-2019.pdf`,
+  // 审计报告
+  'audit-report': `${SUPABASE_BASE}/14-1-audit-report-japanese.pdf`,
+  'audit-report-cn': `${SUPABASE_BASE}/14-2-audit-report-chinese.pdf`,
+  // 录音
+  'recording-1214': `${SUPABASE_BASE}/20191214-recording-full.m4a`,
+  // 股东会记录
+  'shareholder-1202': `${SUPABASE_BASE}/11-shareholder-meeting-20191202.pdf`,
+  'shareholder-1212': `${SUPABASE_BASE}/12-shareholder-meeting-20191212.m4a`,
+  // 律师函
+  'lawyer-letter': `${SUPABASE_BASE}/12-luo-lawyer-letter-20191203.pdf`,
+  'lawyer-letter-2021': `${SUPABASE_BASE}/15-luo-lawyer-letter-20211013.jpg`,
+  // 债权转让
+  'debt-transfer': `${SUPABASE_BASE}/16-debt-transfer-luo-cai.pdf`,
+  // 笔迹鉴定
+  'handwriting': `${SUPABASE_BASE}/handwriting-analysis.pdf`,
+  // 业务指示书（11月9日资产转移）
+  'business-directive': `${SUPABASE_BASE}/10-1-business-directive-20191109.pdf`,
+  // 私设审判微信
+  'wechat-tu-1114': `${SUPABASE_BASE}/wechat-yuanhao-tuyunfeng-20191114.png`,
+  'wechat-lv-1114': `${SUPABASE_BASE}/wechat-yuanhao-lvweilin-20191114.png`,
+  // 公司证照
+  'business-license': `${SUPABASE_BASE}/04-qianlu-business-license.pdf`,
+  'green-license': `${SUPABASE_BASE}/08-1-green-license.pdf`,
+  'shareholder-register': `${SUPABASE_BASE}/shareholder-register.pdf`,
+  // 千寻公司
+  'qianxun-investor': `${SUPABASE_BASE}/qianxun-investor-info.jpg`,
+  // 罗建峰在日本照片
+  'luo-japan-1': `${SUPABASE_BASE}/luo-in-japan-1.png`,
+  'luo-japan-2': `${SUPABASE_BASE}/luo-in-japan-2.png`,
+  'luo-japan-3': `${SUPABASE_BASE}/luo-in-japan-3.png`,
+  // 爱企查报告
+  'aiqicha-luo': `${SUPABASE_BASE}/aiqicha-luo-jianfeng.pdf`,
+  'aiqicha-cai-qitao': `${SUPABASE_BASE}/aiqicha-cai-qitao.pdf`,
+  'aiqicha-cai-qiyong': `${SUPABASE_BASE}/aiqicha-cai-qiyong.pdf`,
+  'aiqicha-lv': `${SUPABASE_BASE}/aiqicha-lv-weilin.pdf`,
+  // 百度资料
+  'baidu-luo': `${SUPABASE_BASE}/baidu-luo-jianfeng.png`,
+  // 吕伟麟代付
+  'lv-payment': `${SUPABASE_BASE}/19-1-lv-payment-proof.jpg`,
+  'lv-statement': `${SUPABASE_BASE}/19-2-lv-statement.jpg`,
+  // 11月9日现场
+  'scene-1109-1': `${SUPABASE_BASE}/photo_20191109_1.png`,
+  'scene-1109-2': `${SUPABASE_BASE}/photo_20191109_2.png`,
+  'scene-1109-video': `${SUPABASE_BASE}/VID_20191109_180841.mp4`,
+  // 撤销仲裁
+  'revoke-arbitration': `${SUPABASE_BASE}/revoke-arbitration-court-decision.pdf`
+};
+
+function showEvidence(evidenceId, title) {
+  const path = evidencePaths[evidenceId];
+  const modal = document.getElementById('evidenceModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalBody = document.getElementById('modalBody');
+
+  modalTitle.textContent = title || '证据预览';
+
+  if (!path) {
+    modalBody.innerHTML = '<p style="text-align:center;padding:40px;color:#666;">此证据待上传</p>';
+  } else {
+    const ext = path.split('.').pop().toLowerCase();
+    const fullPath = path;
+
+    if (['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext)) {
+      modalBody.innerHTML = `<img src="${fullPath}" alt="${title}" style="max-width:100%;">`;
+    } else if (ext === 'pdf') {
+      modalBody.innerHTML = `<iframe src="${fullPath}" style="width:100%;height:70vh;border:none;"></iframe>`;
+    } else if (['mp3', 'wav', 'm4a'].includes(ext)) {
+      modalBody.innerHTML = `
+        <div style="text-align:center;padding:40px;">
+          <p style="margin-bottom:20px;font-weight:bold;">${title}</p>
+          <audio controls style="width:100%;max-width:400px;">
+            <source src="${fullPath}" type="audio/${ext === 'm4a' ? 'mp4' : ext}">
+            您的浏览器不支持音频播放
+          </audio>
+        </div>
+      `;
+    } else {
+      modalBody.innerHTML = `<p style="text-align:center;padding:40px;">不支持的文件格式: ${ext}</p>`;
+    }
+  }
+
+  modal.classList.add('show');
+}
+
+function closeModal() {
+  document.getElementById('evidenceModal').classList.remove('show');
+  document.getElementById('modalBody').innerHTML = '';
+}
+
+// 点击遮罩关闭
+document.getElementById('evidenceModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+// ESC键关闭
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+</script>
 
 </body>
 </html>
