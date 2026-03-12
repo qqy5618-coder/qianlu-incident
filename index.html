@@ -4023,6 +4023,324 @@ body.locked>*:not(#password-gate){display:none!important}
     <h3 class="section-title"><span class="icon">&#128373;</span> 关联企业调查 &mdash; 邓桂燕节点与共用财务网络</h3>
     <p class="section-desc">通过爱企查工商数据调查发现：吕伟麟、蔡启涛、蔡启泳、孔宇、吴铭刚、罗建峰等人在中国共享同一名财务总管<strong>邓桂燕</strong>，邓桂燕同时担任7家关联公司的财务负责人。这一发现直接推翻了仲裁裁决的核心事实认定。</p>
 
+    <!-- 犯罪集团企业关联总图 -->
+    <div class="evidence-block" style="background:#fafafa; padding:20px; border:2px solid #b71c1c; border-radius:10px;">
+      <h4 style="color:#b71c1c; text-align:center; margin-bottom:4px;">犯罪集团企业关联总图</h4>
+      <p style="text-align:center; color:#666; font-size:0.85em; margin-bottom:16px;">以邓桂燕为核心枢纽，串联全部涉案人员与关联企业（数据来源：爱企查工商登记信息）</p>
+
+      <svg viewBox="0 0 1000 780" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:1000px; margin:0 auto; display:block; font-family:'Microsoft YaHei','PingFang SC',sans-serif;">
+        <!-- 背景 -->
+        <rect width="1000" height="780" fill="#fafafa" rx="8"/>
+
+        <!-- 连接线：邓桂燕 → 各公司（红色粗线） -->
+        <g stroke="#c62828" stroke-width="2.5" stroke-opacity="0.6" fill="none">
+          <line x1="500" y1="390" x2="500" y2="185"/><!-- 拓派电子 -->
+          <line x1="500" y1="390" x2="740" y2="265"/><!-- 迅得物业 -->
+          <line x1="500" y1="390" x2="760" y2="460"/><!-- 讯得企业 -->
+          <line x1="500" y1="390" x2="640" y2="610"/><!-- 千寻合同会社 -->
+          <line x1="500" y1="390" x2="360" y2="610"/><!-- 百智达物业 -->
+          <line x1="500" y1="390" x2="240" y2="460"/><!-- 宇翔企业 -->
+          <line x1="500" y1="390" x2="260" y2="265"/><!-- 千路旅游 -->
+          <line x1="500" y1="390" x2="500" y2="105"/><!-- 千路商事 -->
+        </g>
+
+        <!-- 连接线：涉案人员 → 公司（各色细线） -->
+        <!-- 吴铭刚 → 拓派电子 -->
+        <line x1="500" y1="42" x2="500" y2="160" stroke="#b71c1c" stroke-width="2" stroke-dasharray="6,3"/>
+        <!-- 吕伟麟 → 拓派电子/迅得物业/千路旅游/讯得企业 -->
+        <g stroke="#e65100" stroke-width="1.5" stroke-opacity="0.7">
+          <line x1="890" y1="175" x2="540" y2="175"/><!-- 拓派电子 -->
+          <line x1="890" y1="175" x2="780" y2="260"/><!-- 迅得物业 -->
+          <line x1="890" y1="175" x2="300" y2="260"/><!-- 千路旅游 -->
+          <line x1="890" y1="200" x2="790" y2="450"/><!-- 讯得企业 -->
+        </g>
+        <!-- 蔡启涛 → 关联（虚线） -->
+        <g stroke="#ef6c00" stroke-width="1.5" stroke-dasharray="4,3" stroke-opacity="0.6">
+          <line x1="920" y1="510" x2="790" y2="470"/><!-- 讯得企业 -->
+          <line x1="920" y1="510" x2="300" y2="280"/><!-- 千路旅游 -->
+        </g>
+        <!-- 罗建峰 → 迅得物业/千寻 -->
+        <g stroke="#d84315" stroke-width="1.5" stroke-dasharray="4,3" stroke-opacity="0.6">
+          <line x1="740" y1="720" x2="770" y2="280"/><!-- 迅得物业 -->
+          <line x1="740" y1="720" x2="660" y2="630"/><!-- 千寻 -->
+        </g>
+        <!-- 蔡启泳 → 百智达物业 -->
+        <line x1="260" y1="720" x2="360" y2="630" stroke="#ff8f00" stroke-width="1.5"/>
+        <!-- 孔宇 → 宇翔企业 -->
+        <g stroke="#ff8f00" stroke-width="1.5">
+          <line x1="80" y1="510" x2="220" y2="470"/><!-- 宇翔 -->
+        </g>
+        <!-- 凃云峰 → 千路商事/千寻 -->
+        <g stroke="#795548" stroke-width="1.5" stroke-dasharray="5,3">
+          <line x1="110" y1="175" x2="460" y2="100"/><!-- 千路商事 -->
+          <line x1="110" y1="175" x2="610" y2="600"/><!-- 千寻 -->
+        </g>
+
+        <!-- 公司节点（蓝色圆角矩形） -->
+        <g>
+          <!-- 千路商事(日本) - 特殊金色 -->
+          <rect x="400" y="80" width="200" height="46" rx="8" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+          <text x="500" y="100" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">千路商事株式会社</text>
+          <text x="500" y="116" text-anchor="middle" font-size="9" fill="#888">（日本）凃云峰=法人</text>
+
+          <!-- 拓派电子 -->
+          <rect x="400" y="155" width="200" height="46" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+          <text x="500" y="175" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">佛山拓派电子科技</text>
+          <text x="500" y="191" text-anchor="middle" font-size="9" fill="#555">吴铭刚=法人 吕伟麟=监事 邓=财务</text>
+
+          <!-- 千路旅游 -->
+          <rect x="160" y="240" width="200" height="46" rx="8" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+          <text x="260" y="260" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">千路旅游咨询</text>
+          <text x="260" y="276" text-anchor="middle" font-size="9" fill="#555">吕伟麟=监事 邓=财务 已注销</text>
+
+          <!-- 迅得物业 -->
+          <rect x="640" y="240" width="200" height="46" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+          <text x="740" y="260" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">迅得物业管理</text>
+          <text x="740" y="276" text-anchor="middle" font-size="9" fill="#555">吕伟麟=董事 孔宇=股东 邓=财务</text>
+
+          <!-- 宇翔企业 -->
+          <rect x="140" y="435" width="200" height="46" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+          <text x="240" y="455" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">宇翔企业管理</text>
+          <text x="240" y="471" text-anchor="middle" font-size="9" fill="#555">孔宇=法人 吕伟麟=监事 邓=财务</text>
+
+          <!-- 讯得企业 -->
+          <rect x="660" y="435" width="200" height="46" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+          <text x="760" y="455" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">讯得企业管理</text>
+          <text x="760" y="471" text-anchor="middle" font-size="9" fill="#555">吕伟麟=法人 邓=财务</text>
+
+          <!-- 百智达物业 -->
+          <rect x="260" y="590" width="200" height="46" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+          <text x="360" y="610" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">百智达物业管理</text>
+          <text x="360" y="626" text-anchor="middle" font-size="9" fill="#555">蔡启泳=法人 吕伟麟=监事 邓=财务</text>
+
+          <!-- 千寻合同会社 -->
+          <rect x="540" y="590" width="200" height="46" rx="8" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+          <text x="640" y="610" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">千寻合同会社</text>
+          <text x="640" y="626" text-anchor="middle" font-size="9" fill="#555">（日本）凃云峰+蔡启涛+罗建峰</text>
+        </g>
+
+        <!-- 邓桂燕：中心大节点 -->
+        <circle cx="500" cy="390" r="48" fill="#b71c1c" stroke="#fff" stroke-width="3"/>
+        <circle cx="500" cy="390" r="52" fill="none" stroke="#b71c1c" stroke-width="1.5" stroke-opacity="0.4"/>
+        <text x="500" y="385" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">邓桂燕</text>
+        <text x="500" y="403" text-anchor="middle" font-size="10" fill="#ffcdd2">财务总管</text>
+
+        <!-- 涉案人员节点（外围） -->
+        <!-- 吴铭刚 - 顶部 -->
+        <circle cx="500" cy="42" r="30" fill="#b71c1c" stroke="#fff" stroke-width="2"/>
+        <text x="500" y="38" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">吴铭刚</text>
+        <text x="500" y="52" text-anchor="middle" font-size="8" fill="#ffcdd2">幕后老板</text>
+
+        <!-- 吕伟麟 - 右上 -->
+        <circle cx="890" cy="185" r="30" fill="#d84315" stroke="#fff" stroke-width="2"/>
+        <text x="890" y="181" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">吕伟麟</text>
+        <text x="890" y="195" text-anchor="middle" font-size="8" fill="#ffccbc">41%控股</text>
+
+        <!-- 蔡启涛 - 右下 -->
+        <circle cx="920" cy="510" r="30" fill="#e65100" stroke="#fff" stroke-width="2"/>
+        <text x="920" y="506" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">蔡启涛</text>
+        <text x="920" y="520" text-anchor="middle" font-size="8" fill="#ffe0b2">现场管控</text>
+
+        <!-- 罗建峰 - 右下方 -->
+        <circle cx="740" cy="720" r="30" fill="#d84315" stroke="#fff" stroke-width="2"/>
+        <text x="740" y="716" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">罗建峰</text>
+        <text x="740" y="730" text-anchor="middle" font-size="8" fill="#ffccbc">名义债权人</text>
+
+        <!-- 蔡启泳 - 左下方 -->
+        <circle cx="260" cy="720" r="30" fill="#ff8f00" stroke="#fff" stroke-width="2"/>
+        <text x="260" y="716" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">蔡启泳</text>
+        <text x="260" y="730" text-anchor="middle" font-size="8" fill="#fff8e1">仲裁工具人</text>
+
+        <!-- 孔宇 - 左 -->
+        <circle cx="80" cy="510" r="30" fill="#ff8f00" stroke="#fff" stroke-width="2"/>
+        <text x="80" y="506" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">孔宇</text>
+        <text x="80" y="520" text-anchor="middle" font-size="8" fill="#fff8e1">商业伙伴</text>
+
+        <!-- 凃云峰 - 左上 -->
+        <circle cx="110" cy="175" r="30" fill="#795548" stroke="#fff" stroke-width="2"/>
+        <text x="110" y="171" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">凃云峰</text>
+        <text x="110" y="185" text-anchor="middle" font-size="8" fill="#d7ccc8">法定代表人</text>
+
+        <!-- 图例 -->
+        <g transform="translate(20,660)">
+          <rect width="220" height="100" rx="6" fill="#fff" stroke="#ddd" stroke-width="1"/>
+          <text x="10" y="18" font-size="10" font-weight="bold" fill="#333">图例</text>
+          <circle cx="20" cy="36" r="6" fill="#b71c1c"/><text x="32" y="40" font-size="9" fill="#333">幕后老板 / 财务总管</text>
+          <circle cx="20" cy="54" r="6" fill="#d84315"/><text x="32" y="58" font-size="9" fill="#333">控制层（核心成员）</text>
+          <circle cx="20" cy="72" r="6" fill="#ff8f00"/><text x="32" y="76" font-size="9" fill="#333">执行层 / 商业伙伴</text>
+          <rect x="14" y="84" width="12" height="8" rx="2" fill="#e3f2fd" stroke="#1565c0" stroke-width="1"/><text x="32" y="92" font-size="9" fill="#333">关联企业（中国）</text>
+        </g>
+
+        <!-- "财务"标注 -->
+        <g font-size="8" fill="#b71c1c" font-weight="bold">
+          <text x="485" y="295" transform="rotate(-70,485,295)">财务</text>
+          <text x="620" y="340" transform="rotate(-25,620,340)">财务</text>
+          <text x="640" y="435" transform="rotate(20,640,435)">财务</text>
+          <text x="585" y="510" transform="rotate(55,585,510)">财务</text>
+          <text x="420" y="510" transform="rotate(-55,420,510)">财务</text>
+          <text x="355" y="430" transform="rotate(-20,355,430)">财务</text>
+          <text x="375" y="335" transform="rotate(30,375,335)">财务</text>
+          <text x="505" y="250" transform="rotate(90,505,250)">财务</text>
+        </g>
+      </svg>
+
+      <!-- 人员-企业交叉矩阵 -->
+      <h4 style="color:#b71c1c; text-align:center; margin-top:24px; margin-bottom:8px;">涉案人员 &times; 关联企业 交叉矩阵</h4>
+      <p style="text-align:center; color:#666; font-size:0.85em; margin-bottom:12px;">红色标记（邓桂燕列）在每一家公司中都出现——她是唯一连接全部涉案人员的核心枢纽</p>
+      <div style="overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; font-size:0.82em; min-width:800px;">
+          <thead>
+            <tr style="background:#263238; color:#fff;">
+              <th style="padding:8px; border:1px solid #455a64; text-align:left; min-width:160px;">关联企业</th>
+              <th style="padding:8px; border:1px solid #455a64; text-align:center; background:#b71c1c;">吴铭刚</th>
+              <th style="padding:8px; border:1px solid #455a64; text-align:center;">吕伟麟</th>
+              <th style="padding:8px; border:1px solid #455a64; text-align:center;">蔡启涛</th>
+              <th style="padding:8px; border:1px solid #455a64; text-align:center;">罗建峰</th>
+              <th style="padding:8px; border:1px solid #455a64; text-align:center;">蔡启泳</th>
+              <th style="padding:8px; border:1px solid #455a64; text-align:center;">孔宇</th>
+              <th style="padding:8px; border:1px solid #455a64; text-align:center;">凃云峰</th>
+              <th style="padding:8px; border:1px solid #455a64; text-align:center; background:#b71c1c; min-width:70px;">邓桂燕</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff8e1;">
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">千路商事株式会社（日本）</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">股东41%</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">股东10%</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">出资人</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">法人7.35%</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr style="background:#fff8e1;">
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">千寻合同会社（日本）</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">出资人</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">出资人</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">代表社员</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">佛山拓派电子科技</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffebee; font-weight:bold;">法人/董事</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">监事</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr style="background:#f9f9f9;">
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">佛山迅得物业管理</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">董事</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">关联网络</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">股东</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">千路旅游咨询 <span style="color:#c62828;font-size:0.8em;">已注销</span></td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">监事</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">关联</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr style="background:#f9f9f9;">
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">佛山讯得企业管理</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">法人</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">关联</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">关联</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">宇翔企业管理</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">监事</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">法人</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr style="background:#f9f9f9;">
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">百智达物业管理</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">监事35%</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">法人</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">英德长兴投资管理</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">关联</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">法人</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr style="background:#f9f9f9;">
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">钧成企业管理</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">法人</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">顺悦物业管理</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#fff3e0;">法人</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center;">—</td>
+              <td style="padding:6px; border:1px solid #ddd; text-align:center; background:#ffcdd2; font-weight:bold; color:#b71c1c;">财务</td>
+            </tr>
+            <tr style="background:#ffebee; font-weight:bold;">
+              <td style="padding:8px; border:1px solid #ddd; color:#b71c1c;">出现公司数</td>
+              <td style="padding:8px; border:1px solid #ddd; text-align:center; color:#b71c1c;">1</td>
+              <td style="padding:8px; border:1px solid #ddd; text-align:center; color:#d84315;">8</td>
+              <td style="padding:8px; border:1px solid #ddd; text-align:center; color:#e65100;">4</td>
+              <td style="padding:8px; border:1px solid #ddd; text-align:center; color:#d84315;">3</td>
+              <td style="padding:8px; border:1px solid #ddd; text-align:center; color:#ff8f00;">1</td>
+              <td style="padding:8px; border:1px solid #ddd; text-align:center; color:#ff8f00;">6</td>
+              <td style="padding:8px; border:1px solid #ddd; text-align:center; color:#795548;">3</td>
+              <td style="padding:8px; border:1px solid #ddd; text-align:center; background:#b71c1c; color:#fff; font-size:1.1em;">11 全部</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align:center; margin-top:12px; padding:10px; background:#ffebee; border-radius:6px; border:1px solid #c62828;"><strong style="color:#b71c1c;">结论：邓桂燕是唯一一个在全部11家涉案关联公司中都担任财务的人物。</strong>她是连接吴铭刚（幕后老板）、吕伟麟（核心控股）、蔡启涛/蔡启泳（仲裁发起人）、罗建峰（名义债权人）、孔宇（商业伙伴）的<strong>唯一共同纽带</strong>——没有邓桂燕，这个犯罪网络的组织性将无法被直观证明。</p>
+    </div>
+
     <div class="evidence-block">
       <h4>一、邓桂燕的核心角色</h4>
       <p>邓桂燕是吕伟麟和蔡启涛最早安排担任千路商事株式会社<strong>中国方面会计</strong>的人员。吕伟麟和蔡启涛的说辞是：邓桂燕是他们中国公司的会计，可以"免费"帮助千路商事做财务管理，省去日本人工成本。</p>
