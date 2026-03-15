@@ -401,6 +401,7 @@
   <h1>🔴 刑事报案导航 - 员昊、邱千依诉蔡启泳等五人虚假诉讼案</h1>
   <div class="subtitle">本页面供律师/警察同步查看，点击右侧证据按钮可直接查看对应证据</div>
   <div class="nav-links">
+    <a href="index.html" style="background:#fff;color:#1a237e;font-weight:bold;">← 返回主页面</a>
     <a href="#core-logic" class="active">核心逻辑</a>
     <a href="#traps" style="background:#ff6f00;">❓ 疑问澄清</a>
     <a href="#lie1">谎言1:无法获知财务</a>
@@ -462,8 +463,11 @@
             <a class="evidence-btn pdf" href="evidence/刑事控告书-合同条款版.html" target="_blank">
               <span class="icon">📄</span>合同条款详细分析
             </a>
-            <a class="evidence-btn" onclick="showEvidence('审计报告（中文翻译）', 'evidence/14-2审计报告中文翻译.pdf')">
-              <span class="icon">📋</span>证据4-1 审计报告
+            <a class="evidence-btn pdf" onclick="showEvidence('审计报告（日文原版）', 'evidence/14-1审计报告日文原版.pdf')" style="cursor:pointer;">
+              <span class="icon">📄</span>证据4-1 审计报告（日文原版）
+            </a>
+            <a class="evidence-btn pdf" onclick="showEvidence('审计报告（中文翻译）', 'evidence/14-2审计报告中文翻译.pdf')" style="cursor:pointer;">
+              <span class="icon">📄</span>证据4-1 审计报告（中文翻译）
             </a>
           </div>
         </div>
@@ -472,7 +476,7 @@
           <div class="point red-border">
             <h4>虚假诉讼的三步走</h4>
             <p><strong>第一步：</strong>湛江仲裁 → 洪华全枉法裁决，跳过违约条款</p>
-            <p><strong>第二步：</strong>湛江中院撤裁听证 → 审计报告曝光，蔡启泳明知内容</p>
+            <p><strong>第二步：</strong>湛江中院撤裁听证 → <span class="red">王奥（蔡启泳代理律师）当庭拿出审计报告自认证据</span>，蔡启泳明知内容</p>
             <p><strong>第三步：</strong>南昌中院执行 → 蔡启泳隐匿审计报告，欺骗执行法院</p>
             <p style="margin-top:15px;font-weight:bold;color:#c62828;">➜ 这就是虚假诉讼罪的本质：欺骗执行法院！</p>
           </div>
@@ -586,7 +590,7 @@
             <p style="margin-top:10px;">——见仲裁裁决书第5页</p>
           </div>
           <div class="evidence-btns">
-            <a class="evidence-btn" onclick="alert('此证据待上传，请查看纸质材料')">
+            <a class="evidence-btn pdf" onclick="showEvidence('裁决书第5页', 'evidence/17湛江仲裁裁决书.pdf')" style="cursor:pointer;">
               <span class="icon">📄</span>证据1-1 裁决书第5页
             </a>
           </div>
@@ -677,10 +681,13 @@
             <p class="red" style="margin-top:10px;">这是故意篡改合同条款！</p>
           </div>
           <div class="evidence-btns">
-            <a class="evidence-btn pdf" onclick="alert('此证据待上传，请查看纸质材料')">
-              <span class="icon">📄</span>证据3-1 借款协议
+            <a class="evidence-btn pdf" onclick="showEvidence('2018年第一次借款协议', 'evidence/05-2018年第一次借款协议.pdf')" style="cursor:pointer;">
+              <span class="icon">📄</span>证据3-1 第一次借款协议
             </a>
-            <a class="evidence-btn" onclick="alert('此证据待上传，请查看纸质材料')">
+            <a class="evidence-btn pdf" onclick="showEvidence('2019年第二次借款协议', 'evidence/06-2019年第二次借款协议.pdf')" style="cursor:pointer;">
+              <span class="icon">📄</span>证据3-2 第二次借款协议
+            </a>
+            <a class="evidence-btn pdf" onclick="showEvidence('裁决书第29页', 'evidence/17湛江仲裁裁决书.pdf')" style="cursor:pointer;">
               <span class="icon">📄</span>证据1-1 裁决书第29页
             </a>
           </div>
@@ -716,8 +723,8 @@
           </div>
           <div class="timeline-item">
             <div class="timeline-date">2023年8月21日</div>
-            <p>湛江中院撤裁听证会——审计报告首次曝光</p>
-            <p><strong>蔡启泳此时已明知审计报告内容</strong></p>
+            <p>湛江中院撤裁听证会——<span class="red">王奥（蔡启泳代理律师）当庭拿出审计报告作为自认证据</span></p>
+            <p><strong>蔡启泳此时已明知审计报告证明员昊无违约，却仍继续执行！</strong></p>
           </div>
           <div class="timeline-item alert">
             <div class="timeline-date">2023年/2024年</div>
@@ -745,28 +752,31 @@
           <div class="timeline-item alert">
             <div class="timeline-date">2019年11月9日</div>
             <p>凃云峰签署《业务指示书》，将全部财务资料转移给西田诚亮</p>
-            <a class="evidence-btn pdf" onclick="alert('此证据待上传，请查看纸质材料')" style="margin-top:10px;">
-              <span class="icon">📄</span>证据5-1 业务指示书
+            <a class="evidence-btn pdf" onclick="showEvidence('业务指示书翻译件（1-2页）', 'evidence/业务指示书翻译件_1-2.pdf')" style="margin-top:10px;cursor:pointer;">
+              <span class="icon">📄</span>证据5-1 业务指示书（1-2页）
+            </a>
+            <a class="evidence-btn pdf" onclick="showEvidence('业务指示书翻译件（3-6页）', 'evidence/业务指示书翻译件_3-6.pdf')" style="margin-top:5px;cursor:pointer;">
+              <span class="icon">📄</span>证据5-1 业务指示书（3-6页）
             </a>
           </div>
           <div class="timeline-item alert">
-            <div class="timeline-date">2019年11月底</div>
-            <p>邓桂燕（吕伟麟/蔡启涛指派的财务）停止在群内汇报</p>
-            <a class="evidence-btn img" onclick="showEvidence('财务汇报停止', 'evidence/微信对话截图/IMG_7003.PNG')" style="margin-top:10px;">
-              <span class="icon">🖼️</span>证据2-5 群内汇报记录
+            <div class="timeline-date">2019年11月12日</div>
+            <p>邓桂燕（吕伟麟/蔡启涛指派的财务）最后一次在股东群内汇报财务，此后停止汇报</p>
+            <a class="evidence-btn img" onclick="showEvidence('2019年11月12日邓桂燕最后一次在股东群内汇报财务', 'evidence/微信对话截图/2019年11月12日邓桂燕最后一次在股东群内汇报财务.PNG')" style="margin-top:10px;cursor:pointer;">
+              <span class="icon">🖼️</span>证据2-5 邓桂燕最后汇报
             </a>
           </div>
           <div class="timeline-item alert">
             <div class="timeline-date">2019年12月2日</div>
             <p>凃云峰、吕伟麟、蔡启涛召开秘密股东会，修改账户密码</p>
-            <a class="evidence-btn pdf" onclick="showEvidence('12月2日股东会记录', 'evidence/股东会证据/12-1股东会记录.pdf')" style="margin-top:10px;">
+            <a class="evidence-btn pdf" onclick="showEvidence('2019年12月2日第一回临时股东大会', 'evidence/股东会证据/11-2019年12月2日第一回临时股东大会.pdf')" style="margin-top:10px;cursor:pointer;">
               <span class="icon">📄</span>证据6-1 股东会记录
             </a>
           </div>
           <div class="timeline-item alert">
             <div class="timeline-date">2019年12月3日</div>
             <p><strong>秘密股东会后仅24小时</strong>，罗建峰发出律师函追索财务数据</p>
-            <a class="evidence-btn pdf" onclick="alert('此证据待上传，请查看纸质材料')" style="margin-top:10px;">
+            <a class="evidence-btn pdf" onclick="showEvidence('罗建峰2019年12月3日律师函', 'evidence/12-罗建峰2019年12月3日律师函.pdf')" style="margin-top:10px;cursor:pointer;">
               <span class="icon">📄</span>证据7-1 律师函
             </a>
           </div>
@@ -802,7 +812,7 @@
           </tr>
           <tr>
             <td>公司关系（日本）</td>
-            <td>罗建峰与凃云峰、蔡启涛于2019年1月共同成立<strong>千寻合同会社</strong></td>
+            <td>罗建峰与凃云峰、蔡启涛于2019年2月共同成立<strong>千寻合同会社</strong></td>
             <td>
               <a class="evidence-btn img" onclick="showEvidence('千寻合同会社', 'evidence/千寻合同会社/千寻合同会社出资人信息.JPG')" style="margin:0;">
                 <span class="icon">🖼️</span>证据8-1
@@ -813,7 +823,7 @@
             <td>公司关系（中国）</td>
             <td>吕伟麟是蔡启泳公司（房悦居）的<strong>监事</strong>和<strong>投资人</strong></td>
             <td>
-              <a class="evidence-btn" onclick="alert('此证据待上传，请查看纸质材料')" style="margin:0;">
+              <a class="evidence-btn pdf" onclick="showEvidence('爱企查-吕伟麟关联企业', 'evidence/business-network/aiqicha-lvweilin.pdf')" style="margin:0;cursor:pointer;">
                 <span class="icon">📄</span>证据9-1
               </a>
             </td>
@@ -822,7 +832,7 @@
             <td>资金关系</td>
             <td>吕伟麟代罗建峰支付借款1000万日元</td>
             <td>
-              <a class="evidence-btn" onclick="alert('此证据待上传，请查看纸质材料')" style="margin:0;">
+              <a class="evidence-btn pdf" onclick="showEvidence('裁决书（含吕伟麟代付记录）', 'evidence/17湛江仲裁裁决书.pdf')" style="margin:0;cursor:pointer;">
                 <span class="icon">📄</span>证据10-1
               </a>
             </td>
@@ -831,7 +841,7 @@
             <td>资金关系</td>
             <td>吕伟麟代蔡启泳支付律师费5000元</td>
             <td>
-              <a class="evidence-btn" onclick="alert('此证据待上传，请查看纸质材料')" style="margin:0;">
+              <a class="evidence-btn pdf" onclick="showEvidence('裁决书（含吕伟麟代付律师费）', 'evidence/17湛江仲裁裁决书.pdf')" style="margin:0;cursor:pointer;">
                 <span class="icon">📄</span>证据10-2
               </a>
             </td>
@@ -840,16 +850,30 @@
             <td>家族关系</td>
             <td>蔡启涛与蔡启泳系<strong>亲兄弟</strong></td>
             <td>
-              <a class="evidence-btn" onclick="alert('此证据待上传，请查看纸质材料')" style="margin:0;">
-                <span class="icon">📄</span>证据11-1
+              <a class="evidence-btn img" onclick="showEvidence('蔡启泳关联企业网络', 'evidence/business-network/caiqiyong-network.png')" style="margin:0;cursor:pointer;">
+                <span class="icon">🖼️</span>证据11-1
               </a>
             </td>
           </tr>
         </table>
 
-        <a class="evidence-btn" href="evidence/business-network/" target="_blank" style="width:100%;justify-content:center;margin-top:20px;">
-          <span class="icon">🔗</span>查看完整商业关系网络图
-        </a>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;">
+          <a class="evidence-btn img" onclick="showEvidence('蔡启泳关联企业网络', 'evidence/business-network/caiqiyong-network.png')" style="cursor:pointer;flex:1;min-width:200px;justify-content:center;">
+            <span class="icon">🖼️</span>蔡启泳关系网络
+          </a>
+          <a class="evidence-btn img" onclick="showEvidence('吕伟麟关联企业网络', 'evidence/business-network/lvweilin-network.png')" style="cursor:pointer;flex:1;min-width:200px;justify-content:center;">
+            <span class="icon">🖼️</span>吕伟麟关系网络
+          </a>
+          <a class="evidence-btn img" onclick="showEvidence('蔡启涛关联企业网络', 'evidence/business-network/caiqitao-network.png')" style="cursor:pointer;flex:1;min-width:200px;justify-content:center;">
+            <span class="icon">🖼️</span>蔡启涛关系网络
+          </a>
+          <a class="evidence-btn img" onclick="showEvidence('孔宇关联企业网络', 'evidence/business-network/kongyu-network.png')" style="cursor:pointer;flex:1;min-width:200px;justify-content:center;">
+            <span class="icon">🖼️</span>孔宇关系网络
+          </a>
+          <a class="evidence-btn img" onclick="showEvidence('罗建峰关联企业网络', 'evidence/business-network/caishiyue-network.png')" style="cursor:pointer;flex:1;min-width:200px;justify-content:center;">
+            <span class="icon">🖼️</span>拓派-邓桂-吕关系
+          </a>
+        </div>
       </div>
     </div>
 
@@ -909,7 +933,7 @@
             </table>
           </div>
           <div class="evidence-btns">
-            <a class="evidence-btn" onclick="alert('此证据待上传，请查看纸质材料')">
+            <a class="evidence-btn pdf" onclick="showEvidence('裁决书第7-8页', 'evidence/17湛江仲裁裁决书.pdf')" style="cursor:pointer;">
               <span class="icon">📄</span>证据1-1 裁决书第7-8页
             </a>
           </div>
@@ -940,7 +964,7 @@
           </tr>
           <tr>
             <td>限制高消费</td>
-            <td>员昊被列入限制高消费名单<strong>超过2年</strong><br>禁止乘坐飞机、高铁</td>
+            <td>员昊、邱千依均被列入限制高消费名单<strong>超过2年</strong><br>禁止乘坐飞机、高铁</td>
           </tr>
           <tr class="lie">
             <td><strong>严重精神损害</strong></td>
@@ -1025,7 +1049,7 @@
             <p style="margin-top:10px;"><strong>调查目的：</strong>湛江中院已确认"律师费由吕伟麟代为支付"。若两处签名并非同一人书写，则吕伟麟可能是实际操控整个仲裁的幕后人。</p>
           </div>
           <div class="evidence-btns">
-            <a class="evidence-btn" onclick="alert('此证据待上传，请查看纸质材料')">
+            <a class="evidence-btn pdf" onclick="showEvidence('罗建峰与蔡启泳的债权转让协议', 'evidence/16罗建峰与蔡启泳的债权转让协议.pdf')" style="cursor:pointer;">
               <span class="icon">📄</span>证据11-1 债权转让协议
             </a>
           </div>
