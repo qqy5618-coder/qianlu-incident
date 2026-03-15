@@ -3,13 +3,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.main-nav a');
   const sections = document.querySelectorAll('.section');
 
+  // Section grouping: clicking one nav item shows multiple related sections
+  const sectionGroups = {
+    'criminal-complaint': ['criminal-complaint', 'rebuttal', 'evidence', 'luo-financial-group', 'affiliated'],
+    'legal': ['legal', 'losses']
+  };
+
   function showSection(id) {
     sections.forEach(s => s.classList.remove('active'));
     navLinks.forEach(a => a.classList.remove('active'));
-    const target = document.getElementById(id);
-    if (target) {
-      target.classList.add('active');
-    }
+    const idsToShow = sectionGroups[id] || [id];
+    idsToShow.forEach(sid => {
+      const target = document.getElementById(sid);
+      if (target) target.classList.add('active');
+    });
     const link = document.querySelector(`.main-nav a[data-section="${id}"]`);
     if (link) {
       link.classList.add('active');
