@@ -32,9 +32,9 @@
 
 | 日语原版 | 翻译件 storagePath | 状态 |
 |----------|-------------------|------|
-| 11 第一回临时股东大会 | `shareholders_meeting_20191202_cn.pdf` | 待翻译 |
-| 千寻玉出东（不动产登记） | `qianxun_tamade_east_cn.pdf` | 待翻译 |
-| 千寻玉出中（不动产登记） | `qianxun_tamade_central_cn.pdf` | 待翻译 |
+| 11 第一回临时股东大会 | 中日文同版，无需单独翻译 | ✅ 已确认 |
+| 千寻玉出东（不动产登记） | `evidence/千寻合同会社与株式会社Westage用于共同抵押的证据_1-4.pdf` | ✅ 已有 |
+| 千寻玉出中（不动产登记） | `evidence/千寻合同会社与株式会社Westage用于共同抵押的证据_26-27.pdf` | ✅ 已有 |
 
 **已有翻译件（无需操作）：**
 - 08 绿牌许可证 → `green_license_translation.pdf` (已上传)
