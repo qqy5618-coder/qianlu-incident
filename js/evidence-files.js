@@ -198,7 +198,7 @@ const EVIDENCE_FILES = {
     aliases: ["2019年第一次临时股东大会"],
     translations: {
       ja: { storagePath: "shareholders_meeting_20191202.pdf", uploaded: true },
-      cn: { storagePath: "shareholders_meeting_20191202_cn.pdf", uploaded: false }
+      cn: { storagePath: "shareholders_meeting_20191202.pdf", uploaded: true, note: "中日文同版" }
     },
     quickPreview: {
       storagePath: "preview_shareholders_meeting.png",
@@ -434,7 +434,7 @@ const EVIDENCE_FILES = {
     storagePath: "qianxun_tamade_east.pdf",
     translations: {
       ja: { storagePath: "qianxun_tamade_east.pdf", uploaded: true },
-      cn: { storagePath: "qianxun_tamade_east_cn.pdf", uploaded: false }
+      cn: { storagePath: "qianxun_tamade_east_cn.pdf", uploaded: true }
     }
   },
   "千寻玉出中.pdf": {
@@ -442,7 +442,7 @@ const EVIDENCE_FILES = {
     storagePath: "qianxun_tamade_central.pdf",
     translations: {
       ja: { storagePath: "qianxun_tamade_central.pdf", uploaded: true },
-      cn: { storagePath: "qianxun_tamade_central_cn.pdf", uploaded: false }
+      cn: { storagePath: "qianxun_tamade_central_cn.pdf", uploaded: true }
     }
   },
   "千寻与westage的共同担保房产证.pdf": {
@@ -505,7 +505,7 @@ const EVIDENCE_FILES = {
     storagePath: "lawyer_letter_luo_20211013.jpg"
   },
   "湛江仲裁申请书": {
-    uploaded: false, type: "pdf",
+    uploaded: true, type: "pdf",
     storagePath: "arbitration_application.pdf"
   },
   "执行通知": {
@@ -1100,43 +1100,43 @@ const EVIDENCE_FILES = {
 
   // === WeChat Conversation Screenshots (員昊与罗建峰) ===
   "微信对话截图-罗建峰2019年7月16日-1": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_luojianfeng_20190716_1.png",
     localPath: "evidence/微信对话截图/IMG_6998.PNG",
     aliases: ["罗建峰微信1", "罗建峰说公司运营顺利"]
   },
   "微信对话截图-罗建峰2019年7月16日-2": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_luojianfeng_20190716_2.png",
     localPath: "evidence/微信对话截图/IMG_6999.PNG",
     aliases: ["罗建峰微信2", "罗建峰讨论管理方式"]
   },
   "微信对话截图-罗建峰2019年7月16日-3": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_luojianfeng_20190716_3.png",
     localPath: "evidence/微信对话截图/IMG_7001.PNG",
     aliases: ["罗建峰微信3", "团队分工默契"]
   },
   "微信对话截图-罗建峰2019年7月16日-4": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_luojianfeng_20190716_4.png",
     localPath: "evidence/微信对话截图/IMG_7002.PNG",
     aliases: ["罗建峰微信4", "对你有信心"]
   },
   "微信对话截图-东洋游学群2018年10月": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_group_201810.png",
     localPath: "evidence/微信对话截图/IMG_7003.PNG",
     aliases: ["东洋游学群聊1", "公司发展讨论"]
   },
   "微信对话截图-东洋游学群2018年11月开业": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_group_opening_201811.png",
     localPath: "evidence/微信对话截图/IMG_7004.PNG",
     aliases: ["东洋游学群聊2", "公司正式开业", "罗建峰庆祝开业"]
   },
   "微信对话截图-东洋游学群成员": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_group_members.png",
     localPath: "evidence/微信对话截图/IMG_7005.PNG",
     aliases: ["东洋游学群成员", "群成员截图", "蔡启涛罗建峰吕伟麟同群"]
@@ -1144,13 +1144,13 @@ const EVIDENCE_FILES = {
 
   // === Shareholder Meeting Evidence (股东会证据) ===
   "2019年12月12日第二次股东会录音": {
-    uploaded: false, type: "audio",
+    uploaded: true, type: "audio",
     storagePath: "shareholder_meeting_20191212.m4a",
     localPath: "evidence/股东会证据/2019年12月12日千路第二次股东会.m4a",
     aliases: ["第二次股东会录音", "蔡启涛承认运营好", "股东会录音"]
   },
   "2019年12月23日供应商通知书": {
-    uploaded: false, type: "pdf",
+    uploaded: true, type: "pdf",
     storagePath: "supplier_notice_20191223.pdf",
     localPath: "evidence/股东会证据/13-2019年12月23日发给各供应商的通知书.pdf",
     aliases: ["伪造股东会决议", "律师函伪造开除员昊", "供应商通知书"]
@@ -1158,13 +1158,13 @@ const EVIDENCE_FILES = {
 
   // === Qianxun Company Evidence (千寻合同会社证据) ===
   "千寻合同会社法务局登记证明": {
-    uploaded: false, type: "pdf",
+    uploaded: true, type: "pdf",
     storagePath: "qianxun_company_registration.pdf",
     localPath: "evidence/千寻合同会社/千寻合同会社藤本_3.pdf",
     aliases: ["千寻合同会社藤本", "千寻法务局证明", "凃云峰罗建峰合谋证据"]
   },
   "千寻合同会社出资人信息": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "qianxun_investors_info.jpg",
     localPath: "evidence/千寻合同会社/千寻合同会社出资人信息.JPG",
     aliases: ["千寻出资人", "凃云峰吴铭刚罗建峰出资"]
@@ -1172,19 +1172,19 @@ const EVIDENCE_FILES = {
 
   // === Tu Yunfeng Conversation Evidence (凃云峰对话证据) ===
   "凃云峰微信对话-员昊质问转移资产": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_tuyunfeng_20191229_1.png",
     localPath: "evidence/凃云峰对话/IMG_7014.PNG",
     aliases: ["凃云峰对话1", "员昊质问转移资产", "凃云峰欠工资"]
   },
   "凃云峰微信对话-日语催工资1": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_tuyunfeng_20191229_2.png",
     localPath: "evidence/凃云峰对话/IMG_7015.PNG",
     aliases: ["凃云峰对话2", "凃云峰日语催工资", "制造员昊不回复假象"]
   },
   "凃云峰微信对话-日语催工资2": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_tuyunfeng_20200119.png",
     localPath: "evidence/凃云峰对话/IMG_7016.PNG",
     aliases: ["凃云峰对话3", "凃云峰持续日语催工资"]
@@ -1192,13 +1192,13 @@ const EVIDENCE_FILES = {
 
   // === Cai Qitao Threat Evidence (蔡启涛威胁证据) ===
   "蔡启涛威胁清算消息": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_caiqitao_threat_20191219.png",
     localPath: "evidence/蔡启涛威胁/IMG_7011.PNG",
     aliases: ["蔡启涛威胁1", "5天最后通牒", "280万清算威胁"]
   },
   "蔡启涛继续威胁消息": {
-    uploaded: false, type: "image",
+    uploaded: true, type: "image",
     storagePath: "wechat_caiqitao_threat_20191230.png",
     localPath: "evidence/蔡启涛威胁/IMG_7013.PNG",
     aliases: ["蔡启涛威胁2", "你知道的", "阻挠干扰威胁"]
