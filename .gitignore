@@ -16,4 +16,5 @@ node_modules/
 # Vercel
 .vercel/
 .vercel
-evidence/千路录像/*.mp4
+# 541MB video too large for GitHub/Vercel, use Baidu cloud link instead
+evidence/千路录像/VID_20191109_190317.mp4
