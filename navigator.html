@@ -1092,11 +1092,8 @@ function showEvidence(title, path) {
   if (ext === 'pdf') {
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-      // 移动端：弹窗提供下载按钮，用手机PDF阅读器打开完整文件
-      body.innerHTML = '<div style="text-align:center;padding:40px 20px;">' +
-        '<p style="font-size:16px;margin-bottom:20px;">移动端浏览器无法完整显示PDF，请下载后查看</p>' +
-        '<a href="' + path + '" download style="display:inline-block;padding:14px 28px;background:var(--primary);color:#fff;border-radius:8px;text-decoration:none;font-size:16px;">📥 下载 ' + title + '</a></div>';
-      document.getElementById('evidenceModal').classList.add('show');
+      // 移动端：直接跳转触发下载/打开
+      window.location.href = path;
     } else {
       window.open(path, '_blank');
     }
