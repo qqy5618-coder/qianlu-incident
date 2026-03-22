@@ -1090,7 +1090,8 @@ function showEvidence(title, path) {
   const ext = path.split('.').pop().toLowerCase();
 
   if (ext === 'pdf') {
-    body.innerHTML = '<iframe src="' + path + '"></iframe>';
+    window.open(path, '_blank');
+    return;
   } else if (['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext)) {
     body.innerHTML = '<img src="' + path + '" alt="' + title + '">';
   } else if (['m4a', 'mp3', 'wav'].includes(ext)) {
