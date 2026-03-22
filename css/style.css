@@ -1322,7 +1322,7 @@ body {
   border-left-color: var(--primary);
 }
 
-.callout strong {
+.callout > strong {
   display: block;
   margin-bottom: 6px;
   letter-spacing: 0.5px;
