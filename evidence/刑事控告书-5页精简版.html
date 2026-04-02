@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>刑事控告书（5页精简版）</title>
+<style>
+  @page { size: A4; margin: 13mm 14mm 13mm 14mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1 { font-size: 17pt; font-weight: 700; text-align: center; letter-spacing: 4px; margin-bottom: 4px; padding-bottom: 8px; border-bottom: 2px solid #c0392b; }
+  h2 { font-size: 10.5pt; font-weight: 700; color: #b71c1c; margin: 10px 0 5px; padding: 3px 8px; background: #ffebee; border-left: 4px solid #c0392b; }
+  h3 { font-size: 9.5pt; font-weight: 700; color: #1a1a1a; margin: 7px 0 4px; }
+  p { margin-bottom: 5px; }
+  table { width: 100%; border-collapse: collapse; margin: 5px 0; font-size: 9pt; }
+  th { background: #ffcdd2; padding: 5px 7px; border: 1px solid #ddd; text-align: left; font-weight: 700; }
+  td { padding: 5px 7px; border: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafafa; }
+  .red { color: #c0392b; font-weight: 700; }
+  .green-row td { background: #e8f5e9 !important; }
+  .red-row td { background: #ffcdd2 !important; }
+  blockquote { border-left: 3px solid #c0392b; padding: 4px 10px; margin: 5px 0; background: #fef9f9; font-size: 9pt; color: #444; }
+  ul { margin: 4px 0 5px 18px; }
+  li { margin-bottom: 2px; }
+
+  /* 摘要框 */
+  .summary { background: #0d47a1; color: #fff; padding: 10px 14px; margin: 6px 0 8px; border-radius: 3px; }
+  .summary p { margin-bottom: 5px; font-size: 9.5pt; line-height: 1.7; }
+  .summary strong.y { color: #ffeb3b; }
+  .summary strong.r { color: #ff8a80; }
+
+  /* 损害后果 */
+  .damage { background: #b71c1c; color: #fff; padding: 8px 12px; margin: 6px 0; }
+  .damage td { border-color: rgba(255,255,255,0.3); color: #fff; padding: 4px 8px; }
+  .damage th { background: rgba(255,255,255,0.2); color: #fff; border-color: rgba(255,255,255,0.3); padding: 4px 8px; }
+
+  /* 对比框 */
+  .compare { display: flex; gap: 8px; margin: 6px 0; }
+  .compare-box { flex: 1; padding: 8px 10px; border-radius: 3px; font-size: 9pt; }
+  .compare-box.orig { background: #e8f5e9; border: 2px solid #4caf50; }
+  .compare-box.fake { background: #ffcdd2; border: 2px solid #f44336; }
+  .compare-box .label { font-size: 8pt; font-weight: 700; margin-bottom: 4px; }
+  .compare-box.orig .label { color: #2e7d32; }
+  .compare-box.fake .label { color: #c62828; }
+
+  /* 警示框 */
+  .alert { background: #fff3e0; border: 1.5px solid #e65100; padding: 7px 10px; margin: 5px 0; border-radius: 3px; }
+  .alert-red { background: #ffebee; border: 1.5px solid #c0392b; padding: 7px 10px; margin: 5px 0; border-radius: 3px; }
+  .alert-dark { background: #1a237e; color: #fff; padding: 7px 10px; margin: 5px 0; border-radius: 3px; }
+  .alert-dark td { color: #fff; border-color: rgba(255,255,255,0.3); }
+  .alert-dark th { background: rgba(255,255,255,0.2); color: #fff; border-color: rgba(255,255,255,0.3); }
+
+  /* 步骤 */
+  .step { display: flex; align-items: flex-start; gap: 8px; margin: 4px 0; }
+  .step-num { background: #c0392b; color: #fff; font-weight: 700; font-size: 9pt; padding: 1px 7px; border-radius: 2px; white-space: nowrap; margin-top: 2px; }
+
+  /* 签名 */
+  .sign { text-align: right; margin-top: 14px; padding-right: 40px; }
+
+  /* 分页控制 */
+  .page-break { page-break-after: always; }
+  h2 { page-break-after: avoid; }
+  table { page-break-inside: avoid; }
+  .compare { page-break-inside: avoid; }
+
+  @media print {
+    body { padding: 0; max-width: none; }
+    .page-break { page-break-after: always; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ====== 第1页 ====== -->
+<h1>刑事控告书</h1>
+<p style="text-align:center; color:#666; font-size:8.5pt; margin:2px 0 8px;">虚假诉讼罪（刑法第307条之一）· 枉法仲裁罪（刑法第399条之一）</p>
+
+<!-- 摘要：一眼看清脉络 -->
+<div class="summary">
+  <p style="color:#ffeb3b; font-weight:700; font-size:10pt; margin-bottom:6px;">▶ 办案人员一眼看清脉络</p>
+  <p>借款协议写"<strong class="y">乙方（公司）</strong>"违约，代理律师王奥在仲裁申请书中篡改为"<strong class="r">4名股东</strong>"违约，据此申请 <strong class="y">213.84万元</strong> 连带赔偿。</p>
+  <p>员昊、邱千依是合同<strong class="y">丙方——公司出借人（债权人）</strong>兼全额缴纳注册资本金的小股东。<strong class="r">哪条法律允许公司债权人承担公司全部债务？</strong></p>
+  <p>独任仲裁员洪华全在（2022）湛仲字第56号中七处篡改，方向完全一致，均指向同一目的：<strong class="y">为被告公司法定代表人凃云峰完全免责</strong>——合同义务第一责任人、资产转移执行人，被精确从每一个责任节点摘除。</p>
+  <p style="margin-bottom:0">更离谱的是：<strong class="r">被告人之一、公司最大股东（持股41%）吕伟麟，公然替原告蔡启泳支付仲裁律师费并出具代付声明书</strong>（见裁决书第19页）——被告替原告付律师费来告自己，恶意串通昭然若揭。</p>
+</div>
+
+<!-- 损害后果 -->
+<div class="damage">
+  <table>
+    <tr><th style="width:90px;">执行标的</th><td><strong style="font-size:11pt;">213.84万元人民币</strong>（案号：（2023）赣0111执2290号）</td></tr>
+    <tr><th>财产损失</th><td>邱千依南昌房产被查封执行；个人律师费逾25万元</td></tr>
+    <tr><th>人身限制</th><td>员昊、邱千依被限制高消费<strong>超过2年</strong>，无法购买机票回国</td></tr>
+    <tr><th>人生遗憾</th><td><strong>邱千依因被限高无法乘机，错失与外公临终最后告别的机会</strong></td></tr>
+    <tr><th>加重情节</th><td>2023年、2024年反复多次申请强制执行（刑法307条之一加重情节）</td></tr>
+  </table>
+</div>
+
+<!-- 控告人/被控告人 -->
+<h2>一、控告人与被控告人</h2>
+<table>
+  <tr><th style="width:70px;">控告人</th><td><strong>员昊</strong>（旅日华侨，日本永住权）；<strong>邱千依</strong>（旅日华侨，日本永住权）</td></tr>
+  <tr><th>控告罪名</th><td><span class="red">虚假诉讼罪</span>（§307-1）针对蔡启泳、王奥、罗建峰、吕伟麟、吴铭刚、凃云峰、蔡启涛、邓桂燕；<span class="red">枉法仲裁罪</span>（§399-1）针对洪华全</td></tr>
+</table>
+<table style="margin-top:5px;">
+  <tr><th style="width:70px;">被控告人</th><th style="width:130px;">身份</th><th>涉嫌行为</th></tr>
+  <tr><td><strong>蔡启泳</strong></td><td>傀儡原告</td><td>明知无事实依据仍发起虚假仲裁；全程未出庭；笔迹鉴定签字"非同一人"</td></tr>
+  <tr><td><strong>王奥</strong></td><td>代理律师</td><td>篡改合同主体；持有无违规审计报告仍主张违约；当庭虚假陈述</td></tr>
+  <tr><td><strong>洪华全</strong></td><td>独任仲裁员</td><td>七处枉法篡改；曾任湛江市霞山区人民法院审判长</td></tr>
+  <tr><td><strong>罗建峰</strong></td><td>原债权人/CPA</td><td>债权转让协议捏造"连带赔偿"；仲裁中虚假陈述；指挥资产转移</td></tr>
+  <tr><td><strong>吕伟麟</strong></td><td>实际操盘人（41%）</td><td>拿走全部公司资产；替原告代付律师费；代替罗建峰支付1000万日元借款</td></tr>
+  <tr><td><strong>吴铭刚</strong></td><td>幕后控制人</td><td>吕伟麟表哥；与吕、邓同任佛山拓派；千寻会社出资35%</td></tr>
+  <tr><td><strong>凃云峰</strong></td><td>法定代表人（7.35%）</td><td>签署资产转移指令；秘密成立千寻合同会社</td></tr>
+  <tr><td><strong>蔡启涛</strong></td><td>股东（10%）</td><td>蔡启泳之兄；参与免除员昊、邱千依董事职务</td></tr>
+  <tr><td><strong>邓桂燕</strong></td><td>财务总管</td><td>资产转移后第3天停止汇报；同时担任7家以上关联公司财务负责人</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- ====== 第2页 ====== -->
+<h2>二、核心证据——两份文件对比，无需推断</h2>
+
+<h3>（一）合同原文 vs 王奥仲裁申请书</h3>
+<div class="compare">
+  <div class="compare-box orig">
+    <div class="label">✅ 借款协议第二条第5款原文</div>
+    "乙方（千路商事株式会社，<strong>法定代表人凃云峰</strong>）需每周末向甲方报告银行余额情况。否则，属<strong>乙方</strong>违约，按第三条第2项处理。"
+  </div>
+  <div class="compare-box fake">
+    <div class="label">❌ 王奥仲裁申请书篡改为</div>
+    "<strong>4名股东</strong>一直没有履行每周向罗建峰报告银行余额的义务，属严重违约。"
+  </div>
+</div>
+<div class="compare">
+  <div class="compare-box orig">
+    <div class="label">✅ 合同第三条第2款违约条件原文</div>
+    "不得将借款用于与乙方经营无关的用途，及<strong>违规滥用借款</strong>，否则甲方有权要求<strong>违规方</strong>承担相应的赔偿责任。"
+  </div>
+  <div class="compare-box fake">
+    <div class="label">❌ 洪华全裁决书跳过前提直接判决</div>
+    全文未认定任何"违规滥用借款"，却直接援引第三条第2款裁决<strong>177万元连带赔偿</strong>——适用依据不存在。
+  </div>
+</div>
+
+<div class="alert-red">
+  <p><span class="red">致命逻辑：</span>员昊、邱千依是合同<strong>丙方——公司出借人（债权人）</strong>，非借款人；两份协议全文无任何个人连带条款；赔偿前提是"违规滥用借款"——蔡启泳从未指控、从未举证，审计师也查不出。<strong class="red">明知前提条件不成立仍发起仲裁 = 虚假诉讼。</strong></p>
+</div>
+
+<h3>（二）合同约定的完整逻辑链 vs 仲裁庭的跳跃</h3>
+<table>
+  <tr><th style="width:50%;">合同约定的正确逻辑</th><th>仲裁庭实际操作（枉法）</th></tr>
+  <tr class="green-row"><td>① 未报告银行余额 → 属<strong>乙方（公司）</strong>违约</td><td rowspan="2" class="red-row">① 篡改为"<strong>四被申请人（个人）</strong>"违约</td></tr>
+  <tr class="green-row"><td>② 按第三条第2款处理</td></tr>
+  <tr class="green-row"><td>③ <strong>必须证明"违规滥用借款"</strong>（前提条件）</td><td class="red-row">② <strong>跳过前提条件</strong>，从未审查</td></tr>
+  <tr class="green-row"><td>④ 才能要求"违规方"赔偿</td><td class="red-row">③ 直接判决连带赔偿177万元</td></tr>
+</table>
+
+<h3>（三）审计报告——证明不存在违规（被告自认证据）</h3>
+<table>
+  <tr><th style="width:130px;">出具时间</th><td>2020年5月22日（比仲裁申请早2年多）</td></tr>
+  <tr><th>出具人</th><td>公认会计士长岛广明（受罗建峰、吕伟麟委托）</td></tr>
+  <tr><th>结论原文</th><td><strong>"明確な回答は得られず、その事実は確認できなかった"</strong><br>中文：无法得到明确回答，<strong class="red">无法确认事实</strong>——审计师未认定任何挪用或违规</td></tr>
+  <tr><th>提交法院</th><td>由王奥在（2023）粤08民特113号湛江中院撤裁听证中<strong>主动提交</strong>，属自认证据</td></tr>
+  <tr><th>王奥当庭陈述</th><td>自己提交的译文写"无法确认"，当庭却称"<strong class="red">发现他们挪用公司资金</strong>"——故意虚假陈述铁证</td></tr>
+</table>
+
+<div class="alert-dark">
+  <p style="color:#ffeb3b; font-weight:700; margin-bottom:5px;">既然你自己都没指控挪用，审计也查不出挪用，按合同规定你根本无权追责——那为什么要仲裁？</p>
+  <p style="margin:0; color:#fff;">唯一答案：<strong style="color:#ff8a80;">明知没有权利基础，仍发起虚假诉讼，目的是侵吞员昊、邱千依的房产。</strong></p>
+</div>
+
+<h3>（四）罗建峰债权转让协议——捏造"连带赔偿"</h3>
+<div class="compare">
+  <div class="compare-box orig">
+    <div class="label">✅ 借款协议实际内容</div>
+    全文<strong>无任何"连带赔偿"条款</strong>；赔偿须以"违规滥用借款"为前提；责任主体为"违规方"
+  </div>
+  <div class="compare-box fake">
+    <div class="label">❌ 罗建峰债权转让协议（2021.12.17）捏造写入</div>
+    "该公司股东因<strong>严重违反协议约定，应当为此向甲方承担连带赔偿责任</strong>"——合同无此表述，审计无违规认定，凭空捏造
+  </div>
+</div>
+<p style="font-size:8.5pt; color:#555;">注：罗建峰系注册会计师（CPA），担任香港联塑集团等上市公司独立非执行董事；王奥具备法学+会计双重背景。两人均不可能看不懂上述简单合同条款和审计结论。</p>
+
+<div class="page-break"></div>
+
+<!-- ====== 第3页 ====== -->
+<h2>三、仲裁员洪华全——七处枉法篡改，均为凃云峰免责</h2>
+
+<p>（2022）湛仲字第56号裁决书中，七处篡改方向完全一致，均指向同一目的：<strong class="red">为法定代表人凃云峰完全免责</strong>。</p>
+
+<table>
+  <tr><th style="width:30px;">#</th><th style="width:47%;">合同/法律原文</th><th>洪华全篡改为</th></tr>
+  <tr>
+    <td>①</td>
+    <td>合同首页及日本法务局登记簿：<strong>法定代表人凃云峰</strong></td>
+    <td class="red-row">降格为"<strong>董事</strong>"——系统稀释凃云峰法律责任</td>
+  </tr>
+  <tr>
+    <td>②</td>
+    <td>合同原文：<strong>乙方</strong>需每周报告银行余额</td>
+    <td class="red-row">篡改为"<strong>千路商事、员昊、孙万鹏、邱千依</strong>"四方义务，<strong>精确排除凃云峰</strong></td>
+  </tr>
+  <tr>
+    <td>③</td>
+    <td>合同丙方责任主体：丙A员昊、丙B孙万鹏、<strong>丙C凃云峰</strong>、丙D邱千依</td>
+    <td class="red-row"><strong>精确摘除丙C</strong>，仅裁决其余三人——凃云峰作为第一责任人被完全免责</td>
+  </tr>
+  <tr>
+    <td>④</td>
+    <td>汇报义务前提："<strong>在乙方未取得绿牌车公司资格前</strong>"——已于2018年11月6日取得，义务已消灭</td>
+    <td class="red-row">无视绿牌已取得，<strong>以已失效条款认定违约</strong>（罗建峰2018年11月28日亲赴大阪乘坐绿牌车）</td>
+  </tr>
+  <tr>
+    <td>⑤</td>
+    <td>第三条第2款：赔偿前提是"<strong>违规滥用借款</strong>"</td>
+    <td class="red-row">全文未认定任何滥用，<strong>径直援引该条款裁决赔偿</strong>——适用依据不存在</td>
+  </tr>
+  <tr>
+    <td>⑥</td>
+    <td>借款协议全文<strong>根本不含</strong>"互相监督、互相督促"表述</td>
+    <td class="red-row"><strong>凭空捏造此表述</strong>，为强加个人义务自行制造依据</td>
+  </tr>
+  <tr>
+    <td>⑦</td>
+    <td>《民法典》第521条：申请人放弃追诉凃云峰，依法应<strong>减免其余三人份额</strong></td>
+    <td class="red-row">以"申请人对自身权利的处分"一语带过，<strong>拒绝适用</strong></td>
+  </tr>
+</table>
+
+<div class="alert-red">
+  <p><span class="red">致命逻辑：</span>凃云峰是合同乙方法定代表人、汇报义务合同指定履行人、丙C责任主体、公司财务资产实际控制者——按任何正常裁决逻辑，凃云峰必然是第一追责对象。洪华全却通过七步操作将其从每一个责任节点精确摘除。<strong class="red">七处错误全部指向同一人，不可能是法律理解偏差，系故意枉法裁决。</strong></p>
+</div>
+
+<h3>仲裁庭自相矛盾——枉法的铁证</h3>
+<table>
+  <tr class="green-row"><td style="width:120px;"><strong>裁决书第25页</strong></td><td>仲裁庭认定两份借款协议<strong>"合法有效，受法律保护"</strong></td></tr>
+  <tr class="red-row"><td><strong>裁决书第29页</strong></td><td>却<strong>完全不按合同约定的违约条款（第三条第2款）进行审查</strong>，直接判决连带责任</td></tr>
+</table>
+<p style="font-size:9pt; margin-top:4px;"><strong>既然承认合同有效，就必须按合同裁决。承认有效却不按合同裁决——这是赤裸裸的枉法裁决。</strong></p>
+
+<h2>四、预谋三步闭环——违约事实系被告发人亲手制造</h2>
+
+<div class="step"><div class="step-num">第一步</div><div><strong>2019年11月9日</strong>：凃云峰签署《业务指示书》，将公司全部公章、4本银行存折、全部网银令牌、信用卡、现金金库悉数转交第三方Westage公司保管（有书面《預かり証》）。员昊、邱千依当日不在日本，护照记录可核实。在场的公认会计士长岛广明即后来出具审计报告之同一人——被告发人自此完整掌握全部财务数据。</div></div>
+
+<div class="step"><div class="step-num">第二步</div><div><strong>2019年11月12日</strong>：会计总管邓桂燕于资产转移后第<strong>3天</strong>突然全面停止汇报。其2019年9月财务报表显示公司资产超300万元，并非"濒临破产"。<br><strong>2019年12月2日</strong>：公司所有账户密码被悉数变更，员昊、邱千依完全丧失获取任何财务信息的可能。</div></div>
+
+<div class="step"><div class="step-num">第三步</div><div><strong>2019年12月3日（变更密码次日）</strong>：罗建峰发律师函，以"员昊等人一直未汇报、未提供银行流水"为由启动仲裁前置程序——此时员昊等已被完全剥夺获取财务资料的可能。然而事实是：员昊持续两个月向罗建峰发送<strong>8份正式汇报文件</strong>，罗建峰全部<strong>已读不回</strong>，仲裁中却声称"从未汇报"，构成可查证的虚假陈述。</div></div>
+
+<p style="margin:6px 0 4px; font-weight:700; color:#c0392b;">先转移资产 → 切断信息 → 变更密码 → 次日以"未汇报"起诉：违约事实系被告发人亲手制造。</p>
+
+<p><strong>犯罪目的直接证据</strong>：2019年12月19日，蔡启涛微信发出最后通牒："你们如果愿意继续经营千路，我们仅收回股金和借款本金约共280万元，千路公司归你们。若5天后不答应，将任随千路清算结业！"员昊拒绝后，蔡启泳随即发动仲裁。被告发人要求的280万收购价，高于仲裁诉求177万——<strong>本案真实目的是逼迫员昊等放弃股权，而非正当追索债权。</strong></p>
+
+<div class="page-break"></div>
+
+<!-- ====== 第4页 ====== -->
+<h2>五、恶意串通证据链</h2>
+
+<table>
+  <tr><th style="width:170px;">证据</th><th>内容</th><th style="width:160px;">来源</th></tr>
+  <tr>
+    <td><strong>被告替原告付律师费</strong></td>
+    <td>被告人吕伟麟于2022年7月28日，通过招商银行账户（539042481050）替原告蔡启泳支付仲裁律师费5000元，并出具《代付声明书》</td>
+    <td>仲裁裁决书<strong>第19页底部</strong>（自认证据）</td>
+  </tr>
+  <tr>
+    <td><strong>被告与原告合开公司</strong></td>
+    <td>吕伟麟任监事、蔡启泳任法定代表人，共同经营佛山市顺德区房悦居信息服务有限公司</td>
+    <td>中国工商登记</td>
+  </tr>
+  <tr>
+    <td><strong>原告给全体被告免责</strong></td>
+    <td>蔡启泳在仲裁中放弃追诉凃云峰（法定代表人）、吕伟麟（最大股东41%）、蔡启涛（持股10%）——切断信息渠道的人全部被免责；王奥当庭称这些人是"朋友，自愿免责"</td>
+    <td>仲裁庭笔录</td>
+  </tr>
+  <tr>
+    <td><strong>原告全程未出庭</strong></td>
+    <td>蔡启泳作为仲裁申请人，全程未出庭参加任何一次庭审</td>
+    <td>庭审记录</td>
+  </tr>
+  <tr>
+    <td><strong>签字非同一人</strong></td>
+    <td>笔迹咨询鉴定显示蔡启泳在律所委托合同与债权转让协议上的签字"不是出自同一人书写"</td>
+    <td>笔迹鉴定报告</td>
+  </tr>
+  <tr>
+    <td><strong>罗建峰拒绝出面</strong></td>
+    <td>王奥在仲裁中陈述：罗建峰是"名人，不方便出面"，所以将债权转让给蔡启泳代为仲裁</td>
+    <td>仲裁庭陈述</td>
+  </tr>
+  <tr>
+    <td><strong>提前成立接盘公司</strong></td>
+    <td>2019年2月21日，被告发人秘密成立千寻合同会社（注册地址与千路相同），出资人：吴铭刚35%、凃云峰35%、罗建峰13.8%、蔡启涛8.1%——早于起诉约两年已布局</td>
+    <td>日本法务局登记</td>
+  </tr>
+  <tr>
+    <td><strong>邓桂燕犯罪网络枢纽</strong></td>
+    <td>工商登记显示邓桂燕同时担任吴铭刚、吕伟麟等被告发人关联7家以上公司财务负责人；与吴铭刚、吕伟麟同时任职佛山拓派电子科技有限公司</td>
+    <td>中国工商登记</td>
+  </tr>
+</table>
+
+<h2>六、提级管辖申请</h2>
+
+<div class="alert-red">
+  <p><strong>洪华全曾任湛江市霞山区人民法院审判长</strong>，在湛江本地司法系统拥有深厚关系网络。本案由其原工作城市公安机关侦查，独立性存疑。</p>
+  <p style="margin-top:5px;">本案2025年7月28日报案，历时8个月：公安机关既未立案，亦未出具《不予立案通知书》，剥夺控告人向检察院申请监督的法定权利。本案证据全部在国内，被控告人均为中国公民，<strong>"涉外"理由不能成立。</strong></p>
+  <p style="margin-top:5px; color:#c0392b; font-weight:700;">恳请提级管辖，确保侦查不受本地司法关系干扰。</p>
+</div>
+
+<h2>七、证据来源（全部为中国境内文书，无需涉外调查）</h2>
+
+<table>
+  <tr><th>#</th><th>证据名称</th><th>关键内容</th></tr>
+  <tr><td>1</td><td>借款协议（两份）</td><td>合同义务主体为"乙方"（公司），无个人连带条款</td></tr>
+  <tr><td>2</td><td>仲裁申请书</td><td>从未指控"违规滥用借款"，无挪用证据</td></tr>
+  <tr><td>3</td><td>（2022）湛仲字第56号裁决书</td><td>七处枉法篡改，见第19、28-29页</td></tr>
+  <tr><td>4</td><td>审计报告（中日双语）</td><td>结论"无法确认事实"；由王奥在湛江中院撤裁听证自行提交</td></tr>
+  <tr><td>5</td><td>（2023）粤08民特113号卷宗</td><td>吕伟麟代付律师费声明书（第19页）</td></tr>
+  <tr><td>6</td><td>名古屋谈判录音（2019.12.14）</td><td>吕伟麟亲口承认受罗建峰委托实施资产转移</td></tr>
+  <tr><td>7</td><td>蔡启涛微信记录（2019.12.19）</td><td>"280万收购要挟"——直接证明犯罪目的</td></tr>
+  <tr><td>8</td><td>业务指示书+預かり証</td><td>2019年11月9日资产转移的书面证明</td></tr>
+  <tr><td>9</td><td>员昊8份汇报文件（微信群）</td><td>罗建峰已读不回；驳斥"从未汇报"虚假陈述</td></tr>
+  <tr><td>10</td><td>债权转让协议（2021.12.17）</td><td>罗建峰捏造"连带赔偿"表述</td></tr>
+  <tr><td>11</td><td>中国、日本工商登记</td><td>千寻合同会社布局；邓桂燕关联公司网络</td></tr>
+  <tr><td>12</td><td>护照出入境记录</td><td>2019年11月9日员昊、邱千依不在日本</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- ====== 第5页 ====== -->
+<h2>八、控告请求</h2>
+
+<table>
+  <tr><th style="width:30px;">一</th><td>对<strong>蔡启泳、王奥、罗建峰、吕伟麟、吴铭刚、凃云峰、蔡启涛、邓桂燕</strong>以<span class="red">虚假诉讼罪</span>立案侦查</td></tr>
+  <tr><th>二</th><td>对<strong>洪华全</strong>以<span class="red">枉法仲裁罪</span>立案侦查，并调查其与蔡启泳、王奥是否存在串通</td></tr>
+  <tr><th>三</th><td>鉴于洪华全前任湛江市霞山区人民法院审判长身份，<strong>请求提级管辖</strong></td></tr>
+  <tr><th>四</th><td><strong>依法中止执行</strong>（2023）赣0111执2290号强制执行措施，解除员昊、邱千依限制消费令</td></tr>
+  <tr><th>五</th><td>请求对以下账户实施<strong>冻结保全</strong>：吕伟麟招商银行账户（539042481050）及相关涉案人员国内资产</td></tr>
+</table>
+
+<h2>九、法律依据</h2>
+<table>
+  <tr><th style="width:200px;">法律依据</th><th>适用内容</th></tr>
+  <tr><td>《刑法》第307条之一</td><td>虚假诉讼罪；向人民法院申请执行基于捏造事实的仲裁裁决，明确属于虚假诉讼罪（法释〔2018〕17号第一条第三款）</td></tr>
+  <tr><td>《刑法》第399条之一</td><td>枉法仲裁罪；仲裁员故意违背事实和法律作出枉法裁决</td></tr>
+  <tr><td>法释〔2018〕17号第一条</td><td>以捏造的事实提起民事诉讼/申请仲裁</td></tr>
+  <tr><td>法发〔2021〕10号第四条（六）</td><td>通过虚假仲裁申请法院强制执行</td></tr>
+  <tr><td>最高法刑事审判参考第1377号</td><td>向执行法院申请执行基于虚假事实的仲裁裁决构成虚假诉讼罪</td></tr>
+  <tr><td>《归侨侨眷权益保护法》</td><td>告发人员昊、邱千依系持日本永住权中国公民，合法权益受法律保护</td></tr>
+</table>
+
+<h2>十、补充说明</h2>
+<p>本案核心证据均为<strong>被告发人自行提交的官方文件</strong>（审计报告、仲裁申请书、裁决书），无法辩称伪造，无需复杂鉴定。两份文件对比（借款协议原文 vs 仲裁申请书篡改），一眼可见虚假诉讼事实。</p>
+<p style="margin-top:5px;">告发人已于2025年7月28日正式报案，另已向最高人民检察院提交信访材料，请求立案监督。</p>
+
+<div class="sign">
+  <p>控告人：员昊　　邱千依</p>
+  <p>首次控告日期：2025年7月28日</p>
+  <p>本文书日期：2026年4月2日</p>
+</div>
+
+<div style="margin-top:16px; padding:8px 12px; background:#e3f2fd; border:1px solid #90caf9; border-radius:3px; font-size:8.5pt; color:#1565c0;">
+  <strong>完整证据资料详见：</strong>https://mokobasic.online　|　案件编号：（2022）湛仲字第56号　|　执行案号：（2023）赣0111执2290号
+</div>
+
+</body>
+</html>
